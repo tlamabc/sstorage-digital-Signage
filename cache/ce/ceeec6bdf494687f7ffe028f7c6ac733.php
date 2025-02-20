@@ -84,7 +84,7 @@ class __TwigTemplate_341f4a68c64565a562e8f0b32f47e3fc extends Template
         // line 38
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["helpService"] ?? null), "getLandingPage", [], "method", false, false, false, 38), "html", null, true);
         yield "\" type=\"button\" class=\"btn-rounded btn-orange\">Documentation</a>
-                        <a href=\"https://sstorage.vn\" type=\"button\" class=\"btn-rounded btn-outlined\">Training</a>
+                        <a href=\"https://sstorage.vn/\" type=\"button\" class=\"btn-rounded btn-outlined\">Training</a>
                     </div>
                 </div>
                 <div class=\"header-image-box\">
