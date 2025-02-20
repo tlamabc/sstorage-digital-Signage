@@ -410,7 +410,22 @@ class StatusDashboard extends Base
                     $data['latestNews'] = array(array('title' => __('Latest news not available.'), 'description' => '', 'link' => ''));
                 }
             } else {
-                $data['latestNews'] = array(array('title' => __('Latest news not enabled.'), 'description' => '', 'link' => ''));
+              //  $data['latestNews'] = array(array('title' => __('Latest news not enabled.'), 'description' => '', 'link' => ''));
+              $data['latestNews'] = [
+                [
+                    'title' => 'Ý Nghĩa Của SStorage',
+                    'description' => '
+                    ✅ <b>Super:</b> Lưu trữ hàng Pb dữ liệu<br>
+                    ✅ <b>Speed:</b> Tốc độ lưu trữ không giới hạn<br>
+                    ✅ <b>Smart:</b> Lưu trữ thông minh có chọn lọc và phân loại data<br>
+                    ✅ <b>Security:</b> Dữ liệu lưu tại IDC tiêu chuẩn Tier III<br>
+                    ✅ <b>Scalable:</b> Mở rộng linh hoạt 1Tb – Hàng trăm Pb<br>
+                    ✅ <b>Saving:</b> Tiết kiệm chi phí',
+                    'link' => '',
+                    'date' => Carbon::now()->format(DateFormatHelper::getSystemFormat()),
+                ]
+            ];
+            
             }
 
             // Display Status and Media Inventory data - Level one
