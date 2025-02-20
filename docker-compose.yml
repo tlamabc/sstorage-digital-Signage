@@ -6,7 +6,7 @@ services:
     ports:
     - "3315:3306"
     volumes:
-    - ./containers/db:/var/lib/mysql
+    - ./containers/database:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: "root"
       MYSQL_DATABASE: "cms"
