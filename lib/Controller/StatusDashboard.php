@@ -421,7 +421,7 @@ class StatusDashboard extends Base
                     ✅ <b>Security:</b> Dữ liệu lưu tại IDC tiêu chuẩn Tier III<br>
                     ✅ <b>Scalable:</b> Mở rộng linh hoạt 1Tb – Hàng trăm Pb<br>
                     ✅ <b>Saving:</b> Tiết kiệm chi phí',
-                    'link' => '',
+                    'link' => 'https://sstorage.vn/',
                     'date' => Carbon::now()->format(DateFormatHelper::getSystemFormat()),
                 ]
             ];
