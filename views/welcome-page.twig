@@ -164,11 +164,17 @@
 
         if (isXiboThemed) {
             othersCards.push({
-                title: '{% trans "Training" %}',
-                text: '{% trans "Self-paced online training videos designed to get you up and running with Xibo in no time." %}',
-                links: `<a href="https://sstorage.vn/lien-he/" target="_blank">{% trans "New User Training" %}</a>`,
-                iconName: "training"
+                title: 'Liên Hệ Để Hỗ Trợ',
+                text: `Địa chỉ: Tầng 5, 27A Hoàng Việt, F4, Quận Tân Bình, TP Hồ Chí Minh
+            Hotline: 0906 618 181
+            E-mail: sstorage@icsp.vn`.replace(/\n/g, "<br>"),
+                links: isXiboThemed ? `
+                    <a href="https://sstorage.vn/lien-he/" target="_blank">{% trans "Trung tâm hỗ trợ" %}</a>
+                    <a href="https://sstorage.vn/lien-he/" target="_blank">{% trans "Cộng đồng" %}</a>
+                ` : '',
+                iconName: "help"
             });
+
         }
 
         othersCards.push({
