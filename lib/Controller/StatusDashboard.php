@@ -341,7 +341,7 @@ class StatusDashboard extends Base
             $data['nowShowing'] = $sth->fetchColumn(0);
 
             // Latest news
-            if ($this->getConfig()->getSetting('DASHBOARD_LATEST_NEWS_ENABLED') == 1
+            if ($this->getConfig()->getSetting('DASHBOARD_LATEST_NEWS_ENABLED') == 00
                 && !empty($this->getConfig()->getSetting('LATEST_NEWS_URL'))
             ) {
                 // Make sure we have the cache location configured
