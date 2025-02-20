@@ -31,7 +31,7 @@ services:
     ports:
       - "81:80"
     environment:
-      CMS_DEV_MODE: "true"
+      CMS_DEV_MODE: "false"
       MYSQL_DATABASE: "cms"
 
   memcached:
