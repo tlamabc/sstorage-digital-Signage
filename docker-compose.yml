@@ -1,52 +1,87 @@
-version: "3"
+version: "3.8"
 
 services:
   db:
     image: mysql:8.0
-    restart: always   # Giữ MySQL luôn chạy
+    restart: always
+    container_name: xibo-db
     ports:
       - "3315:3306"
     volumes:
       - /db_signage/:/var/lib/mysql
+      - /etc/localtime:/etc/localtime:ro
     environment:
       MYSQL_ROOT_PASSWORD: "root"
       MYSQL_DATABASE: "cms"
+      MYSQL_USER: "cms"
+      MYSQL_PASSWORD: "cms"
+      TZ: "Asia/Ho_Chi_Minh"  # ✅ Đảm bảo MySQL cũng dùng đúng múi giờ
+    networks:
+      - xibo-net
 
   xmr:
     image: ghcr.io/xibosignage/xibo-xmr:develop
-    restart: always   # Giữ XMR luôn chạy
+    restart: always
+    container_name: xibo-xmr
     ports:
       - "9505:9505"
     environment:
       XMR_DEBUG: "true"
       IPV6PUBSUPPORT: "false"
+    networks:
+      - xibo-net
 
   web:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    restart: always   # Giữ Web Server luôn chạy
+    image: xibosignage/xibo-cms:release-3.3.6  # ✅ Dùng image chính thức thay vì build Dockerfile
+    restart: always
+    container_name: xibo-web
+    depends_on:
+      - db
+      - xmr
     volumes:
-      - ./:/var/www/cms
+      - /xibo_cms_data:/var/www/cms
+      - /etc/localtime:/etc/localtime:ro
     ports:
       - "81:80"
     environment:
       CMS_DEV_MODE: "false"
+      CMS_SERVER_NAME: "localhost"
+      MYSQL_HOST: "db"  # ✅ Đảm bảo Xibo CMS kết nối đúng đến MySQL
       MYSQL_DATABASE: "cms"
+      MYSQL_USER: "cms"
+      MYSQL_PASSWORD: "cms"
+      TZ: "Asia/Ho_Chi_Minh"  # ✅ Đảm bảo web container dùng đúng múi giờ
+      XMR_HOST: "xmr"
+      XMR_PORT: "9505"
+    networks:
+      - xibo-net
 
   memcached:
     image: memcached:alpine
-    restart: always   # Giữ Memcached luôn chạy
+    restart: always
+    container_name: xibo-memcached
     command: memcached -m 15
+    networks:
+      - xibo-net
 
   swagger:
     image: swaggerapi/swagger-ui:latest
-    restart: always   # Giữ Swagger luôn chạy
+    restart: always
+    container_name: xibo-swagger
     ports:
       - "8080:8080"
     environment:
       - API_URL=http://localhost/swagger.json
+    networks:
+      - xibo-net
 
   quickchart:
     image: ianw/quickchart
-    restart: always   # Giữ QuickChart luôn chạy
+    restart: always
+    container_name: xibo-quickchart
+    networks:
+      - xibo-net
+
+networks:
+  xibo-net:
+    driver: bridge
