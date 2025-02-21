@@ -414,20 +414,21 @@ class Login extends Base
      * @throws GeneralException
      * @throws \Xibo\Support\Exception\ControllerNotImplemented
      */
-    public function about(Request $request, Response $response)
-    {
-        $state = $this->getState();
 
-        if ($request->isXhr()) {
-            $state->template = 'about-text';
-        } else {
-            $state->template = 'about-page';
-        }
+    //  public function about(Request $request, Response $response)
+    // {
+    //     $state = $this->getState();
 
-        $state->setData(['version' => Environment::$WEBSITE_VERSION_NAME, 'sourceUrl' => $this->getConfig()->getThemeConfig('cms_source_url')]);
+    //     if ($request->isXhr()) {
+    //         $state->template = 'about-text';
+    //     } else {
+    //         $state->template = 'about-page';
+    //     }
 
-        return $this->render($request, $response);
-    }
+    //     $state->setData(['version' => Environment::$WEBSITE_VERSION_NAME, 'sourceUrl' => $this->getConfig()->getThemeConfig('cms_source_url')]);
+
+    //     return $this->render($request, $response);
+    // }
 
     /**
      * Generate an email body

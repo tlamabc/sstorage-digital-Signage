@@ -643,7 +643,7 @@ $app->get('/fault/view', ['\Xibo\Controller\Fault','displayPage'])
 //
 // license
 //
-$app->get('/license/view', ['\Xibo\Controller\Login','about'])->setName('license.view');
+//$app->get('/license/view', ['\Xibo\Controller\Login','about'])->setName('license.view');
 
 //
 // Reporting
