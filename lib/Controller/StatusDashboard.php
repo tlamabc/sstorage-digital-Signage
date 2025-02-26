@@ -413,18 +413,19 @@ class StatusDashboard extends Base
               //  $data['latestNews'] = array(array('title' => __('Latest news not enabled.'), 'description' => '', 'link' => ''));
               $data['latestNews'] = [
                 [
-                    'title' => 'Ý Nghĩa Của SStorage',
+                    'title' => 'Ý Nghĩa Của SSignage',
                     'description' => '
-                    ✅ <b>Super:</b> Lưu trữ hàng Pb dữ liệu<br>
-                    ✅ <b>Speed:</b> Tốc độ lưu trữ không giới hạn<br>
-                    ✅ <b>Smart:</b> Lưu trữ thông minh có chọn lọc và phân loại data<br>
-                    ✅ <b>Security:</b> Dữ liệu lưu tại IDC tiêu chuẩn Tier III<br>
-                    ✅ <b>Scalable:</b> Mở rộng linh hoạt 1Tb – Hàng trăm Pb<br>
-                    ✅ <b>Saving:</b> Tiết kiệm chi phí',
-                    'link' => 'https://sstorage.vn/',
+                    📺 <b>Smart:</b> Hiển thị nội dung số linh hoạt và thông minh<br>
+                    ⚡ <b>Speed:</b> Cập nhật nội dung tức thì từ xa<br>
+                    🎯 <b>Scalable:</b> Mở rộng dễ dàng từ một đến hàng ngàn màn hình<br>
+                    🔒 <b>Security:</b> Bảo mật cao với hệ thống quản lý tập trung<br>
+                    💰 <b>Saving:</b> Giảm thiểu chi phí in ấn và nhân lực<br>
+                    🌍 <b>Sustainability:</b> Giải pháp xanh, giảm thiểu rác thải giấy',
+                    'link' => 'https://ssignage.vn/',
                     'date' => Carbon::now()->format(DateFormatHelper::getSystemFormat()),
                 ]
             ];
+            
             
             }
 
