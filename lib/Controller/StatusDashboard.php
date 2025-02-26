@@ -417,12 +417,10 @@ class StatusDashboard extends Base
                     'description' => '
                     📺 <b>Smart:</b> Hiển thị nội dung số linh hoạt và thông minh<br>
                     ⚡ <b>Speed:</b> Cập nhật nội dung tức thì từ xa<br>
-                    🎯 <b>Scalable:</b> Mở rộng dễ dàng từ một đến hàng ngàn màn hình<br>
+                    🎯 <b>Scalable:</b> Mở rộng dễ dàng từ một đến hàng trăm màn hình<br>
                     🔒 <b>Security:</b> Bảo mật cao với hệ thống quản lý tập trung<br>
                     💰 <b>Saving:</b> Giảm thiểu chi phí in ấn và nhân lực<br>
                     🌍 <b>Sustainability:</b> Giải pháp xanh, giảm thiểu rác thải giấy',
-                    'link' => 'https://ssignage.vn/',
-                    'date' => Carbon::now()->format(DateFormatHelper::getSystemFormat()),
                 ]
             ];
             
