@@ -20,7 +20,7 @@
             padding-top: 40px !important;
             padding-bottom: 40px !important;
             background: url('{{ theme.uri("img/backgroundlogin.png") }}') no-repeat center center fixed;
-            background-size: cover; /* Đảm bảo ảnh phủ toàn bộ màn hình */
+            background-size: cover; 
             background-position: center;
             background-repeat: no-repeat;
             font-size: 1rem;
@@ -117,10 +117,22 @@
         </form>
         {% endif %}
 
-        <p class="text-center">Member of ICSP.VN
-            | <a id="source-link" href="{{ theme.getThemeConfig("cms_source_url") }}">{% trans "Source" %}</a>
-            {# | <a id="about-link" class="XiboFormButton" href="{{ url_for("about") }}" title="{% trans "About" %}">{% trans "About" %}</a> #}
+        <p class="text-center" style="
+            background: rgba(0, 123, 255, 0.1);
+            padding: 8px 15px;
+            border-radius: 8px;
+            display: inline-block;
+            font-weight: bold;
+            color: #007bff;
+            transition: all 0.3s ease-in-out;
+        ">
+            Member of ICSP.VN |
+            <a id="source-link" href="{{ theme.getThemeConfig('cms_source_url') }}" 
+                style="color: #ff5722; text-decoration: underline; font-weight: bold; transition: color 0.3s ease;">
+                {% trans "Source" %}
+            </a>
         </p>
+
     </div> <!-- /container -->
     <!-- Import JS bundle from dist -->
     <script src="{{ theme.rootUri() }}dist/vendor.bundle.min.js?v={{ version }}&rev={{revision}}" nonce="{{ cspNonce }}"></script>
