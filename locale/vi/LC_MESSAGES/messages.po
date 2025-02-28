@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-01-30 07:48+0000\n"
-"PO-Revision-Date: 2025-02-28 11:09+0700\n"
+"PO-Revision-Date: 2025-02-28 11:23+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: vi\n"
@@ -23,11 +23,11 @@ msgstr ""
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:1312
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:1542
 msgid "Audio"
-msgstr ""
+msgstr "Âm thanh"
 
 #: locale/moduletranslate.php:4
 msgid "Upload Audio files to assign to Layouts"
-msgstr ""
+msgstr "Tải tệp âm thanh lên để gán cho Bố cục"
 
 #: locale/moduletranslate.php:5 locale/moduletranslate.php:463
 #: locale/moduletranslate.php:491 locale/moduletranslate.php:521
@@ -53,7 +53,7 @@ msgstr ""
 #: cache/4f/4f986972093be579922959000f8429fb.php:179
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:897
 msgid "Loop?"
-msgstr ""
+msgstr "Vòng lặp?"
 
 #: locale/moduletranslate.php:9
 msgid "Should the audio loop if it finishes before the provided duration?"
@@ -62,7 +62,7 @@ msgstr ""
 #: locale/moduletranslate.php:10
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:479
 msgid "Calendar"
-msgstr ""
+msgstr "Lịch"
 
 #: locale/moduletranslate.php:11
 msgid "A module for displaying a calendar based on an iCal feed"
@@ -136,7 +136,7 @@ msgstr ""
 #: cache/9e/9e6f650d21b6dc055e4bfd82da487c3c.php:170
 #: lib/Widget/DataType/Event.php:64
 msgid "Start Date"
-msgstr ""
+msgstr "Ngày bắt đầu"
 
 #: locale/moduletranslate.php:27 locale/moduletranslate.php:1630
 #: cache/00/00e29dc44c2e4928fedaba3a9ba3ce19.php:627
@@ -145,7 +145,7 @@ msgstr ""
 #: cache/9e/9e6f650d21b6dc055e4bfd82da487c3c.php:174
 #: lib/Widget/DataType/Event.php:65
 msgid "End Date"
-msgstr ""
+msgstr "Ngày kết thúc"
 
 #: locale/moduletranslate.php:28
 msgid "Exclude all day events?"
@@ -8529,7 +8529,7 @@ msgstr "Màn hình"
 #: cache/11/1166151ca61185a39a692ab3eb99064f.php:110
 #: cache/ce/ceeec6bdf494687f7ffe028f7c6ac733.php:184
 msgid "Layouts"
-msgstr "Bố "
+msgstr "Bố cục"
 
 #: cache/bd/bd181ede1d0afe0f39ee56af2ea42aab.php:113
 #, no-php-format
@@ -8800,12 +8800,14 @@ msgstr ""
 
 #: cache/21/21cb37a7a05080b05969e015396b81f1.php:57
 msgid "Reset Report Schedule"
-msgstr ""
+msgstr "Đặt lại lịch báo cáo"
 
 #: cache/21/21cb37a7a05080b05969e015396b81f1.php:91
 msgid ""
 "Are you sure you want to reset this report schedule? This cannot be undone"
 msgstr ""
+"Bạn có chắc chắn muốn đặt lại lịch báo cáo này không? Việc này không thể "
+"hoàn tác được"
 
 #: cache/48/4860b3518f632b1f057ab5780c58564e.php:57
 #: cache/45/452993b5cfada14b95c3c3f731195fbd.php:77
@@ -8893,11 +8895,11 @@ msgstr ""
 #: cache/05/05fdcdaf4a060d06313a504c3e7c8950.php:63
 #: cache/d1/d10814ee3dd19888fef200639442fd26.php:834
 msgid "Report Schedules"
-msgstr ""
+msgstr "Báo cáo về lập lịch"
 
 #: cache/55/55c98fd97562c03f815b3331e503f3f2.php:86
 msgid "Saved reports"
-msgstr ""
+msgstr "Báo cáo đã lưu"
 
 #: cache/55/55c98fd97562c03f815b3331e503f3f2.php:117
 #: cache/a0/a08d35232aeb73f99b2b364078cce4c0.php:149
@@ -8908,21 +8910,21 @@ msgstr ""
 #: cache/11/1166151ca61185a39a692ab3eb99064f.php:235
 #: cache/20/20c62931092a02ad5a52d5d17a567869.php:147
 msgid "Show items owned by the selected User."
-msgstr ""
+msgstr "Hiển thị các mục thuộc sở hữu của Người dùng đã chọn."
 
 #: cache/55/55c98fd97562c03f815b3331e503f3f2.php:137
 #: cache/4a/4a4278fd57892a9180e837c6b9b78f8b.php:153
 msgid "Show items belong to a report."
-msgstr ""
+msgstr "Hiển thị các mục thuộc về một báo cáo."
 
 #: cache/55/55c98fd97562c03f815b3331e503f3f2.php:151
 msgid "Only my reports?"
-msgstr ""
+msgstr "Chỉ báo cáo của tôi?"
 
 #: cache/55/55c98fd97562c03f815b3331e503f3f2.php:167
 #: cache/4a/4a4278fd57892a9180e837c6b9b78f8b.php:87
 msgid "Report Schedule"
-msgstr ""
+msgstr "Báo cáo lập "
 
 #: cache/55/55c98fd97562c03f815b3331e503f3f2.php:171
 msgid "Saved as"
@@ -10971,7 +10973,7 @@ msgstr "Nhật ký"
 #: cache/7c/7c83e34565b8f2b468cd031ae65008ae.php:554
 #: cache/d1/d10814ee3dd19888fef200639442fd26.php:932
 msgid "Audit Trail"
-msgstr ""
+msgstr "Nhật ký hoạt động"
 
 #: cache/7c/7c83e34565b8f2b468cd031ae65008ae.php:567
 #: cache/38/385ee00baa220642744fad407cdf9850.php:55
@@ -12126,7 +12128,7 @@ msgstr ""
 #: cache/6a/6a00ee3d77ba0c4abd202500df4a6d77.php:583
 #: lib/Entity/Schedule.php:2090
 msgid "Campaign"
-msgstr ""
+msgstr "Chiến dịch"
 
 #: cache/17/171a03d2fcd4a30b3b21796f9876f6cc.php:407
 #: cache/34/3493d88c45c5b62199e7bd7d6a5699df.php:419
@@ -14494,13 +14496,13 @@ msgstr ""
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:449
 msgid "Delete all"
-msgstr ""
+msgstr "Xóa tất cả"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:472
 #: cache/6f/6f414548a478130c0e2dd1cb97b03156.php:440
 #: lib/Controller/Module.php:121
 msgid "Configure"
-msgstr ""
+msgstr "Cấu hình"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:476
 msgid "Appearance"
@@ -14589,7 +14591,7 @@ msgstr ""
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:606
 msgid "Selected item is not shared with you with edit permission!"
-msgstr ""
+msgstr "Mục đã chọn không được chia sẻ với bạn với quyền chỉnh sửa!"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:611
 msgid "No actions to show"
@@ -17570,7 +17572,7 @@ msgstr ""
 
 #: cache/58/5827a58c854ad5a45c08da531d11366b.php:178
 msgid "Shared with:"
-msgstr ""
+msgstr "Chia sẻ với:"
 
 #: cache/58/5827a58c854ad5a45c08da531d11366b.php:187
 msgid "Not shared"
@@ -18413,7 +18415,7 @@ msgstr ""
 #: lib/Controller/Command.php:213 lib/Controller/Command.php:226
 #: lib/Controller/DayPart.php:186 lib/Controller/DayPart.php:192
 msgid "Share"
-msgstr ""
+msgstr "Chia sẻ"
 
 #: cache/5d/5ddc3b3a06dcb05f69b47d5cd8bae287.php:164
 msgid "Set as Home"
@@ -21977,7 +21979,7 @@ msgstr ""
 
 #: lib/Controller/Widget.php:181
 msgid "This Playlist is not shared with you with edit permission"
-msgstr ""
+msgstr "Danh sách phát này không được chia sẻ với bạn với quyền chỉnh sửa"
 
 #: lib/Controller/Widget.php:187
 msgid ""
