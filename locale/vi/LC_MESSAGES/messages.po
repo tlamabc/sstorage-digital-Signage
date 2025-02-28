@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-01-30 07:48+0000\n"
-"PO-Revision-Date: 2025-02-28 11:23+0700\n"
+"PO-Revision-Date: 2025-02-28 13:57+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: vi\n"
@@ -2768,11 +2768,11 @@ msgstr ""
 #: cache/11/1166151ca61185a39a692ab3eb99064f.php:368
 #: cache/ce/ceeec6bdf494687f7ffe028f7c6ac733.php:197
 msgid "Media"
-msgstr ""
+msgstr "Phương tiện"
 
 #: locale/moduletranslate.php:876
 msgid "Choose media"
-msgstr ""
+msgstr "Chọn phương tiện"
 
 #: locale/moduletranslate.php:878 locale/moduletranslate.php:1052
 #: locale/moduletranslate.php:1079 locale/moduletranslate.php:1115
@@ -6241,7 +6241,7 @@ msgstr ""
 
 #: locale/dbtranslate.php:121
 msgid "Media Dashboard"
-msgstr ""
+msgstr "Bảng điều khiển phương tiện"
 
 #: locale/dbtranslate.php:124
 msgid "Full account access"
@@ -7286,7 +7286,7 @@ msgstr ""
 
 #: cache/39/39e9701c305bee67c2942096f45058f4.php:57
 msgid "Delete Media"
-msgstr ""
+msgstr "Xóa phương tiện"
 
 #: cache/39/39e9701c305bee67c2942096f45058f4.php:91
 #: cache/47/471f5b61d27300ce08c1b02bafa301e8.php:91
@@ -7355,7 +7355,7 @@ msgstr ""
 #: cache/79/798c63ad0ec5103a770da709da49900a.php:150
 #: cache/d1/d10814ee3dd19888fef200639442fd26.php:174
 msgid "Templates"
-msgstr ""
+msgstr "Mẫu"
 
 #: cache/c8/c8be5b9fc4051f3583eba482b4065cf3.php:72
 msgid "Add a new Template and jump to the layout editor."
@@ -8775,7 +8775,7 @@ msgstr ""
 #: cache/11/11647a3c18d902dd179d3cb9b3b7ec76.php:94
 #: cache/11/1166151ca61185a39a692ab3eb99064f.php:934
 msgid "Enable Stats Collection?"
-msgstr ""
+msgstr "Bật Thu thập số liệu thống kê?"
 
 #: cache/bb/bb9d8c7fef20d1514f5bb3acae314198.php:265
 msgid ""
@@ -10492,7 +10492,7 @@ msgstr ""
 #: cache/7c/7c83e34565b8f2b468cd031ae65008ae.php:129
 #: cache/d1/d10814ee3dd19888fef200639442fd26.php:189
 msgid "Resolutions"
-msgstr ""
+msgstr "Tỉ lệ màn hình"
 
 #: cache/1d/1d4d60123f584d2cb4e7c5af85f76cdf.php:72
 msgid "Add a new resolution for use on layouts"
@@ -10501,7 +10501,7 @@ msgstr ""
 #: cache/1d/1d4d60123f584d2cb4e7c5af85f76cdf.php:76
 #: cache/19/19133af1af464cdc9744328e818fb730.php:57
 msgid "Add Resolution"
-msgstr ""
+msgstr "Thêm tỉ lệ màn hình mới"
 
 #: cache/1d/1d4d60123f584d2cb4e7c5af85f76cdf.php:97
 #: cache/1d/1d4d60123f584d2cb4e7c5af85f76cdf.php:145
@@ -10515,7 +10515,7 @@ msgstr ""
 #: cache/37/3782c69d3f921332b127a83467224cb2.php:91
 #: cache/19/19133af1af464cdc9744328e818fb730.php:91
 msgid "Resolution"
-msgstr ""
+msgstr "Tỉ lệ"
 
 #: cache/1d/1d4d60123f584d2cb4e7c5af85f76cdf.php:157
 #: cache/04/049b075cac583aefc958ee662a293536.php:250
@@ -14761,7 +14761,7 @@ msgstr ""
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:859
 #: cache/f3/f305b9840ead0e355f2310af892a0ac0.php:194
 msgid "Change the resolution"
-msgstr ""
+msgstr "Đổi tỉ lệ"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:867
 #: cache/f3/f305b9840ead0e355f2310af892a0ac0.php:211
@@ -20792,7 +20792,7 @@ msgstr ""
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:1711
 msgid "Allow usage tracking?"
-msgstr ""
+msgstr "Chấp nhận theo dõi sử dụng?"
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:1717
 msgid "Should the CMS send anonymous statistics to help improve the software?"
@@ -22846,7 +22846,7 @@ msgstr ""
 
 #: lib/Controller/Playlist.php:525 lib/Controller/Library.php:767
 msgid "Usage Report"
-msgstr ""
+msgstr "Báo cáo sử dụng"
 
 #: lib/Controller/Playlist.php:674
 msgid "Please enter playlist name"
