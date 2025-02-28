@@ -457,28 +457,56 @@ ul.sidebar .sidebar-title {
   height: 40px;
   border-radius: 2px;
 }
+.navbar-default {
+  background-color: #ffffff !important; /* Nền trắng */
+  font-size: 1rem;
+  padding: 0 8px;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+}
+
+/* Màu chữ đen cho menu */
 .navbar-default .navbar-nav>li>a {
   line-height: 49px;
   color: #000000 !important; /* Chữ đen */
   font-weight: bold;
   border-bottom: 1px solid #ffffff;
 }
+
+/* Hover menu */
 .navbar-default .navbar-nav>li>a:focus, 
 .navbar-default .navbar-nav>li>a:hover {
   color: #008acd !important; /* Hover đổi màu xanh */
   background-color: rgba(0, 138, 205, 0.1); /* Hiệu ứng nền nhẹ */
   border-radius: 5px; /* Bo góc */
 }
-.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
-  color: #fff;
-  border-bottom: 1px solid #e99d1a;
-  background-color: #30426a;
+
+/* Khi menu được mở */
+.navbar-default .navbar-nav>.open>a, 
+.navbar-default .navbar-nav>.open>a:focus, 
+.navbar-default .navbar-nav>.open>a:hover {
+  color: #008acd !important;
+  border-bottom: 1px solid #008acd;
+  background-color: rgba(0, 138, 205, 0.1);
+  border-radius: 5px;
 }
-.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
-  color: #fff;
-  border-bottom: 1px solid #e99d1a;
-  background-color: #30426a;
+
+/* Đồng bộ dropdown */
+.navbar-default .navbar-nav .dropdown-menu {
+  background-color: #ffffff !important;
+  border: 1px solid #ddd;
 }
+
+.navbar-default .navbar-nav .dropdown-menu>li>a {
+  color: #000000 !important; /* Chữ đen */
+}
+
+.navbar-default .navbar-nav .dropdown-menu>li>a:hover {
+  background-color: rgba(0, 138, 205, 0.1) !important;
+  color: #008acd !important;
+  border-radius: 5px;
+}
+
 .notification-drawer-icon i {
   font-size: 1.4rem;
 }
