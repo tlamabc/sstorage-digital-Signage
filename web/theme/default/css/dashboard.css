@@ -491,10 +491,27 @@ ul.sidebar .sidebar-title {
   border-radius: 5px;
 }
 
-/* Đồng bộ dropdown */
+/* Dropdown menu */
 .navbar-default .navbar-nav .dropdown-menu {
   background-color: #ffffff !important;
   border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+}
+
+/* Dropdown item */
+.navbar-default .navbar-nav .dropdown-menu>li>a {
+  color: #000000 !important; /* Chữ đen */
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover dropdown item */
+.navbar-default .navbar-nav .dropdown-menu>li>a:hover, 
+.navbar-default .navbar-nav .dropdown-menu>li>a:focus {
+  background-color: rgba(0, 138, 205, 0.1) !important;
+  color: #008acd !important;
+  border-radius: 5px;
 }
 
 .navbar-default .navbar-nav .dropdown-menu>li>a {
