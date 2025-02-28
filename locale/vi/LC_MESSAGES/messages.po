@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-01-30 07:48+0000\n"
-"PO-Revision-Date: 2025-02-28 10:44+0700\n"
+"PO-Revision-Date: 2025-02-28 11:09+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: vi\n"
@@ -7736,7 +7736,7 @@ msgstr ""
 #: cache/d1/d10814ee3dd19888fef200639442fd26.php:884
 #: cache/11/1166151ca61185a39a692ab3eb99064f.php:126
 msgid "Advanced"
-msgstr ""
+msgstr "Mở rộng"
 
 #: cache/bd/bd5d2e4a3e31b76bad9ff5f5698f7a7b.php:80
 #: cache/ef/ef83cce0de7eb8867114fe1580770c60.php:80
@@ -9137,7 +9137,7 @@ msgstr "Thêm sự kiện được đồng bộ hóa"
 #: cache/7c/7c83e34565b8f2b468cd031ae65008ae.php:541
 #: cache/d1/d10814ee3dd19888fef200639442fd26.php:917
 msgid "Sessions"
-msgstr "Phiên"
+msgstr "Phiên hoạt động"
 
 #: cache/36/36a9081c5fdfcd84a39063b4437f0c7e.php:75
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:77
@@ -10655,7 +10655,7 @@ msgstr ""
 
 #: cache/84/84359f589ba8915a7c7a9b5ebb5f3561.php:209
 msgid "Last Login"
-msgstr ""
+msgstr "Lần cuối đăng nhập"
 
 #: cache/84/84359f589ba8915a7c7a9b5ebb5f3561.php:213
 #: cache/40/40934d1cc21621783800143e32bfb38c.php:179
@@ -13246,7 +13246,7 @@ msgstr ""
 #: cache/d8/d8641e7f460578ef71d1de7ee959cbcf.php:57
 #: lib/Controller/Display.php:1043 lib/Controller/Display.php:1058
 msgid "Request Screen Shot"
-msgstr ""
+msgstr "Chụp màn hình "
 
 #: cache/d8/d8641e7f460578ef71d1de7ee959cbcf.php:91
 msgid "Are you sure you want to request a screenshot?"
@@ -13345,7 +13345,7 @@ msgstr ""
 #: cache/22/22448b62fd274e1ae1e82305deeffcd3.php:60
 #: cache/22/22448b62fd274e1ae1e82305deeffcd3.php:62
 msgid "Preferences"
-msgstr ""
+msgstr "Tùy chọn"
 
 #: cache/5e/5eb625b45fa949442f35023536c2a28a.php:94
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:292
@@ -13771,7 +13771,7 @@ msgstr ""
 #: cache/6d/6dbfc6f56029f200649cfd67abd33697.php:95
 #: cache/ab/abfb98d815e4ff156f48ca0f6456c9e2.php:110
 msgid "Notification Centre"
-msgstr ""
+msgstr "Trung tâm thông báo"
 
 #: cache/6d/6dbfc6f56029f200649cfd67abd33697.php:113
 msgid "My Read"
@@ -13942,7 +13942,7 @@ msgstr ""
 #: cache/40/40934d1cc21621783800143e32bfb38c.php:638
 #: cache/59/59f0058495a6a779727bbfe19dd6898f.php:490
 msgid "Storage Free %"
-msgstr ""
+msgstr "Dung lượng còn trống %"
 
 #: cache/40/40934d1cc21621783800143e32bfb38c.php:665
 #: cache/44/44f134266ea30161ba4929c6a2658018.php:842
@@ -13961,7 +13961,7 @@ msgstr ""
 #: cache/59/59f0058495a6a779727bbfe19dd6898f.php:523
 #: cache/78/78ed9f2a473ef7fccd9492ef5da7328b.php:203
 msgid "Logged In"
-msgstr ""
+msgstr "Đã đăng nhập"
 
 #: cache/40/40934d1cc21621783800143e32bfb38c.php:689
 msgid "Supported?"
@@ -13987,7 +13987,7 @@ msgstr ""
 #: cache/40/40934d1cc21621783800143e32bfb38c.php:721
 #: cache/59/59f0058495a6a779727bbfe19dd6898f.php:563
 msgid "Screen shot?"
-msgstr ""
+msgstr "Chụp màn hình"
 
 #: cache/40/40934d1cc21621783800143e32bfb38c.php:729
 #: cache/59/59f0058495a6a779727bbfe19dd6898f.php:571
@@ -14114,7 +14114,7 @@ msgstr ""
 #: cache/22/22448b62fd274e1ae1e82305deeffcd3.php:72
 #: cache/22/22448b62fd274e1ae1e82305deeffcd3.php:74
 msgid "Edit Profile"
-msgstr ""
+msgstr "Cập nhật hồ sơ"
 
 #: cache/2f/2fe706b49c8d482e8266815c300fa7fb.php:168
 msgid ""
@@ -17752,7 +17752,7 @@ msgstr ""
 
 #: cache/59/59f0058495a6a779727bbfe19dd6898f.php:152
 msgid "Now Showing"
-msgstr ""
+msgstr "Đang hiển thị"
 
 #: cache/59/59f0058495a6a779727bbfe19dd6898f.php:173
 #, no-php-format
@@ -17791,7 +17791,7 @@ msgstr ""
 
 #: cache/59/59f0058495a6a779727bbfe19dd6898f.php:327
 msgid "Display Status"
-msgstr ""
+msgstr "Trạng thái các màn hình"
 
 #: cache/59/59f0058495a6a779727bbfe19dd6898f.php:334
 #: cache/59/59f0058495a6a779727bbfe19dd6898f.php:355
@@ -17800,7 +17800,7 @@ msgstr ""
 
 #: cache/59/59f0058495a6a779727bbfe19dd6898f.php:348
 msgid "Display Content Status"
-msgstr ""
+msgstr "Hiển thị trạng thái nội dung"
 
 #: cache/59/59f0058495a6a779727bbfe19dd6898f.php:373
 msgid "Display Groups Status"
@@ -18470,7 +18470,7 @@ msgstr ""
 
 #: cache/5d/5ddc3b3a06dcb05f69b47d5cd8bae287.php:220
 msgid "Unlimited"
-msgstr ""
+msgstr "Không giới hạn"
 
 #: cache/5d/5ddc3b3a06dcb05f69b47d5cd8bae287.php:224
 msgid ""
@@ -18924,11 +18924,11 @@ msgstr ""
 
 #: cache/22/22448b62fd274e1ae1e82305deeffcd3.php:86
 msgid "My Applications"
-msgstr ""
+msgstr "Ứng dụng"
 
 #: cache/22/22448b62fd274e1ae1e82305deeffcd3.php:94
 msgid "Reshow welcome"
-msgstr ""
+msgstr "Hiển thị lại trang giới thiệu"
 
 #: cache/22/22448b62fd274e1ae1e82305deeffcd3.php:101
 msgid "About the CMS"
@@ -18938,7 +18938,7 @@ msgstr ""
 #: cache/22/22448b62fd274e1ae1e82305deeffcd3.php:117
 #: lib/Controller/Sessions.php:119
 msgid "Logout"
-msgstr ""
+msgstr "Đăng xuất"
 
 #: cache/22/22f7152547bc1d348546cfbb37d509f4.php:59
 msgid "Edit Display Group"
@@ -20214,7 +20214,7 @@ msgstr ""
 
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:532
 msgid "Max Plays per Hour"
-msgstr ""
+msgstr "Số giờ phát tối đa"
 
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:544
 msgid "Recurrence Description"
@@ -20238,7 +20238,7 @@ msgstr ""
 
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:564
 msgid "Priority?"
-msgstr ""
+msgstr "Ưu tiên"
 
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:568
 msgid "Criteria?"
