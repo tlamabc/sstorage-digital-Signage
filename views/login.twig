@@ -54,6 +54,36 @@
         .login-logo {
             width: 200px;
         }
+        .highlighted-text {
+            background: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            color: #333;
+            display: inline-block;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+            margin-top: 15px; /* Để tạo khoảng cách với form */
+        }
+
+        .highlighted-text a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .highlighted-text a:hover {
+            color: #ff5722;
+        }
+
+        /* Căn giữa ở dưới form */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
 
     </style>
     <!-- Import user made CSS from theme -->
@@ -117,21 +147,13 @@
         </form>
         {% endif %}
 
-        <p class="text-center" style="
-            background: rgba(0, 123, 255, 0.1);
-            padding: 8px 15px;
-            border-radius: 8px;
-            display: inline-block;
-            font-weight: bold;
-            color: #007bff;
-            transition: all 0.3s ease-in-out;
-        ">
+        <p class="highlighted-text text-center">
             Member of ICSP.VN |
-            <a id="source-link" href="{{ theme.getThemeConfig('cms_source_url') }}" 
-                style="color: #ff5722; text-decoration: underline; font-weight: bold; transition: color 0.3s ease;">
+            <a id="source-link" href="{{ theme.getThemeConfig('cms_source_url') }}">
                 {% trans "Source" %}
             </a>
         </p>
+
 
     </div> <!-- /container -->
     <!-- Import JS bundle from dist -->
