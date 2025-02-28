@@ -6,16 +6,17 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-01-30 07:48+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2025-02-28 10:44+0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.5\n"
 
 #: locale/moduletranslate.php:3 locale/dbtranslate.php:73
 #: cache/ae/aede29170646eeec2459cefb297c2720.php:556
@@ -8511,7 +8512,7 @@ msgstr ""
 #: cache/ce/ceeec6bdf494687f7ffe028f7c6ac733.php:242
 #: cache/ce/ceeec6bdf494687f7ffe028f7c6ac733.php:252
 msgid "Displays"
-msgstr ""
+msgstr "Màn hình"
 
 #: cache/bd/bd181ede1d0afe0f39ee56af2ea42aab.php:103
 #: cache/cf/cf63b697a899071854cdf7e574d55466.php:109
@@ -8528,7 +8529,7 @@ msgstr ""
 #: cache/11/1166151ca61185a39a692ab3eb99064f.php:110
 #: cache/ce/ceeec6bdf494687f7ffe028f7c6ac733.php:184
 msgid "Layouts"
-msgstr ""
+msgstr "Bố "
 
 #: cache/bd/bd181ede1d0afe0f39ee56af2ea42aab.php:113
 #, no-php-format
@@ -8562,7 +8563,7 @@ msgstr ""
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:216
 #: cache/f2/f2b0cf2ff27af65e38d0d5f4755db1db.php:91
 msgid "From Date"
-msgstr ""
+msgstr "Từ ngày "
 
 #: cache/bd/bd181ede1d0afe0f39ee56af2ea42aab.php:150
 #: cache/cf/cffabfeef57943ab38af08d828420e2d.php:111
@@ -8575,7 +8576,7 @@ msgstr ""
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:227
 #: cache/f2/f2b0cf2ff27af65e38d0d5f4755db1db.php:102
 msgid "To Date"
-msgstr ""
+msgstr "Đến gày"
 
 #: cache/bd/bd181ede1d0afe0f39ee56af2ea42aab.php:176
 #: cache/cf/cffabfeef57943ab38af08d828420e2d.php:122
@@ -8606,14 +8607,14 @@ msgstr ""
 #: cache/78/78ed9f2a473ef7fccd9492ef5da7328b.php:195
 #: lib/Report/DistributionReport.php:253
 msgid "Display"
-msgstr ""
+msgstr "Màn hình"
 
 #: cache/bb/bb9d8c7fef20d1514f5bb3acae314198.php:57
 #: cache/9b/9b336feab307d9fb44a116731ed70a80.php:599
 #: cache/ae/aede29170646eeec2459cefb297c2720.php:472
 #: cache/f3/f305b9840ead0e355f2310af892a0ac0.php:58
 msgid "Edit Layout"
-msgstr ""
+msgstr "Chỉnh sửa bố cục"
 
 #: cache/bb/bb9d8c7fef20d1514f5bb3acae314198.php:115
 #: cache/cf/cf63b697a899071854cdf7e574d55466.php:130
@@ -8636,7 +8637,7 @@ msgstr ""
 #: cache/8e/8e6f77c3d5f13012bdd306a830c2cc41.php:113
 #: cache/11/1166151ca61185a39a692ab3eb99064f.php:873
 msgid "Current Folder"
-msgstr ""
+msgstr "Thư mục hiện tại"
 
 #: cache/bb/bb9d8c7fef20d1514f5bb3acae314198.php:125
 #: cache/cf/cf63b697a899071854cdf7e574d55466.php:140
@@ -8656,11 +8657,11 @@ msgstr ""
 #: cache/3e/3e7b7368bc03cefa8cad6e22da50268b.php:104
 #: cache/8e/8e6f77c3d5f13012bdd306a830c2cc41.php:123
 msgid "Move to Selected Folder:"
-msgstr ""
+msgstr "Chuyển đến thư mục đã "
 
 #: cache/bb/bb9d8c7fef20d1514f5bb3acae314198.php:152
 msgid "The Name of the Layout - (1 - 50 characters)"
-msgstr ""
+msgstr "Đặt tên cho bố cục"
 
 #: cache/bb/bb9d8c7fef20d1514f5bb3acae314198.php:172
 #: cache/41/41a6be7914a5010730d851a22d9c8bb9.php:162
@@ -8669,6 +8670,9 @@ msgid ""
 "If you choose a Tag that has associated values, they will be shown for "
 "selection below."
 msgstr ""
+"Thẻ cho Bố cục này - Chuỗi Thẻ hoặc định dạng Thẻ | Giá trị được phân tách "
+"bằng dấu phẩy. Nếu bạn chọn Thẻ có các giá trị được liên kết, chúng sẽ được "
+"hiển thị để lựa chọn bên dưới."
 
 #: cache/bb/bb9d8c7fef20d1514f5bb3acae314198.php:185
 #: cache/bb/bb9d8c7fef20d1514f5bb3acae314198.php:197
@@ -8698,7 +8702,7 @@ msgstr ""
 #: cache/8e/8e6f77c3d5f13012bdd306a830c2cc41.php:193
 #: cache/8e/8e6f77c3d5f13012bdd306a830c2cc41.php:205
 msgid "Tag value"
-msgstr ""
+msgstr "Giá trị tag"
 
 #: cache/bb/bb9d8c7fef20d1514f5bb3acae314198.php:203
 #: cache/cf/cf63b697a899071854cdf7e574d55466.php:218
@@ -9091,64 +9095,64 @@ msgstr ""
 #: cache/24/24586f514f7ca9717426ed09b5e5d4c2.php:344
 #: cache/f7/f7f09a3ccd551d0c4068a90ef4a908ee.php:356
 msgid "Library Media"
-msgstr ""
+msgstr "Thư viện phương tiện"
 
 #: cache/e7/e7a55afa5802d90ff130b21054502509.php:125
 #: cache/41/4183074efb7723c5f952e5f8dba225aa.php:144
 msgid "Default Duration"
-msgstr ""
+msgstr "Thời lượng mặc định"
 
 #: cache/e7/e7a55afa5802d90ff130b21054502509.php:129
 msgid "Preview Enabled"
-msgstr ""
+msgstr "Đã bật xem trước"
 
 #: cache/e7/e7a55afa5802d90ff130b21054502509.php:133
 msgid "Can this module be assigned to a Layout?"
-msgstr ""
+msgstr "Mô-đun này có thể được gán cho Bố cục không?"
 
 #: cache/e7/e7a55afa5802d90ff130b21054502509.php:135
 msgid "Assignable"
-msgstr ""
+msgstr "Chuyển nhượng"
 
 #: cache/e7/e7a55afa5802d90ff130b21054502509.php:139
 #: cache/1d/1d4d60123f584d2cb4e7c5af85f76cdf.php:110
 #: cache/30/302546eec41a46c8a34a19447abc899c.php:212
 #: cache/6f/6f414548a478130c0e2dd1cb97b03156.php:425
 msgid "Enabled"
-msgstr ""
+msgstr "Bật"
 
 #: cache/e7/e7a55afa5802d90ff130b21054502509.php:143
 #: cache/6a/6a00ee3d77ba0c4abd202500df4a6d77.php:611
 msgid "Errors"
-msgstr ""
+msgstr "Lỗi!"
 
 #: cache/7e/7ebabda5480d88651340523f453cf0ea.php:58
 #: cache/36/36a9081c5fdfcd84a39063b4437f0c7e.php:83
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:85
 msgid "Add Synchronised Event"
-msgstr ""
+msgstr "Thêm sự kiện được đồng bộ hóa"
 
 #: cache/36/36a9081c5fdfcd84a39063b4437f0c7e.php:56
 #: cache/36/36a9081c5fdfcd84a39063b4437f0c7e.php:117
 #: cache/7c/7c83e34565b8f2b468cd031ae65008ae.php:541
 #: cache/d1/d10814ee3dd19888fef200639442fd26.php:917
 msgid "Sessions"
-msgstr ""
+msgstr "Phiên"
 
 #: cache/36/36a9081c5fdfcd84a39063b4437f0c7e.php:75
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:77
 msgid "Add a new Sync event"
-msgstr ""
+msgstr "Thêm sự kiện Đồng bộ hóa mới"
 
 #: cache/36/36a9081c5fdfcd84a39063b4437f0c7e.php:89
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:91
 msgid "Add a new Scheduled event"
-msgstr ""
+msgstr "Thêm một sự kiện đã lên lịch mới"
 
 #: cache/36/36a9081c5fdfcd84a39063b4437f0c7e.php:95
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:97
 msgid "Add Event"
-msgstr ""
+msgstr "Thêm sự kiện"
 
 #: cache/36/36a9081c5fdfcd84a39063b4437f0c7e.php:147
 #: cache/36/36a9081c5fdfcd84a39063b4437f0c7e.php:186
@@ -9156,23 +9160,23 @@ msgstr ""
 #: cache/4a/4a4278fd57892a9180e837c6b9b78f8b.php:211
 #: cache/85/85ec384d80a4ea0b703e4c2372ebb08e.php:137
 msgid "Active"
-msgstr ""
+msgstr "Hoạt động"
 
 #: cache/36/36a9081c5fdfcd84a39063b4437f0c7e.php:153
 msgid "Guest"
-msgstr ""
+msgstr "Khách"
 
 #: cache/36/36a9081c5fdfcd84a39063b4437f0c7e.php:159
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:1972 web/xmds.php:137
 msgid "Expired"
-msgstr ""
+msgstr "Hết hạn"
 
 #: cache/36/36a9081c5fdfcd84a39063b4437f0c7e.php:182
 #: cache/40/40934d1cc21621783800143e32bfb38c.php:342
 #: cache/40/40934d1cc21621783800143e32bfb38c.php:677
 #: cache/59/59f0058495a6a779727bbfe19dd6898f.php:527
 msgid "Last Accessed"
-msgstr ""
+msgstr "Lần truy cập cuối"
 
 #: cache/36/36a9081c5fdfcd84a39063b4437f0c7e.php:190
 #: cache/1e/1e0f418be5a8d787e2b1cde17302439d.php:108
@@ -9219,7 +9223,7 @@ msgstr ""
 #: cache/62/62033f7cd3ca12c211994d966b6adc3a.php:100
 #: cache/4a/4a3332e6e963e35feaad18f2b2a17205.php:166
 msgid "The Name for this Campaign"
-msgstr ""
+msgstr "Tên cho chiến dịch này"
 
 #: cache/cf/cf63b697a899071854cdf7e574d55466.php:187
 #: cache/9b/9b336feab307d9fb44a116731ed70a80.php:241
@@ -9229,11 +9233,14 @@ msgid ""
 "If you choose a Tag that has associated values, they will be shown for "
 "selection below."
 msgstr ""
+"Thẻ cho Chiến dịch này - Chuỗi Thẻ hoặc định dạng Thẻ|Giá trị được phân tách "
+"bằng dấu phẩy. Nếu bạn chọn Thẻ có các giá trị được liên kết, chúng sẽ được "
+"hiển thị để lựa chọn bên dưới."
 
 #: cache/cf/cf63b697a899071854cdf7e574d55466.php:240
 #: cache/4a/4a3332e6e963e35feaad18f2b2a17205.php:239
 msgid "Enable cycle based playback"
-msgstr ""
+msgstr "Cho phép phát lại dựa trên chu kỳ"
 
 #: cache/cf/cf63b697a899071854cdf7e574d55466.php:246
 #: cache/4a/4a3332e6e963e35feaad18f2b2a17205.php:245
@@ -9242,6 +9249,9 @@ msgid ""
 "be played each time it is in a Schedule loop. The same Layout will be shown "
 "until the 'Play count' is achieved."
 msgstr ""
+"Khi bật tính năng phát lại theo chu kỳ, chỉ 1 Bố cục từ Chiến dịch này sẽ "
+"được phát mỗi lần bố cục đó ở trong vòng lặp Lịch trình. Bố cục tương tự sẽ "
+"được hiển thị cho đến khi đạt được 'Số lần phát'."
 
 #: cache/cf/cf63b697a899071854cdf7e574d55466.php:263
 #: cache/4a/4a3332e6e963e35feaad18f2b2a17205.php:262
@@ -9253,7 +9263,7 @@ msgstr ""
 #: cache/cf/cf63b697a899071854cdf7e574d55466.php:274
 #: cache/4a/4a3332e6e963e35feaad18f2b2a17205.php:273
 msgid "List play order"
-msgstr ""
+msgstr "Liệt kê thứ tự phát"
 
 #: cache/cf/cf63b697a899071854cdf7e574d55466.php:280
 #: cache/4a/4a3332e6e963e35feaad18f2b2a17205.php:279
@@ -9261,6 +9271,8 @@ msgid ""
 "When this campaign is scheduled alongside another campaign with the same "
 "display order, how should the layouts in both campaigns be ordered?"
 msgstr ""
+"Khi chiến dịch này được lập lịch cùng với một chiến dịch khác có cùng thứ tự "
+"hiển thị, bố cục trong cả hai chiến dịch sẽ được sắp xếp như thế nào?"
 
 #: cache/cf/cf63b697a899071854cdf7e574d55466.php:285
 #: cache/4a/4a3332e6e963e35feaad18f2b2a17205.php:284
@@ -9448,7 +9460,7 @@ msgstr ""
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:614
 #: cache/f2/f25f8d320563284fa160dec55f51246f.php:71
 msgid "Next"
-msgstr ""
+msgstr "Kế tiếp"
 
 #: cache/3c/3c1fa79a7b77f42d6209210a75b63812.php:57
 #, no-php-format
@@ -10128,7 +10140,7 @@ msgstr ""
 #: cache/00/0074e5e270a057778c73e91eb7c04618.php:57
 #: lib/Controller/Display.php:928
 msgid "Set Default Layout"
-msgstr ""
+msgstr "Đặt bố cục mặc định "
 
 #: cache/00/0074e5e270a057778c73e91eb7c04618.php:96
 #: cache/40/40934d1cc21621783800143e32bfb38c.php:661
@@ -10137,7 +10149,7 @@ msgstr ""
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:816
 #: lib/Controller/Display.php:914
 msgid "Default Layout"
-msgstr ""
+msgstr "Đặt bố cục mặc định "
 
 #: cache/00/0074e5e270a057778c73e91eb7c04618.php:102
 msgid "The Default Layout to Display where there is no other content."
@@ -10275,7 +10287,7 @@ msgstr ""
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:107
 #: lib/Controller/Template.php:188 lib/Controller/Layout.php:1796
 msgid "Publish"
-msgstr ""
+msgstr "Xuất bản"
 
 #: cache/0f/0fd26627923450664db1a44a3d265559.php:144
 #: cache/ae/aede29170646eeec2459cefb297c2720.php:215
@@ -10286,7 +10298,7 @@ msgstr ""
 
 #: cache/0f/0fd26627923450664db1a44a3d265559.php:150
 msgid "Publish Now?"
-msgstr ""
+msgstr "Xuất bản ngay bây giờ?"
 
 #: cache/0f/0fd26627923450664db1a44a3d265559.php:156
 msgid ""
@@ -10648,7 +10660,7 @@ msgstr ""
 #: cache/84/84359f589ba8915a7c7a9b5ebb5f3561.php:213
 #: cache/40/40934d1cc21621783800143e32bfb38c.php:179
 msgid "Logged In?"
-msgstr ""
+msgstr "Đã đăng nhập"
 
 #: cache/84/84359f589ba8915a7c7a9b5ebb5f3561.php:217
 #: cache/a3/a3efbd21e9c181a14f5fceee1b54a95f.php:326
@@ -10773,7 +10785,7 @@ msgstr ""
 #: cache/7c/7c83e34565b8f2b468cd031ae65008ae.php:44
 #: cache/d1/d10814ee3dd19888fef200639442fd26.php:43
 msgid "Dashboard"
-msgstr ""
+msgstr "Bảng điều khiển"
 
 #: cache/7c/7c83e34565b8f2b468cd031ae65008ae.php:54
 #: cache/ae/aede29170646eeec2459cefb297c2720.php:223
@@ -10794,14 +10806,14 @@ msgstr ""
 #: lib/Controller/Library.php:784 lib/Controller/Layout.php:1856
 #: lib/Controller/Display.php:1004
 msgid "Schedule"
-msgstr ""
+msgstr "Lập lịch"
 
 #: cache/7c/7c83e34565b8f2b468cd031ae65008ae.php:81
 #: cache/d1/d10814ee3dd19888fef200639442fd26.php:126
 #: lib/Controller/Playlist.php:1722 lib/Controller/Library.php:2158
 #: lib/Controller/Layout.php:1786
 msgid "Design"
-msgstr ""
+msgstr "Thiết kế"
 
 #: cache/7c/7c83e34565b8f2b468cd031ae65008ae.php:90
 #: cache/30/302546eec41a46c8a34a19447abc899c.php:56
@@ -10811,7 +10823,7 @@ msgstr ""
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:284
 #: cache/d1/d10814ee3dd19888fef200639442fd26.php:144
 msgid "Campaigns"
-msgstr ""
+msgstr "Chiến dịch"
 
 #: cache/7c/7c83e34565b8f2b468cd031ae65008ae.php:146
 #: cache/6d/6dbfc6f56029f200649cfd67abd33697.php:139
@@ -10821,7 +10833,7 @@ msgstr ""
 #: cache/79/798c63ad0ec5103a770da709da49900a.php:127
 #: cache/d1/d10814ee3dd19888fef200639442fd26.php:222
 msgid "Library"
-msgstr ""
+msgstr "Thư viện"
 
 #: cache/7c/7c83e34565b8f2b468cd031ae65008ae.php:155
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:180
@@ -10831,14 +10843,14 @@ msgstr ""
 #: cache/6b/6b8f3b359fea543f836222f075be96fc.php:95
 #: cache/d1/d10814ee3dd19888fef200639442fd26.php:240
 msgid "Playlists"
-msgstr ""
+msgstr "Danh sách phát"
 
 #: cache/7c/7c83e34565b8f2b468cd031ae65008ae.php:181
 #: cache/d1/d10814ee3dd19888fef200639442fd26.php:270
 #: cache/20/20c62931092a02ad5a52d5d17a567869.php:59
 #: cache/20/20c62931092a02ad5a52d5d17a567869.php:100
 msgid "DataSets"
-msgstr ""
+msgstr "Bộ dữ liệu"
 
 #: cache/7c/7c83e34565b8f2b468cd031ae65008ae.php:233
 #: cache/69/69ec08a106f7f315270a0d937d8b66dc.php:145
@@ -10851,29 +10863,29 @@ msgstr ""
 #: cache/d1/d10814ee3dd19888fef200639442fd26.php:351
 #: lib/Controller/Display.php:1139
 msgid "Display Groups"
-msgstr ""
+msgstr "Nhóm hiển thị"
 
 #: cache/7c/7c83e34565b8f2b468cd031ae65008ae.php:246
 #: cache/45/452993b5cfada14b95c3c3f731195fbd.php:57
 #: cache/45/452993b5cfada14b95c3c3f731195fbd.php:98
 #: cache/d1/d10814ee3dd19888fef200639442fd26.php:366
 msgid "Sync Groups"
-msgstr ""
+msgstr "Nhóm đồng bộ hóa"
 
 #: cache/7c/7c83e34565b8f2b468cd031ae65008ae.php:259
 #: cache/d1/d10814ee3dd19888fef200639442fd26.php:381
 msgid "Display Settings"
-msgstr ""
+msgstr "Cài đặt hiển thị"
 
 #: cache/7c/7c83e34565b8f2b468cd031ae65008ae.php:272
 #: cache/d1/d10814ee3dd19888fef200639442fd26.php:396
 msgid "Player Versions"
-msgstr ""
+msgstr "Phiên bản phát"
 
 #: cache/7c/7c83e34565b8f2b468cd031ae65008ae.php:319
 #: cache/d1/d10814ee3dd19888fef200639442fd26.php:461
 msgid "Administration"
-msgstr ""
+msgstr "Quản trị"
 
 #: cache/7c/7c83e34565b8f2b468cd031ae65008ae.php:342
 #: cache/6a/6a1e270e2a09041c6345a9e4acf5fcca.php:56
@@ -10882,7 +10894,7 @@ msgstr ""
 #: cache/d0/d0cd42c40e99ed35fac97c4508e666ce.php:170
 #: lib/Controller/User.php:381
 msgid "User Groups"
-msgstr ""
+msgstr "Nhóm người dùng"
 
 #: cache/7c/7c83e34565b8f2b468cd031ae65008ae.php:355
 #: cache/9e/9e6f650d21b6dc055e4bfd82da487c3c.php:71
@@ -10893,28 +10905,28 @@ msgstr ""
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:56
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:94
 msgid "Settings"
-msgstr ""
+msgstr "Cài đặt"
 
 #: cache/7c/7c83e34565b8f2b468cd031ae65008ae.php:368
 #: cache/6f/6f414548a478130c0e2dd1cb97b03156.php:57
 #: cache/6f/6f414548a478130c0e2dd1cb97b03156.php:93
 #: cache/d1/d10814ee3dd19888fef200639442fd26.php:572
 msgid "Applications"
-msgstr ""
+msgstr "Ứng dụng"
 
 #: cache/7c/7c83e34565b8f2b468cd031ae65008ae.php:394
 #: cache/f1/f12c5efb884b378d9de632cba0de1288.php:56
 #: cache/f1/f12c5efb884b378d9de632cba0de1288.php:84
 #: cache/d1/d10814ee3dd19888fef200639442fd26.php:632
 msgid "Transitions"
-msgstr ""
+msgstr "Chuyển tiếp"
 
 #: cache/7c/7c83e34565b8f2b468cd031ae65008ae.php:407
 #: cache/96/96affd0a9256a5f771c300eac126b41f.php:56
 #: cache/96/96affd0a9256a5f771c300eac126b41f.php:95
 #: cache/d1/d10814ee3dd19888fef200639442fd26.php:662
 msgid "Tasks"
-msgstr ""
+msgstr "Nhiệm vụ"
 
 #: cache/7c/7c83e34565b8f2b468cd031ae65008ae.php:433
 #: cache/58/5827a58c854ad5a45c08da531d11366b.php:56
@@ -10922,7 +10934,7 @@ msgstr ""
 #: cache/2e/2e7cf65479feac6f2abf2dca6b37d28e.php:237
 #: cache/d1/d10814ee3dd19888fef200639442fd26.php:722
 msgid "Folders"
-msgstr ""
+msgstr "Thư mục"
 
 #: cache/7c/7c83e34565b8f2b468cd031ae65008ae.php:446
 #: cache/2e/2e7cf65479feac6f2abf2dca6b37d28e.php:375
@@ -10935,26 +10947,26 @@ msgstr ""
 #: cache/2e/2e7cf65479feac6f2abf2dca6b37d28e.php:178
 #: cache/d1/d10814ee3dd19888fef200639442fd26.php:799
 msgid "Reporting"
-msgstr ""
+msgstr "Báo cáo"
 
 #: cache/7c/7c83e34565b8f2b468cd031ae65008ae.php:474
 #: cache/a6/a6390c88e41e7b5e55ca863b37f20805.php:44
 #: cache/d1/d10814ee3dd19888fef200639442fd26.php:819
 msgid "All Reports"
-msgstr ""
+msgstr "Tất cả báo cáo"
 
 #: cache/7c/7c83e34565b8f2b468cd031ae65008ae.php:500
 #: cache/05/05fdcdaf4a060d06313a504c3e7c8950.php:55
 #: cache/4a/4a4278fd57892a9180e837c6b9b78f8b.php:67
 #: cache/d1/d10814ee3dd19888fef200639442fd26.php:849
 msgid "Saved Reports"
-msgstr ""
+msgstr "Báo cáo đã lưu"
 
 #: cache/7c/7c83e34565b8f2b468cd031ae65008ae.php:528
 #: cache/38/385ee00baa220642744fad407cdf9850.php:446
 #: cache/d1/d10814ee3dd19888fef200639442fd26.php:902
 msgid "Log"
-msgstr ""
+msgstr "Nhật ký"
 
 #: cache/7c/7c83e34565b8f2b468cd031ae65008ae.php:554
 #: cache/d1/d10814ee3dd19888fef200639442fd26.php:932
@@ -10966,20 +10978,20 @@ msgstr ""
 #: cache/79/798c63ad0ec5103a770da709da49900a.php:235
 #: cache/d1/d10814ee3dd19888fef200639442fd26.php:947
 msgid "Report Fault"
-msgstr ""
+msgstr "Báo cáo lỗi"
 
 #: cache/7c/7c83e34565b8f2b468cd031ae65008ae.php:584
 #: cache/d1/d10814ee3dd19888fef200639442fd26.php:974
 #: cache/ce/ceeec6bdf494687f7ffe028f7c6ac733.php:297
 msgid "Developer"
-msgstr ""
+msgstr "Nhà phát triển"
 
 #: cache/7c/7c83e34565b8f2b468cd031ae65008ae.php:594
 #: cache/d1/d10814ee3dd19888fef200639442fd26.php:984
 #: cache/01/019a1b744a253c77c5764bd8cdfc415a.php:57
 #: cache/01/019a1b744a253c77c5764bd8cdfc415a.php:102
 msgid "Module Templates"
-msgstr ""
+msgstr "Mẫu mô-đun"
 
 #: cache/7c/7ce810f31c2447de0d7082522919f477.php:57
 msgid "Delete Menu Board Product"
@@ -11596,7 +11608,7 @@ msgstr ""
 #: cache/9b/9b336feab307d9fb44a116731ed70a80.php:595
 #: cache/11/1166151ca61185a39a692ab3eb99064f.php:82
 msgid "Add Layout"
-msgstr ""
+msgstr "Thêm bố cục"
 
 #: cache/9b/9b336feab307d9fb44a116731ed70a80.php:378
 msgid "Please select a Layout to add to this Campaign"
@@ -11695,7 +11707,7 @@ msgstr ""
 #: cache/ab/abfb98d815e4ff156f48ca0f6456c9e2.php:52
 #: cache/6c/6c1dd0533ff1fe8d7d9a0d40647751ed.php:116
 msgid "Notifications"
-msgstr ""
+msgstr "Thông báo"
 
 #: cache/a3/a3efbd21e9c181a14f5fceee1b54a95f.php:142
 #: cache/6c/6c1dd0533ff1fe8d7d9a0d40647751ed.php:140
@@ -11918,7 +11930,7 @@ msgstr ""
 
 #: cache/41/418c7a12bb0c2ea85344aeffdaed3e57.php:57
 msgid "Run Task Now"
-msgstr ""
+msgstr "Chạy tác vụ ngay"
 
 #: cache/41/418c7a12bb0c2ea85344aeffdaed3e57.php:91
 msgid "Are you sure you want to run this task immediately?"
@@ -11978,7 +11990,7 @@ msgstr ""
 
 #: cache/b5/b5bf1741d35b3a4df2f59f959052ebec.php:95
 msgid "Continue..."
-msgstr ""
+msgstr "Tiếp tục..."
 
 #: cache/77/775dbc28c4b471035babd5164d9518fe.php:124
 msgid "The description for this Display Profile"
@@ -12157,7 +12169,7 @@ msgstr ""
 #: cache/17/171a03d2fcd4a30b3b21796f9876f6cc.php:478
 #: cache/34/3493d88c45c5b62199e7bd7d6a5699df.php:489
 msgid "Preview"
-msgstr ""
+msgstr "Xem trước"
 
 #: cache/17/171a03d2fcd4a30b3b21796f9876f6cc.php:482
 #: cache/34/3493d88c45c5b62199e7bd7d6a5699df.php:493
@@ -12478,7 +12490,7 @@ msgstr ""
 #: cache/78/78ed9f2a473ef7fccd9492ef5da7328b.php:211
 #: cache/d0/d0cd42c40e99ed35fac97c4508e666ce.php:174
 msgid "Member"
-msgstr ""
+msgstr "Thành viên"
 
 #: cache/ae/aede29170646eeec2459cefb297c2720.php:171
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:255
@@ -13678,7 +13690,7 @@ msgstr ""
 #: cache/b4/b4e0a32ac171996e111be1266b068542.php:59
 #: cache/af/afb7866a1b31acfe5bca26fc69acd70e.php:77
 msgid "Add Display Group"
-msgstr ""
+msgstr "Thêm nhóm màn hình"
 
 #: cache/b4/b4e0a32ac171996e111be1266b068542.php:191
 #: cache/22/22f7152547bc1d348546cfbb37d509f4.php:198
@@ -13797,7 +13809,7 @@ msgstr ""
 
 #: cache/40/40934d1cc21621783800143e32bfb38c.php:76
 msgid "Add Display (Code)"
-msgstr ""
+msgstr "Thêm màn hình bằng mã  code "
 
 #: cache/40/40934d1cc21621783800143e32bfb38c.php:150
 #: cache/5d/5ddc3b3a06dcb05f69b47d5cd8bae287.php:200
@@ -13819,7 +13831,7 @@ msgstr ""
 #: cache/40/40934d1cc21621783800143e32bfb38c.php:622
 #: cache/59/59f0058495a6a779727bbfe19dd6898f.php:474
 msgid "Authorised?"
-msgstr ""
+msgstr "Đã cấp quyền hoạt động?"
 
 #: cache/40/40934d1cc21621783800143e32bfb38c.php:235
 msgid "XMR Registered?"
@@ -14630,7 +14642,7 @@ msgstr ""
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:695
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:1389
 msgid "Next Layout"
-msgstr ""
+msgstr "Bố cục tiếp theo"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:699
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:1393
@@ -15477,13 +15489,15 @@ msgstr ""
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:2092
 msgid "Repeat"
-msgstr ""
+msgstr "Lặp lại"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:2096
 msgid ""
 "Repeat - repeat the Widgets in this Playlist until the number of Spots have "
 "been filled"
 msgstr ""
+"Lặp lại - lặp lại các Widget trong Danh sách phát này cho đến khi số Điểm "
+"được lấp đầy"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:2104
 msgid ""
@@ -16471,7 +16485,7 @@ msgstr ""
 
 #: cache/44/44f134266ea30161ba4929c6a2658018.php:59
 msgid "Edit Display"
-msgstr ""
+msgstr "Sửa màn hình"
 
 #: cache/44/44f134266ea30161ba4929c6a2658018.php:117
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:118
@@ -17430,13 +17444,15 @@ msgstr ""
 
 #: cache/62/62f02d9694937edf9eeebf8af13766c4.php:569
 msgid "Use CMS time?"
-msgstr ""
+msgstr "Sử dụng thời gian của hệ thống CMS?"
 
 #: cache/62/62f02d9694937edf9eeebf8af13766c4.php:572
 msgid ""
 "Set the device time using the CMS. Only available on rooted devices or "
 "system signed players."
 msgstr ""
+"Đặt thời gian cho thiết bị bằng CMS. Chỉ khả dụng trên các thiết bị đã root "
+"hoặc người chơi đã ký hệ thống."
 
 #: cache/62/62f02d9694937edf9eeebf8af13766c4.php:580
 msgid "Enable caching of Web Resources?"
@@ -17763,7 +17779,7 @@ msgstr ""
 
 #: cache/59/59f0058495a6a779727bbfe19dd6898f.php:235
 msgid "Display Activity"
-msgstr ""
+msgstr "Màn hình hoạt động"
 
 #: cache/59/59f0058495a6a779727bbfe19dd6898f.php:272
 msgid "Latest News"
@@ -17891,7 +17907,7 @@ msgstr ""
 #: cache/38/385ee00baa220642744fad407cdf9850.php:530
 #: cache/5d/5ddc3b3a06dcb05f69b47d5cd8bae287.php:807
 msgid "Previous"
-msgstr ""
+msgstr "Trước"
 
 #: cache/38/385ee00baa220642744fad407cdf9850.php:349
 msgid "Turn ON full auditing and debugging."
@@ -18430,11 +18446,11 @@ msgstr ""
 
 #: cache/5d/5ddc3b3a06dcb05f69b47d5cd8bae287.php:192
 msgid "Online"
-msgstr ""
+msgstr "Đang hoạt động"
 
 #: cache/5d/5ddc3b3a06dcb05f69b47d5cd8bae287.php:196
 msgid "Offline"
-msgstr ""
+msgstr "Mất kết nối "
 
 #: cache/5d/5ddc3b3a06dcb05f69b47d5cd8bae287.php:204
 msgid "Not up to date"
@@ -20095,7 +20111,7 @@ msgstr ""
 
 #: cache/a6/a6579b7d1804bb135693b09a2c137fce.php:57
 msgid "Add Display via Code"
-msgstr ""
+msgstr "Thêm màn hình bằng mã  code "
 
 #: cache/a6/a6579b7d1804bb135693b09a2c137fce.php:91
 msgid ""
@@ -21386,7 +21402,7 @@ msgstr ""
 
 #: cache/4b/4b0db8399daea4cc77895687f09d9c78.php:57
 msgid "Delete Display Group"
-msgstr ""
+msgstr "Xóa nhóm màn hình"
 
 #: cache/4b/4b0db8399daea4cc77895687f09d9c78.php:91
 msgid ""
@@ -21448,7 +21464,7 @@ msgstr ""
 
 #: cache/11/1166151ca61185a39a692ab3eb99064f.php:833
 msgid "Add Layout Export ZIP Files"
-msgstr ""
+msgstr "Thêm bố cục từ tệp ZIP"
 
 #: cache/11/1166151ca61185a39a692ab3eb99064f.php:837
 msgid "Start Import"
@@ -21636,7 +21652,7 @@ msgstr ""
 #: lib/Controller/DisplayGroup.php:500 lib/Controller/Display.php:1071
 #: lib/Controller/Display.php:1086
 msgid "Collect Now"
-msgstr ""
+msgstr "Ra lệnh cho thiết bị ngay lập tức"
 
 #: cache/93/93078235b28ca357eac86e35a6a69595.php:91
 msgid "Are you sure you want to request a collection to occur?"
@@ -21694,12 +21710,12 @@ msgstr ""
 
 #: cache/ce/ceeec6bdf494687f7ffe028f7c6ac733.php:56
 msgid "Welcome"
-msgstr ""
+msgstr "Chào "
 
 #: cache/ce/ceeec6bdf494687f7ffe028f7c6ac733.php:77
 #, no-php-format
 msgid "Welcome to the %productName% CMS"
-msgstr ""
+msgstr "Chào mừng bạn đến với "
 
 #: cache/ce/ceeec6bdf494687f7ffe028f7c6ac733.php:81
 msgid ""
@@ -21707,10 +21723,12 @@ msgid ""
 "your images/videos, create and schedule your layouts, and manage your "
 "display network."
 msgstr ""
+"Đây là hệ thống quản lý nội dung hay gọi tắt là CMS, nơi bạn tải lên hình "
+"ảnh/video, tạo và lên lịch bố cục cũng như quản lý mạng hiển thị của mình."
 
 #: cache/ce/ceeec6bdf494687f7ffe028f7c6ac733.php:97
 msgid "Overview"
-msgstr ""
+msgstr "Tổng quan"
 
 #: cache/ce/ceeec6bdf494687f7ffe028f7c6ac733.php:101
 msgid ""
@@ -21718,6 +21736,9 @@ msgid ""
 "scheduled to Displays. A Player application downloads new content and "
 "schedules from the CMS to display on screens."
 msgstr ""
+"Hệ thống quản lý nội dung (CMS) là nơi nội dung được tạo/tải lên và lên lịch "
+"hiển thị. Ứng dụng Trình phát tải xuống nội dung và lịch trình mới từ CMS để "
+"hiển thị trên màn hình."
 
 #: cache/ce/ceeec6bdf494687f7ffe028f7c6ac733.php:107
 msgid ""
@@ -21725,6 +21746,9 @@ msgid ""
 "network so that is can connector to the CMS to download new content at "
 "regular defined intervals."
 msgstr ""
+"Ứng dụng trình phát cần chạy trên thiết bị được gắn màn hình và mạng để có "
+"thể kết nối với CMS để tải xuống nội dung mới theo các khoảng thời gian được "
+"xác định đều đặn."
 
 #: cache/ce/ceeec6bdf494687f7ffe028f7c6ac733.php:111
 msgid ""
@@ -21732,6 +21756,9 @@ msgid ""
 "problem connecting to the CMS, it can continue to show the stored content "
 "until the connection between the CMS and Player is re-established."
 msgstr ""
+"Nội dung tải xuống từ CMS được lưu vào bộ nhớ đệm của Trình phát nên nếu có "
+"sự cố khi kết nối với CMS, nó có thể tiếp tục hiển thị nội dung được lưu trữ "
+"cho đến khi kết nối giữa CMS và Trình phát được thiết lập lại."
 
 #: cache/ce/ceeec6bdf494687f7ffe028f7c6ac733.php:115
 msgid ""
@@ -23115,7 +23142,7 @@ msgstr ""
 
 #: lib/Controller/Layout.php:1070
 msgid "Cannot delete Layout from its Draft, delete the parent"
-msgstr ""
+msgstr "Không thể xóa Bố cục khỏi Bản nháp của nó, hãy xóa bố cục gốc!"
 
 #: lib/Controller/Layout.php:1154
 #, php-format
@@ -23192,7 +23219,7 @@ msgstr ""
 
 #: lib/Controller/Layout.php:1894
 msgid "Jump to Media included on this Layout"
-msgstr ""
+msgstr "Chuyển đến Phương tiện có trong Bố cục này"
 
 #: lib/Controller/Layout.php:1956
 msgid "Unretire"
@@ -24429,7 +24456,7 @@ msgstr ""
 
 #: lib/Entity/Media.php:408
 msgid "Media you own already has this name. Please choose another."
-msgstr ""
+msgstr "Phương tiện bạn sở hữu đã có tên này. Vui lòng chọn cái khác."
 
 #: lib/Entity/Media.php:753
 msgid "Problem copying file in the Library Folder"
@@ -25271,7 +25298,7 @@ msgstr ""
 
 #: lib/Factory/LayoutFactory.php:1491
 msgid "Cannot save media file from ZIP file"
-msgstr ""
+msgstr "Không thể lưu tệp phương tiện từ tệp ZIP"
 
 #: lib/Factory/LayoutFactory.php:1852
 #, php-format
@@ -25333,7 +25360,7 @@ msgstr ""
 #: lib/Factory/MediaFactory.php:379 lib/Factory/MediaFactory.php:396
 #: lib/Factory/MediaFactory.php:413 lib/Factory/MediaFactory.php:430
 msgid "Cannot find media"
-msgstr ""
+msgstr "Không thể tìm thấy phương tiện"
 
 #: lib/Factory/ModuleFactory.php:407
 #, php-format
@@ -25486,7 +25513,7 @@ msgstr ""
 
 #: lib/Factory/RequiredFileFactory.php:106
 msgid "Required file not found for Display and Media Combination"
-msgstr ""
+msgstr "Không tìm thấy tệp bắt buộc cho Kết hợp hiển thị và phương tiện"
 
 #: lib/Factory/RequiredFileFactory.php:123
 msgid "Required file not found for Display and Layout Widget"
@@ -25980,12 +26007,14 @@ msgstr ""
 
 #: lib/Factory/UserGroupFactory.php:995
 msgid "Media Manager Dashboard"
-msgstr ""
+msgstr "Bảng điều khiển quản lý phương tiện"
 
 #: lib/Factory/UserGroupFactory.php:996
 msgid ""
 "Media Manager Dashboard showing all Widgets the user has access to modify."
 msgstr ""
+"Bảng điều khiển Trình quản lý phương tiện hiển thị tất cả các Widget mà "
+"người dùng có quyền truy cập để sửa đổi."
 
 #: lib/Factory/UserGroupFactory.php:1001
 msgid "Playlist Dashboard"
@@ -26149,7 +26178,7 @@ msgstr ""
 
 #: lib/Widget/DataType/SocialMedia.php:63
 msgid "Social Media"
-msgstr ""
+msgstr "Truyền thông xã hội"
 
 #: lib/Widget/DataType/SocialMedia.php:67
 msgid "Profile Image"
@@ -26189,7 +26218,7 @@ msgstr ""
 
 #: lib/Xmds/Soap4.php:451
 msgid "Media exists but file missing from library."
-msgstr ""
+msgstr "Thiếu tệp trong thư viện."
 
 #: lib/Xmds/Soap4.php:810
 msgid "Incorrect Screen shot Format"
@@ -26424,7 +26453,7 @@ msgstr ""
 
 #: lib/Helper/XiboUploadHandler.php:108
 msgid "Access denied replacing old media"
-msgstr ""
+msgstr "Truy cập bị từ chối thay thế phương tiện cũ"
 
 #: lib/Helper/XiboUploadHandler.php:114 lib/Helper/XiboUploadHandler.php:266
 msgid "You cannot replace this media with an item of a different type"

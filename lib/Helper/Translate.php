@@ -75,9 +75,9 @@ class Translate
                 // Go through the list until we have a match
                 foreach ($languagePreferenceArray as $languagePreference => $preferenceRating) {
 
-                    // We don't ship an en.mo, so fudge in a case where we automatically convert that to en_GB
+                    // We don't ship an en.mo, so fudge in a case where we automatically convert that to vi_VN
                     if ($languagePreference == 'en')
-                        $languagePreference = 'en_GB';
+                        $languagePreference = 'vi_VN';
 
                     // Sanitize
                     $languagePreference = str_replace('-', '_', $languagePreference);

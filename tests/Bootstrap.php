@@ -35,4 +35,4 @@ if (!file_exists(PROJECT_ROOT . '/web/settings.php'))
 
 \Xibo\Tests\LocalWebTestCase::setEnvironment();
 
-\Xibo\Helper\Translate::InitLocale(null, 'en_GB');
+\Xibo\Helper\Translate::InitLocale(null, 'vi_VN');

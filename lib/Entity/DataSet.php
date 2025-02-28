@@ -756,7 +756,7 @@ class DataSet implements \JsonSerializable
                             if (isset($details[2])) {
                                 $language = str_replace(' ', '', $details[2]);
                             } else {
-                                $language = $this->config->getSetting('DEFAULT_LANGUAGE', 'en_GB');
+                                $language = $this->config->getSetting('DEFAULT_LANGUAGE', 'vi_VN');
                             }
 
                             $carbonFactory = new Factory(['locale' => $language], Carbon::class);

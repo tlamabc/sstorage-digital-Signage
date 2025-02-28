@@ -970,9 +970,9 @@
                                     {% set helpText %}{% trans "The default language to use" %}{% endset %}
 
                                     {% if theme.isSettingEditable("DEFAULT_LANGUAGE") %}
-                                        {{ forms.dropdown("DEFAULT_LANGUAGE", "single", title, theme.getSetting("DEFAULT_LANGUAGE", "en_GB"), languages, "id", "value", helpText) }}
+                                        {{ forms.dropdown("DEFAULT_LANGUAGE", "single", title, theme.getSetting("DEFAULT_LANGUAGE", "vi_VN"), languages, "id", "value", helpText) }}
                                     {% else %}
-                                        {{ forms.disabled("DEFAULT_LANGUAGE", title, theme.getSetting("DEFAULT_LANGUAGE", "en_GB"), helpText) }}
+                                        {{ forms.disabled("DEFAULT_LANGUAGE", title, theme.getSetting("DEFAULT_LANGUAGE", "vi_VN"), helpText) }}
                                     {% endif %}
                                 {% endif %}
 
