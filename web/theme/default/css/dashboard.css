@@ -442,11 +442,13 @@ ul.sidebar .sidebar-title {
 
 /* Horizontal Menu */
 .navbar-default {
-  background-color: #273759;
+  background-color: #ffffff !important; /* Nền trắng */
   font-size: 1rem;
   padding: 0 8px;
   margin-bottom: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
 }
+
 .navbar-default .navbar-brand {
  padding: 13px 0;
 }
@@ -457,12 +459,15 @@ ul.sidebar .sidebar-title {
 }
 .navbar-default .navbar-nav>li>a {
   line-height: 49px;
-  color: #b2bfdc;
-  border-bottom: 1px solid #273759;
+  color: #000000 !important; /* Chữ đen */
+  font-weight: bold;
+  border-bottom: 1px solid #ffffff;
 }
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-  color: #fff;
-  background-color: #30426a;
+.navbar-default .navbar-nav>li>a:focus, 
+.navbar-default .navbar-nav>li>a:hover {
+  color: #008acd !important; /* Hover đổi màu xanh */
+  background-color: rgba(0, 138, 205, 0.1); /* Hiệu ứng nền nhẹ */
+  border-radius: 5px; /* Bo góc */
 }
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
   color: #fff;
