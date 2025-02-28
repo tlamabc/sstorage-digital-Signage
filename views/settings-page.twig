@@ -84,37 +84,9 @@
                                     </div>
                                 {% endif %}
 
-                                {% if theme.isSettingVisible("GLOBAL_THEME_NAME") %}
-                                    {% set title %}{% trans "CMS Theme" %}{% endset %}
-                                    {% set helpText %}{% trans "The Theme to apply to all pages by default" %}{% endset %}
 
-                                    {% if theme.isSettingEditable("GLOBAL_THEME_NAME") %}
-                                        {% if hideThemes %}
-                                            {# Show a edit box  #}
-                                            {{ forms.input("GLOBAL_THEME_NAME", title, theme.getSetting("GLOBAL_THEME_NAME"), helpText) }}
-                                        {% else %}
-                                            {{ forms.dropdown("GLOBAL_THEME_NAME", "single", title, theme.getSetting("GLOBAL_THEME_NAME"), themes, "id", "value", helpText) }}
-                                        {% endif %}
-                                    {% else %}
-                                        {{ forms.disabled("GLOBAL_THEME_NAME", title, theme.getSetting("GLOBAL_THEME_NAME"), helpText) }}
-                                    {% endif %}
-                                {% endif %}
 
-                                {% if theme.isSettingVisible("NAVIGATION_MENU_POSITION") %}
-                                    {% set title %}{% trans "Navigation Menu" %}{% endset %}
-                                    {% set helpText %}{% trans "Select where the Navigation Menu should be positioned by default. Users can set an alternate view in their Preferences under their User Profile." %}{% endset %}
-
-                                    {% set horizontalOption %}{% trans "Horizontal along the top" %}{% endset %}
-                                    {% set verticalOption %}{% trans "Vertically on the left" %}{% endset %}
-                                    {% set options = [
-                                        { id: "horizontal", value: horizontalOption },
-                                        { id: "vertical", value: verticalOption }
-                                    ] %}
-                                    {% if theme.isSettingEditable("NAVIGATION_MENU_POSITION") %}
-                                        {{ forms.dropdown("NAVIGATION_MENU_POSITION", "single", title, theme.getSetting("NAVIGATION_MENU_POSITION", "vertical"), options, "id", "value", helpText) }}
-                                    {% else %}
-                                        {{ forms.disabled("NAVIGATION_MENU_POSITION", title, theme.getSetting("NAVIGATION_MENU_POSITION", "vertical"), helpText) }}
-                                    {% endif %}
+                              
                                 {% endif %}
                             </div>
                             <div class="tab-pane" id="tab_defaults">
