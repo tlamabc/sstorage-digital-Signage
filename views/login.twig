@@ -81,7 +81,7 @@
             <input type="hidden" name="{{ csrfKey }}" value="{{ csrfToken }}" />
             <p><a href="{{ theme.getThemeConfig("theme_url") }}"><img class="login-logo" src="{{ theme.uri("img/xibologo.png") }}"></a></p>
 
-            <p>{% trans "Please provide your credentials" %}</p>
+            <p>{% trans "Vui lòng cung cấp thông tin xác thực của bạn" %}</p>
 
             <input id="username" class="form-control input-block-level" name="username" type="text" placeholder="{% trans "User" %}" autofocus autocomplete="username">
             <input id="password" class="form-control input-block-level" name="password" type="password" placeholder="{% trans "Password" %}" autocomplete="current-password">
@@ -90,7 +90,7 @@
                 <div class="alert alert-danger">{{ loginMessage }}</div>
             {% endfor %}
 
-            <p><button class="btn btn-primary" type="submit">{% trans "Login" %}</button></p>
+            <p><button class="btn btn-primary" type="submit">{% trans "Đăng nhập" %}</button></p>
 
             {% if passwordReminderEnabled %}<p><a href="#" id="reminder-form-toggle">{% trans "Forgotten your password?" %}</a></p>{% endif %}
         </form>
@@ -114,7 +114,7 @@
         </form>
         {% endif %}
 
-        <p class="text-center">{% trans %}Version {{ version }}{% endtrans %}
+        <p class="text-center">Member of ICSP.VN
             | <a id="source-link" href="{{ theme.getThemeConfig("cms_source_url") }}">{% trans "Source" %}</a>
             {# | <a id="about-link" class="XiboFormButton" href="{{ url_for("about") }}" title="{% trans "About" %}">{% trans "About" %}</a> #}
         </p>
