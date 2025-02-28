@@ -76,32 +76,11 @@
                                     {% else %}
                                         {{ forms.disabled("SERVER_KEY", title, theme.getSetting("SERVER_KEY"), helpText) }}
                                     {% endif %}
-                                    <div class="form-group row">
-                                        <label class="col-sm-2 control-label"></label>
-                                        <div class="col-sm-10">
-                                            <p><i>{{  theme.getPhoneticKey() }}</i></p>
-                                        </div>
-                                    </div>
+                         
                                 {% endif %}
 
 
 
-                                {% if theme.isSettingVisible("NAVIGATION_MENU_POSITION") %}
-                                    {% set title %}{% trans "Navigation Menu" %}{% endset %}
-                                    {% set helpText %}{% trans "Select where the Navigation Menu should be positioned by default. Users can set an alternate view in their Preferences under their User Profile." %}{% endset %}
-
-                                    {% set horizontalOption %}{% trans "Horizontal along the top" %}{% endset %}
-                                    {% set verticalOption %}{% trans "Vertically on the left" %}{% endset %}
-                                    {% set options = [
-                                        { id: "horizontal", value: horizontalOption },
-                                        { id: "vertical", value: verticalOption }
-                                    ] %}
-                                    {% if theme.isSettingEditable("NAVIGATION_MENU_POSITION") %}
-                                        {{ forms.dropdown("NAVIGATION_MENU_POSITION", "single", title, theme.getSetting("NAVIGATION_MENU_POSITION", "vertical"), options, "id", "value", helpText) }}
-                                    {% else %}
-                                        {{ forms.disabled("NAVIGATION_MENU_POSITION", title, theme.getSetting("NAVIGATION_MENU_POSITION", "vertical"), helpText) }}
-                                    {% endif %}
-                                {% endif %}
                             </div>
                             <div class="tab-pane" id="tab_defaults">
                                 <h3 class="section-heading">{% trans "Defaults" %}</h3>
