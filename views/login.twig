@@ -16,13 +16,16 @@
         html {
             font-size: 14px;
         }
-
         body {
             padding-top: 40px !important;
             padding-bottom: 40px !important;
             background: url('{{ theme.uri("img/backgroundlogin.png") }}') no-repeat center center fixed;
+            background-size: cover; /* Đảm bảo ảnh phủ toàn bộ màn hình */
+            background-position: center;
+            background-repeat: no-repeat;
             font-size: 1rem;
         }
+
 
         .form-signin {
             max-width: 300px;
