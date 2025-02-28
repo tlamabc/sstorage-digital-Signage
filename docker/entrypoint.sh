@@ -190,7 +190,7 @@ then
   mysql -D $MYSQL_DATABASE -e "UPDATE \`setting\` SET \`value\`='Apache', \`userChange\`=0, \`userSee\`=0 WHERE \`setting\`='SENDFILE_MODE' LIMIT 1"
 
   # Set admin username/password
-  mysql -D $MYSQL_DATABASE -e "UPDATE \`user\` SET \`UserName\`='xibo_admin', \`UserPassword\`='5f4dcc3b5aa765d61d8327deb882cf99' WHERE \`UserID\` = 1 LIMIT 1"
+  mysql -D $MYSQL_DATABASE -e "UPDATE \`user\` SET \`UserName\`='admin', \`UserPassword\`='5f4dcc3b5aa765d61d8327deb882cf99' WHERE \`UserID\` = 1 LIMIT 1"
 
   # Set XMR public address
   mysql -D $MYSQL_DATABASE -e "UPDATE \`setting\` SET \`value\`='tcp://cms.example.org:9505' WHERE \`setting\`='XMR_PUB_ADDRESS' LIMIT 1"

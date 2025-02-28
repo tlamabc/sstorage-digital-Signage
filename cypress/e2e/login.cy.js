@@ -5,7 +5,7 @@ describe('Login', function() {
         cy.visit('/login').then(() => {
 
             cy.get('input#username')
-                .type('xibo_admin');
+                .type('admin');
 
             cy.get('input#password')
                 .type('password');
@@ -15,7 +15,7 @@ describe('Login', function() {
 
             cy.url().should('include', 'dashboard');
 
-            cy.contains('xibo_admin');
+            cy.contains('admin');
         });
     });
 
@@ -23,7 +23,7 @@ describe('Login', function() {
 
         cy.visit('/login').then(() => {
             cy.get('input#username')
-                .type('xibo_admin');
+                .type('admin');
 
             cy.get('input#password')
                 .type('wrongpassword');

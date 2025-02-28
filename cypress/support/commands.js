@@ -53,7 +53,7 @@ Cypress.Commands.add('login', function(callbackRoute = '/login') {
       url: '/login',
       form: true,
       body: {
-        username: 'xibo_admin',
+        username: 'admin',
         password: 'password',
       },
     }).then((res) => {
