@@ -959,11 +959,7 @@
                                     {% endif %}
                                 {% endif %}
 
-                                {% if theme.isSettingVisible("DETECT_LANGUAGE") %}
-                                    {% set title %}{% trans "Detect language?" %}{% endset %}
-                                    {% set helpText %}{% trans "Detect the browser language?" %}{% endset %}
-                                    {{ forms.checkbox("DETECT_LANGUAGE", title, theme.getSetting("DETECT_LANGUAGE"), helpText, "", "", not theme.isSettingEditable("DETECT_LANGUAGE")) }}
-                                {% endif %}
+
 
                                 {% if theme.isSettingVisible("CALENDAR_TYPE") %}
                                     {% set title %}{% trans "Calendar Type" %}{% endset %}
