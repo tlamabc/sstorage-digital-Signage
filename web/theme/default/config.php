@@ -28,7 +28,7 @@ $config = array(
     'theme_title' => 'SStorage Digital Signage',
     'app_name' => 'SSTORAGE',
     'theme_url' => 'https://sstorage.vn/',
-    'cms_source_url' => 'https://sstorage.vn/giai-phap/giai-phap-luu-tru-server-cloud/',
+    'cms_source_url' => 'https://sstorage.vn/dv-ssignage-digital/',
     'cms_install_url' => 'manual/en/install_cms.html',
     'cms_release_notes_url' => 'manual/en/release_notes.html',
 );
