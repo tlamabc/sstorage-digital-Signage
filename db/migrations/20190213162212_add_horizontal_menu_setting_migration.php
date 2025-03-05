@@ -35,7 +35,7 @@ class AddHorizontalMenuSettingMigration extends AbstractMigration
             $this->table('setting')->insert([
                 [
                     'setting' => 'NAVIGATION_MENU_POSITION',
-                    'value' => 'vertical',
+                    'value' => 'horizontal',
                     'userSee' => 1,
                     'userChange' => 1
                 ]
