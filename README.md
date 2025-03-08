@@ -56,9 +56,8 @@ git clone https://github.com/tlamabc/sstorage-digital-Signage
 ```sh
 cd ./sstorage-digital-Signage
 ```
-
-We recommend installing the dependencies via Docker, so that you are guarenteed consistent dependencies across 
-different development machines.
+Chúng tôi khuyên bạn nên cài đặt các phụ thuộc thông qua Docker để đảm bảo các phụ thuộc nhất quán trên
+các máy phát triển khác nhau.
 
 ### PHP dependencies
 
@@ -66,20 +65,20 @@ different development machines.
 docker run --interactive --tty --volume $PWD:/app --volume ~/.composer:/tmp composer install
 ```
 
-This command also mounts the Composer `/tmp` folder into your home directory so that you can take advantage of
-Composer caching.
+
+Lệnh này cũng gắn thư mục `/tmp` của Composer vào thư mục gốc của bạn để bạn có thể tận dụng
+bộ nhớ đệm của Composer.
 
 ### Website dependencies (webpack)
 
-If you have installed node locally:
-
+Nếu bạn đã cài đặt node cục bộ ( cài services thay vì container:
 ```shell
 npm install webpack -g
 npm install
 npm run build
 ```
 
-Alternatively you can use a Docker container:
+Còn nếu chạy bằng Docker container:
 
 ```shell
 docker run -it --volume $PWD:/app --volume ~/.npm:/root/.npm -w /app node:22 sh -c "npm install webpack -g; npm install; npm run build;"
@@ -112,13 +111,13 @@ $apiKeyPaths = [
 ```
 
 ### OpenOOH specification
-Xibo can present the OpenOOH venue classifications in the display edit form. For this functionality to work in 
-development, it is necessary 
-to [download the latest file](https://raw.githubusercontent.com/openooh/venue-taxonomy/main/specification.json) and 
-place it in here: `openooh/specification.json`
+Xibo có thể trình bày các phân loại địa điểm OpenOOH trong biểu mẫu chỉnh sửa hiển thị. Để chức năng này hoạt động trong
+phát triển, cần
+[tải xuống tệp mới nhất](https://raw.githubusercontent.com/openooh/venue-taxonomy/main/specification.json) và
+đặt tệp đó vào đây: `openooh/specification.json`
 
-The production/CI containers add this file during the build process so that it is already available in the Docker
-image.
+Các thùng chứa sản xuất/CI thêm tệp này trong quá trình xây dựng để tệp đó đã có sẵn trong
+image Docker.
 
 
 ## Bring up the Containers
