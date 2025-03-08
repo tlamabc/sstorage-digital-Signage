@@ -2,54 +2,36 @@
 
 [![Github All Releases](https://img.shields.io/github/downloads/xibosignage/xibo-cms/total.svg)]()
 
+# Ước Lượng Cấu Hình Server Cho 100 Player
 
-## About Xibo - VERSION 4.2.0
-Xibo is a powerful Open Source Digital Signage platform with a web content management system and Windows display player
-software. We have commercial player options for Android, LG webOS and Samsung Tizen, as well as CMS hosting and support.
+Dựa trên kinh nghiệm thực tế và tài liệu từ **diễn đàn Xibo**, có thể tham khảo:
+
+## Tài Nguyên & Khuyến Nghị
+
+| **Tài nguyên** | **Mức khuyến nghị cho 100 player** |
+|--------------|----------------------------------|
+| **CPU** | 4 - 8 vCPU (Intel Xeon hoặc AMD EPYC) |
+| **RAM** | 16 - 32GB |
+| **Băng thông** | 50 - 200 Mbps (tùy nội dung) |
+| **Storage** | SSD NVMe, tối thiểu 500GB (nếu nhiều video thì >=1TB) |
+
+## Giải Thích
+
+- **CPU**: Xibo CMS chủ yếu dùng PHP/MySQL, nếu có nhiều request từ player thì cần CPU mạnh để xử lý.
+- **RAM**: Nếu nhiều player tải dữ liệu cùng lúc, cần RAM đủ để MySQL và PHP-FPM hoạt động tốt.
+- **Băng thông**: Nếu mỗi player tải **100MB nội dung/ngày**, thì tổng băng thông là **10GB/ngày (~120KB/s trung bình)**.  
+  Nhưng nếu phát video Full HD liên tục, băng thông có thể tăng rất cao.
+- **Storage**: Nếu lưu video, nên dùng **SSD** để tăng tốc độ đọc dữ liệu.
 
 See [https://xibosignage.com](https://xibosignage.com) for more information.
 
 Our first open source release 1.0.0-rc1 landed in 2009, and we're committed to keeping everything you need to run a
 digital signage network, or single screen, open source and free to use.
 
-## Licence
 
-[![Licence](https://img.shields.io/github/license/xibosignage/xibo-cms)]()
+## Điều kiện tiên quyết
 
-Copyright (C) 2006-2024 Xibo Signage Ltd and Contributors.
-
-Xibo is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public
-License as published by the Free Software Foundation, either version 3 of the License, or any later version.
-
-Xibo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty
-of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License for more details.
-
-You should have received a copy of the GNU Affero General Public License along with Xibo. 
-If not, see <http://www.gnu.org/licenses/>.
-
-
-# Installation
-
-We recommend installing an official release via Docker. Instructions for doing so can be found in our 
-[documentation](https://xibosignage.com/docs/setup/cms-installation-guides).
-
-
-# Developing
-
-**Please only install a Development environment if you intend make code changes to Xibo. Installing from the 
-repository is not suitable for a production installation.**
-
-Xibo uses Docker to ensure all contributors have a repeatable development environment which is easy to get up and
-running. The very same Docker containers are used in our recommended end user installation to promote consistency 
-from development to deployment.
-
-To these ends this repository includes a `docker-compose.yml` file to spin up a model development environment.
-
-
-## Prerequisites
-
-The development Docker containers do not automatically build vendor files for PHP or JS, this is left as a developer 
-responsibility. Therefore you will need the following tools:
+Các container Docker phát triển không tự động xây dựng các tệp nhà cung cấp cho PHP hoặc JS, điều này được giao cho trách nhiệm của nhà phát triển. Do đó, bạn sẽ cần các công cụ sau:
 
  - Git
  - [Composer](http://getcomposer.org)
@@ -60,33 +42,19 @@ responsibility. Therefore you will need the following tools:
 
 ## Clone the repository
 
-Create a folder in your development workspace and clone the repository. If you intend to make changes and submit
-pull requests please Fork us first and create a new branch.
+Tạo một thư mục trong không gian làm việc phát triển của bạn và sao chép kho lưu trữ. Nếu bạn có ý định thực hiện thay đổi và gửi
+yêu cầu kéo, vui lòng Fork chúng tôi trước và tạo một nhánh mới.
 
 ```shell
-git clone git@github.com:<your_id>/xibo-cms.git xibo-cms
+git clone https://github.com/tlamabc/sstorage-digital-Signage
 ```
 
-### Branches
-
-We maintain the following branches. To contribute to Xibo please use the `develop` branch as your base.
-
-- kopff: Work in progress toward 4.2.x
-- develop: Bug fixes for 4.1.x
-- master: Currently 4.0
-- release40: Bug fixes for 4.0
-- release33: Bug fixes for 3.3
-- release23: Bug fixes for 2.3
-- release18: Archive of 1.8
-- release17: Archive of 1.7
-- release1.6.4: Archive of 1.6
 
 ## Install dependencies
-
-Change into your new folder
+Đi đến folder của source
 
 ```sh
-cd xibo-cms
+cd ./sstorage-digital-Signage
 ```
 
 We recommend installing the dependencies via Docker, so that you are guarenteed consistent dependencies across 
@@ -200,23 +168,24 @@ To generate a `swagger.json` file, with the dev containers running:
 ```shell
 docker-compose exec web sh -c "cd /var/www/cms; vendor/bin/swagger lib -o web/swagger.json"
 ```
+## Licence
 
-## Application Structure
+[![Licence](https://img.shields.io/github/license/xibosignage/xibo-cms)]()
 
-To find out more about the application code and how everything fits together, please refer to 
-the [developer docs](https://xibosignage.com/docs/developer/extend).
+Copyright (C) 2006-2024 Xibo Signage Ltd and Contributors.
+
+Xibo is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public
+License as published by the Free Software Foundation, either version 3 of the License, or any later version.
+
+Xibo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty
+of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License along with Xibo. 
+If not, see <http://www.gnu.org/licenses/>.
 
 
-# Contributing
-We would be delighted to accept contributions to the project - please refer to
-[CONTRIBUTING.md](https://github.com/xibosignage/xibo/blob/master/CONTRIBUTING.md) for further information.
+# Installation
 
-# Sponsorship
-We've built commercial products and services on top of our open source project. If you want to support our work the
-best way is to [become a customer](https://xibosignage.com/pricing). We're committed to keeping our project open
-source either way!
+We recommend installing an official release via Docker. Instructions for doing so can be found in our 
+[documentation](https://xibosignage.com/docs/setup/cms-installation-guides).
 
-# Reporting Problems
-Support requests can be reported on the [Xibo Community Forum](https://community.xibo.org.uk/c/dev). Verified, 
-re-producable bugs with this repository can be reported in 
-the [Xibo parent repository](https://github.com/xibosignage/xibo/issues).
