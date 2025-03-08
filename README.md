@@ -87,21 +87,21 @@ docker run -it --volume $PWD:/app --volume ~/.npm:/root/.npm -w /app node:22 sh 
 
 ### Mapped Volumes
 
-The development version of Xibo expects the code base to be mapped into the container such that changes on the host
-are reflected in the container.
+Phiên bản phát triển của Xibo mong đợi cơ sở mã được ánh xạ vào container sao cho các thay đổi trên máy chủ
+được phản ánh trong container.
 
-However, the container itself creates some files, such as the twig cache and library uploads. These locations will need
-to be created and the container given access to them.
+Tuy nhiên, bản thân container tạo ra một số tệp, chẳng hạn như bộ đệm twig và tải lên thư viện. Những vị trí này sẽ cần
+được tạo và container được cấp quyền truy cập vào chúng.
 
-The easiest way to do this is to make the `cache` and `library` folders and `chmod 777` them. Obviously this is not
-suitable for production, but you shouldn't be using these files for production (we have containers for that).
+Cách dễ nhất để thực hiện việc này là tạo các thư mục `cache` và `library` và `chmod 777` chúng. Rõ ràng là điều này không
+phù hợp cho sản xuất, nhưng bạn không nên sử dụng các tệp này cho sản xuất (chúng tôi có các container cho mục đích đó).
 
 ### API Keys
-The API requires a pub/private RSA keypair and an encryption key to be provided. The docker entrypoint will create 
-these in `/library/certs`.
+API yêu cầu cặp khóa RSA pub/private và khóa mã hóa phải được cung cấp. Điểm vào Docker sẽ tạo
+những khóa này trong `/library/certs`.
 
-You can override the generated keys paths and encryption key by providing an alternative in `settings-custom.php`.
-For example: 
+Bạn có thể ghi đè các đường dẫn khóa được tạo và khóa mã hóa bằng cách cung cấp một giải pháp thay thế trong `settings-custom.php`.
+Ví dụ:
 
 ```php
 $apiKeyPaths = [
@@ -123,22 +123,19 @@ image.
 
 ## Bring up the Containers
 
-Use Docker Compose to bring up the containers.
-
+Sử dụng Docker Compose để đưa các container chạy lên.
 ```sh
 docker-compose up --build -d
 ```
 
 ## Login
-After the containers have come up you should be able to login with the details:
-
+Sau khi các container xuất hiện, bạn sẽ có thể đăng nhập bằng account:
 U: `admin`
 P: `password`
 
 
 ## Translations
-To parse the translations:
-
+Để phân tích bản dịch:
 ```shell
 docker-compose exec web sh -c "cd /var/www/cms; rm -R ./cache"
 docker-compose exec web sh -c "cd /var/www/cms; php bin/locale.php"
@@ -163,8 +160,7 @@ for i in *.po; do msgfmt "$i" -o $(echo $i | sed s/po/mo/); done
 Move the resulting `mo` files into your `locale` folder.
 
 ## Swagger API Docs
-To generate a `swagger.json` file, with the dev containers running:
-
+Để tạo tệp `swagger.json`, với các container dev đang chạy:
 ```shell
 docker-compose exec web sh -c "cd /var/www/cms; vendor/bin/swagger lib -o web/swagger.json"
 ```
