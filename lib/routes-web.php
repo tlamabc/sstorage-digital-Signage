@@ -43,7 +43,7 @@ $app->group('', function(RouteCollectorProxy $group) {
 // Everyone has access to this dashboard.
 $app->get('/icondashboard', ['\Xibo\Controller\IconDashboard', 'displayPage'])
     ->add(new FeatureAuth($app->getContainer(), ['dashboard.status']))
-    ->setName('icondashboard.view');
+    ->setName('statusdashboard.view');
 
 
 $app->group('', function (RouteCollectorProxy $group) {
