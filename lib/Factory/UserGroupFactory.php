@@ -981,8 +981,8 @@ class UserGroupFactory extends BaseFactory
                     __('Status Dashboard'),
                     __('Status Dashboard showing key platform metrics, usually for an administrator.')
                 ),
-                'icondashboard.view' => new Homepage(
-                    'icondashboard.view',
+                'statusdashboard.view' => new Homepage(
+                    'statusdashboard.view',
                     '',
                     __('Icon Dashboard'),
                     __('Icon Dashboard showing an easy access set of feature icons the user can access.')
