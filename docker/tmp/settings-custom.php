@@ -26,7 +26,7 @@
 // For example, if you want to configure SAML authentication, you can add the
 // required configuration here
 
-/*
+
 $authentication = new \Xibo\Middleware\SAMLAuthentication();
 $samlSettings = [
     'workflow' => [
@@ -94,4 +94,4 @@ $samlSettings = [
         'wantNameIdEncrypted' => false,
     ],
 ];
-*/
+
