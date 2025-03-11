@@ -76,7 +76,7 @@ class Translate
                 foreach ($languagePreferenceArray as $languagePreference => $preferenceRating) {
 
                     // We don't ship an en.mo, so fudge in a case where we automatically convert that to vi_VN
-                    if ($languagePreference == 'en')
+                    if ($languagePreference == 'vi')
                         $languagePreference = 'vi_VN';
 
                     // Sanitize
@@ -102,7 +102,7 @@ class Translate
         if ($foundLanguage == '') {
             // Check the default
             if (!in_array($default . '.mo', $supportedLanguages)) {
-                $default = 'en_GB';
+                $default = 'vi_VN';
             }
 
             // The default is valid
