@@ -41,11 +41,10 @@ $app->group('', function(RouteCollectorProxy $group) {
 })->add(new FeatureAuth($app->getContainer(), ['dashboard.status']));
 
 // Everyone has access to this dashboard.
-// $app->get('/icondashboard', ['\Xibo\Controller\IconDashboard', 'displayPage'])
-//     ->setName('icondashboard.view');
-$app->get('/icondashboard', function ($request, $response, $args) {
-    return $response->withHeader('Location', '/statusdashboard')->withStatus(302);
-})->setName('icondashboard.view');
+$app->get('/icondashboard', ['\Xibo\Controller\IconDashboard', 'displayPage'])
+    ->add(new FeatureAuth($app->getContainer(), ['dashboard.status']))
+    ->setName('icondashboard.view');
+
 
 $app->group('', function (RouteCollectorProxy $group) {
     $group->get('/mediamanager', ['\Xibo\Controller\MediaManager', 'displayPage'])
