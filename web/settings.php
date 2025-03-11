@@ -25,7 +25,7 @@ $dbssl = $_SERVER['MYSQL_ATTR_SSL_CA'];
 $dbsslverify = $_SERVER['MYSQL_ATTR_SSL_VERIFY_SERVER_CERT'];
 
 if (!defined('SECRET_KEY')) {
-    define('SECRET_KEY','au0amdI2');
+    define('SECRET_KEY', 'au0amdI2');
 }
 
 if (array_key_exists('CMS_USE_MEMCACHED', $_SERVER)
@@ -40,8 +40,18 @@ if (array_key_exists('CMS_USE_MEMCACHED', $_SERVER)
     ];
 }
 
-if (file_exists('/var/www/cms/custom/settings-custom.php')) {
-    include('/var/www/cms/custom/settings-custom.php');
+/* ==========================
+ * Thiết lập theme mặc định và menu điều hướng
+ * ========================== */
+$mysqli = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
+
+if ($mysqli->connect_error) {
+    die("Database connection failed: " . $mysqli->connect_error);
 }
+
+$mysqli->query("UPDATE setting SET value = 'default' WHERE setting = 'GLOBAL_THEME_NAME'");
+$mysqli->query("UPDATE setting SET value = 'horizontal' WHERE setting = 'NAVIGATION_MENU_POSITION'");
+
+$mysqli->close();
 
 ?>
