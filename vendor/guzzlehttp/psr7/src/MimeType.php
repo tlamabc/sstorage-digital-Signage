@@ -689,7 +689,7 @@ final class MimeType
         'org' => 'text/x-org',
         'osf' => 'application/vnd.yamaha.openscoreformat',
         'osfpvg' => 'application/vnd.yamaha.openscoreformat.osfpvg+xml',
-        'osm' => 'application/vnd.openstreetmap.data+xml',
+        'osm' => 'application/vnd.openmap.data+xml',
         'otc' => 'application/vnd.oasis.opendocument.chart-template',
         'otf' => 'font/otf',
         'otg' => 'application/vnd.oasis.opendocument.graphics-template',

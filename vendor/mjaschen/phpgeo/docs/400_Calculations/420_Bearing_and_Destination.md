@@ -114,7 +114,7 @@ Spherical:   52.04988 13.87628
 Ellipsoidal: 52.05020 13.87126
 ```
 
-Oh, look, what a [beautiful spot on earth](https://www.openstreetmap.org/?mlat=52.0499&mlon=13.8762#map=13/52.0499/13.8762) it is. ;-)
+Oh, look, what a [beautiful spot on earth](https://www.openmap.org/?mlat=52.0499&mlon=13.8762#map=13/52.0499/13.8762) it is. ;-)
 
 ## Final Bearing for a calculated destination
 

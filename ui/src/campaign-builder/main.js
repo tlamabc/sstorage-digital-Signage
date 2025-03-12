@@ -58,7 +58,7 @@ window.cB = {
       attribution: this.getDataProperty(
         $containerSelector,
         'mapAttribution',
-        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+        '&copy; <a href="https://www.openmap.org/copyright">openmap</a>',
       ),
       subdomains: ['a', 'b', 'c'],
     }).addTo(this.map);
@@ -86,7 +86,7 @@ window.cB = {
     // add search Control - allows searching by country/city and automatically
     // moves map to that location
     const searchControl = new L.Control.Search({
-      url: 'https://nominatim.openstreetmap.org/search?format=json&q={s}',
+      url: 'https://nominatim.openmap.org/search?format=json&q={s}',
       jsonpParam: 'json_callback',
       propertyName: 'display_name',
       propertyLoc: ['lat', 'lon'],

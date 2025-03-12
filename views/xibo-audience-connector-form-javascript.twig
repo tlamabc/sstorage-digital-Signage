@@ -275,7 +275,7 @@
                 attribution: getDataProperty(
                   $containerSelector,
                   'mapAttribution',
-                  '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+                  '&copy; <a href="https://www.openmap.org/copyright">openmap</a>',
                 ),
                 subdomains: ['a', 'b', 'c'],
               }).addTo(map);
@@ -303,7 +303,7 @@
               // add search Control - allows searching by country/city and automatically
               // moves map to that location
               const searchControl = new L.Control.Search({
-                url: 'https://nominatim.openstreetmap.org/search?format=json&q={s}',
+                url: 'https://nominatim.openmap.org/search?format=json&q={s}',
                 jsonpParam: 'json_callback',
                 propertyName: 'display_name',
                 propertyLoc: ['lat', 'lon'],
@@ -482,7 +482,7 @@
                         {{ forms.message("Draw areas on the map where you want this DMA to be active."|trans) }}
 
                         <div id="audience-dma-map"
-                           data-map-tile-server="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                           data-map-tile-server="https://{s}.tile.openmap.org/{z}/{x}/{y}.png"
                            data-map-lat="{{ settings.DEFAULT_LAT }}"
                            data-map-long="{{ settings.DEFAULT_LONG }}"
                            data-map-zoom="13"
