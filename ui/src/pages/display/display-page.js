@@ -460,7 +460,7 @@ $(function() {
 
       // Move and show map button inside of the table container
       if ($mapController.length > 0 && target.closest('.dataTables_wrapper')
-        .find('.dataTables_folder .map-controller').length == 0) {
+        .find('.dataTables_folder ').length == 0) {
         $mapController.appendTo('.dataTables_folder');
         $mapController.removeClass('d-none').addClass('d-inline-flex');
       }
