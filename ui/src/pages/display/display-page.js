@@ -527,7 +527,7 @@ $(function() {
     $('.map-legend').hide();
     $displayMap.hide();
     $listBtn.hide();
-    $mapBtn.show();
+    $mapBtn.hide();
     $dataTablesFolder.siblings().show();
     $dataTablesFolder.parent().siblings().show();
   });
