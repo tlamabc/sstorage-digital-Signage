@@ -267,7 +267,7 @@ describe('Displays', function() {
 
     cy.get('#display-map.leaflet-container').should('not.be.visible');
 
-    cy.get('#map_button').click();
+    cy.get('#map_button').should('not.exist');
 
     cy.get('#display-map.leaflet-container').should('be.visible');
 
