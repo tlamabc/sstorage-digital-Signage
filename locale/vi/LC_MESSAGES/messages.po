@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-03-15 14:54+0700\n"
+"PO-Revision-Date: 2025-03-15 14:56+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: vi\n"
@@ -12479,7 +12479,7 @@ msgstr "Sửa đổi tại"
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:580
 #: cache/45/452993b5cfada14b95c3c3f731195fbd.php:205
 msgid "Modified By"
-msgstr "được sửa đổi bởi"
+msgstr "Sửa đổi bởi"
 
 #: cache/30/302546eec41a46c8a34a19447abc899c.php:425
 #: cache/40/40934d1cc21621783800143e32bfb38c.php:591
