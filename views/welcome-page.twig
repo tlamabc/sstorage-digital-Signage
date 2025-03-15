@@ -4,13 +4,13 @@
 
 {% block pageContent %}
     <div id="top" class="welcome-page flex-column" style="background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); position: relative; overflow: hidden;">
-        <div class="container-fluid" style="max-width: 1400px; padding: 40px 20px;">
+        <div class="container-fluid" style="max-width: 1400px; padding: 40px 20px; position: relative; z-index: 2;">
             <!-- Header Section -->
-            <div class="welcome-header d-flex align-items-center justify-content-between flex-wrap" style="position: relative; z-index: 2;">
-                <div class="header-text-content" style="flex: 1; min-width: 300px; color: white; padding-right: 20px;">
+            <div class="welcome-header d-flex align-items-center justify-content-between flex-wrap" style="background: rgba(0,0,0,0.2); padding: 30px; border-radius: 15px;">
+                <div class="header-text-content" style="flex: 1; min-width: 300px; color: #fff; padding-right: 20px;">
                     {% set productName = theme.getThemeConfig('theme_title') %}
-                    <h2 class="animate__animated animate__fadeIn" style="font-size: 2.5rem; font-weight: 700; margin-bottom: 20px;">CHÀO MỪNG BẠN ĐẾN VỚI CMS SSIGNAGE</h2>
-                    <p style="font-size: 1.1rem; line-height: 1.6; opacity: 0.9;">Hệ thống CMS cho phép bạn tạo, quản lý và cập nhật nội dung. Bạn có thể tải lên hình ảnh, video, thiết kế bố cục, lên lịch phát nội dung theo thời gian và vị trí, cũng như kiểm soát toàn bộ mạng lưới hiển thị.</p>
+                    <h2 class="animate__animated animate__fadeIn" style="font-size: 2.5rem; font-weight: 700; margin-bottom: 20px; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">CHÀO MỪNG BẠN ĐẾN VỚI CMS SSIGNAGE</h2>
+                    <p style="font-size: 1.1rem; line-height: 1.6; opacity: 0.95; text-shadow: 0 1px 2px rgba(0,0,0,0.2);">Hệ thống CMS cho phép bạn tạo, quản lý và cập nhật nội dung. Bạn có thể tải lên hình ảnh, video, thiết kế bố cục, lên lịch phát nội dung theo thời gian và vị trí, cũng như kiểm soát toàn bộ mạng lưới hiển thị.</p>
                     <div class="d-flex mt-4" style="column-gap: 15px;">
                         <a href="https://sstorage.vn/dv-ssignage-digital/" 
                            class="btn btn-primary btn-rounded animate__animated animate__pulse" 
@@ -45,23 +45,20 @@
             </div>
 
             <!-- Service Cards -->
-            <div class="service-card-container d-flex flex-column" style="row-gap: 30px; margin-top: 80px; position: relative; z-index: 2;">
+            <div class="service-card-container d-flex flex-column" style="row-gap: 30px; margin-top: 80px;">
                 {% if currentUser.featureEnabled("displays.view") %}
-                    <div class="card service-card animate__animated animate__fadeInUp" style="background: rgba(255,255,255,0.95); border-radius: 15px; padding: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-                        <!-- Nội dung card được điền bởi JS -->
-                    </div>
+                    <div class="card service-card animate__animated animate__fadeInUp displays-enabled" style="background: rgba(255,255,255,0.95); border-radius: 15px; padding: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);"></div>
                 {% endif %}
                 {% if currentUser.featureEnabled("library.view") or currentUser.featureEnabled("layout.view") %}
-                    <div class="card service-card animate__animated animate__fadeInUp" style="background: rgba(255,255,255,0.95); border-radius: 15px; padding: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-                        <!-- Nội dung card được điền bởi JS -->
-                    </div>
+                    <div class="card service-card animate__animated animate__fadeInUp library-layout-enabled" style="background: rgba(255,255,255,0.95); border-radius: 15px; padding: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);"></div>
                 {% endif %}
                 {% if currentUser.featureEnabled("schedule.view") %}
-                    <div class="card service-card animate__animated animate__fadeInUp" style="background: rgba(255,255,255,0.95); border-radius: 15px; padding: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-                        <!-- Nội dung card được điền bởi JS -->
-                    </div>
+                    <div class="card service-card animate__animated animate__fadeInUp schedule-enabled" style="background: rgba(255,255,255,0.95); border-radius: 15px; padding: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);"></div>
                 {% endif %}
             </div>
+
+            <!-- Others Cards -->
+            <div class="others-card-container" style="margin-top: 60px;"></div>
 
             <!-- Back to Top -->
             <a class="scroll-up" href="#top" style="position: fixed; bottom: 30px; right: 30px; z-index: 1000;">
@@ -82,6 +79,14 @@
     <script type="text/javascript" nonce="{{ cspNonce }}" defer>
         var isXiboThemed = '{{ theme.getThemeConfig("app_name") }}' === 'Xibo';
         var isSuperAdmin = '{{ currentUser.isSuperAdmin()}}';
+
+        var onboardingCard = [
+            { title: '{% trans "Displays" %}', link: 'displays', iconURL: '{{ theme.rootUri() }}theme/default/img/onboarding/displays-icon.svg' },
+            { title: 'Nội dung đang có', link: 'existing-content', iconURL: '{{ theme.rootUri() }}theme/default/img/onboarding/existing-content-icon.svg' },
+            { title: '{% trans "Playlists" %}', link: 'playlists', iconURL: '{{ theme.rootUri() }}theme/default/img/onboarding/playlist-icon.svg' },
+            { title: 'Sáng tạo nội dung', link: 'create-content', iconURL: '{{ theme.rootUri() }}theme/default/img/onboarding/create-content-icon.svg' },
+            { title: '{% trans "Schedule" %}', link: 'schedule', iconURL: '{{ theme.rootUri() }}theme/default/img/onboarding/schedule-icon.svg' },
+        ];
 
         var serviceCards = [
             {
@@ -133,10 +138,40 @@
             }
         ];
 
+        var othersCards = [
+            {
+                title: '{% trans "Documentation" %}',
+                text: 'Tài liệu của chúng tôi luôn sẵn sàng trợ giúp bạn mọi lúc mọi nơi. Nó được cập nhật thường xuyên để phản ánh những thay đổi và bổ sung cho giải pháp và vì vậy đây là công cụ tham khảo có giá trị cho tất cả khách hàng.',
+                links: `
+                    <a href="https://sstorage.vn/dv-ssignage-digital/" target="_blank" class="text-link">{% trans "User Manual" %}</a>
+                    ${isXiboThemed && isSuperAdmin ? 
+                    `<a href="https://sstorage.vn/lien-he/" target="_blank" class="text-link">{% trans "Admin" %}</a>
+                     <a href="https://sstorage.vn/lien-he/" target="_blank" class="text-link">{% trans "Developer" %}</a>` : ''}`,
+                iconName: "documentation"
+            },
+            ...(isXiboThemed ? [{
+                title: 'Liên Hệ Để Hỗ Trợ',
+                text: `Địa chỉ: Tầng 5, 27A Hoàng Việt, F4, Quận Tân Bình, TP Hồ Chí Minh<br>Hotline: 0906 618 181<br>E-mail: sstorage@icsp.vn`,
+                links: `
+                    <a href="https://sstorage.vn/lien-he/" target="_blank" class="text-link">{% trans "Trung tâm hỗ trợ" %}</a>
+                    <a href="https://sstorage.vn/lien-he/" target="_blank" class="text-link">{% trans "Cộng đồng" %}</a>`,
+                iconName: "help"
+            }] : []),
+            {
+                title: 'Liên Hệ Để Hỗ Trợ',
+                text: `Hotline: 0906 618 181`,
+                links: `
+                    <a href="https://sstorage.vn/lien-he/" target="_blank" class="text-link">{% trans "Trung tâm hỗ trợ" %}</a>
+                    <a href="https://sstorage.vn/lien-he/" target="_blank" class="text-link">{% trans "Cộng đồng" %}</a>`,
+                iconName: "help"
+            }
+        ];
+
         // Dynamic Card Rendering
         document.addEventListener('DOMContentLoaded', function() {
-            const containers = document.querySelectorAll('.service-card');
-            containers.forEach((container, index) => {
+            // Service Cards
+            const serviceContainers = document.querySelectorAll('.service-card');
+            serviceContainers.forEach((container, index) => {
                 const card = serviceCards[index];
                 if (card) {
                     container.innerHTML = `
@@ -152,10 +187,19 @@
                     `;
                 }
             });
+
+            // Others Cards
+            const othersContainer = document.querySelector('.others-card-container');
+            othersContainer.innerHTML = othersCards.map(card => `
+                <div class="card animate__animated animate__fadeInUp" style="background: rgba(255,255,255,0.95); border-radius: 15px; padding: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); margin-bottom: 20px;">
+                    <h3 style="font-size: 1.5rem; font-weight: 600; color: #1e3c72;">${card.title}</h3>
+                    <p style="font-size: 1rem; color: #333; line-height: 1.6;">${card.text}</p>
+                    <div style="margin-top: 15px;">${card.links}</div>
+                </div>
+            `).join('');
         });
     </script>
 
-    <!-- Thêm Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" nonce="{{ cspNonce }}">
     <script src="{{ theme.rootUri() }}dist/pages/welcome-page.bundle.min.js?v={{ version }}&rev={{revision}}" nonce="{{ cspNonce }}"></script>
 {% endblock %}
