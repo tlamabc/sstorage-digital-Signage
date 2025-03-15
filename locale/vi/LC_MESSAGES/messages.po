@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-03-15 14:56+0700\n"
+"PO-Revision-Date: 2025-03-15 15:00+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: vi\n"
@@ -9361,7 +9361,7 @@ msgstr "Kích thước của các mục phương tiện"
 
 #: cache/f9/f94739d77632ff2785eb7f60400f9cff.php:166
 msgid "Tidy library"
-msgstr "Thư viện gọn gàng"
+msgstr "Dọn dẹp thư viện"
 
 #: cache/f9/f94739d77632ff2785eb7f60400f9cff.php:171
 #: cache/fd/fdc577da9565022792574e6aa3ef7609.php:94
@@ -17355,7 +17355,7 @@ msgstr "Thêm phương tiện (URL)"
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:76
 #: lib/XTR/MaintenanceRegularTask.php:299
 msgid "Tidy Library"
-msgstr "Thư viện gọn gàng"
+msgstr "Dọn dẹp thư viện"
 
 #: cache/fd/fdc577da9565022792574e6aa3ef7609.php:217
 #: cache/6b/6b8f3b359fea543f836222f075be96fc.php:192
