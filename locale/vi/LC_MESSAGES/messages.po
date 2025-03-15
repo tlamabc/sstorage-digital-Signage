@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-03-15 17:27+0700\n"
+"PO-Revision-Date: 2025-03-15 17:30+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: vi\n"
@@ -10381,7 +10381,7 @@ msgstr "Tổng quan "
 #: lib/Controller/Library.php:784 lib/Controller/Layout.php:1856
 #: lib/Controller/Display.php:1004
 msgid "Schedule"
-msgstr "Lập "
+msgstr "Lập lịch"
 
 #: cache/7c/7c83e34565b8f2b468cd031ae65008ae.php:81
 #: cache/d1/d10814ee3dd19888fef200639442fd26.php:126
