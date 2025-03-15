@@ -1,3 +1,19 @@
-<svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6.00008 24V21.3333H12.6667V17.3333H3.33341C2.60008 17.3333 1.9723 17.0722 1.45008 16.55C0.927859 16.0278 0.666748 15.4 0.666748 14.6667V2.66667C0.666748 1.93333 0.927859 1.30556 1.45008 0.783333C1.9723 0.261111 2.60008 0 3.33341 0H24.6667C25.4001 0 26.0279 0.261111 26.5501 0.783333C27.0723 1.30556 27.3334 1.93333 27.3334 2.66667V14.6667C27.3334 15.4 27.0723 16.0278 26.5501 16.55C26.0279 17.0722 25.4001 17.3333 24.6667 17.3333H15.3334V21.3333H22.0001V24H6.00008ZM3.33341 14.6667H24.6667V2.66667H3.33341V14.6667Z" fill="#EB7857"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+    <title>playlist [#1002]</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+
+</defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dribbble-Light-Preview" transform="translate(-380.000000, -3759.000000)" fill="#000000">
+            <g id="icons" transform="translate(56.000000, 160.000000)">
+                <path d="M324,3599 L324,3605.18704 L329,3602.09301 L324,3599 Z M324,3619 L344,3619 L344,3616.96913 L324,3616.96913 L324,3619 Z M324,3610.87652 L344,3610.87652 L344,3608.84565 L324,3608.84565 L324,3610.87652 Z M331,3602.75305 L344,3602.75305 L344,3600.72218 L331,3600.72218 L331,3602.75305 Z" id="playlist-[#1002]">
+
+</path>
+            </g>
+        </g>
+    </g>
 </svg>
