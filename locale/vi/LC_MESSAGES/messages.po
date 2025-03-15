@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-03-15 15:00+0700\n"
+"PO-Revision-Date: 2025-03-15 15:04+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: vi\n"
@@ -10712,7 +10712,7 @@ msgstr "Cho phép thu thập số liệu thống kê Proof of Play cho Danh sác
 #: cache/11/11647a3c18d902dd179d3cb9b3b7ec76.php:114
 #: lib/Controller/Layout.php:1378
 msgid "On"
-msgstr "TRÊN"
+msgstr "Bật"
 
 #: cache/24/24586f514f7ca9717426ed09b5e5d4c2.php:317
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:1015
