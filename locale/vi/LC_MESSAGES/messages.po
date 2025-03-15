@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-03-15 15:04+0700\n"
+"PO-Revision-Date: 2025-03-15 17:27+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: vi\n"
@@ -9267,12 +9267,12 @@ msgstr "Xuất file"
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:3629
 #: lib/Widget/DataType/SocialMedia.php:66
 msgid "User"
-msgstr "người dùng"
+msgstr "Tài khoản"
 
 #: cache/14/14bb6e98f6948b95336492e93123ea66.php:139
 #: cache/14/14bb6e98f6948b95336492e93123ea66.php:200
 msgid "Entity"
-msgstr "thực thể"
+msgstr "Thực thể"
 
 #: cache/14/14bb6e98f6948b95336492e93123ea66.php:150
 #: cache/14/14bb6e98f6948b95336492e93123ea66.php:204
@@ -10381,7 +10381,7 @@ msgstr "Tổng quan "
 #: lib/Controller/Library.php:784 lib/Controller/Layout.php:1856
 #: lib/Controller/Display.php:1004
 msgid "Schedule"
-msgstr "Lịch trình"
+msgstr "Lập "
 
 #: cache/7c/7c83e34565b8f2b468cd031ae65008ae.php:81
 #: cache/d1/d10814ee3dd19888fef200639442fd26.php:126
@@ -13380,7 +13380,7 @@ msgstr "XMR đã đăng ký"
 #: cache/59/59f0058495a6a779727bbfe19dd6898f.php:591
 #: cache/ca/ca33d05cf8fdeb833db69451a0ddd065.php:100
 msgid "Remote"
-msgstr "Xa"
+msgstr "Từ "
 
 #: cache/40/40934d1cc21621783800143e32bfb38c.php:757
 msgid "Screen Size"
@@ -16083,7 +16083,7 @@ msgstr "dữ liệu"
 #: cache/ca/ca33d05cf8fdeb833db69451a0ddd065.php:215
 #: cache/20/20c62931092a02ad5a52d5d17a567869.php:219
 msgid "Remote?"
-msgstr "Xa?"
+msgstr "Từ xa?"
 
 #: cache/74/745df4d934b108b14bbd2306db53e6b7.php:207
 #: cache/ca/ca33d05cf8fdeb833db69451a0ddd065.php:221
@@ -21753,7 +21753,7 @@ msgstr "Đã sử dụng"
 #: lib/Controller/StatusDashboard.php:296 lib/Report/LibraryUsage.php:201
 #: lib/Report/LibraryUsage.php:549
 msgid "Free"
-msgstr "Miễn phí"
+msgstr "Còn trống"
 
 #: lib/Controller/StatusDashboard.php:410
 msgid "Latest news not available."
