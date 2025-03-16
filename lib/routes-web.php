@@ -32,17 +32,12 @@ $app->get('/welcome', ['\Xibo\Controller\User', 'welcome'])->setName('welcome.vi
 // Dashboards
 //
 $app->group('', function(RouteCollectorProxy $group) {
-
-    ->setName('icondashboard.view');
-    $group->get('/icondashboard/data', ['\Xibo\Controller\IconDashboard', 'grid'])
-        ->setName('icondashboard.search');
-
-    // $group->get('/statusdashboard', ['\Xibo\Controller\StatusDashboard', 'displayPage'])
-    //     ->setName('statusdashboard.view');
-    // $group->get('/statusdashboard/displays', ['\Xibo\Controller\StatusDashboard', 'displays'])
-    //     ->setName('statusdashboard.displays');
-    // $group->get('/statusdashboard/displayGroups', ['\Xibo\Controller\StatusDashboard', 'displayGroups'])
-    //     ->setName('statusdashboard.displayGroups');
+    $group->get('/statusdashboard', ['\Xibo\Controller\StatusDashboard', 'displayPage'])
+        ->setName('statusdashboard.view');
+    $group->get('/statusdashboard/displays', ['\Xibo\Controller\StatusDashboard', 'displays'])
+        ->setName('statusdashboard.displays');
+    $group->get('/statusdashboard/displayGroups', ['\Xibo\Controller\StatusDashboard', 'displayGroups'])
+        ->setName('statusdashboard.displayGroups');
 })->add(new FeatureAuth($app->getContainer(), ['dashboard.status']));
 
 // Everyone has access to this dashboard.
