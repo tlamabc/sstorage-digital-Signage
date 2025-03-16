@@ -13,7 +13,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: "root"
       MYSQL_DATABASE: "cms"
-      MYSQL_USER: "cms"         # Thêm dòng này
+      MYSQL_USER: "root"         # Thêm dòng này
       MYSQL_PASSWORD: "root"    # Thêm dòng này
       TZ: "Asia/Ho_Chi_Minh"
 
