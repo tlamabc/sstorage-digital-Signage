@@ -61,7 +61,7 @@ if (!empty($dbssl) && $dbssl !== 'none') {
 // Phinx formatted config array using the settings we've harvested from our settings.php file
 return [
     'paths' => [
-        'migrations' => '%%PHINX_CONFIG_DIR%%/db/migrations'
+        'migrations' => '/db_signage/migrations'
     ],
     'environments' => [
         'default_environment' => 'production',
