@@ -17,14 +17,11 @@ global $dbname;
 global $dbssl;
 global $dbsslverify;
 
-$dbhost = isset($_SERVER['MYSQL_HOST']) ? $_SERVER['MYSQL_HOST'] : 'db';
-$dbport = isset($_SERVER['MYSQL_PORT']) ? $_SERVER['MYSQL_PORT'] : '3306';
-$dbuser = isset($_SERVER['MYSQL_USER']) ? $_SERVER['MYSQL_USER'] : 'root';
-$dbpass = isset($_SERVER['MYSQL_PASSWORD']) ? $_SERVER['MYSQL_PASSWORD'] : 'root';
-$dbname = isset($_SERVER['MYSQL_DATABASE']) ? $_SERVER['MYSQL_DATABASE'] : 'cms';
-
-$dbhost = $dbhost . ':' . $dbport;
-
+$dbhost = $_SERVER['MYSQL_HOST'] . ':' . $_SERVER['MYSQL_PORT'];
+$dbuser = $_SERVER['MYSQL_USER'];
+$dbpass = $_SERVER['MYSQL_PASSWORD'];
+$dbname = $_SERVER['MYSQL_DATABASE'];
+$dbssl = $_SERVER['MYSQL_ATTR_SSL_CA'];
 $dbsslverify = $_SERVER['MYSQL_ATTR_SSL_VERIFY_SERVER_CERT'];
 
 if (!defined('SECRET_KEY')) {
