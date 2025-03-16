@@ -1,11 +1,4 @@
-version: "2.2"
-
-networks:
-  custom_network:
-    driver: bridge
-    ipam:
-      config:
-        - subnet: 192.168.1.0/24  # Định nghĩa dải mạng
+version: "3"
 
 services:
   db:
@@ -20,29 +13,26 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: "root"
       MYSQL_DATABASE: "cms"
-      MYSQL_USER: "cms"
-      MYSQL_PASSWORD: "root"
+      MYSQL_USER: "cms"         # Thêm dòng này
+      MYSQL_PASSWORD: "root"    # Thêm dòng này
       TZ: "Asia/Ho_Chi_Minh"
-    networks:
-      custom_network:
-        ipv4_address: 192.168.1.100   # Gán IP tĩnh cho MySQL
+
+
 
   xmr:
     image: ghcr.io/xibosignage/xibo-xmr:develop
-    restart: always
+    restart: always   # Giữ XMR luôn chạy
     ports:
       - "9505:9505"
     environment:
       XMR_DEBUG: "true"
       IPV6PUBSUPPORT: "false"
-    networks:
-      custom_network:
 
   web:
     build:
       context: .
       dockerfile: Dockerfile
-    restart: always
+    restart: always   # Giữ Web Server luôn chạy
     volumes:
       - ./:/var/www/cms
       - /etc/localtime:/etc/localtime:ro
@@ -53,30 +43,23 @@ services:
       MYSQL_DATABASE: "cms"
       TZ: "Asia/Ho_Chi_Minh"
       MYSQL_PASSWORD: "root"
-      MYSQL_USER: "cms"
-      MYSQL_HOST: "192.168.1.100"  # Trỏ trực tiếp tới IP tĩnh của db
-    networks:
-      custom_network:
+      MYSQL_USER: "root"
+      MYSQL_HOST: "db"
+
 
   memcached:
     image: memcached:alpine
-    restart: always
+    restart: always   # Giữ Memcached luôn chạy
     command: memcached -m 15
-    networks:
-      custom_network:
 
   swagger:
     image: swaggerapi/swagger-ui:latest
-    restart: always
+    restart: always   # Giữ Swagger luôn chạy
     ports:
       - "8080:8080"
     environment:
       - API_URL=http://localhost/swagger.json
-    networks:
-      custom_network:
 
   quickchart:
     image: ianw/quickchart
-    restart: always
-    networks:
-      custom_network:
+    restart: always   # Giữ QuickChart luôn chạy
