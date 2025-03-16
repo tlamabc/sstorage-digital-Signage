@@ -62,6 +62,8 @@ if (!empty($dbssl) && $dbssl !== 'none') {
 return [
     'paths' => [
         'migrations' => '/db_signage/migrations'
+        'seeds' => '/db_signage/seeds'  // 👈 Thêm dòng này
+
     ],
     'environments' => [
         'default_environment' => 'production',
