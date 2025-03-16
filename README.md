@@ -1,4 +1,4 @@
-[![Xibo - Digital Signage](web/theme/default/img/192x192.png)](https://xibosignage.com)
+[![SStorage - Digital Signage](web/theme/default/img/192x192.png)](https://sstorage.vn)
 
 # Ước Lượng Cấu Hình Server Cho 100 Player
 
@@ -21,11 +21,6 @@ Dựa trên kinh nghiệm thực tế và tài liệu từ **diễn đàn Xibo**
   Nhưng nếu phát video Full HD liên tục, băng thông có thể tăng rất cao.
 - **Storage**: Nếu lưu video, nên dùng **SSD** để tăng tốc độ đọc dữ liệu.
 
-See [https://xibosignage.com](https://xibosignage.com) for more information.
-
-Our first open source release 1.0.0-rc1 landed in 2009, and we're committed to keeping everything you need to run a
-digital signage network, or single screen, open source and free to use.
-
 
 ## Điều kiện tiên quyết
 
@@ -47,6 +42,10 @@ yêu cầu kéo, vui lòng Fork chúng tôi trước và tạo một nhánh mớ
 git clone https://github.com/tlamabc/sstorage-digital-Signage
 ```
 
+Tạo folder cho database
+```shell
+mkdir /db_signage/
+```
 
 ## Install dependencies
 Đi đến folder của source
@@ -69,14 +68,8 @@ bộ nhớ đệm của Composer.
 
 ### Website dependencies (webpack)
 
-Nếu bạn đã cài đặt node cục bộ ( cài services thay vì container:
-```shell
-npm install webpack -g
-npm install
-npm run build
-```
 
-Còn nếu chạy bằng Docker container:
+chạy bằng Docker container:
 
 ```shell
 docker run -it --volume $PWD:/app --volume ~/.npm:/root/.npm -w /app node:22 sh -c "npm install webpack -g; npm install; npm run build;"
@@ -93,20 +86,7 @@ Tuy nhiên, bản thân container tạo ra một số tệp, chẳng hạn như 
 Cách dễ nhất để thực hiện việc này là tạo các thư mục `cache` và `library` và `chmod 777` chúng. Rõ ràng là điều này không
 phù hợp cho sản xuất, nhưng bạn không nên sử dụng các tệp này cho sản xuất (chúng tôi có các container cho mục đích đó).
 
-### API Keys
-API yêu cầu cặp khóa RSA pub/private và khóa mã hóa phải được cung cấp. Điểm vào Docker sẽ tạo
-những khóa này trong `/library/certs`.
 
-Bạn có thể ghi đè các đường dẫn khóa được tạo và khóa mã hóa bằng cách cung cấp một giải pháp thay thế trong `settings-custom.php`.
-Ví dụ:
-
-```php
-$apiKeyPaths = [
-    'publicKeyPath' => '/var/www/cms/custom/public.key',
-    'privateKeyPath' => '/var/www/cms/custom/private.key',
-    'encryptionKey' => ''
-];
-```
 
 ### OpenOOH specification
 Xibo có thể trình bày các phân loại địa điểm OpenOOH trong biểu mẫu chỉnh sửa hiển thị. Để chức năng này hoạt động trong
@@ -132,36 +112,55 @@ U: `admin`
 P: `password`
 
 
-## Translations
-Để phân tích bản dịch:
-```shell
-docker-compose exec web sh -c "cd /var/www/cms; rm -R ./cache"
-docker-compose exec web sh -c "cd /var/www/cms; php bin/locale.php"
-```
 
-```shell
-find ./locale ./cache ./lib ./web  -iname "*.php" -print0 | xargs -0 xgettext --from-code=UTF-8 -k_e -k_x -k__ -o locale/default.pot
-```
-
-To import translations:
-
-```shell
-bzr pull lp:~dangarner/xibo/holmes-translations
-```
-
-Convert to `mo` format:
-
-```shell
-for i in *.po; do msgfmt "$i" -o $(echo $i | sed s/po/mo/); done
-```
-
-Move the resulting `mo` files into your `locale` folder.
 
 ## Swagger API Docs
 Để tạo tệp `swagger.json`, với các container dev đang chạy:
 ```shell
 docker-compose exec web sh -c "cd /var/www/cms; vendor/bin/swagger lib -o web/swagger.json"
 ```
+
+
+
+
+
+
+
+
+
+
+
+## =======================================================================================================================================================
+
+
+
+
+# Hướng dẫn Migration nếu lỗi cms.settings!!!!
+
+## 1. Truy cập vào container web
+
+
+
+```bash
+docker exec -it <ID container web> bash
+```
+
+Vào folder của web
+```
+cd /var/www/cms
+```
+
+Chạy lệnh này để migrate
+```
+php vendor/bin/phinx migrate -c /var/www/cms/phinx.php
+
+```
+## =======================================================================================================================================================
+
+## Nếu vấn để liên quan đến database, Lâm DevOps of ICSP có thể support qua zalo: 0359001647. Thanks
+
+# =======================================================================================================================================================
+
 ## Licence
 
 [![Licence](https://img.shields.io/github/license/xibosignage/xibo-cms)]()
