@@ -61,9 +61,7 @@ if (!empty($dbssl) && $dbssl !== 'none') {
 // Phinx formatted config array using the settings we've harvested from our settings.php file
 return [
     'paths' => [
-        'migrations' => '/db_signage/migrations',
-        'seeds' => '/db_signage/seeds'  // 👈 Thêm dòng này
-
+        'migrations' => '%%PHINX_CONFIG_DIR%%/db/migrations'
     ],
     'environments' => [
         'default_environment' => 'production',
