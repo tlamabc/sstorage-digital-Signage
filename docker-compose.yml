@@ -1,80 +1,46 @@
-version: "3.3"
+version: "3"
 
 services:
   db:
     image: mysql:8.0
-    restart: always
     ports:
-      - "3315:3306"
+    - "3315:3306"
     volumes:
-      - ./containers/db:/var/lib/mysql
-      - /etc/localtime:/etc/localtime:ro
-      - ./init_triggers.sh:/docker-entrypoint-initdb.d/init_triggers.sh
+    - ./containers/db:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: "root"
       MYSQL_DATABASE: "cms"
-      MYSQL_ROOT_USER: "root"
-      MYSQL_PASSWORD: "root"
-      TZ: "Asia/Ho_Chi_Minh"
-    networks:
-      - ssignage_network
 
   xmr:
     image: ghcr.io/xibosignage/xibo-xmr:develop
-    restart: always
     ports:
-      - "9505:9505"
+    - "9505:9505"
     environment:
       XMR_DEBUG: "true"
       IPV6PUBSUPPORT: "false"
-    networks:
-      - ssignage_network
 
   web:
     build:
       context: .
-      dockerfile: Dockerfile
-    restart: always
+      dockerfile: Dockerfile.dev
     volumes:
-      - ./:/var/www/cms
-      - /etc/localtime:/etc/localtime:ro
+    - ./:/var/www/cms
     ports:
-      - "81:80"
+    - "80:80"
     environment:
-      CMS_DEV_MODE: "false"
+      CMS_DEV_MODE: "true"
       MYSQL_DATABASE: "cms"
-      MYSQL_ROOT_PASSWORD: "root"
-      MYSQL_ROOT_USER: "root"
-      MYSQL_HOST: "db"
-      TZ: "Asia/Ho_Chi_Minh"
-    depends_on:
-      - db
-    networks:
-      - ssignage_network
 
   memcached:
     image: memcached:alpine
-    restart: always
     command: memcached -m 15
-    networks:
-      - ssignage_network
 
   swagger:
     image: swaggerapi/swagger-ui:latest
-    restart: always
     ports:
-      - "8080:8080"
+    - "8080:8080"
     environment:
-      - API_URL=http://localhost/swagger.json
-    networks:
-      - ssignage_network
+    - API_URL=http://localhost/swagger.json
 
   quickchart:
     image: ianw/quickchart
-    restart: always
-    networks:
-      - ssignage_network
-
-networks:
-  ssignage_network:
-    driver: bridge
