@@ -25,7 +25,11 @@ use Xibo\Middleware\FeatureAuth;
 use Xibo\Middleware\SuperAdminAuth;
 
 // Special "root" route
-$app->get('/', ['\Xibo\Controller\User', 'home'])->setName('home');
+// $app->get('/', ['\Xibo\Controller\User', 'home'])->setName('home');
+$app->get('/', function ($request, $response) {
+    return $response->withRedirect('/statusdashboard', 301);
+})->setName('home');
+
 $app->get('/welcome', ['\Xibo\Controller\User', 'welcome'])->setName('welcome.view');
 
 //
@@ -38,12 +42,13 @@ $app->group('', function(RouteCollectorProxy $group) {
         ->setName('statusdashboard.displays');
     $group->get('/statusdashboard/displayGroups', ['\Xibo\Controller\StatusDashboard', 'displayGroups'])
         ->setName('statusdashboard.displayGroups');
-});
-//->add(new FeatureAuth($app->getContainer(), ['dashboard.status']));
+})->add(new FeatureAuth($app->getContainer(), ['dashboard.status']));
 
 // Everyone has access to this dashboard.
 $app->get('/icondashboard', ['\Xibo\Controller\IconDashboard', 'displayPage'])
-    ->setName('icondashboard.view');
+    ->add(new FeatureAuth($app->getContainer(), ['dashboard.status']))
+    ->setName('statusdashboard.view');
+
 
 $app->group('', function (RouteCollectorProxy $group) {
     $group->get('/mediamanager', ['\Xibo\Controller\MediaManager', 'displayPage'])
@@ -644,7 +649,7 @@ $app->get('/fault/view', ['\Xibo\Controller\Fault','displayPage'])
 //
 // license
 //
-$app->get('/license/view', ['\Xibo\Controller\Login','about'])->setName('license.view');
+//$app->get('/license/view', ['\Xibo\Controller\Login','about'])->setName('license.view');
 
 //
 // Reporting
