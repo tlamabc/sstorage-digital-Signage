@@ -10,6 +10,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: "root"
       MYSQL_DATABASE: "cms"
+      MYSQL_ROOT_USER: "root"
 
   xmr:
     image: ghcr.io/xibosignage/xibo-xmr:develop
@@ -29,7 +30,9 @@ services:
     - "81:80"
     environment:
       CMS_DEV_MODE: "true"
+      MYSQL_ROOT_PASSWORD: "root"
       MYSQL_DATABASE: "cms"
+      MYSQL_ROOT_USER: "root"
 
   memcached:
     image: memcached:alpine
