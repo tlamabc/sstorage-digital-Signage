@@ -119,11 +119,7 @@ image Docker.
 
 
 ## Bring up the Containers
-Thêm ssl
-```sh
-docker-compose run --rm certbot certonly --webroot -w /var/www/cms -d ssignage.yourdomain.com --email you@example.com --agree-tos --no-eff-email
 
-```
 Sử dụng Docker Compose để đưa các container chạy lên.
 ```sh
 docker-compose up --build -d
