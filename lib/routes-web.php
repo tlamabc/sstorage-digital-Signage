@@ -32,6 +32,11 @@ $app->get('/welcome', ['\Xibo\Controller\User', 'welcome'])->setName('welcome.vi
 // Dashboards
 //
 $app->group('', function(RouteCollectorProxy $group) {
+
+    ->setName('icondashboard.view');
+    $group->get('/icondashboard/data', ['\Xibo\Controller\IconDashboard', 'grid'])
+        ->setName('icondashboard.search');
+
     // $group->get('/statusdashboard', ['\Xibo\Controller\StatusDashboard', 'displayPage'])
     //     ->setName('statusdashboard.view');
     // $group->get('/statusdashboard/displays', ['\Xibo\Controller\StatusDashboard', 'displays'])
