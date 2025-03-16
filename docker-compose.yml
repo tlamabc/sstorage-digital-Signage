@@ -36,6 +36,7 @@ services:
     volumes:
       - ./:/var/www/cms
       - /etc/localtime:/etc/localtime:ro
+      - ./ssl:/etc/letsencrypt  
     ports:
       - "81:80"
     environment:
@@ -43,7 +44,12 @@ services:
       MYSQL_DATABASE: "cms"
       TZ: "Asia/Ho_Chi_Minh"
 
-
+  certbot:
+      image: certbot/certbot
+      volumes:
+        - ./ssl:/etc/letsencrypt
+        - ./ssl/lib:/var/lib/letsencrypt
+      entrypoint: "/bin/sh -c 'trap exit TERM; while :; do sleep 6h & wait $${!}; certbot renew; done'"
   memcached:
     image: memcached:alpine
     restart: always   # Giữ Memcached luôn chạy
