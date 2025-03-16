@@ -25,10 +25,10 @@ use Xibo\Middleware\FeatureAuth;
 use Xibo\Middleware\SuperAdminAuth;
 
 // Special "root" route
-// $app->get('/', ['\Xibo\Controller\User', 'home'])->setName('home');
-$app->get('/', function ($request, $response) {
-    return $response->withRedirect('/statusdashboard', 301);
-})->setName('home');
+ $app->get('/', ['\Xibo\Controller\User', 'home'])->setName('home');
+// $app->get('/', function ($request, $response) {
+//     return $response->withRedirect('/statusdashboard', 301);
+// })->setName('home');
 
 $app->get('/welcome', ['\Xibo\Controller\User', 'welcome'])->setName('welcome.view');
 
