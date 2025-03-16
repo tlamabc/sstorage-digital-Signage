@@ -13,7 +13,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: "root"
       MYSQL_DATABASE: "cms"
-      MYSQL_USER: "root"
+      MYSQL_ROOT_USER: "root"
       MYSQL_PASSWORD: "root"
       TZ: "Asia/Ho_Chi_Minh"
     networks:
@@ -43,8 +43,8 @@ services:
     environment:
       CMS_DEV_MODE: "false"
       MYSQL_DATABASE: "cms"
-      MYSQL_PASSWORD: "root"
-      MYSQL_USER: "root"
+      MYSQL_ROOT_PASSWORD: "root"
+      MYSQL_ROOT_USER: "root"
       MYSQL_HOST: "db"
       TZ: "Asia/Ho_Chi_Minh"
     depends_on:
