@@ -1,4 +1,4 @@
-version: "3"
+version: "3.8"
 
 services:
   db:
@@ -13,26 +13,28 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: "root"
       MYSQL_DATABASE: "cms"
-      MYSQL_USER: "root"         # Thêm dòng này
-      MYSQL_PASSWORD: "root"    # Thêm dòng này
+      MYSQL_USER: "root"
+      MYSQL_PASSWORD: "root"
       TZ: "Asia/Ho_Chi_Minh"
-
-
+    networks:
+      - ssignage_network
 
   xmr:
     image: ghcr.io/xibosignage/xibo-xmr:develop
-    restart: always   # Giữ XMR luôn chạy
+    restart: always
     ports:
       - "9505:9505"
     environment:
       XMR_DEBUG: "true"
       IPV6PUBSUPPORT: "false"
+    networks:
+      - ssignage_network
 
   web:
     build:
       context: .
       dockerfile: Dockerfile
-    restart: always   # Giữ Web Server luôn chạy
+    restart: always
     volumes:
       - ./:/var/www/cms
       - /etc/localtime:/etc/localtime:ro
@@ -41,25 +43,38 @@ services:
     environment:
       CMS_DEV_MODE: "false"
       MYSQL_DATABASE: "cms"
-      TZ: "Asia/Ho_Chi_Minh"
       MYSQL_PASSWORD: "root"
       MYSQL_USER: "root"
       MYSQL_HOST: "db"
-
+      TZ: "Asia/Ho_Chi_Minh"
+    depends_on:
+      - db
+    networks:
+      - ssignage_network
 
   memcached:
     image: memcached:alpine
-    restart: always   # Giữ Memcached luôn chạy
+    restart: always
     command: memcached -m 15
+    networks:
+      - ssignage_network
 
   swagger:
     image: swaggerapi/swagger-ui:latest
-    restart: always   # Giữ Swagger luôn chạy
+    restart: always
     ports:
       - "8080:8080"
     environment:
       - API_URL=http://localhost/swagger.json
+    networks:
+      - ssignage_network
 
   quickchart:
     image: ianw/quickchart
-    restart: always   # Giữ QuickChart luôn chạy
+    restart: always
+    networks:
+      - ssignage_network
+
+networks:
+  ssignage_network:
+    driver: bridge
