@@ -38,7 +38,7 @@ $app->group('', function(RouteCollectorProxy $group) {
         ->setName('statusdashboard.displays');
     $group->get('/statusdashboard/displayGroups', ['\Xibo\Controller\StatusDashboard', 'displayGroups'])
         ->setName('statusdashboard.displayGroups');
-});->add(new FeatureAuth($app->getContainer(), ['dashboard.status']));
+})->add(new FeatureAuth($app->getContainer(), ['dashboard.status']));
 
 // Everyone has access to this dashboard.
 $app->get('/icondashboard', ['\Xibo\Controller\IconDashboard', 'displayPage'])
