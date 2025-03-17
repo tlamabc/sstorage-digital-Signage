@@ -17,9 +17,7 @@ global $dbname;
 global $dbssl;
 global $dbsslverify;
 
-// $dbhost = $_SERVER['MYSQL_HOST'] . ':' . $_SERVER['MYSQL_PORT'];
-$dbhost = 'db:3306';
-
+$dbhost = $_SERVER['MYSQL_HOST'] . ':' . $_SERVER['MYSQL_PORT'];
 $dbuser = $_SERVER['MYSQL_USER'];
 $dbpass = $_SERVER['MYSQL_PASSWORD'];
 $dbname = $_SERVER['MYSQL_DATABASE'];

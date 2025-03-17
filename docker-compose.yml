@@ -42,7 +42,6 @@ services:
       CMS_DEV_MODE: "false"
       MYSQL_DATABASE: "cms"
       TZ: "Asia/Ho_Chi_Minh"
-      MYSQL_HOST: "db"
 
 
   memcached:
