@@ -27,8 +27,8 @@
     {% include "theme-dashboard-message.twig" ignore missing %}
     <div class="dashboard-wrapper">
         <div class="dashboard-header">
-            <h1 class="dashboard-title">SStorage CMS Dashboard</h1>
-            <p class="dashboard-subtitle">Tăng tốc quản lý nội dung số của bạn với giao diện mới</p>
+            <h1 class="dashboard-title fade-in">Chào mừng đến với SStorage CMS</h1>
+            <p class="dashboard-subtitle fade-in">Quản lý nội dung số của bạn một cách dễ dàng và hiệu quả</p>
         </div>
         <div class="dashboard-tiles">
             {% if currentUser.featureEnabled("schedule.view") %}
@@ -36,7 +36,7 @@
                     <a href="{{ url_for("schedule.view") }}">
                         <div class="tile-content">
                             <div class="tile-icon-wrapper">
-                                <img src="{{ theme.uri("img/dashboard/scheduleview.png") }}" class="tile-icon" alt="Lập lịch" />
+                                <img src="{{ theme.uri("img/dashboard/scheduleview.png") }}" class="tile-icon scale-up" alt="Lập lịch" />
                             </div>
                             <span class="tile-title">Lập lịch</span>
                             <span class="tile-description">Quản lý lịch phát nội dung</span>
@@ -50,7 +50,7 @@
                     <a href="{{ url_for("layout.view") }}">
                         <div class="tile-content">
                             <div class="tile-icon-wrapper">
-                                <img src="{{ theme.uri("img/dashboard/presentations.png") }}" class="tile-icon" alt="Bố cục" />
+                                <img src="{{ theme.uri("img/dashboard/presentations.png") }}" class="tile-icon scale-up" alt="Bố cục" />
                             </div>
                             <span class="tile-title">Bố cục</span>
                             <span class="tile-description">Tạo và chỉnh sửa bố cục</span>
@@ -64,7 +64,7 @@
                     <a href="{{ url_for("library.view") }}">
                         <div class="tile-content">
                             <div class="tile-icon-wrapper">
-                                <img src="{{ theme.uri("img/dashboard/content.png") }}" class="tile-icon" alt="Thư viện" />
+                                <img src="{{ theme.uri("img/dashboard/content.png") }}" class="tile-icon scale-up" alt="Thư viện" />
                             </div>
                             <span class="tile-title">Thư viện</span>
                             <span class="tile-description">Lưu trữ và quản lý media</span>
@@ -78,7 +78,7 @@
                     <a href="{{ url_for("template.view") }}">
                         <div class="tile-content">
                             <div class="tile-icon-wrapper">
-                                <img src="{{ theme.uri("img/dashboard/layouts.png") }}" class="tile-icon" alt="Mẫu" />
+                                <img src="{{ theme.uri("img/dashboard/layouts.png") }}" class="tile-icon scale-up" alt="Mẫu" />
                             </div>
                             <span class="tile-title">Mẫu</span>
                             <span class="tile-description">Sử dụng mẫu để tiết kiệm thời gian</span>
@@ -92,10 +92,50 @@
                     <a href="{{ url_for("user.view") }}">
                         <div class="tile-content">
                             <div class="tile-icon-wrapper">
-                                <img src="{{ theme.uri("img/dashboard/users.png") }}" class="tile-icon" alt="Người dùng" />
+                                <img src="{{ theme.uri("img/dashboard/users.png") }}" class="tile-icon scale-up" alt="Người dùng" />
                             </div>
                             <span class="tile-title">Người dùng</span>
                             <span class="tile-description">Quản lý người dùng và quyền</span>
+                        </div>
+                    </a>
+                </div>
+            {% endif %}
+
+            {% if currentUser.isSuperUser() %}
+                <div class="tile tile-settings animate-tile" data-tooltip="Cài đặt hệ thống">
+                    <a href="{{ url_for("admin.view") }}">
+                        <div class="tile-content">
+                            <div class="tile-icon-wrapper">
+                                <img src="{{ theme.uri("img/dashboard/settings.png") }}" class="tile-icon scale-up" alt="Cài đặt" />
+                            </div>
+                            <span class="tile-title">Cài đặt</span>
+                            <span class="tile-description">Điều chỉnh cấu hình hệ thống</span>
+                        </div>
+                    </a>
+                </div>
+            {% endif %}
+
+            <div class="tile tile-about animate-tile" data-tooltip="Thông tin về hệ thống">
+                <a href="{{ url_for("license.view") }}">
+                    <div class="tile-content">
+                        <div class="tile-icon-wrapper">
+                            <img src="{{ theme.uri("img/dashboard/license.png") }}" class="tile-icon scale-up" alt="Về" />
+                        </div>
+                        <span class="tile-title">Về</span>
+                        <span class="tile-description">Thông tin về SStorage CMS</span>
+                    </div>
+                </a>
+            </div>
+
+            {% if currentUser.featureEnabled("troubleshooting.fault") %}
+                <div class="tile tile-report animate-tile" data-tooltip="Báo cáo sự cố hệ thống">
+                    <a href="{{ url_for("fault.view") }}">
+                        <div class="tile-content">
+                            <div class="tile-icon-wrapper">
+                                <img src="{{ theme.uri("img/dashboard/help.png") }}" class="tile-icon scale-up" alt="Báo lỗi" />
+                            </div>
+                            <span class="tile-title">Báo lỗi</span>
+                            <span class="tile-description">Gửi báo cáo sự cố</span>
                         </div>
                     </a>
                 </div>
@@ -115,7 +155,10 @@
         /* Dashboard Container */
         .dashboard-wrapper {
             min-height: 100vh;
-            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%); /* Gradient nền hiện đại */
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%); /* Gradient nền từ welcome */
+            background-image: url('{{ theme.rootUri() }}theme/default/img/vector-bg.png'); /* Giữ nền vector từ welcome */
+            background-size: cover;
+            background-position: center;
             padding: 60px 40px;
             display: flex;
             flex-direction: column;
@@ -147,9 +190,9 @@
         /* Tiles Container */
         .dashboard-tiles {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Tự động điều chỉnh, tối thiểu 350px */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
-            max-width: 1400px;
+            max-width: 1500px; /* Giữ max-width giống welcome */
             width: 100%;
         }
 
@@ -157,7 +200,7 @@
         .tile {
             position: relative;
             width: 100%;
-            height: 350px;
+            height: 300px;
             background: rgba(255, 255, 255, 0.1); /* Hiệu ứng kính mờ */
             border-radius: 15px;
             backdrop-filter: blur(15px);
@@ -187,6 +230,9 @@
         .tile-library { background: linear-gradient(45deg, #f1c40f, #e67e22); }
         .tile-template { background: linear-gradient(45deg, #27ae60, #2ecc71); }
         .tile-users { background: linear-gradient(45deg, #e91e63, #c0392b); }
+        .tile-settings { background: linear-gradient(45deg, #6a6a6a, #95a5a6); }
+        .tile-about { background: linear-gradient(45deg, #34495e, #7f8c8d); }
+        .tile-report { background: linear-gradient(45deg, #e74c3c, #c0392b); }
 
         /* Tile Content */
         .tile-content {
@@ -199,8 +245,8 @@
         }
 
         .tile-icon-wrapper {
-            width: 120px;
-            height: 120px;
+            width: 100px;
+            height: 100px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -211,13 +257,13 @@
         }
 
         .tile-icon {
-            width: 80px;
-            height: 80px;
+            width: 70px;
+            height: 70px;
             filter: brightness(0) invert(1); /* Chuyển icon thành màu trắng */
         }
 
         .tile-title {
-            font-size: 26px;
+            font-size: 24px;
             font-weight: 600;
             color: #ffffff;
             text-transform: uppercase;
@@ -269,15 +315,8 @@
             animation: fadeInUp 0.8s ease-in-out forwards;
         }
 
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px) scale(0.9);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0) scale(1);
-            }
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
         }
 
         @keyframes fadeIn {
@@ -286,6 +325,32 @@
             }
             to {
                 opacity: 1;
+            }
+        }
+
+        .scale-up {
+            animation: scaleUp 1.5s ease-in-out forwards;
+        }
+
+        @keyframes scaleUp {
+            from {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px) scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
             }
         }
 
