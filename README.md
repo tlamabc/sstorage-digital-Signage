@@ -81,7 +81,7 @@ Dựa trên kinh nghiệm thực tế và tài liệu từ **diễn đàn Xibo**
  
  
  
- ### OpenOOH specification
+ ### OpenOOH specification Nếu Cần
  Xibo có thể trình bày các phân loại địa điểm OpenOOH trong biểu mẫu chỉnh sửa hiển thị. Để chức năng này hoạt động trong
  phát triển, cần
  [tải xuống tệp mới nhất](https://raw.githubusercontent.com/openooh/venue-taxonomy/main/specification.json) và
@@ -104,7 +104,7 @@ Dựa trên kinh nghiệm thực tế và tài liệu từ **diễn đàn Xibo**
  U: `admin`
  P: `password`
  
- ## Swagger API Docs
+ ## Swagger API Docs Nếu Cần
  Để tạo tệp `swagger.json`, với các container dev đang chạy:
  ```shell
  docker-compose exec web sh -c "cd /var/www/cms; vendor/bin/swagger lib -o web/swagger.json"
