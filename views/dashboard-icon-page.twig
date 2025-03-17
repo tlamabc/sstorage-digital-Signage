@@ -3,34 +3,35 @@
 {% block title %}{{ "Dashboard"|trans }} | {% endblock %}
 
 {% block pageContent %}
-    <div class="dashboard-container">
-        <header class="dashboard-header">
-            <h1 class="header-title" style="font-weight: bold;">Bảng điều khiển SSIGNAGE</h1>
-            <p class="header-subtitle">Truy cập nhanh vào các tính năng chính</p>
+    <div class="dashboard-container-by-gpt">
+        <header class="dashboard-header-by-gpt">
+        <h1 class="header-title-by-gptgpt" style="font-weight: bold;">Bảng điều khiển SSIGNAGE</h1>
+
+            <p class="header-subtitle-by-gpt">Truy cập nhanh vào các tính năng chính</p>
         </header>
-        <main class="dashboard-grid">
+        <main class="dashboard-grid-by-gpt">
             {% if currentUser.featureEnabled("schedule.view") %}
-                <a href="{{ url_for("schedule.view") }}" class="dashboard-button button-schedule">Lập lịch</a>
+                <a href="{{ url_for("schedule.view") }}" class="dashboard-button-by-gpt button-schedule-by-gpt">Lập lịch</a>
             {% endif %}
             
             {% if currentUser.featureEnabled("layout.view") %}
-                <a href="{{ url_for("layout.view") }}" class="dashboard-button button-layout">Bố cục</a>
+                <a href="{{ url_for("layout.view") }}" class="dashboard-button-by-gpt button-layout-by-gpt">Bố cục</a>
             {% endif %}
             
             {% if currentUser.featureEnabled("library.view") %}
-                <a href="{{ url_for("library.view") }}" class="dashboard-button button-library">Thư viện</a>
+                <a href="{{ url_for("library.view") }}" class="dashboard-button-by-gpt button-library-by-gpt">Thư viện</a>
             {% endif %}
             
             {% if currentUser.featureEnabled("template.view") %}
-                <a href="{{ url_for("template.view") }}" class="dashboard-button button-template">Mẫu</a>
+                <a href="{{ url_for("template.view") }}" class="dashboard-button-by-gpt button-template-by-gpt">Mẫu</a>
             {% endif %}
             
             {% if currentUser.featureEnabled("users.view") and (currentUser.isGroupAdmin() or currentUser.isSuperAdmin()) %}
-                <a href="{{ url_for("user.view") }}" class="dashboard-button button-users">Người dùng</a>
+                <a href="{{ url_for("user.view") }}" class="dashboard-button-by-gpt button-users-by-gpt">Người dùng</a>
             {% endif %}
             
             {% if currentUser.featureEnabled("troubleshooting.fault") %}
-                <a href="{{ url_for("fault.view") }}" class="dashboard-button button-report">Báo lỗi</a>
+                <a href="{{ url_for("fault.view") }}" class="dashboard-button-by-gpt button-report-by-gpt">Báo lỗi</a>
             {% endif %}
         </main>
     </div>
@@ -44,7 +45,7 @@
             box-sizing: border-box;
         }
 
-        .dashboard-container {
+        .dashboard-container-by-gpt {
             min-height: 100vh;
             background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
             padding: 50px 20px;
@@ -55,22 +56,22 @@
             color: white;
         }
 
-        .dashboard-header {
+        .dashboard-header-by-gpt {
             text-align: center;
             margin-bottom: 40px;
         }
 
-        .header-title {
+        .header-title-by-gpt {
             font-size: 36px;
             font-weight: bold;
         }
 
-        .header-subtitle {
+        .header-subtitle-by-gpt {
             font-size: 18px;
             opacity: 0.8;
         }
 
-        .dashboard-grid {
+        .dashboard-grid-by-gpt {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 20px;
@@ -78,7 +79,7 @@
             max-width: 800px;
         }
 
-        .dashboard-button {
+        .dashboard-button-by-gpt {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -91,16 +92,16 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .dashboard-button:hover {
+        .dashboard-button-by-gpt:hover {
             transform: translateY(-5px);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
         }
 
-        .button-schedule { background: #3498db; }
-        .button-layout { background: #9b59b6; }
-        .button-library { background: #f1c40f; }
-        .button-template { background: #27ae60; }
-        .button-users { background: #e91e63; }
-        .button-report { background: #e74c3c; }
+        .button-schedule-by-gpt { background: #3498db; }
+        .button-layout-by-gpt { background: #9b59b6; }
+        .button-library-by-gpt { background: #f1c40f; }
+        .button-template-by-gpt { background: #27ae60; }
+        .button-users-by-gpt { background: #e91e63; }
+        .button-report-by-gpt { background: #e74c3c; }
     </style>
 {% endblock %}
