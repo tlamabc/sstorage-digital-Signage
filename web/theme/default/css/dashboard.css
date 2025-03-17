@@ -545,3 +545,61 @@ ul.sidebar .sidebar-title {
   padding: 10px;
   border: 1px solid grey;
 }
+.dashboard-container-by-gpt {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: white;
+}
+
+.dashboard-header-by-gpt {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header-title-by-gpt {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.header-subtitle-by-gpt {
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+.dashboard-grid-by-gpt {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.dashboard-button-by-gpt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-button-by-gpt:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.button-schedule-by-gpt { background: #3498db; }
+.button-layout-by-gpt { background: #9b59b6; }
+.button-library-by-gpt { background: #f1c40f; }
+.button-template-by-gpt { background: #27ae60; }
+.button-users-by-gpt { background: #e91e63; }
+.button-report-by-gpt { background: #e74c3c; }
