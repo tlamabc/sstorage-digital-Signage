@@ -1,6 +1,6 @@
 {
   "name": "bandwidth",
-  "description": "Display Statistics: Bandwidth",
+  "description": "Thống kê thiết bị trình chiếu: Băng thông",
   "class": "\\Xibo\\Report\\Bandwidth",
   "type": "Chart",
   "output_type": "chart",

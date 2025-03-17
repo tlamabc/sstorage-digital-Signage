@@ -1,6 +1,6 @@
 {
   "name": "timeconnected",
-  "description": "Time Connected",
+  "description": "Thời gian kết nối",
   "class": "\\Xibo\\Report\\TimeConnected",
   "type": "Report",
   "output_type": "table",

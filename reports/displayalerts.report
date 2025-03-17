@@ -1,6 +1,6 @@
 {
   "name": "displayalerts",
-  "description": "Display Alerts",
+  "description": "Cảnh báo thiết bị",
   "class": "\\Xibo\\Report\\DisplayAlerts",
   "type": "Report",
   "output_type": "table",

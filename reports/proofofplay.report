@@ -1,6 +1,6 @@
 {
   "name": "proofofplayReport",
-  "description": "Proof of Play",
+  "description": "Bằng chứng phát",
   "class": "\\Xibo\\Report\\ProofOfPlay",
   "type": "Report",
   "output_type": "table",

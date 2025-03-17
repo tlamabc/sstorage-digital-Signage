@@ -1,6 +1,6 @@
 {
   "name": "timedisconnectedsummary",
-  "description": "Time Connected Summary",
+  "description": "Thời gian mất kết nối",
   "class": "\\Xibo\\Report\\TimeDisconnectedSummary",
   "type": "Report",
   "output_type": "both",

@@ -1,6 +1,6 @@
 {
   "name": "distributionReport",
-  "description": "Chart: Distribution by Layout, Media or Event",
+  "description": "Chart: Phân phối theo Bố cục, Phương tiện hoặc Sự kiện",
   "class": "\\Xibo\\Report\\DistributionReport",
   "type": "Chart",
   "output_type": "both",

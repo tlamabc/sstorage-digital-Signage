@@ -1,6 +1,6 @@
 {
   "name": "apirequests",
-  "description": "API Requests History",
+  "description": "Lịch sử API Requests",
   "class": "\\Xibo\\Report\\ApiRequests",
   "type": "Report",
   "output_type": "table",

@@ -1,6 +1,6 @@
 {
   "name": "sessionhistory",
-  "description": "Session History",
+  "description": "Lịch sử ra vào hệ thống",
   "class": "\\Xibo\\Report\\SessionHistory",
   "type": "Report",
   "output_type": "table",

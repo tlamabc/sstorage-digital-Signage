@@ -1,6 +1,6 @@
 {
   "name": "libraryusage",
-  "description": "Library Usage",
+  "description": "Thư viện đã sử dụng",
   "class": "\\Xibo\\Report\\LibraryUsage",
   "type": "Report",
   "output_type": "both",

@@ -1,6 +1,6 @@
 {
   "name": "summaryReport",
-  "description": "Chart: Summary by Layout, Media or Event",
+  "description": "Chart: Tóm tắt theo Bố cục, Phương tiện hoặc Sự kiện",
   "class": "\\Xibo\\Report\\SummaryReport",
   "type": "Chart",
   "output_type": "both",
