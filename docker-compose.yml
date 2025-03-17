@@ -36,9 +36,11 @@ services:
       - "81:80"
     environment:
       CMS_DEV_MODE: "false"
+      MYSQL_ROOT_PASSWORD: "root"
       MYSQL_DATABASE: "cms"
+      MYSQL_ROOT_USER: "root"      
       TZ: "Asia/Ho_Chi_Minh"
-
+      MYSQL_HOST: "db" 
 
   memcached:
     image: memcached:alpine
