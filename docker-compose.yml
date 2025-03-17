@@ -40,7 +40,6 @@ services:
       MYSQL_DATABASE: "cms"
       MYSQL_ROOT_USER: "root"      
       TZ: "Asia/Ho_Chi_Minh"
-      MYSQL_HOST: "db" 
 
   memcached:
     image: memcached:alpine
