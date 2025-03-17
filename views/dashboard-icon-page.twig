@@ -1,6 +1,9 @@
 {% extends "authed.twig" %}
 
 {% block title %}{{ "Dashboard"|trans }} | {% endblock %}
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for("static", filename="icondashboard.css") }}">
+{% endblock %}
 
 {% block pageContent %}
     <div class="dashboard-container-by-gpt">

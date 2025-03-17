@@ -22,6 +22,9 @@
 #}
 {% extends "authed.twig" %}
 {% import "inline.twig" as inline %}
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for("static", filename="dashboard1.css") }}">
+{% endblock %}
 
 {% block pageContent %}
     {% include "theme-dashboard-message.twig" ignore missing %}
