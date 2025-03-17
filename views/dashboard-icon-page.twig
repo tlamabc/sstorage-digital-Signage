@@ -25,100 +25,155 @@
 
 {% block pageContent %}
     {% include "theme-dashboard-message.twig" ignore missing %}
-    <div id="dashbuttons" class="metro-dashboard">
-        {% if currentUser.featureEnabled("schedule.view") %}
-            <div class="tile tile-square tile-cyan scale-up">
-                <a href="{{ url_for("schedule.view") }}">
-                    <img src="{{ theme.uri("img/dashboard/scheduleview.png") }}" class="tile-icon" alt="Lập lịch" />
-                    <span class="tile-text">Lập lịch</span>
-                </a>
-            </div>
-        {% endif %}
-
-        {% if currentUser.featureEnabled("layout.view") %}
-            <div class="tile tile-square tile-purple scale-up">
-                <a href="{{ url_for("layout.view") }}">
-                    <img src="{{ theme.uri("img/dashboard/presentations.png") }}" class="tile-icon" alt="Bố cục" />
-                    <span class="tile-text">Bố cục</span>
-                </a>
-            </div>
-        {% endif %}
-
-        {% if currentUser.featureEnabled("library.view") %}
-            <div class="tile tile-square tile-orange scale-up">
-                <a href="{{ url_for("library.view") }}">
-                    <img src="{{ theme.uri("img/dashboard/content.png") }}" class="tile-icon" alt="Thư viện" />
-                    <span class="tile-text">Thư viện</span>
-                </a>
-            </div>
-        {% endif %}
-
-        {% if currentUser.featureEnabled("template.view") %}
-            <div class="tile tile-square tile-green scale-up">
-                <a href="{{ url_for("template.view") }}">
-                    <img src="{{ theme.uri("img/dashboard/layouts.png") }}" class="tile-icon" alt="Mẫu" />
-                    <span class="tile-text">Mẫu</span>
-                </a>
-            </div>
-        {% endif %}
-
-        {% if currentUser.featureEnabled("users.view") and (currentUser.isGroupAdmin() or currentUser.isSuperAdmin()) %}
-            <div class="tile tile-square tile-magenta scale-up">
-                <a href="{{ url_for("user.view") }}">
-                    <img src="{{ theme.uri("img/dashboard/users.png") }}" class="tile-icon" alt="Người dùng" />
-                    <span class="tile-text">Người dùng</span>
-                </a>
-            </div>
-        {% endif %}
-
-        <div class="tile tile-square tile-grey scale-up">
-            <a href="{{ url_for("license.view") }}">
-                <img src="{{ theme.uri("img/dashboard/license.png") }}" class="tile-icon" alt="Về" />
-                <span class="tile-text">Về</span>
-            </a>
+    <div class="modern-dashboard">
+        <div class="dashboard-header">
+            <h1 class="dashboard-title">Chào mừng đến với SStorage CMS</h1>
+            <p class="dashboard-subtitle">Quản lý nội dung số của bạn một cách dễ dàng và hiệu quả</p>
         </div>
+        <div class="dashboard-tiles">
+            {% if currentUser.featureEnabled("schedule.view") %}
+                <div class="tile tile-schedule animate-tile" data-tooltip="Lên lịch phát nội dung">
+                    <a href="{{ url_for("schedule.view") }}">
+                        <div class="tile-icon-wrapper">
+                            <img src="{{ theme.uri("img/dashboard/scheduleview.png") }}" class="tile-icon" alt="Lập lịch" />
+                        </div>
+                        <span class="tile-title">Lập lịch</span>
+                    </a>
+                </div>
+            {% endif %}
 
-        {% if currentUser.featureEnabled("troubleshooting.fault") %}
-            <div class="tile tile-square tile-red scale-up">
-                <a href="{{ url_for("fault.view") }}">
-                    <img src="{{ theme.uri("img/dashboard/help.png") }}" class="tile-icon" alt="Báo lỗi" />
-                    <span class="tile-text">Báo lỗi</span>
+            {% if currentUser.featureEnabled("layout.view") %}
+                <div class="tile tile-layout animate-tile" data-tooltip="Thiết kế bố cục hiển thị">
+                    <a href="{{ url_for("layout.view") }}">
+                        <div class="tile-icon-wrapper">
+                            <img src="{{ theme.uri("img/dashboard/presentations.png") }}" class="tile-icon" alt="Bố cục" />
+                        </div>
+                        <span class="tile-title">Bố cục</span>
+                    </a>
+                </div>
+            {% endif %}
+
+            {% if currentUser.featureEnabled("library.view") %}
+                <div class="tile tile-library animate-tile" data-tooltip="Quản lý thư viện media">
+                    <a href="{{ url_for("library.view") }}">
+                        <div class="tile-icon-wrapper">
+                            <img src="{{ theme.uri("img/dashboard/content.png") }}" class="tile-icon" alt="Thư viện" />
+                        </div>
+                        <span class="tile-title">Thư viện</span>
+                    </a>
+                </div>
+            {% endif %}
+
+            {% if currentUser.featureEnabled("template.view") %}
+                <div class="tile tile-template animate-tile" data-tooltip="Tạo mẫu nội dung nhanh">
+                    <a href="{{ url_for("template.view") }}">
+                        <div class="tile-icon-wrapper">
+                            <img src="{{ theme.uri("img/dashboard/layouts.png") }}" class="tile-icon" alt="Mẫu" />
+                        </div>
+                        <span class="tile-title">Mẫu</span>
+                    </a>
+                </div>
+            {% endif %}
+
+            {% if currentUser.featureEnabled("users.view") and (currentUser.isGroupAdmin() or currentUser.isSuperAdmin()) %}
+                <div class="tile tile-users animate-tile" data-tooltip="Quản lý tài khoản người dùng">
+                    <a href="{{ url_for("user.view") }}">
+                        <div class="tile-icon-wrapper">
+                            <img src="{{ theme.uri("img/dashboard/users.png") }}" class="tile-icon" alt="Người dùng" />
+                        </div>
+                        <span class="tile-title">Người dùng</span>
+                    </a>
+                </div>
+            {% endif %}
+
+            <div class="tile tile-about animate-tile" data-tooltip="Thông tin về hệ thống">
+                <a href="{{ url_for("license.view") }}">
+                    <div class="tile-icon-wrapper">
+                        <img src="{{ theme.uri("img/dashboard/license.png") }}" class="tile-icon" alt="Về" />
+                    </div>
+                    <span class="tile-title">Về</span>
                 </a>
             </div>
-        {% endif %}
+
+            {% if currentUser.featureEnabled("troubleshooting.fault") %}
+                <div class="tile tile-report animate-tile" data-tooltip="Báo cáo sự cố hệ thống">
+                    <a href="{{ url_for("fault.view") }}">
+                        <div class="tile-icon-wrapper">
+                            <img src="{{ theme.uri("img/dashboard/help.png") }}" class="tile-icon" alt="Báo lỗi" />
+                        </div>
+                        <span class="tile-title">Báo lỗi</span>
+                    </a>
+                </div>
+            {% endif %}
+        </div>
     </div>
 {% endblock %}
 
 {% block styles %}
     <style>
-        /* Reset mặc định để tránh xung đột với CSS cũ */
+        /* Reset mặc định */
         #dashbuttons {
             margin: 0;
             padding: 0;
         }
 
-        /* Metro Dashboard Styles - Desktop */
-        .metro-dashboard {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr); /* 4 cột cho desktop */
-            gap: 20px;
+        /* Dashboard Container */
+        .modern-dashboard {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
             padding: 40px;
-            max-width: 1200px;
-            margin: 0 auto;
-            background-color: #f5f5f5; /* Nền nhẹ */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
+        /* Header */
+        .dashboard-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .dashboard-title {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            font-size: 48px;
+            font-weight: 700;
+            color: #ffffff;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .dashboard-subtitle {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            font-size: 20px;
+            color: #d1d8e0;
+            margin-top: 10px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Tiles Container */
+        .dashboard-tiles {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        /* Tile Styles */
         .tile {
             position: relative;
+            width: 250px;
+            height: 250px;
+            background: rgba(255, 255, 255, 0.1); /* Glassmorphism effect */
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            text-align: center;
-            border-radius: 8px;
-            overflow: hidden;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
         }
 
         .tile a {
@@ -126,65 +181,105 @@
             color: white;
             width: 100%;
             height: 100%;
-            padding: 20px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
         }
 
-        .tile:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
+        /* Gradient Background for Tiles */
+        .tile-schedule { background: linear-gradient(45deg, #1BA1E2, #2ECC71); }
+        .tile-layout { background: linear-gradient(45deg, #AA00FF, #E91E63); }
+        .tile-library { background: linear-gradient(45deg, #F09609, #FF5722); }
+        .tile-template { background: linear-gradient(45deg, #00CC00, #4CAF50); }
+        .tile-users { background: linear-gradient(45deg, #D80073, #FF4081); }
+        .tile-about { background: linear-gradient(45deg, #6A6A6A, #B0BEC5); }
+        .tile-report { background: linear-gradient(45deg, #E51400, #FF9800); }
 
-        /* Tile Size - Vuông đồng nhất */
-        .tile-square {
-            width: 250px;
-            height: 250px;
-        }
-
-        /* Tile Colors - Mỗi ô một màu */
-        .tile-cyan { background-color: #1BA1E2; } /* Lập lịch */
-        .tile-purple { background-color: #AA00FF; } /* Bố cục */
-        .tile-orange { background-color: #F09609; } /* Thư viện */
-        .tile-green { background-color: #00CC00; } /* Mẫu */
-        .tile-magenta { background-color: #D80073; } /* Người dùng */
-        .tile-grey { background-color: #6A6A6A; } /* Về */
-        .tile-red { background-color: #E51400; } /* Báo lỗi */
-
-        /* Tile Content */
-        .tile-icon {
+        /* Tile Icon */
+        .tile-icon-wrapper {
             width: 100px;
             height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             margin-bottom: 15px;
         }
 
-        .tile-text {
+        .tile-icon {
+            width: 80px;
+            height: 80px;
+            transition: transform 0.3s ease;
+        }
+
+        .tile:hover .tile-icon {
+            transform: rotate(10deg) scale(1.1);
+        }
+
+        /* Tile Title */
+        .tile-title {
             font-family: 'Segoe UI', Arial, sans-serif;
-            font-size: 20px;
+            font-size: 22px;
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
 
-        /* Animation */
-        .scale-up {
-            animation: scaleUp 0.8s ease-in-out forwards;
+        /* Hover Effect */
+        .tile:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
         }
 
-        @keyframes scaleUp {
+        /* Tooltip */
+        .tile::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 14px;
+            white-space: nowrap;
+            opacity: 0;
+            transition: opacity 0.3s ease, bottom 0.3s ease;
+            pointer-events: none;
+        }
+
+        .tile:hover::after {
+            opacity: 1;
+            bottom: -30px;
+        }
+
+        /* Animation */
+        .animate-tile {
+            animation: fadeInUp 0.8s ease-in-out forwards;
+        }
+
+        @keyframes fadeInUp {
             from {
-                transform: scale(0.7);
+                opacity: 0;
+                transform: translateY(20px) scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
                 opacity: 0;
             }
             to {
-                transform: scale(1);
                 opacity: 1;
             }
         }
 
-        /* Ẩn CSS cũ nếu có */
+        /* Ẩn CSS cũ */
         .dashicons, .dash_button, .dash_text {
             display: none;
         }
