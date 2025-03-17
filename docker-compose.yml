@@ -29,7 +29,7 @@ services:
   web:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.dev
     restart: always   # Giữ Web Server luôn chạy
     volumes:
       - ./:/var/www/cms
