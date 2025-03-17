@@ -32,6 +32,8 @@ services:
     volumes:
       - ./:/var/www/cms
       - /etc/localtime:/etc/localtime:ro
+    depends_on:
+      - db   
     ports:
       - "81:80"
     environment:
