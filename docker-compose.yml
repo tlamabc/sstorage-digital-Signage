@@ -3,23 +3,28 @@ version: "3"
 services:
   db:
     image: mysql:8.0
-    restart: always   # Giữ MySQL luôn chạy
+    restart: always
     ports:
       - "3315:3306"
     volumes:
-      - /db_signage/:/var/lib/mysql
+      - db_signage:/var/lib/mysql
       - /etc/localtime:/etc/localtime:ro
-      # - ./init_db:/docker-entrypoint-initdb.d
-      # - ./init_triggers.sh:/docker-entrypoint-initdb.d/init_triggers.sh
     environment:
-      MYSQL_ROOT_PASSWORD: "root"
-      MYSQL_DATABASE: "cms"
-      MYSQL_ROOT_USER: "root"
-
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-root}
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-cms}
+      MYSQL_USER: ${MYSQL_USER:-cms}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:-cms_pass}
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      retries: 5
+      timeout: 5s
 
   xmr:
     image: ghcr.io/xibosignage/xibo-xmr:develop
-    restart: always   # Giữ XMR luôn chạy
+    restart: always
+    depends_on:
+      - db
     ports:
       - "9505:9505"
     environment:
@@ -30,31 +35,40 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    restart: always   # Giữ Web Server luôn chạy
+    restart: always
+    depends_on:
+      db:
+        condition: service_healthy
+      xmr:
+        condition: service_started
     volumes:
       - ./:/var/www/cms
       - /etc/localtime:/etc/localtime:ro
     ports:
       - "81:80"
     environment:
-      CMS_DEV_MODE: "false"
-      MYSQL_DATABASE: "cms"
+      CMS_DEV_MODE: ${CMS_DEV_MODE:-false}
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-cms}
+      MYSQL_USER: ${MYSQL_USER:-cms}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:-cms_pass}
       TZ: "Asia/Ho_Chi_Minh"
-
 
   memcached:
     image: memcached:alpine
-    restart: always   # Giữ Memcached luôn chạy
+    restart: always
     command: memcached -m 15
 
   swagger:
     image: swaggerapi/swagger-ui:latest
-    restart: always   # Giữ Swagger luôn chạy
+    restart: always
     ports:
       - "8080:8080"
     environment:
-      - API_URL=http://localhost/swagger.json
+      API_URL: "http://localhost/swagger.json"
 
   quickchart:
     image: ianw/quickchart
-    restart: always   # Giữ QuickChart luôn chạy
+    restart: always
+
+volumes:
+  db_signage:
