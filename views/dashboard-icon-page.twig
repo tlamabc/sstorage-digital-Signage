@@ -29,8 +29,8 @@
         {% if currentUser.featureEnabled("schedule.view") %}
             <div class="tile tile-square tile-cyan scale-up">
                 <a href="{{ url_for("schedule.view") }}">
-                    <img src="{{ theme.uri("img/dashboard/scheduleview.png") }}" class="tile-icon" alt="Schedule Icon" />
-                    <span class="tile-text">{% trans "Schedule" %}</span>
+                    <img src="{{ theme.uri("img/dashboard/scheduleview.png") }}" class="tile-icon" alt="Lập lịch" />
+                    <span class="tile-text">Lập lịch</span>
                 </a>
             </div>
         {% endif %}
@@ -38,8 +38,8 @@
         {% if currentUser.featureEnabled("layout.view") %}
             <div class="tile tile-square tile-purple scale-up">
                 <a href="{{ url_for("layout.view") }}">
-                    <img src="{{ theme.uri("img/dashboard/presentations.png") }}" class="tile-icon" alt="Layouts Icon" />
-                    <span class="tile-text">{% trans "Layouts" %}</span>
+                    <img src="{{ theme.uri("img/dashboard/presentations.png") }}" class="tile-icon" alt="Bố cục" />
+                    <span class="tile-text">Bố cục</span>
                 </a>
             </div>
         {% endif %}
@@ -47,8 +47,8 @@
         {% if currentUser.featureEnabled("library.view") %}
             <div class="tile tile-square tile-orange scale-up">
                 <a href="{{ url_for("library.view") }}">
-                    <img src="{{ theme.uri("img/dashboard/content.png") }}" class="tile-icon" alt="Library Icon" />
-                    <span class="tile-text">{% trans "Library" %}</span>
+                    <img src="{{ theme.uri("img/dashboard/content.png") }}" class="tile-icon" alt="Thư viện" />
+                    <span class="tile-text">Thư viện</span>
                 </a>
             </div>
         {% endif %}
@@ -56,8 +56,8 @@
         {% if currentUser.featureEnabled("template.view") %}
             <div class="tile tile-square tile-green scale-up">
                 <a href="{{ url_for("template.view") }}">
-                    <img src="{{ theme.uri("img/dashboard/layouts.png") }}" class="tile-icon" alt="Templates Icon" />
-                    <span class="tile-text">{% trans "Templates" %}</span>
+                    <img src="{{ theme.uri("img/dashboard/layouts.png") }}" class="tile-icon" alt="Mẫu" />
+                    <span class="tile-text">Mẫu</span>
                 </a>
             </div>
         {% endif %}
@@ -65,33 +65,24 @@
         {% if currentUser.featureEnabled("users.view") and (currentUser.isGroupAdmin() or currentUser.isSuperAdmin()) %}
             <div class="tile tile-square tile-magenta scale-up">
                 <a href="{{ url_for("user.view") }}">
-                    <img src="{{ theme.uri("img/dashboard/users.png") }}" class="tile-icon" alt="Users Icon" />
-                    <span class="tile-text">{% trans "Users" %}</span>
-                </a>
-            </div>
-        {% endif %}
-
-        {% if currentUser.isSuperUser() %}
-            <div class="tile tile-square tile-blue scale-up">
-                <a href="{{ url_for("admin.view") }}">
-                    <img src="{{ theme.uri("img/dashboard/settings.png") }}" class="tile-icon" alt="Settings Icon" />
-                    <span class="tile-text">{% trans "Settings" %}</span>
+                    <img src="{{ theme.uri("img/dashboard/users.png") }}" class="tile-icon" alt="Người dùng" />
+                    <span class="tile-text">Người dùng</span>
                 </a>
             </div>
         {% endif %}
 
         <div class="tile tile-square tile-grey scale-up">
             <a href="{{ url_for("license.view") }}">
-                <img src="{{ theme.uri("img/dashboard/license.png") }}" class="tile-icon" alt="About Icon" />
-                <span class="tile-text">{% trans "About" %}</span>
+                <img src="{{ theme.uri("img/dashboard/license.png") }}" class="tile-icon" alt="Về" />
+                <span class="tile-text">Về</span>
             </a>
         </div>
 
         {% if currentUser.featureEnabled("troubleshooting.fault") %}
             <div class="tile tile-square tile-red scale-up">
                 <a href="{{ url_for("fault.view") }}">
-                    <img src="{{ theme.uri("img/dashboard/help.png") }}" class="tile-icon" alt="Report Fault Icon" />
-                    <span class="tile-text">{% trans "Report Fault" %}</span>
+                    <img src="{{ theme.uri("img/dashboard/help.png") }}" class="tile-icon" alt="Báo lỗi" />
+                    <span class="tile-text">Báo lỗi</span>
                 </a>
             </div>
         {% endif %}
@@ -100,7 +91,7 @@
 
 {% block styles %}
     <style>
-        /* Reset mặc định để đảm bảo không bị ảnh hưởng bởi CSS gốc */
+        /* Reset mặc định để tránh xung đột với CSS cũ */
         #dashbuttons {
             margin: 0;
             padding: 0;
@@ -114,7 +105,7 @@
             padding: 40px;
             max-width: 1200px;
             margin: 0 auto;
-            background-color: #f5f5f5; /* Nền nhẹ để nổi bật các ô */
+            background-color: #f5f5f5; /* Nền nhẹ */
         }
 
         .tile {
@@ -124,7 +115,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            border-radius: 10px;
+            border-radius: 8px;
             overflow: hidden;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -149,30 +140,29 @@
 
         /* Tile Size - Vuông đồng nhất */
         .tile-square {
-            width: 250px; /* Kích thước lớn hơn cho desktop */
+            width: 250px;
             height: 250px;
         }
 
         /* Tile Colors - Mỗi ô một màu */
-        .tile-cyan { background-color: #1BA1E2; } /* Schedule */
-        .tile-purple { background-color: #AA00FF; } /* Layouts */
-        .tile-orange { background-color: #F09609; } /* Library */
-        .tile-green { background-color: #00CC00; } /* Templates */
-        .tile-magenta { background-color: #D80073; } /* Users */
-        .tile-blue { background-color: #0050EF; } /* Settings */
-        .tile-grey { background-color: #6A6A6A; } /* About */
-        .tile-red { background-color: #E51400; } /* Report Fault */
+        .tile-cyan { background-color: #1BA1E2; } /* Lập lịch */
+        .tile-purple { background-color: #AA00FF; } /* Bố cục */
+        .tile-orange { background-color: #F09609; } /* Thư viện */
+        .tile-green { background-color: #00CC00; } /* Mẫu */
+        .tile-magenta { background-color: #D80073; } /* Người dùng */
+        .tile-grey { background-color: #6A6A6A; } /* Về */
+        .tile-red { background-color: #E51400; } /* Báo lỗi */
 
         /* Tile Content */
         .tile-icon {
-            width: 100px; /* Icon lớn hơn cho desktop */
+            width: 100px;
             height: 100px;
             margin-bottom: 15px;
         }
 
         .tile-text {
             font-family: 'Segoe UI', Arial, sans-serif;
-            font-size: 20px; /* Chữ lớn hơn cho desktop */
+            font-size: 20px;
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -194,9 +184,9 @@
             }
         }
 
-        /* Đảm bảo không bị ảnh hưởng bởi CSS mặc định của theme */
+        /* Ẩn CSS cũ nếu có */
         .dashicons, .dash_button, .dash_text {
-            display: none; /* Ẩn các class cũ nếu có xung đột */
+            display: none;
         }
     </style>
 {% endblock %}
