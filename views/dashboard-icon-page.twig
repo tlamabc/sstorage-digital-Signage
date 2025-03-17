@@ -28,7 +28,7 @@
     <div class="modern-dashboard">
         <div class="dashboard-header">
             <h1 class="dashboard-title">Chào mừng đến với SStorage CMS</h1>
-            <p class="dashboard-subtitle">Quản lý nội dung số của bạn một cách dễ dàng và hiệu quả</p>
+            <p class="dashboard-subtitle">Quản lý nội dung số của bạn một cách hiệu quả</p>
         </div>
         <div class="dashboard-tiles">
             {% if currentUser.featureEnabled("schedule.view") %}
@@ -85,26 +85,6 @@
                     </a>
                 </div>
             {% endif %}
-
-            <div class="tile tile-about animate-tile" data-tooltip="Thông tin về hệ thống">
-                <a href="{{ url_for("license.view") }}">
-                    <div class="tile-icon-wrapper">
-                        <img src="{{ theme.uri("img/dashboard/license.png") }}" class="tile-icon" alt="Về" />
-                    </div>
-                    <span class="tile-title">Về</span>
-                </a>
-            </div>
-
-            {% if currentUser.featureEnabled("troubleshooting.fault") %}
-                <div class="tile tile-report animate-tile" data-tooltip="Báo cáo sự cố hệ thống">
-                    <a href="{{ url_for("fault.view") }}">
-                        <div class="tile-icon-wrapper">
-                            <img src="{{ theme.uri("img/dashboard/help.png") }}" class="tile-icon" alt="Báo lỗi" />
-                        </div>
-                        <span class="tile-title">Báo lỗi</span>
-                    </a>
-                </div>
-            {% endif %}
         </div>
     </div>
 {% endblock %}
@@ -120,8 +100,8 @@
         /* Dashboard Container */
         .modern-dashboard {
             min-height: 100vh;
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            padding: 40px;
+            background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%); /* Gradient nền nhẹ nhàng */
+            padding: 60px 40px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -130,22 +110,22 @@
         /* Header */
         .dashboard-header {
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 60px;
+            color: #2c3e50;
         }
 
         .dashboard-title {
             font-family: 'Segoe UI', Arial, sans-serif;
             font-size: 48px;
             font-weight: 700;
-            color: #ffffff;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
             animation: fadeIn 1s ease-in-out;
         }
 
         .dashboard-subtitle {
             font-family: 'Segoe UI', Arial, sans-serif;
             font-size: 20px;
-            color: #d1d8e0;
+            color: #7f8c8d;
             margin-top: 10px;
             animation: fadeIn 1.5s ease-in-out;
         }
@@ -153,32 +133,33 @@
         /* Tiles Container */
         .dashboard-tiles {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 30px;
-            max-width: 1200px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Tự động điều chỉnh, tối thiểu 300px */
+            gap: 40px;
+            max-width: 1400px;
             width: 100%;
         }
 
         /* Tile Styles */
         .tile {
             position: relative;
-            width: 250px;
-            height: 250px;
-            background: rgba(255, 255, 255, 0.1); /* Glassmorphism effect */
-            border-radius: 15px;
+            width: 100%;
+            height: 300px;
+            background: rgba(255, 255, 255, 0.2); /* Hiệu ứng kính mờ */
+            border-radius: 20px;
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             overflow: hidden;
+            cursor: pointer;
         }
 
         .tile a {
             text-decoration: none;
-            color: white;
+            color: #2c3e50;
             width: 100%;
             height: 100%;
             display: flex;
@@ -188,47 +169,50 @@
         }
 
         /* Gradient Background for Tiles */
-        .tile-schedule { background: linear-gradient(45deg, #1BA1E2, #2ECC71); }
-        .tile-layout { background: linear-gradient(45deg, #AA00FF, #E91E63); }
-        .tile-library { background: linear-gradient(45deg, #F09609, #FF5722); }
-        .tile-template { background: linear-gradient(45deg, #00CC00, #4CAF50); }
-        .tile-users { background: linear-gradient(45deg, #D80073, #FF4081); }
-        .tile-about { background: linear-gradient(45deg, #6A6A6A, #B0BEC5); }
-        .tile-report { background: linear-gradient(45deg, #E51400, #FF9800); }
+        .tile-schedule { background: linear-gradient(45deg, #3498db, #8e44ad); }
+        .tile-layout { background: linear-gradient(45deg, #9b59b6, #e74c3c); }
+        .tile-library { background: linear-gradient(45deg, #f1c40f, #e67e22); }
+        .tile-template { background: linear-gradient(45deg, #27ae60, #2ecc71); }
+        .tile-users { background: linear-gradient(45deg, #e91e63, #9c27b0); }
 
         /* Tile Icon */
         .tile-icon-wrapper {
-            width: 100px;
-            height: 100px;
+            width: 120px;
+            height: 120px;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 15px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
         }
 
         .tile-icon {
             width: 80px;
             height: 80px;
-            transition: transform 0.3s ease;
+            filter: brightness(0) invert(1); /* Chuyển icon thành màu trắng */
         }
 
-        .tile:hover .tile-icon {
-            transform: rotate(10deg) scale(1.1);
+        .tile:hover .tile-icon-wrapper {
+            transform: scale(1.1);
         }
 
         /* Tile Title */
         .tile-title {
             font-family: 'Segoe UI', Arial, sans-serif;
-            font-size: 22px;
+            font-size: 24px;
             font-weight: 600;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 1.5px;
+            color: #fff;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
         }
 
         /* Hover Effect */
         .tile:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
         }
 
         /* Tooltip */
@@ -238,9 +222,9 @@
             bottom: -40px;
             left: 50%;
             transform: translateX(-50%);
-            background: rgba(0, 0, 0, 0.8);
+            background: rgba(0, 0, 0, 0.7);
             color: white;
-            padding: 8px 15px;
+            padding: 10px 20px;
             border-radius: 5px;
             font-size: 14px;
             white-space: nowrap;
