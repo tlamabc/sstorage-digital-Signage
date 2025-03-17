@@ -30,21 +30,21 @@
             <div class="welcome-header">
                 <div class="header-text-content">
                     {% set productName = theme.getThemeConfig('theme_title') %}
-                    <h2><strong>CHÀO MỪNG BẠN ĐẾN VỚI CMS SSIGNAGE</strong></h2> 
-                    <p>Hệ thống CMS cho phép bạn tạo, quản lý và cập nhật nội dung. Bạn có thể tải lên hình ảnh, video, thiết kế bố cục, lên lịch phát nội dung theo thời gian và vị trí, cũng như kiểm soát toàn bộ mạng lưới hiển thị.</p>
-                    <div class="d-flex" style="column-gap: 8px;">
+                    <h2 class="fade-in"><strong>CHÀO MỪNG BẠN ĐẾN VỚI CMS SSIGNAGE</strong></h2> 
+                    <p class="fade-in">Hệ thống CMS cho phép bạn tạo, quản lý và cập nhật nội dung. Bạn có thể tải lên hình ảnh, video, thiết kế bố cục, lên lịch phát nội dung theo thời gian và vị trí, cũng như kiểm soát toàn bộ mạng lưới hiển thị.</p>
+                    <div class="d-flex fade-in" style="column-gap: 8px;">
                         <a href="https://drive.sstorage.vn/s/y45GskJGEd5aAcA/download/SSignage%20Player.apk" type="button" class="btn-rounded btn-orange">Download Player APK</a>
                         <a href="https://drive.sstorage.vn/s/jttpWJBBkSbp6kr/download/T%C3%80I%20LI%E1%BB%86U%20HDSD%20SSIGNAGE%20FINAL%20%28v1%29.docx" type="button" class="btn-rounded btn-outlined">Training</a>
                     </div>
                 </div>
-                <div class="header-image-box">
+                <div class="header-image-box fade-in">
                     <img class="onboarding-welcome-image" src="{{ theme.rootUri() }}theme/default/img/welcomepage.jpg" alt="Welcome Image">
                 </div>
             </div>
-            <div class="onboarding-cards-container">
+            <div class="onboarding-cards-container fade-in">
                 <img class="line-curve" src="{{ theme.rootUri() }}theme/default/img/line-curve-vector.svg" alt="Welcome Image">
             </div>
-            <div class="d-flex flex-column service-card-container" style="row-gap: 40px; margin-top: 80px;">
+            <div class="d-flex flex-column service-card-container fade-in" style="row-gap: 40px; margin-top: 80px;">
                 {% if currentUser.featureEnabled("displays.view") %}
                     <div class="displays-enabled"></div>
                 {% endif %}
@@ -55,10 +55,10 @@
                     <div class="schedule-enabled"></div>
                 {% endif %}
             </div>
-            <div class="others-card-container">
+            <div class="others-card-container fade-in">
             </div>
         </div>
-        <a class="scroll-up" href="#top">
+        <a class="scroll-up fade-in" href="#top">
             <img style="height:30px; width: 30px;" src="{{ theme.rootUri() }}theme/default/img/onboarding/back-to-top-icon.svg" alt="Welcome Image">
         </a>
     </div>
@@ -187,10 +187,25 @@
             iconName: "help"
         });
 
-
-
     </script>
 
     {# Add page source code bundle ( JS and CSS ) #}
     <script src="{{ theme.rootUri() }}dist/pages/welcome-page.bundle.min.js?v={{ version }}&rev={{revision}}" nonce="{{ cspNonce }}"></script>
+{% endblock %}
+
+{% block styles %}
+    <style>
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
 {% endblock %}
