@@ -27,7 +27,7 @@
     {% include "theme-dashboard-message.twig" ignore missing %}
     <div id="dashbuttons" class="metro-dashboard">
         {% if currentUser.featureEnabled("schedule.view") %}
-            <div class="tile tile-large tile-cyan scale-up">
+            <div class="tile tile-square tile-cyan scale-up">
                 <a href="{{ url_for("schedule.view") }}">
                     <img src="{{ theme.uri("img/dashboard/scheduleview.png") }}" class="tile-icon" alt="Schedule Icon" />
                     <span class="tile-text">{% trans "Schedule" %}</span>
@@ -36,7 +36,7 @@
         {% endif %}
 
         {% if currentUser.featureEnabled("layout.view") %}
-            <div class="tile tile-medium tile-purple scale-up">
+            <div class="tile tile-square tile-purple scale-up">
                 <a href="{{ url_for("layout.view") }}">
                     <img src="{{ theme.uri("img/dashboard/presentations.png") }}" class="tile-icon" alt="Layouts Icon" />
                     <span class="tile-text">{% trans "Layouts" %}</span>
@@ -45,7 +45,7 @@
         {% endif %}
 
         {% if currentUser.featureEnabled("library.view") %}
-            <div class="tile tile-medium tile-orange scale-up">
+            <div class="tile tile-square tile-orange scale-up">
                 <a href="{{ url_for("library.view") }}">
                     <img src="{{ theme.uri("img/dashboard/content.png") }}" class="tile-icon" alt="Library Icon" />
                     <span class="tile-text">{% trans "Library" %}</span>
@@ -54,7 +54,7 @@
         {% endif %}
 
         {% if currentUser.featureEnabled("template.view") %}
-            <div class="tile tile-small tile-green scale-up">
+            <div class="tile tile-square tile-green scale-up">
                 <a href="{{ url_for("template.view") }}">
                     <img src="{{ theme.uri("img/dashboard/layouts.png") }}" class="tile-icon" alt="Templates Icon" />
                     <span class="tile-text">{% trans "Templates" %}</span>
@@ -63,7 +63,7 @@
         {% endif %}
 
         {% if currentUser.featureEnabled("users.view") and (currentUser.isGroupAdmin() or currentUser.isSuperAdmin()) %}
-            <div class="tile tile-small tile-magenta scale-up">
+            <div class="tile tile-square tile-magenta scale-up">
                 <a href="{{ url_for("user.view") }}">
                     <img src="{{ theme.uri("img/dashboard/users.png") }}" class="tile-icon" alt="Users Icon" />
                     <span class="tile-text">{% trans "Users" %}</span>
@@ -72,7 +72,7 @@
         {% endif %}
 
         {% if currentUser.isSuperUser() %}
-            <div class="tile tile-medium tile-blue scale-up">
+            <div class="tile tile-square tile-blue scale-up">
                 <a href="{{ url_for("admin.view") }}">
                     <img src="{{ theme.uri("img/dashboard/settings.png") }}" class="tile-icon" alt="Settings Icon" />
                     <span class="tile-text">{% trans "Settings" %}</span>
@@ -80,7 +80,7 @@
             </div>
         {% endif %}
 
-        <div class="tile tile-small tile-grey scale-up">
+        <div class="tile tile-square tile-grey scale-up">
             <a href="{{ url_for("license.view") }}">
                 <img src="{{ theme.uri("img/dashboard/license.png") }}" class="tile-icon" alt="About Icon" />
                 <span class="tile-text">{% trans "About" %}</span>
@@ -88,7 +88,7 @@
         </div>
 
         {% if currentUser.featureEnabled("troubleshooting.fault") %}
-            <div class="tile tile-medium tile-red scale-up">
+            <div class="tile tile-square tile-red scale-up">
                 <a href="{{ url_for("fault.view") }}">
                     <img src="{{ theme.uri("img/dashboard/help.png") }}" class="tile-icon" alt="Report Fault Icon" />
                     <span class="tile-text">{% trans "Report Fault" %}</span>
@@ -103,7 +103,7 @@
         /* Metro Dashboard Styles */
         .metro-dashboard {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Tất cả ô đều vuông và responsive */
             gap: 20px;
             padding: 20px;
             max-width: 1200px;
@@ -139,31 +139,21 @@
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
 
-        /* Tile Sizes */
-        .tile-small {
-            width: 150px;
-            height: 150px;
+        /* Tile Size - Vuông */
+        .tile-square {
+            width: 180px;
+            height: 180px;
         }
 
-        .tile-medium {
-            width: 200px;
-            height: 200px;
-        }
-
-        .tile-large {
-            width: 250px;
-            height: 250px;
-        }
-
-        /* Tile Colors */
-        .tile-cyan { background-color: #1BA1E2; }
-        .tile-purple { background-color: #AA00FF; }
-        .tile-orange { background-color: #F09609; }
-        .tile-green { background-color: #00CC00; }
-        .tile-magenta { background-color: #D80073; }
-        .tile-blue { background-color: #0050EF; }
-        .tile-grey { background-color: #6A6A6A; }
-        .tile-red { background-color: #E51400; }
+        /* Tile Colors - Mỗi ô một màu */
+        .tile-cyan { background-color: #1BA1E2; } /* Schedule */
+        .tile-purple { background-color: #AA00FF; } /* Layouts */
+        .tile-orange { background-color: #F09609; } /* Library */
+        .tile-green { background-color: #00CC00; } /* Templates */
+        .tile-magenta { background-color: #D80073; } /* Users */
+        .tile-blue { background-color: #0050EF; } /* Settings */
+        .tile-grey { background-color: #6A6A6A; } /* About */
+        .tile-red { background-color: #E51400; } /* Report Fault */
 
         /* Tile Content */
         .tile-icon {
@@ -174,7 +164,7 @@
 
         .tile-text {
             font-family: 'Segoe UI', Arial, sans-serif;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 500;
             text-transform: uppercase;
         }
