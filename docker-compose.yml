@@ -9,6 +9,8 @@ services:
     volumes:
       - /db_signage/:/var/lib/mysql
       - /etc/localtime:/etc/localtime:ro
+      # - ./init_db:/docker-entrypoint-initdb.d
+      # - ./init_triggers.sh:/docker-entrypoint-initdb.d/init_triggers.sh
     environment:
       MYSQL_ROOT_PASSWORD: "root"
       MYSQL_DATABASE: "cms"
@@ -32,20 +34,13 @@ services:
     volumes:
       - ./:/var/www/cms
       - /etc/localtime:/etc/localtime:ro
-    depends_on:
-      - db   
     ports:
       - "81:80"
     environment:
       CMS_DEV_MODE: "false"
-      MYSQL_ROOT_PASSWORD: "root"
       MYSQL_DATABASE: "cms"
-      MYSQL_ROOT_USER: "root"      
       TZ: "Asia/Ho_Chi_Minh"
-      MYSQL_HOST: mysql
-      MYSQL_DATABASE: cms
-      MYSQL_USER: cms
-      MYSQL_PASSWORD: password
+
 
   memcached:
     image: memcached:alpine
