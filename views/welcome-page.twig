@@ -1,8 +1,8 @@
 {#
 /**
- * Copyright (C) 2024 Xibo Signage Ltd
+ * Copyright (C) 2020 Xibo Signage Ltd
  *
- * Xibo - Digital Signage - https://xibosignage.com
+ * Xibo - Digital Signage - http://www.xibo.org.uk
  *
  * This file is part of Xibo.
  *
@@ -21,180 +21,300 @@
  */
 #}
 {% extends "authed.twig" %}
-
-{% block title %}{{ "Welcome"|trans }} | {% endblock %}
+{% import "inline.twig" as inline %}
 
 {% block pageContent %}
-    <div id="top" class="welcome-page flex-column" style="background-image: url('{{ theme.rootUri() }}theme/default/img/vector-bg.png');">
-        <div class="container-fluid" style="max-width: 1500px;">
-            <div class="welcome-header">
-                <div class="header-text-content">
-                    {% set productName = theme.getThemeConfig('theme_title') %}
-                    <h2 class="fade-in"><strong>CHÀO MỪNG BẠN ĐẾN VỚI CMS SSIGNAGE</strong></h2> 
-                    <p class="fade-in">Hệ thống CMS cho phép bạn tạo, quản lý và cập nhật nội dung. Bạn có thể tải lên hình ảnh, video, thiết kế bố cục, lên lịch phát nội dung theo thời gian và vị trí, cũng như kiểm soát toàn bộ mạng lưới hiển thị.</p>
-                    <div class="d-flex fade-in" style="column-gap: 8px;">
-                        <a href="https://drive.sstorage.vn/s/y45GskJGEd5aAcA/download/SSignage%20Player.apk" type="button" class="btn-rounded btn-orange">Download Player APK</a>
-                        <a href="https://drive.sstorage.vn/s/jttpWJBBkSbp6kr/download/T%C3%80I%20LI%E1%BB%86U%20HDSD%20SSIGNAGE%20FINAL%20%28v1%29.docx" type="button" class="btn-rounded btn-outlined">Training</a>
-                    </div>
-                </div>
-                <div class="header-image-box fade-in">
-                    <img class="onboarding-welcome-image scale-up" src="{{ theme.rootUri() }}theme/default/img/welcomepage.jpg" alt="Welcome Image">
-                </div>
-            </div>
-            <div class="onboarding-cards-container fade-in">
-                <img class="line-curve scale-up" src="{{ theme.rootUri() }}theme/default/img/line-curve-vector.svg" alt="Welcome Image">
-            </div>
-            <div class="d-flex flex-column service-card-container fade-in" style="row-gap: 40px; margin-top: 80px;">
-                {% if currentUser.featureEnabled("displays.view") %}
-                    <div class="displays-enabled"></div>
-                {% endif %}
-                {% if currentUser.featureEnabled("library.view") or currentUser.featureEnabled("layout.view") %}
-                    <div class="library-layout-enabled d-flex flex-column" style="row-gap: 40px;"></div>
-                {% endif %}
-                {% if currentUser.featureEnabled("schedule.view") %}
-                    <div class="schedule-enabled"></div>
-                {% endif %}
-            </div>
-            <div class="others-card-container fade-in">
-            </div>
+    {% include "theme-dashboard-message.twig" ignore missing %}
+    <div class="dashboard-wrapper">
+        <div class="dashboard-header">
+            <h1 class="dashboard-title fade-in">Chào mừng đến với SStorage CMS</h1>
+            <p class="dashboard-subtitle fade-in">Quản lý nội dung số của bạn một cách dễ dàng và hiệu quả</p>
         </div>
-        <a class="scroll-up fade-in" href="#top">
-            <img class="scale-up" style="height:30px; width: 30px;" src="{{ theme.rootUri() }}theme/default/img/onboarding/back-to-top-icon.svg" alt="Welcome Image">
-        </a>
+        <div class="dashboard-tiles">
+            {% if currentUser.featureEnabled("schedule.view") %}
+                <div class="tile tile-schedule animate-tile" data-tooltip="Lên lịch phát nội dung">
+                    <a href="{{ url_for("schedule.view") }}">
+                        <div class="tile-content">
+                            <div class="tile-icon-wrapper">
+                                <img src="{{ theme.uri("img/dashboard/scheduleview.png") }}" class="tile-icon scale-up" alt="Lập lịch" />
+                            </div>
+                            <span class="tile-title">Lập lịch</span>
+                            <span class="tile-description">Quản lý lịch phát nội dung</span>
+                        </div>
+                    </a>
+                </div>
+            {% endif %}
+
+            {% if currentUser.featureEnabled("layout.view") %}
+                <div class="tile tile-layout animate-tile" data-tooltip="Thiết kế bố cục hiển thị">
+                    <a href="{{ url_for("layout.view") }}">
+                        <div class="tile-content">
+                            <div class="tile-icon-wrapper">
+                                <img src="{{ theme.uri("img/dashboard/presentations.png") }}" class="tile-icon scale-up" alt="Bố cục" />
+                            </div>
+                            <span class="tile-title">Bố cục</span>
+                            <span class="tile-description">Tạo và chỉnh sửa bố cục</span>
+                        </div>
+                    </a>
+                </div>
+            {% endif %}
+
+            {% if currentUser.featureEnabled("library.view") %}
+                <div class="tile tile-library animate-tile" data-tooltip="Quản lý thư viện media">
+                    <a href="{{ url_for("library.view") }}">
+                        <div class="tile-content">
+                            <div class="tile-icon-wrapper">
+                                <img src="{{ theme.uri("img/dashboard/content.png") }}" class="tile-icon scale-up" alt="Thư viện" />
+                            </div>
+                            <span class="tile-title">Thư viện</span>
+                            <span class="tile-description">Lưu trữ và quản lý media</span>
+                        </div>
+                    </a>
+                </div>
+            {% endif %}
+
+            {% if currentUser.featureEnabled("template.view") %}
+                <div class="tile tile-template animate-tile" data-tooltip="Tạo mẫu nội dung nhanh">
+                    <a href="{{ url_for("template.view") }}">
+                        <div class="tile-content">
+                            <div class="tile-icon-wrapper">
+                                <img src="{{ theme.uri("img/dashboard/layouts.png") }}" class="tile-icon scale-up" alt="Mẫu" />
+                            </div>
+                            <span class="tile-title">Mẫu</span>
+                            <span class="tile-description">Sử dụng mẫu để tiết kiệm thời gian</span>
+                        </div>
+                    </a>
+                </div>
+            {% endif %}
+
+            {% if currentUser.featureEnabled("users.view") and (currentUser.isGroupAdmin() or currentUser.isSuperAdmin()) %}
+                <div class="tile tile-users animate-tile" data-tooltip="Quản lý tài khoản người dùng">
+                    <a href="{{ url_for("user.view") }}">
+                        <div class="tile-content">
+                            <div class="tile-icon-wrapper">
+                                <img src="{{ theme.uri("img/dashboard/users.png") }}" class="tile-icon scale-up" alt="Người dùng" />
+                            </div>
+                            <span class="tile-title">Người dùng</span>
+                            <span class="tile-description">Quản lý người dùng và quyền</span>
+                        </div>
+                    </a>
+                </div>
+            {% endif %}
+
+            {% if currentUser.isSuperUser() %}
+                <div class="tile tile-settings animate-tile" data-tooltip="Cài đặt hệ thống">
+                    <a href="{{ url_for("admin.view") }}">
+                        <div class="tile-content">
+                            <div class="tile-icon-wrapper">
+                                <img src="{{ theme.uri("img/dashboard/settings.png") }}" class="tile-icon scale-up" alt="Cài đặt" />
+                            </div>
+                            <span class="tile-title">Cài đặt</span>
+                            <span class="tile-description">Điều chỉnh cấu hình hệ thống</span>
+                        </div>
+                    </a>
+                </div>
+            {% endif %}
+
+            <div class="tile tile-about animate-tile" data-tooltip="Thông tin về hệ thống">
+                <a href="{{ url_for("license.view") }}">
+                    <div class="tile-content">
+                        <div class="tile-icon-wrapper">
+                            <img src="{{ theme.uri("img/dashboard/license.png") }}" class="tile-icon scale-up" alt="Về" />
+                        </div>
+                        <span class="tile-title">Về</span>
+                        <span class="tile-description">Thông tin về SStorage CMS</span>
+                    </div>
+                </a>
+            </div>
+
+            {% if currentUser.featureEnabled("troubleshooting.fault") %}
+                <div class="tile tile-report animate-tile" data-tooltip="Báo cáo sự cố hệ thống">
+                    <a href="{{ url_for("fault.view") }}">
+                        <div class="tile-content">
+                            <div class="tile-icon-wrapper">
+                                <img src="{{ theme.uri("img/dashboard/help.png") }}" class="tile-icon scale-up" alt="Báo lỗi" />
+                            </div>
+                            <span class="tile-title">Báo lỗi</span>
+                            <span class="tile-description">Gửi báo cáo sự cố</span>
+                        </div>
+                    </a>
+                </div>
+            {% endif %}
+        </div>
     </div>
-{% endblock %}
-
-{% block javaScript %}
-    {# Initialise JS variables and translations #}
-    <script type="text/javascript" nonce="{{ cspNonce }}" defer>
-        var isXiboThemed = '{{ theme.getThemeConfig("app_name") }}' === 'Xibo';
-        var isSuperAdmin ='{{ currentUser.isSuperAdmin()}}';
-
-        var onboardingCard = [
-            {
-                title: '{% trans "Displays" %}',
-                link: 'displays',
-                iconURL: '{{ theme.rootUri() }}theme/default/img/onboarding/displays-icon.png',
-            },
-            {
-                title: 'Nội dung đang có',
-                link: 'existing-content',
-                iconURL: '{{ theme.rootUri() }}theme/default/img/onboarding/existing-content-icon.png',
-            },
-            {
-                title: '{% trans "Playlists" %}',
-                link: 'playlists',
-                iconURL: '{{ theme.rootUri() }}theme/default/img/onboarding/playlist-icon.png',
-            },
-            {
-                title: 'Sáng tạo nội dung',
-                link: 'create-content',
-                iconURL: '{{ theme.rootUri() }}theme/default/img/onboarding/create-content-icon.png',
-            },
-            {
-                title: '{% trans "Schedule" %}',
-                link: 'schedule',
-                iconURL: '{{ theme.rootUri() }}theme/default/img/onboarding/schedule-icon.png',
-            },
-        ];
-
-        var serviceCards = [
-            {
-                title: 'Màn hình',
-                text: 'Bắt đầu bằng cách cài đặt một trong các Trình phát của chúng tôi và nhập mã ghép nối vào <a class="text-link">trang Hiển thị</a> để bạn có thể hiển thị nội dung của mình. Nếu bạn không có thiết bị để sử dụng làm Người chơi, bạn có thể xem trước và kiểm tra lịch trình trong trình duyệt web của mình.',
-                firstLink: '{{ url_for("display.view")}}',
-                secondLink: '{{ helpService.getLandingPage}}displays.html',
-                imageUrl: '{{ theme.rootUri() }}theme/default/img/onboarding/displays.png',
-                serviceId: 'displays',
-                featureFlag: "displays.view"
-            },
-            {
-                title: 'Nội dung đang có',
-                text: 'Bạn đã có sẵn nội dung để hiển thị chưa? Bắt đầu hiển thị điều đó trong 2 bước đơn giản. Tải mọi hình ảnh hoặc video toàn màn hình hiện có lên <a class="text-link">Thư viện phương tiện</a>, sau đó lên lịch hiển thị những hình ảnh hoặc video đó khi bạn muốn trên màn hình của mình từ <a class="text-link">Schedule page</a>.',
-                firstLink: '{{ url_for("library.view")}}',
-                secondLink: '{{ url_for("schedule.view")}}',
-                otherLink: '{{ helpService.getLandingPage }}media_library.html',
-                imageUrl: '{{ theme.rootUri() }}theme/default/img/onboarding/existing-content.png',
-                serviceId: 'existing-content',
-                featureFlag: ["library.view", "layout.view"],
-                showLink: true
-            },
-            {
-                title: 'Danh sách phát',
-                text: 'Nếu bạn có nhiều hình ảnh hoặc video để hiển thị, hãy đưa chúng vào Danh sách phát rồi lên lịch cho Danh sách phát trên màn hình của bạn để quản lý dễ dàng hơn.',
-                firstLink: '{{ url_for("playlist.view") }}',
-                secondLink: '{{ helpService.getLandingPage }}media_playlists.html',    
-                imageUrl: '{{ theme.rootUri() }}theme/default/img/onboarding/playlists.png',
-                serviceId: 'playlists',
-                featureFlag: ["library.view", "layout.view"]
-            },
-            {
-                title: 'Tạo nội dung',
-                text: 'Nếu bạn cần tạo nội dung phức tạp hơn, Trình chỉnh sửa bố cục luôn sẵn sàng giúp bạn tạo nội dung ấn tượng. Có những mẫu được thiết kế sẵn mà bạn có thể làm việc hoặc bạn có thể tạo thứ gì đó từ đầu.',
-                firstLink: '{{ url_for("layout.view") }}',
-                secondLink: '{{ helpService.getLandingPage }}layouts_editor.html',
-                imageUrl: '{{ theme.rootUri() }}theme/default/img/onboarding/create-content.png',
-                serviceId: 'create-content',
-                featureFlag: ["library.view", "layout.view"]
-            },
-            {
-                title: 'Lên lịch',
-                text: 'Bạn có thể kết hợp giữa việc lên lịch các mục phương tiện, bố cục và chiến dịch theo ý muốn. Nếu bạn lên lịch nhiều việc cùng lúc, chúng sẽ lần lượt được hiển thị.',
-                firstLink: '{{ url_for("schedule.view") }}',
-                secondLink: '{{ helpService.getLandingPage }}scheduling_events.html',
-                imageUrl: '{{ theme.rootUri() }}theme/default/img/onboarding/schedule.png',
-                serviceId: 'schedule',
-                featureFlag: "schedule.view"
-            }
-        ];
-
-        var othersCards = [
-            {
-            title: 'Về chúng tôi',
-            text: 'Phần mềm cài đặt trên máy chủ quản lý tập trung và Giao diện quản lý sử dụng công nghệ điện toán đám mây của SStorage chúng tôi.',
-            links: `
-                <a href="https://sstorage.vn/dv-ssignage-digital/" target="_blank">sstorage.vn</a>
-                ${isXiboThemed && isSuperAdmin ? 
-                `<a href="https://sstorage.vn/lien-he/" target="_blank">{% trans "Admin" %}</a>
-                 <a href="https://sstorage.vn/lien-he/" target="_blank">{% trans "Developer" %}</a>` : ''
-                }`,
-            iconURL: '{{ theme.rootUri() }}theme/default/img/team.png'
-            },
-        ];
-
-        if (isXiboThemed) {
-            othersCards.push({
-                title: 'Liên Hệ Để Hỗ Trợ',
-                text: `Địa chỉ: Tầng 5, 27A Hoàng Việt, F4, Quận Tân Bình, TP Hồ Chí Minh
-            Hotline: 0906 618 181
-            E-mail: sstorage@icsp.vn`.replace(/\n/g, "<br>"),
-                links: isXiboThemed ? `
-                    <a href="https://sstorage.vn/lien-he/" target="_blank">{% trans "Trung tâm hỗ trợ" %}</a>
-                    <a href="https://sstorage.vn/lien-he/" target="_blank">{% trans "Cộng đồng" %}</a>
-                ` : '',
-                iconName: "help"
-            });
-
-        }
-
-        othersCards.push({
-            title: 'Liên Hệ Để Hỗ Trợ',
-            text: `Hotline: 0906 618 181`,
-            links: isXiboThemed ? `
-                <a href="https://sstorage.vn/lien-he/" target="_blank">{% trans "Trung tâm hỗ trợ" %}</a>
-                <a href="https://sstorage.vn/lien-he/" target="_blank">{% trans "Cộng đồng" %}</a>
-            ` : '',
-            iconName: "help"
-        });
-
-    </script>
-
-    {# Add page source code bundle ( JS and CSS ) #}
-    <script src="{{ theme.rootUri() }}dist/pages/welcome-page.bundle.min.js?v={{ version }}&rev={{revision}}" nonce="{{ cspNonce }}"></script>
 {% endblock %}
 
 {% block styles %}
     <style>
+        /* Reset mặc định */
+        #dashbuttons {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Dashboard Container */
+        .dashboard-wrapper {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%); /* Gradient nền từ welcome */
+            background-image: url('{{ theme.rootUri() }}theme/default/img/vector-bg.png'); /* Giữ nền vector từ welcome */
+            background-size: cover;
+            background-position: center;
+            padding: 60px 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        /* Header */
+        .dashboard-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .dashboard-title {
+            font-size: 48px;
+            font-weight: 700;
+            color: #ffffff;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .dashboard-subtitle {
+            font-size: 20px;
+            color: #dfe6e9;
+            margin-top: 10px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Tiles Container */
+        .dashboard-tiles {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1500px; /* Giữ max-width giống welcome */
+            width: 100%;
+        }
+
+        /* Tile Styles */
+        .tile {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            background: rgba(255, 255, 255, 0.1); /* Hiệu ứng kính mờ */
+            border-radius: 15px;
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .tile a {
+            text-decoration: none;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Gradient Background for Tiles */
+        .tile-schedule { background: linear-gradient(45deg, #3498db, #2980b9); }
+        .tile-layout { background: linear-gradient(45deg, #9b59b6, #8e44ad); }
+        .tile-library { background: linear-gradient(45deg, #f1c40f, #e67e22); }
+        .tile-template { background: linear-gradient(45deg, #27ae60, #2ecc71); }
+        .tile-users { background: linear-gradient(45deg, #e91e63, #c0392b); }
+        .tile-settings { background: linear-gradient(45deg, #6a6a6a, #95a5a6); }
+        .tile-about { background: linear-gradient(45deg, #34495e, #7f8c8d); }
+        .tile-report { background: linear-gradient(45deg, #e74c3c, #c0392b); }
+
+        /* Tile Content */
+        .tile-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .tile-icon-wrapper {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .tile-icon {
+            width: 70px;
+            height: 70px;
+            filter: brightness(0) invert(1); /* Chuyển icon thành màu trắng */
+        }
+
+        .tile-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 10px;
+        }
+
+        .tile-description {
+            font-size: 16px;
+            color: #dfe6e9;
+            opacity: 0.8;
+        }
+
+        /* Hover Effect */
+        .tile:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .tile:hover .tile-icon-wrapper {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        /* Tooltip */
+        .tile::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 14px;
+            white-space: nowrap;
+            opacity: 0;
+            transition: opacity 0.3s ease, bottom 0.3s ease;
+            pointer-events: none;
+        }
+
+        .tile:hover::after {
+            opacity: 1;
+            bottom: -30px;
+        }
+
+        /* Animation */
+        .animate-tile {
+            animation: fadeInUp 0.8s ease-in-out forwards;
+        }
+
         .fade-in {
             animation: fadeIn 2s ease-in-out;
         }
@@ -214,19 +334,29 @@
 
         @keyframes scaleUp {
             from {
-                transform: scale(0.5); /* Bắt đầu từ kích thước nhỏ (50%) */
-                opacity: 0; /* Kết hợp với hiệu ứng mờ dần */
+                transform: scale(0.5);
+                opacity: 0;
             }
             to {
-                transform: scale(1); /* Phóng to lên kích thước đầy đủ (100%) */
-                opacity: 1; /* Hiển thị hoàn toàn */
+                transform: scale(1);
+                opacity: 1;
             }
         }
 
-        /* Áp dụng hiệu ứng cho ảnh trong các card động (nếu cần) */
-        .service-card-container img,
-        .others-card-container img {
-            animation: scaleUp 1.5s ease-in-out forwards;
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px) scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        /* Ẩn CSS cũ */
+        .dashicons, .dash_button, .dash_text {
+            display: none;
         }
     </style>
 {% endblock %}
