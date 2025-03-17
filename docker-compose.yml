@@ -1,4 +1,4 @@
-version: "3"
+version: "3.8"
 
 services:
   db:
@@ -37,10 +37,8 @@ services:
       dockerfile: Dockerfile
     restart: always
     depends_on:
-      db:
-        condition: service_healthy
-      xmr:
-        condition: service_started
+      - db
+      - xmr
     volumes:
       - ./:/var/www/cms
       - /etc/localtime:/etc/localtime:ro
