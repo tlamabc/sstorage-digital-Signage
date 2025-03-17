@@ -31,6 +31,7 @@
             <p class="dashboard-subtitle fade-in">Quản lý nội dung số của bạn một cách dễ dàng và hiệu quả</p>
         </div>
         <div class="dashboard-tiles">
+            {# Dòng 1: Lập lịch, Bố cục, Thư viện #}
             {% if currentUser.featureEnabled("schedule.view") %}
                 <div class="tile tile-schedule animate-tile" data-tooltip="Lên lịch phát nội dung">
                     <a href="{{ url_for("schedule.view") }}">
@@ -73,6 +74,7 @@
                 </div>
             {% endif %}
 
+            {# Dòng 2: Mẫu, Người dùng, Báo lỗi #}
             {% if currentUser.featureEnabled("template.view") %}
                 <div class="tile tile-template animate-tile" data-tooltip="Tạo mẫu nội dung nhanh">
                     <a href="{{ url_for("template.view") }}">
@@ -91,7 +93,7 @@
                 <div class="tile tile-users animate-tile" data-tooltip="Quản lý tài khoản người dùng">
                     <a href="{{ url_for("user.view") }}">
                         <div class="tile-content">
-                            <div class="tile-icon-wrapper">
+                            <div "tile-icon-wrapper">
                                 <img src="{{ theme.uri("img/dashboard/users.png") }}" class="tile-icon scale-up" alt="Người dùng" />
                             </div>
                             <span class="tile-title">Người dùng</span>
@@ -100,32 +102,6 @@
                     </a>
                 </div>
             {% endif %}
-
-            {% if currentUser.isSuperUser() %}
-                <div class="tile tile-settings animate-tile" data-tooltip="Cài đặt hệ thống">
-                    <a href="{{ url_for("admin.view") }}">
-                        <div class="tile-content">
-                            <div class="tile-icon-wrapper">
-                                <img src="{{ theme.uri("img/dashboard/settings.png") }}" class="tile-icon scale-up" alt="Cài đặt" />
-                            </div>
-                            <span class="tile-title">Cài đặt</span>
-                            <span class="tile-description">Điều chỉnh cấu hình hệ thống</span>
-                        </div>
-                    </a>
-                </div>
-            {% endif %}
-
-            <div class="tile tile-about animate-tile" data-tooltip="Thông tin về hệ thống">
-                <a href="{{ url_for("license.view") }}">
-                    <div class="tile-content">
-                        <div class="tile-icon-wrapper">
-                            <img src="{{ theme.uri("img/dashboard/license.png") }}" class="tile-icon scale-up" alt="Về" />
-                        </div>
-                        <span class="tile-title">Về</span>
-                        <span class="tile-description">Thông tin về SStorage CMS</span>
-                    </div>
-                </a>
-            </div>
 
             {% if currentUser.featureEnabled("troubleshooting.fault") %}
                 <div class="tile tile-report animate-tile" data-tooltip="Báo cáo sự cố hệ thống">
@@ -155,8 +131,8 @@
         /* Dashboard Container */
         .dashboard-wrapper {
             min-height: 100vh;
-            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%); /* Gradient nền từ welcome */
-            background-image: url('{{ theme.rootUri() }}theme/default/img/vector-bg.png'); /* Giữ nền vector từ welcome */
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            background-image: url('{{ theme.rootUri() }}theme/default/img/vector-bg.png');
             background-size: cover;
             background-position: center;
             padding: 60px 40px;
@@ -190,9 +166,10 @@
         /* Tiles Container */
         .dashboard-tiles {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(3, 1fr); /* 3 cột */
+            grid-template-rows: repeat(2, auto); /* 2 dòng */
             gap: 30px;
-            max-width: 1500px; /* Giữ max-width giống welcome */
+            max-width: 1200px; /* Thu hẹp một chút để cân đối */
             width: 100%;
         }
 
@@ -230,8 +207,6 @@
         .tile-library { background: linear-gradient(45deg, #f1c40f, #e67e22); }
         .tile-template { background: linear-gradient(45deg, #27ae60, #2ecc71); }
         .tile-users { background: linear-gradient(45deg, #e91e63, #c0392b); }
-        .tile-settings { background: linear-gradient(45deg, #6a6a6a, #95a5a6); }
-        .tile-about { background: linear-gradient(45deg, #34495e, #7f8c8d); }
         .tile-report { background: linear-gradient(45deg, #e74c3c, #c0392b); }
 
         /* Tile Content */
