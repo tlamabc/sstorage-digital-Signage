@@ -100,14 +100,21 @@
 
 {% block styles %}
     <style>
-        /* Metro Dashboard Styles */
+        /* Reset mặc định để đảm bảo không bị ảnh hưởng bởi CSS gốc */
+        #dashbuttons {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Metro Dashboard Styles - Desktop */
         .metro-dashboard {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Tất cả ô đều vuông và responsive */
+            grid-template-columns: repeat(4, 1fr); /* 4 cột cho desktop */
             gap: 20px;
-            padding: 20px;
+            padding: 40px;
             max-width: 1200px;
             margin: 0 auto;
+            background-color: #f5f5f5; /* Nền nhẹ để nổi bật các ô */
         }
 
         .tile {
@@ -117,9 +124,10 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            border-radius: 8px;
+            border-radius: 10px;
             overflow: hidden;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .tile a {
@@ -139,10 +147,10 @@
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
 
-        /* Tile Size - Vuông */
+        /* Tile Size - Vuông đồng nhất */
         .tile-square {
-            width: 180px;
-            height: 180px;
+            width: 250px; /* Kích thước lớn hơn cho desktop */
+            height: 250px;
         }
 
         /* Tile Colors - Mỗi ô một màu */
@@ -157,16 +165,17 @@
 
         /* Tile Content */
         .tile-icon {
-            max-width: 60%;
-            max-height: 60%;
-            margin-bottom: 10px;
+            width: 100px; /* Icon lớn hơn cho desktop */
+            height: 100px;
+            margin-bottom: 15px;
         }
 
         .tile-text {
             font-family: 'Segoe UI', Arial, sans-serif;
-            font-size: 16px;
-            font-weight: 500;
+            font-size: 20px; /* Chữ lớn hơn cho desktop */
+            font-weight: 600;
             text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         /* Animation */
@@ -183,6 +192,11 @@
                 transform: scale(1);
                 opacity: 1;
             }
+        }
+
+        /* Đảm bảo không bị ảnh hưởng bởi CSS mặc định của theme */
+        .dashicons, .dash_button, .dash_text {
+            display: none; /* Ẩn các class cũ nếu có xung đột */
         }
     </style>
 {% endblock %}
