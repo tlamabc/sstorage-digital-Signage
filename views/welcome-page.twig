@@ -38,11 +38,11 @@
                     </div>
                 </div>
                 <div class="header-image-box fade-in">
-                    <img class="onboarding-welcome-image" src="{{ theme.rootUri() }}theme/default/img/welcomepage.jpg" alt="Welcome Image">
+                    <img class="onboarding-welcome-image scale-up" src="{{ theme.rootUri() }}theme/default/img/welcomepage.jpg" alt="Welcome Image">
                 </div>
             </div>
             <div class="onboarding-cards-container fade-in">
-                <img class="line-curve" src="{{ theme.rootUri() }}theme/default/img/line-curve-vector.svg" alt="Welcome Image">
+                <img class="line-curve scale-up" src="{{ theme.rootUri() }}theme/default/img/line-curve-vector.svg" alt="Welcome Image">
             </div>
             <div class="d-flex flex-column service-card-container fade-in" style="row-gap: 40px; margin-top: 80px;">
                 {% if currentUser.featureEnabled("displays.view") %}
@@ -59,7 +59,7 @@
             </div>
         </div>
         <a class="scroll-up fade-in" href="#top">
-            <img style="height:30px; width: 30px;" src="{{ theme.rootUri() }}theme/default/img/onboarding/back-to-top-icon.svg" alt="Welcome Image">
+            <img class="scale-up" style="height:30px; width: 30px;" src="{{ theme.rootUri() }}theme/default/img/onboarding/back-to-top-icon.svg" alt="Welcome Image">
         </a>
     </div>
 {% endblock %}
@@ -206,6 +206,27 @@
             to {
                 opacity: 1;
             }
+        }
+
+        .scale-up {
+            animation: scaleUp 1.5s ease-in-out forwards;
+        }
+
+        @keyframes scaleUp {
+            from {
+                transform: scale(0.5); /* Bắt đầu từ kích thước nhỏ (50%) */
+                opacity: 0; /* Kết hợp với hiệu ứng mờ dần */
+            }
+            to {
+                transform: scale(1); /* Phóng to lên kích thước đầy đủ (100%) */
+                opacity: 1; /* Hiển thị hoàn toàn */
+            }
+        }
+
+        /* Áp dụng hiệu ứng cho ảnh trong các card động (nếu cần) */
+        .service-card-container img,
+        .others-card-container img {
+            animation: scaleUp 1.5s ease-in-out forwards;
         }
     </style>
 {% endblock %}
