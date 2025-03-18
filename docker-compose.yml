@@ -9,12 +9,12 @@ services:
     volumes:
       - /db_signage/:/var/lib/mysql
       - /etc/localtime:/etc/localtime:ro
-      # - ./init_db:/docker-entrypoint-initdb.d
-      # - ./init_triggers.sh:/docker-entrypoint-initdb.d/init_triggers.sh
+
     environment:
       MYSQL_ROOT_PASSWORD: "root"
       MYSQL_DATABASE: "cms"
       MYSQL_ROOT_USER: "root"
+      TZ: "Asia/Ho_Chi_Minh"
 
 
   xmr:
@@ -25,6 +25,8 @@ services:
     environment:
       XMR_DEBUG: "true"
       IPV6PUBSUPPORT: "false"
+      TZ: "Asia/Ho_Chi_Minh"
+
 
   web:
     build:
@@ -54,6 +56,7 @@ services:
       - "8080:8080"
     environment:
       - API_URL=http://localhost/swagger.json
+
 
   quickchart:
     image: ianw/quickchart
