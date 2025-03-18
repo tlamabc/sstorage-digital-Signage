@@ -143,27 +143,18 @@ RUN sed -i "s/error_reporting = .*$/error_reporting = E_ERROR | E_WARNING | E_PA
 ARG GIT_COMMIT=prod
 
 # Setup persistent environment variables
-ENV CMS_DEV_MODE=false \
-    INSTALL_TYPE=docker \
+ENV CMS_DEV_MODE=true \
+    INSTALL_TYPE=dev \
     XMR_HOST=xmr \
-    CMS_SERVER_NAME=localhost \
-    MYSQL_HOST=mysql \
-    MYSQL_USER=cms \
-    MYSQL_PASSWORD=none \
+    MYSQL_HOST=db \
     MYSQL_PORT=3306 \
+    MYSQL_USER=root \
+    MYSQL_PASSWORD=root \
     MYSQL_DATABASE=cms \
-    MYSQL_BACKUP_ENABLED=true \
+    MYSQL_BACKUP_ENABLED=false \
     MYSQL_ATTR_SSL_CA=none \
     MYSQL_ATTR_SSL_VERIFY_SERVER_CERT=true \
-    CMS_SMTP_SERVER=smtp.gmail.com:587 \
-    CMS_SMTP_USERNAME=none \
-    CMS_SMTP_PASSWORD=none \
-    CMS_SMTP_USE_TLS=YES \
-    CMS_SMTP_USE_STARTTLS=YES \
-    CMS_SMTP_REWRITE_DOMAIN=gmail.com \
-    CMS_SMTP_HOSTNAME=none \
-    CMS_SMTP_FROM_LINE_OVERRIDE=YES \
-    CMS_SMTP_FROM=none \
+    CMS_SERVER_NAME=localhost \
     CMS_ALIAS=none \
     CMS_PHP_SESSION_GC_MAXLIFETIME=1440 \
     CMS_PHP_POST_MAX_SIZE=2G \
@@ -182,16 +173,17 @@ ENV CMS_DEV_MODE=false \
     CMS_APACHE_MAX_CONNECTIONS_PER_CHILD=300 \
     CMS_APACHE_TIMEOUT=30 \
     CMS_APACHE_OPTIONS_INDEXES=false \
-    CMS_QUICK_CHART_URL=http://cms-quickchart:3400 \
+    CMS_QUICK_CHART_URL=http://quickchart:3400 \
     CMS_APACHE_SERVER_TOKENS=OS \
-    CMS_APACHE_LOG_REQUEST_TIME=false \
-    CMS_USE_MEMCACHED=false \
+    CMS_APACHE_LOG_REQUEST_TIME=true \
+    CMS_USE_MEMCACHED=true \
     MEMCACHED_HOST=memcached \
     MEMCACHED_PORT=11211 \
     CMS_USAGE_REPORT=true \
-    XTR_ENABLED=true \
+    XTR_ENABLED=false \
     GIT_COMMIT=$GIT_COMMIT \
     GNUPGHOME=/var/www/.gnupg
+
 
 # Expose port 80
 EXPOSE 80
