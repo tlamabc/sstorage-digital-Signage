@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-03-18 10:28+0700\n"
+"PO-Revision-Date: 2025-03-18 10:41+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: vi\n"
@@ -9046,7 +9046,7 @@ msgstr "Chân dung"
 
 #: cache/cf/cffabfeef57943ab38af08d828420e2d.php:58
 msgid "Export Statistics"
-msgstr "Thống kê xuất khẩu"
+msgstr "Xuất thống kê"
 
 #: cache/cf/cffabfeef57943ab38af08d828420e2d.php:136
 msgid "Output dates as UTC? Leave unchecked for local CMS time."
@@ -10675,7 +10675,7 @@ msgstr "Thẻ cho Danh sách phát này - Chuỗi Thẻ hoặc định dạng Th
 #: cache/f7/f7f09a3ccd551d0c4068a90ef4a908ee.php:265
 #: cache/6b/6b8f3b359fea543f836222f075be96fc.php:320
 msgid "Dynamic?"
-msgstr "Năng động?"
+msgstr "Động?"
 
 #: cache/24/24586f514f7ca9717426ed09b5e5d4c2.php:280
 #: cache/f7/f7f09a3ccd551d0c4068a90ef4a908ee.php:271
@@ -13214,7 +13214,7 @@ msgstr "Hồ sơ hiển thị"
 
 #: cache/40/40934d1cc21621783800143e32bfb38c.php:353
 msgid "Player Type"
-msgstr "Loại người Thiết bị trình chiếu"
+msgstr "Loại thiết bị"
 
 #: cache/40/40934d1cc21621783800143e32bfb38c.php:359
 msgid "Android"
@@ -13269,7 +13269,7 @@ msgstr "Được cấp phép đầy đủ"
 
 #: cache/40/40934d1cc21621783800143e32bfb38c.php:493
 msgid "Trial"
-msgstr "Sự thử nghiệm"
+msgstr "Dùng thử"
 
 #: cache/40/40934d1cc21621783800143e32bfb38c.php:499
 msgid "Not licenced"
@@ -15713,7 +15713,7 @@ msgstr "Chỉnh sửa nhóm đồng bộ hóa"
 #: cache/e0/e0b013ccd20fff329ddf7c3713949611.php:184
 #: cache/45/452993b5cfada14b95c3c3f731195fbd.php:221
 msgid "Lead Display"
-msgstr "Hiển thị chì"
+msgstr "Màn hình dẫn đầu"
 
 #: cache/e0/e0b013ccd20fff329ddf7c3713949611.php:190
 msgid "Select Lead Display for this sync group"
@@ -18903,7 +18903,7 @@ msgstr "Có Hướng"
 
 #: cache/f1/f12c5efb884b378d9de632cba0de1288.php:116
 msgid "Enabled for In"
-msgstr "Đã bật cho Vào"
+msgstr "Đã bật cho nhập"
 
 #: cache/f1/f12c5efb884b378d9de632cba0de1288.php:120
 msgid "Enabled for Out"
@@ -19142,7 +19142,7 @@ msgstr "Vui lòng chọn Bố cục hoặc Chiến dịch để Sự kiện này
 
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:373
 msgid "Direct Schedule?"
-msgstr "Lịch trình trực tiếp?"
+msgstr "Trực tiếp?"
 
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:379
 msgid "Show only events scheduled directly on selected Displays/Groups"
@@ -19154,7 +19154,7 @@ msgstr "Chỉ hiển thị lịch xuất hiện trên tất cả các màn hình
 
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:411
 msgid "Shared Schedule?"
-msgstr "Lịch trình được chia sẻ?"
+msgstr "Chia sẻ?"
 
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:437
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:536
@@ -19328,7 +19328,7 @@ msgstr "Thêm nhóm đồng bộ hóa mới"
 
 #: cache/45/452993b5cfada14b95c3c3f731195fbd.php:133
 msgid "Lead Display ID"
-msgstr "ID hiển thị khách hàng tiềm năng"
+msgstr "ID Màn hình dẫn đầu"
 
 #: cache/85/85ec384d80a4ea0b703e4c2372ebb08e.php:57
 msgid "Edit Task"
