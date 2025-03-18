@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-03-15 17:30+0700\n"
+"PO-Revision-Date: 2025-03-18 10:28+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: vi\n"
@@ -1284,7 +1284,7 @@ msgstr "Độ tươi (phút)"
 
 #: locale/moduletranslate.php:363
 msgid "If the Player is offline it will switch to the No Data Template after this freshness time. Set this to 0 to never switch."
-msgstr "Nếu Người chơi ngoại tuyến, nó sẽ chuyển sang Mẫu Không có Dữ liệu sau thời gian làm mới này. Đặt giá trị này thành 0 để không bao giờ chuyển đổi."
+msgstr "Nếu Thiết bị trình chiếu ngoại tuyến, nó sẽ chuyển sang Mẫu Không có Dữ liệu sau thời gian làm mới này. Đặt giá trị này thành 0 để không bao giờ chuyển đổi."
 
 #: locale/moduletranslate.php:364 locale/dbtranslate.php:50
 msgid "Embedded"
@@ -1944,7 +1944,7 @@ msgstr "Vui lòng nhập thời lượng tối thiểu được đề xuất tí
 
 #: locale/moduletranslate.php:499
 msgid "This module uses the Google Traffic JavaScript API which is a paid-for API from Google. Charges will apply each time the map is loaded in the CMS preview and on each Player, therefore we recommend setting a high widget duration."
-msgstr "Mô-đun này sử dụng API JavaScript lưu lượng truy cập của Google, đây là API trả phí của Google. Phí sẽ được áp dụng mỗi khi bản đồ được tải trong bản xem trước CMS và trên mỗi Người chơi, do đó chúng tôi khuyên bạn nên đặt thời lượng tiện ích cao."
+msgstr "Mô-đun này sử dụng API JavaScript lưu lượng truy cập của Google, đây là API trả phí của Google. Phí sẽ được áp dụng mỗi khi bản đồ được tải trong bản xem trước CMS và trên mỗi Thiết bị trình chiếu, do đó chúng tôi khuyên bạn nên đặt thời lượng tiện ích cao."
 
 #: locale/moduletranslate.php:506
 msgid "Zoom"
@@ -2008,7 +2008,7 @@ msgstr "Gói HTML"
 
 #: locale/moduletranslate.php:520
 msgid "Upload a complete package to distribute to Players"
-msgstr "Tải lên gói hoàn chỉnh để phân phối cho Người chơi"
+msgstr "Tải lên gói hoàn chỉnh để phân phối cho Thiết bị trình chiếu"
 
 #: locale/moduletranslate.php:523
 msgid "Nominated File"
@@ -2016,7 +2016,7 @@ msgstr "Tệp được đề cử"
 
 #: locale/moduletranslate.php:524
 msgid "Enter a nominated file name that player will attempt to open after extracting the .htz archive"
-msgstr "Nhập tên tệp được chỉ định mà người chơi sẽ cố mở sau khi giải nén kho lưu trữ .htz"
+msgstr "Nhập tên tệp được chỉ định mà Thiết bị trình chiếu sẽ cố mở sau khi giải nén kho lưu trữ .htz"
 
 #: locale/moduletranslate.php:525 locale/moduletranslate.php:1100
 #: locale/moduletranslate.php:1347 locale/moduletranslate.php:2023
@@ -2576,7 +2576,7 @@ msgstr "Một mô-đun hiển thị các thành phần cảnh báo thời tiết
 #: cache/cf/cf63b697a899071854cdf7e574d55466.php:257
 #: cache/4a/4a3332e6e963e35feaad18f2b2a17205.php:256
 msgid "Play count"
-msgstr "Số lượt chơi"
+msgstr "Số lượt phát"
 
 #: locale/moduletranslate.php:868
 msgid "In cycle based playback, how many plays should each Widget have before moving on?"
@@ -2588,7 +2588,7 @@ msgstr "Widget ngẫu nhiên mỗi chu kỳ?"
 
 #: locale/moduletranslate.php:870
 msgid "When enabled the next Widget to play will be chosen at random from the available Widgets."
-msgstr "Khi được bật, Widget tiếp theo để chơi sẽ được chọn ngẫu nhiên từ các Widget có sẵn."
+msgstr "Khi được bật, Widget tiếp theo để phát sẽ được chọn ngẫu nhiên từ các Widget có sẵn."
 
 #: locale/moduletranslate.php:871
 msgid "Rich Text"
@@ -6682,7 +6682,7 @@ msgstr "Vui lòng chọn Nhóm đồng bộ hóa hiện có"
 #: cache/be/be3e30948cadddcda2edc4c38f45c2d0.php:71
 #: lib/Controller/Campaign.php:682 lib/Entity/Schedule.php:2086
 msgid "Layout"
-msgstr "Cách trình bày"
+msgstr "Bố cục"
 
 #: cache/16/160f5151dae9dd6473665e95d0908966.php:236
 #: cache/7e/7ebabda5480d88651340523f453cf0ea.php:212
@@ -6777,14 +6777,14 @@ msgstr "Số lượt phát tối đa mỗi giờ"
 #: cache/17/171a03d2fcd4a30b3b21796f9876f6cc.php:691
 #: cache/34/3493d88c45c5b62199e7bd7d6a5699df.php:696
 msgid "Limit the number of times this event will play per hour on each display. For unlimited plays set to 0."
-msgstr "Giới hạn số lần sự kiện này sẽ phát mỗi giờ trên mỗi màn hình. Đối với lượt chơi không giới hạn được đặt thành 0."
+msgstr "Giới hạn số lần sự kiện này sẽ phát mỗi giờ trên mỗi màn hình. Đối với lượt phát không giới hạn được đặt thành 0."
 
 #: cache/16/160f5151dae9dd6473665e95d0908966.php:380
 #: cache/7e/7ebabda5480d88651340523f453cf0ea.php:356
 #: cache/17/171a03d2fcd4a30b3b21796f9876f6cc.php:703
 #: cache/34/3493d88c45c5b62199e7bd7d6a5699df.php:708
 msgid "Run at CMS Time?"
-msgstr "Chạy vào giờ CMS?"
+msgstr "Chạy theo giờ CMS?"
 
 #: cache/16/160f5151dae9dd6473665e95d0908966.php:386
 #: cache/7e/7ebabda5480d88651340523f453cf0ea.php:362
@@ -7094,7 +7094,7 @@ msgstr "Kiểm tra giấy phép thương mại"
 
 #: cache/39/39a9475d861cbf0824a3be451f1aea8c.php:91
 msgid "Are you sure you want to ask this Player to check its Licence?"
-msgstr "Bạn có chắc chắn muốn yêu cầu Người chơi này kiểm tra Giấy phép của nó không?"
+msgstr "Bạn có chắc chắn muốn yêu cầu Thiết bị trình chiếu này kiểm tra Giấy phép của nó không?"
 
 #: cache/39/39a9475d861cbf0824a3be451f1aea8c.php:102
 msgid "The result of this check will be immediately actioned and the status reported in Commercial Licence column."
@@ -7514,7 +7514,7 @@ msgstr "Khoảng thời gian thu thập"
 #: cache/fd/fdfd9b8e7779cf4b62a5e7614a063d2a.php:101
 #: cache/c5/c55b97faf35e73cd93f558006e1ecd0c.php:113
 msgid "How often should the Player check for new content."
-msgstr "Người chơi nên kiểm tra nội dung mới thường xuyên như thế nào."
+msgstr "Thiết bị trình chiếu nên kiểm tra nội dung mới thường xuyên như thế nào."
 
 #: cache/bd/bd5d2e4a3e31b76bad9ff5f5698f7a7b.php:105
 #: cache/ef/ef83cce0de7eb8867114fe1580770c60.php:105
@@ -7722,7 +7722,7 @@ msgstr "Bật báo cáo thống kê?"
 #: cache/fd/fdfd9b8e7779cf4b62a5e7614a063d2a.php:137
 #: cache/c5/c55b97faf35e73cd93f558006e1ecd0c.php:149
 msgid "Should the application send proof of play stats to the CMS."
-msgstr "Ứng dụng có nên gửi số liệu thống kê bằng chứng chơi tới CMS hay không."
+msgstr "Ứng dụng có nên gửi số liệu thống kê bằng chứng phát tới CMS hay không."
 
 #: cache/bd/bd5d2e4a3e31b76bad9ff5f5698f7a7b.php:146
 #: cache/ef/ef83cce0de7eb8867114fe1580770c60.php:146
@@ -7739,7 +7739,7 @@ msgstr "Mức độ tổng hợp"
 #: cache/fd/fdfd9b8e7779cf4b62a5e7614a063d2a.php:148
 #: cache/c5/c55b97faf35e73cd93f558006e1ecd0c.php:160
 msgid "Set the level of collection for Proof of Play Statistics to be applied to selected Layouts / Media and Widget items."
-msgstr "Đặt mức độ thu thập cho Thống kê Bằng chứng Chơi sẽ được áp dụng cho các mục Bố cục/Phương tiện và Tiện ích đã chọn."
+msgstr "Đặt mức độ thu thập cho Thống kê Bằng chứng phát sẽ được áp dụng cho các mục Bố cục/Phương tiện và Tiện ích đã chọn."
 
 #: cache/bd/bd5d2e4a3e31b76bad9ff5f5698f7a7b.php:152
 #: cache/ef/ef83cce0de7eb8867114fe1580770c60.php:152
@@ -7889,19 +7889,19 @@ msgstr "Vị trí pixel trên cùng của cửa sổ hiển thị phải đượ
 
 #: cache/bd/bd5d2e4a3e31b76bad9ff5f5698f7a7b.php:306
 msgid "CTRL Key required to access Player Information Screen?"
-msgstr "Cần có phím CTRL để truy cập Màn hình thông tin người chơi?"
+msgstr "Cần có phím CTRL để truy cập Màn hình thông tin Thiết bị trình chiếu?"
 
 #: cache/bd/bd5d2e4a3e31b76bad9ff5f5698f7a7b.php:309
 msgid "Should the Player information screen require the CTRL key?"
-msgstr "Màn hình thông tin Người chơi có cần phím CTRL không?"
+msgstr "Màn hình thông tin Thiết bị trình chiếu có cần phím CTRL không?"
 
 #: cache/bd/bd5d2e4a3e31b76bad9ff5f5698f7a7b.php:317
 msgid "Key for Player Information Screen"
-msgstr "Phím cho màn hình thông tin người chơi"
+msgstr "Phím cho màn hình thông tin Thiết bị trình chiếu"
 
 #: cache/bd/bd5d2e4a3e31b76bad9ff5f5698f7a7b.php:320
 msgid "Which key should activate the Player information screen? A single character."
-msgstr "Phím nào sẽ kích hoạt màn hình thông tin Người chơi? Một nhân vật duy nhất."
+msgstr "Phím nào sẽ kích hoạt màn hình thông tin Thiết bị trình chiếu? Một nhân vật duy nhất."
 
 #: cache/bd/bd5d2e4a3e31b76bad9ff5f5698f7a7b.php:328
 #: cache/ef/ef83cce0de7eb8867114fe1580770c60.php:262
@@ -7918,7 +7918,7 @@ msgstr "Cấp độ nhật ký"
 #: cache/fd/fdfd9b8e7779cf4b62a5e7614a063d2a.php:194
 #: cache/c5/c55b97faf35e73cd93f558006e1ecd0c.php:290
 msgid "The resting logging level that should be recorded by the Player."
-msgstr "Mức ghi nhật ký nghỉ ngơi cần được Người chơi ghi lại."
+msgstr "Mức ghi nhật ký nghỉ ngơi cần được Thiết bị trình chiếu ghi lại."
 
 #: cache/bd/bd5d2e4a3e31b76bad9ff5f5698f7a7b.php:334
 #: cache/ef/ef83cce0de7eb8867114fe1580770c60.php:268
@@ -8096,7 +8096,7 @@ msgstr "Tải xuống đồng thời tối đa"
 #: cache/bd/bd5d2e4a3e31b76bad9ff5f5698f7a7b.php:489
 #: cache/ef/ef83cce0de7eb8867114fe1580770c60.php:356
 msgid "The maximum number of concurrent downloads the Player will attempt."
-msgstr "Số lượt tải xuống đồng thời tối đa mà Người chơi sẽ thử."
+msgstr "Số lượt tải xuống đồng thời tối đa mà Thiết bị trình chiếu sẽ thử."
 
 #: cache/bd/bd5d2e4a3e31b76bad9ff5f5698f7a7b.php:497
 #: cache/ef/ef83cce0de7eb8867114fe1580770c60.php:364
@@ -8106,7 +8106,7 @@ msgstr "Danh sách cho phép lệnh Shell"
 #: cache/bd/bd5d2e4a3e31b76bad9ff5f5698f7a7b.php:500
 #: cache/ef/ef83cce0de7eb8867114fe1580770c60.php:367
 msgid "Which shell commands should the Player execute?"
-msgstr "Người chơi nên thực thi lệnh shell nào?"
+msgstr "Thiết bị trình chiếu nên thực thi lệnh shell nào?"
 
 #: cache/bd/bd5d2e4a3e31b76bad9ff5f5698f7a7b.php:511
 #: cache/ef/ef83cce0de7eb8867114fe1580770c60.php:378
@@ -8174,7 +8174,7 @@ msgstr "Máy chủ Web nhúng có cho phép WAN?"
 #: cache/62/62f02d9694937edf9eeebf8af13766c4.php:605
 #: cache/c5/c55b97faf35e73cd93f558006e1ecd0c.php:453
 msgid "Should we allow access to the Player Embedded Web Server from WAN? You may need to adjust the device firewall to allow external traffic"
-msgstr "Chúng tôi có nên cho phép truy cập vào Máy chủ web nhúng của người chơi từ WAN không? Bạn có thể cần điều chỉnh tường lửa của thiết bị để cho phép lưu lượng truy cập bên ngoài"
+msgstr "Chúng tôi có nên cho phép truy cập vào Máy chủ web nhúng của Thiết bị trình chiếu từ WAN không? Bạn có thể cần điều chỉnh tường lửa của thiết bị để cho phép lưu lượng truy cập bên ngoài"
 
 #: cache/bd/bd5d2e4a3e31b76bad9ff5f5698f7a7b.php:569
 #: cache/ef/ef83cce0de7eb8867114fe1580770c60.php:436
@@ -8515,7 +8515,7 @@ msgstr "Cổng nhà xuất bản"
 #: cache/48/4860b3518f632b1f057ab5780c58564e.php:144
 #: cache/e0/e0b013ccd20fff329ddf7c3713949611.php:139
 msgid "The port on which players will communicate"
-msgstr "Cổng mà người chơi sẽ liên lạc"
+msgstr "Cổng mà người Thiết bị trình chiếu sẽ kết nối"
 
 #: cache/48/4860b3518f632b1f057ab5780c58564e.php:155
 #: cache/e0/e0b013ccd20fff329ddf7c3713949611.php:150
@@ -9134,7 +9134,7 @@ msgstr "Cầu thủ này đã quá già để bộc lộ lỗi lầm. Vui lòng 
 
 #: cache/3c/3c1fa79a7b77f42d6209210a75b63812.php:150
 msgid "Reported Player Faults"
-msgstr "Lỗi người chơi được báo cáo"
+msgstr "Lỗi thiết bị trình chiếu được báo cáo"
 
 #: cache/3c/3c1fa79a7b77f42d6209210a75b63812.php:166
 #: cache/f9/f94739d77632ff2785eb7f60400f9cff.php:255
@@ -9830,12 +9830,12 @@ msgstr "Bạn muốn DMA này áp dụng cho màn hình nào?"
 #: cache/00/00e29dc44c2e4928fedaba3a9ba3ce19.php:552
 #: cache/9e/9e6f650d21b6dc055e4bfd82da487c3c.php:158
 msgid "Cost per Play"
-msgstr "Chi phí mỗi lần chơi"
+msgstr "Chi phí mỗi lần phát"
 
 #: cache/00/00e29dc44c2e4928fedaba3a9ba3ce19.php:558
 #: cache/44/44f134266ea30161ba4929c6a2658018.php:552
 msgid "The cost per play"
-msgstr "Chi phí cho mỗi lần chơi"
+msgstr "Chi phí cho mỗi lần phát"
 
 #: cache/00/00e29dc44c2e4928fedaba3a9ba3ce19.php:570
 #: cache/9e/9e6f650d21b6dc055e4bfd82da487c3c.php:166
@@ -9849,7 +9849,7 @@ msgstr "Nguồn gốc của con số ấn tượng này là gì?"
 #: cache/00/00e29dc44c2e4928fedaba3a9ba3ce19.php:592
 #: cache/44/44f134266ea30161ba4929c6a2658018.php:563
 msgid "Impressions per play"
-msgstr "Số lần hiển thị mỗi lần chơi"
+msgstr "Số lần hiển thị mỗi lần phát"
 
 #: cache/00/00e29dc44c2e4928fedaba3a9ba3ce19.php:598
 #: cache/44/44f134266ea30161ba4929c6a2658018.php:569
@@ -10245,7 +10245,7 @@ msgstr "Đăng nhập?"
 #: cache/84/84359f589ba8915a7c7a9b5ebb5f3561.php:217
 #: cache/a3/a3efbd21e9c181a14f5fceee1b54a95f.php:326
 msgid "Retired?"
-msgstr "Đã nghỉ hưu?"
+msgstr "Đã vô hiệu hóa?"
 
 #: cache/84/84359f589ba8915a7c7a9b5ebb5f3561.php:221
 msgid "Two Factor"
@@ -10455,7 +10455,7 @@ msgstr "Cài đặt hiển thị"
 #: cache/7c/7c83e34565b8f2b468cd031ae65008ae.php:272
 #: cache/d1/d10814ee3dd19888fef200639442fd26.php:396
 msgid "Player Versions"
-msgstr "Phiên bản người chơi"
+msgstr "Phiên bản Thiết bị trình chiếu"
 
 #: cache/7c/7c83e34565b8f2b468cd031ae65008ae.php:319
 #: cache/d1/d10814ee3dd19888fef200639442fd26.php:461
@@ -11068,7 +11068,7 @@ msgstr "Lọc tất cả các tập tin Media"
 
 #: cache/ba/ba742a40b189db39d785d1467ec212ed.php:91
 msgid "Caution! Trigerring this action will ask Player to remove every downloaded Media file from its storage."
-msgstr "Thận trọng! Việc kích hoạt hành động này sẽ yêu cầu Người chơi xóa mọi tệp Phương tiện đã tải xuống khỏi bộ nhớ của nó."
+msgstr "Thận trọng! Việc kích hoạt hành động này sẽ yêu cầu Thiết bị trình chiếu xóa mọi tệp Phương tiện đã tải xuống khỏi bộ nhớ của nó."
 
 #: cache/ba/ba742a40b189db39d785d1467ec212ed.php:102
 msgid "This action will be immediately actioned. Player will remove all existing Media files from its local storage and request fresh copies of required files from the CMS"
@@ -11110,7 +11110,7 @@ msgstr "Bạn muốn đặt mục tiêu cho chiến dịch này như thế nào?
 #: cache/30/302546eec41a46c8a34a19447abc899c.php:433
 #: cache/4a/4a3332e6e963e35feaad18f2b2a17205.php:304
 msgid "Plays"
-msgstr "Lượt chơi"
+msgstr "Lượt phát"
 
 #: cache/9b/9b336feab307d9fb44a116731ed70a80.php:206
 #: cache/30/302546eec41a46c8a34a19447abc899c.php:437
@@ -11140,7 +11140,7 @@ msgstr "Mục tiêu"
 #: cache/9b/9b336feab307d9fb44a116731ed70a80.php:221
 #: cache/4a/4a3332e6e963e35feaad18f2b2a17205.php:319
 msgid "What is the target number for this Campaign over its entire playtime"
-msgstr "Số mục tiêu cho Chiến dịch này trong toàn bộ thời gian chơi là bao nhiêu"
+msgstr "Số mục tiêu cho Chiến dịch này trong toàn bộ thời gian phát là bao nhiêu"
 
 #: cache/9b/9b336feab307d9fb44a116731ed70a80.php:366
 msgid "Add a layout"
@@ -11759,7 +11759,7 @@ msgstr "Mã bố cục"
 #: cache/17/171a03d2fcd4a30b3b21796f9876f6cc.php:573
 #: cache/34/3493d88c45c5b62199e7bd7d6a5699df.php:581
 msgid "Please select the Code identifier for the Layout that Player should navigate to when this Action is triggered."
-msgstr "Vui lòng chọn mã định danh Mã cho Bố cục mà Người chơi sẽ điều hướng đến khi Hành động này được kích hoạt."
+msgstr "Vui lòng chọn mã định danh Mã cho Bố cục mà Thiết bị trình chiếu sẽ điều hướng đến khi Hành động này được kích hoạt."
 
 #: cache/17/171a03d2fcd4a30b3b21796f9876f6cc.php:596
 #: cache/34/3493d88c45c5b62199e7bd7d6a5699df.php:603
@@ -12225,7 +12225,7 @@ msgstr "Lưu các thay đổi của người chỉnh sửa"
 
 #: cache/ae/aede29170646eeec2459cefb297c2720.php:460
 msgid "Play Layout preview"
-msgstr "Chơi bản xem trước bố cục"
+msgstr "Phát bản xem trước bố cục"
 
 #: cache/ae/aede29170646eeec2459cefb297c2720.php:464
 msgid "Preview stopped!"
@@ -12233,7 +12233,7 @@ msgstr "Đã dừng xem trước!"
 
 #: cache/ae/aede29170646eeec2459cefb297c2720.php:468
 msgid "Click to Play again"
-msgstr "Bấm để chơi lại"
+msgstr "Bấm để phát lại"
 
 #: cache/ae/aede29170646eeec2459cefb297c2720.php:476
 msgid "Stop Layout preview"
@@ -12452,7 +12452,7 @@ msgstr "Tàn tật"
 
 #: cache/30/302546eec41a46c8a34a19447abc899c.php:292
 msgid "# Layouts"
-msgstr "# Bố cục"
+msgstr "Bố cục"
 
 #: cache/30/302546eec41a46c8a34a19447abc899c.php:307
 msgid "Cycle based Playback"
@@ -12461,7 +12461,7 @@ msgstr "Phát lại dựa trên chu kỳ"
 #: cache/30/302546eec41a46c8a34a19447abc899c.php:311
 #: cache/6a/6a00ee3d77ba0c4abd202500df4a6d77.php:516
 msgid "Play Count"
-msgstr "Chơi đếm"
+msgstr "Đếm lượt phát"
 
 #: cache/30/302546eec41a46c8a34a19447abc899c.php:360
 #: cache/0e/0ecdbd83cf10dce8193a8693f01dafb9.php:164
@@ -12703,7 +12703,7 @@ msgstr "Có thể xem ảnh chụp màn hình trong Lưới hiển thị bằng 
 
 #: cache/d8/d8641e7f460578ef71d1de7ee959cbcf.php:129
 msgid "XMR is not working on this Player yet, the screenshot will be requested the next time the Player connects on its collection interval, expected %nextCollect%."
-msgstr "XMR chưa hoạt động trên Trình phát này, ảnh chụp màn hình sẽ được yêu cầu vào lần tiếp theo Người chơi kết nối vào khoảng thời gian thu thập của nó, dự kiến ​​là %nextCollect%."
+msgstr "XMR chưa hoạt động trên Trình phát này, ảnh chụp màn hình sẽ được yêu cầu vào lần tiếp theo Thiết bị trình chiếu kết nối vào khoảng thời gian thu thập của nó, dự kiến ​​là %nextCollect%."
 
 #: cache/d8/d8592dc3f982e425ac60fae060fd2793.php:57
 msgid "Delete Command"
@@ -13200,7 +13200,7 @@ msgstr "Đã lỗi thời"
 #: cache/40/40934d1cc21621783800143e32bfb38c.php:622
 #: cache/59/59f0058495a6a779727bbfe19dd6898f.php:474
 msgid "Authorised?"
-msgstr "Được ủy quyền?"
+msgstr "Đã cấp phép hoạt động?"
 
 #: cache/40/40934d1cc21621783800143e32bfb38c.php:235
 msgid "XMR Registered?"
@@ -13214,7 +13214,7 @@ msgstr "Hồ sơ hiển thị"
 
 #: cache/40/40934d1cc21621783800143e32bfb38c.php:353
 msgid "Player Type"
-msgstr "Loại người chơi"
+msgstr "Loại người Thiết bị trình chiếu"
 
 #: cache/40/40934d1cc21621783800143e32bfb38c.php:359
 msgid "Android"
@@ -13242,7 +13242,7 @@ msgstr "Linux"
 
 #: cache/40/40934d1cc21621783800143e32bfb38c.php:409
 msgid "Player Code"
-msgstr "Mã người chơi"
+msgstr "Mã thiết bị trình chiếu"
 
 #: cache/40/40934d1cc21621783800143e32bfb38c.php:420
 #: cache/40/40934d1cc21621783800143e32bfb38c.php:789
@@ -13281,7 +13281,7 @@ msgstr "Không áp dụng"
 
 #: cache/40/40934d1cc21621783800143e32bfb38c.php:523
 msgid "Player supported?"
-msgstr "Người chơi được hỗ trợ?"
+msgstr "Thiết bị trình chiếu được hỗ trợ?"
 
 #: cache/40/40934d1cc21621783800143e32bfb38c.php:585
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:674
@@ -13396,11 +13396,11 @@ msgstr "Ngoài trời?"
 
 #: cache/40/40934d1cc21621783800143e32bfb38c.php:793
 msgid "Cost Per Play"
-msgstr "Chi phí mỗi lần chơi"
+msgstr "Chi phí mỗi lần phát"
 
 #: cache/40/40934d1cc21621783800143e32bfb38c.php:797
 msgid "Impressions Per Play"
-msgstr "Số lần hiển thị mỗi lần chơi"
+msgstr "Số lần hiển thị mỗi lần phát"
 
 #: cache/40/40934d1cc21621783800143e32bfb38c.php:809
 #: cache/59/59f0058495a6a779727bbfe19dd6898f.php:603
@@ -13486,7 +13486,7 @@ msgstr "Đây là loại Trình phát không xác định và không có cài đ
 
 #: cache/9e/9e6f650d21b6dc055e4bfd82da487c3c.php:75
 msgid "Your API key allows for secure communication between the CMS and the Xibo audience service. It is used to analyse your proof of play data for Ad Campaigns and retrieve reports. It is never possible to retrieve credentials."
-msgstr "Khóa API của bạn cho phép liên lạc an toàn giữa CMS và dịch vụ khán giả Xibo. Nó được sử dụng để phân tích dữ liệu bằng chứng chơi của bạn cho Chiến dịch quảng cáo và truy xuất báo cáo. Không bao giờ có thể lấy lại thông tin xác thực."
+msgstr "Khóa API của bạn cho phép liên lạc an toàn giữa CMS và dịch vụ khán giả Xibo. Nó được sử dụng để phân tích dữ liệu bằng chứng phát của bạn cho Chiến dịch quảng cáo và truy xuất báo cáo. Không bao giờ có thể lấy lại thông tin xác thực."
 
 #: cache/9e/9e6f650d21b6dc055e4bfd82da487c3c.php:100
 msgid "Once enabled additional reporting will be shown for your Ad Campaigns in the 'All Reports' section. To vary your cost/impressions per play by date, time of day, day of week or geo location, add a DMA (designated market area) below."
@@ -13499,7 +13499,7 @@ msgstr "Khóa API của bạn được ủy quyền cho màn hình %numberOfAuth
 
 #: cache/9e/9e6f650d21b6dc055e4bfd82da487c3c.php:162
 msgid "Impressions per Play"
-msgstr "Số lần hiển thị mỗi lần chơi"
+msgstr "Số lần hiển thị mỗi lần phát"
 
 #: cache/9e/9e6f650d21b6dc055e4bfd82da487c3c.php:178
 msgid "Days of week"
@@ -15869,7 +15869,7 @@ msgstr "Màn hình của bạn có được đặt ở ngoài trời không?"
 
 #: cache/44/44f134266ea30161ba4929c6a2658018.php:546
 msgid "Cost per play"
-msgstr "Chi phí mỗi lần chơi"
+msgstr "Chi phí mỗi lần phát"
 
 #: cache/44/44f134266ea30161ba4929c6a2658018.php:654
 #: lib/XTR/MaintenanceRegularTask.php:149
@@ -15886,7 +15886,7 @@ msgstr "Sử dụng Thời gian chờ toàn cầu?"
 
 #: cache/44/44f134266ea30161ba4929c6a2658018.php:694
 msgid "Should this display be tested against the global time out or the Player collection interval?"
-msgstr "Màn hình này có nên được kiểm tra theo thời gian chờ chung hoặc khoảng thời gian thu thập Người chơi không?"
+msgstr "Màn hình này có nên được kiểm tra theo thời gian chờ chung hoặc khoảng thời gian thu thập Thiết bị trình chiếu không?"
 
 #: cache/44/44f134266ea30161ba4929c6a2658018.php:707
 msgid "Enable Wake on LAN"
@@ -15962,7 +15962,7 @@ msgstr "Kiểm toán cho đến khi"
 
 #: cache/44/44f134266ea30161ba4929c6a2658018.php:882
 msgid "Collect auditing from this Player. Should only be used if there is a problem with the display."
-msgstr "Thu thập kiểm tra từ Người chơi này. Chỉ nên sử dụng nếu có vấn đề với màn hình."
+msgstr "Thu thập kiểm tra từ Thiết bị trình chiếu này. Chỉ nên sử dụng nếu có vấn đề với màn hình."
 
 #: cache/44/44f134266ea30161ba4929c6a2658018.php:945
 msgid "Clear Cached Data"
@@ -15978,7 +15978,7 @@ msgstr "Cấu hình lại XMR"
 
 #: cache/44/44f134266ea30161ba4929c6a2658018.php:968
 msgid "Remove the XMR configuration for this Player and send a rekey action."
-msgstr "Xóa cấu hình XMR cho Người chơi này và gửi hành động khóa lại."
+msgstr "Xóa cấu hình XMR cho Thiết bị trình chiếu này và gửi hành động khóa lại."
 
 #: cache/44/44f134266ea30161ba4929c6a2658018.php:981
 msgid "TeamViewer Serial"
@@ -16003,7 +16003,7 @@ msgstr "Phiên bản %version%"
 
 #: cache/9a/9a805b6508ec637b7b449eaf280704fb.php:83
 msgid "Proof of Play"
-msgstr "Bằng chứng chơi"
+msgstr "Bằng chứng Thiết bị trình chiếu"
 
 #: cache/9a/9a805b6508ec637b7b449eaf280704fb.php:207
 msgid "Total number of records to be exported "
@@ -16424,7 +16424,7 @@ msgstr "Mã giấy phép"
 #: cache/62/62f02d9694937edf9eeebf8af13766c4.php:102
 #: cache/c5/c55b97faf35e73cd93f558006e1ecd0c.php:102
 msgid "Provide the Licence Code (formerly Licence email address) to license Players using this Display Profile."
-msgstr "Cung cấp Mã giấy phép (trước đây là địa chỉ email Giấy phép) để cấp phép cho Người chơi sử dụng Hồ sơ hiển thị này."
+msgstr "Cung cấp Mã giấy phép (trước đây là địa chỉ email Giấy phép) để cấp phép cho Thiết bị trình chiếu sử dụng Hồ sơ hiển thị này."
 
 #: cache/62/62f02d9694937edf9eeebf8af13766c4.php:110
 msgid "Password Protect Settings"
@@ -16438,7 +16438,7 @@ msgstr "Cung cấp Mật khẩu sẽ được yêu cầu để truy cập cài �
 #: cache/fd/fdfd9b8e7779cf4b62a5e7614a063d2a.php:159
 #: cache/c5/c55b97faf35e73cd93f558006e1ecd0c.php:171
 msgid "Player Version"
-msgstr "Phiên bản người chơi"
+msgstr "Phiên bản Thiết bị trình chiếu"
 
 #: cache/62/62f02d9694937edf9eeebf8af13766c4.php:196
 #: cache/fd/fdfd9b8e7779cf4b62a5e7614a063d2a.php:162
@@ -16505,7 +16505,7 @@ msgstr "Kích thước màn hình"
 
 #: cache/62/62f02d9694937edf9eeebf8af13766c4.php:310
 msgid "Set dimensions to be used for the Player window ensuring that they do not exceed the actual screen size. Enter the following values representing the pixel sizings for; Top,Left,Width,Height. This requires a Player Restart to action."
-msgstr "Đặt kích thước sẽ được sử dụng cho cửa sổ Trình phát, đảm bảo rằng chúng không vượt quá kích thước màn hình thực tế. Nhập các giá trị sau biểu thị kích thước pixel cho; Trên, Trái, Chiều rộng, Chiều cao. Điều này yêu cầu Người chơi khởi động lại để hành động."
+msgstr "Đặt kích thước sẽ được sử dụng cho cửa sổ Trình phát, đảm bảo rằng chúng không vượt quá kích thước màn hình thực tế. Nhập các giá trị sau biểu thị kích thước pixel cho; Trên, Trái, Chiều rộng, Chiều cao. Điều này yêu cầu Thiết bị trình chiếu khởi động lại để hành động."
 
 #: cache/62/62f02d9694937edf9eeebf8af13766c4.php:322
 msgid "Blacklist Videos?"
@@ -16635,7 +16635,7 @@ msgstr "Sử dụng thời gian CMS?"
 
 #: cache/62/62f02d9694937edf9eeebf8af13766c4.php:572
 msgid "Set the device time using the CMS. Only available on rooted devices or system signed players."
-msgstr "Đặt thời gian cho thiết bị bằng CMS. Chỉ khả dụng trên các thiết bị đã root hoặc người chơi đã ký hệ thống."
+msgstr "Đặt thời gian cho thiết bị bằng CMS. Chỉ khả dụng trên các thiết bị đã root hoặc Thiết bị trình chiếu đã ký hệ thống."
 
 #: cache/62/62f02d9694937edf9eeebf8af13766c4.php:580
 msgid "Enable caching of Web Resources?"
@@ -16659,7 +16659,7 @@ msgstr "Sử dụng nhiều bộ giải mã video"
 
 #: cache/62/62f02d9694937edf9eeebf8af13766c4.php:627
 msgid "Should the Player try to use Multiple Video Decoders when preparing and showing Video content."
-msgstr "Người chơi có nên cố gắng sử dụng Nhiều bộ giải mã video khi chuẩn bị và hiển thị nội dung Video hay không."
+msgstr "Thiết bị trình chiếu có nên cố gắng sử dụng Nhiều bộ giải mã video khi chuẩn bị và hiển thị nội dung Video hay không."
 
 #: cache/62/62f02d9694937edf9eeebf8af13766c4.php:638
 msgid "Maximum Region Count"
@@ -17204,7 +17204,7 @@ msgstr "Tải lên phiên bản"
 
 #: cache/0b/0b613c3b800b3276e4da1deace20b79a.php:153
 msgid "Your API key allows for secure communication between the CMS and the Xibo SSP connector service. It is used to orchestrate the delivery of ads to your players. Enter your API Key from Xibo."
-msgstr "Khóa API của bạn cho phép liên lạc an toàn giữa CMS và dịch vụ kết nối Xibo SSP. Nó được sử dụng để sắp xếp việc phân phối quảng cáo đến người chơi của bạn. Nhập Khóa API của bạn từ Xibo."
+msgstr "Khóa API của bạn cho phép liên lạc an toàn giữa CMS và dịch vụ kết nối Xibo SSP. Nó được sử dụng để sắp xếp việc phân phối quảng cáo đến thiết bị của bạn. Nhập Khóa API của bạn từ SSignage."
 
 #: cache/0b/0b613c3b800b3276e4da1deace20b79a.php:170
 msgid "CMS URL"
@@ -17212,7 +17212,7 @@ msgstr "URL CMS"
 
 #: cache/0b/0b613c3b800b3276e4da1deace20b79a.php:176
 msgid "The URL your players use to connect to your CMS."
-msgstr "URL mà người chơi của bạn sử dụng để kết nối với CMS của bạn."
+msgstr "URL mà người Thiết bị trình chiếu của bạn sử dụng để kết nối với CMS của bạn."
 
 #: cache/0b/0b613c3b800b3276e4da1deace20b79a.php:276
 msgid "Connect to this partner"
@@ -17404,7 +17404,7 @@ msgstr "Đã sửa đổi"
 
 #: cache/fd/fdfd9b8e7779cf4b62a5e7614a063d2a.php:90
 msgid "Provide the Licence Code to license Players using this Display Profile."
-msgstr "Cung cấp Mã giấy phép để cấp phép cho Người chơi sử dụng Hồ sơ hiển thị này."
+msgstr "Cung cấp Mã giấy phép để cấp phép cho Thiết bị trình chiếu sử dụng Hồ sơ hiển thị này."
 
 #: cache/fd/fdfd9b8e7779cf4b62a5e7614a063d2a.php:267
 #: cache/c5/c55b97faf35e73cd93f558006e1ecd0c.php:405
@@ -17593,7 +17593,7 @@ msgstr "Nhập mã được liên kết với web hook mà bạn muốn kích ho
 #: cache/5d/5ddc3b3a06dcb05f69b47d5cd8bae287.php:240
 #: cache/fe/fe4e93c4e904f69a0714cf32c747c46c.php:97
 msgid "Pick a command to send to the Player. If the CMS has XMR enabled this will be sent immediately, otherwise it will show an error."
-msgstr "Chọn một lệnh để gửi cho Người chơi. Nếu CMS đã bật XMR, thông tin này sẽ được gửi ngay lập tức, nếu không nó sẽ hiển thị lỗi."
+msgstr "Chọn một lệnh để gửi cho Thiết bị trình chiếu. Nếu CMS đã bật XMR, thông tin này sẽ được gửi ngay lập tức, nếu không nó sẽ hiển thị lỗi."
 
 #: cache/5d/5ddc3b3a06dcb05f69b47d5cd8bae287.php:250
 #: lib/Event/ScheduleCriteriaRequestEvent.php:44
@@ -17731,11 +17731,11 @@ msgstr "Dễ thấy"
 
 #: cache/5d/5ddc3b3a06dcb05f69b47d5cd8bae287.php:482
 msgid "Overlay Layouts"
-msgstr "Bố cục lớp phủ"
+msgstr "Bố cục chồng lên"
 
 #: cache/5d/5ddc3b3a06dcb05f69b47d5cd8bae287.php:486
 msgid "Interrupt Layouts"
-msgstr "Bố cục ngắt"
+msgstr "Bố cục ngắt quãng"
 
 #: cache/5d/5ddc3b3a06dcb05f69b47d5cd8bae287.php:490
 msgid "Campaign Layouts"
@@ -17918,7 +17918,7 @@ msgstr "Khi được bật, biểu mẫu này sẽ tự động gửi trong tư�
 
 #: cache/5d/5ddc3b3a06dcb05f69b47d5cd8bae287.php:737
 msgid "Play Preview"
-msgstr "Chơi bản xem trước"
+msgstr "Phát bản xem trước"
 
 #: cache/5d/5ddc3b3a06dcb05f69b47d5cd8bae287.php:749
 msgid "Preview in new window"
@@ -18151,7 +18151,7 @@ msgstr "Lên lịch thời gian lưu trữ tiêu chí"
 
 #: cache/71/715b59f2a1850f4b83e1b851aaae249d.php:150
 msgid "If a player has weather based schedule criteria, how many hours should this connector cache that weather data for?"
-msgstr "Nếu người chơi có tiêu chí về lịch trình dựa trên thời tiết thì trình kết nối này sẽ lưu trữ dữ liệu thời tiết đó trong bao nhiêu giờ?"
+msgstr "Nếu Thiết bị trình chiếu có tiêu chí về lịch trình dựa trên thời tiết thì trình kết nối này sẽ lưu trữ dữ liệu thời tiết đó trong bao nhiêu giờ?"
 
 #: cache/71/71f266dcf1ce617b7b2057bf2d0c554d.php:54
 #: lib/Middleware/Handlers.php:146
@@ -18454,7 +18454,7 @@ msgstr "Đã lên lịch vào lúc"
 
 #: cache/6a/6a00ee3d77ba0c4abd202500df4a6d77.php:591
 msgid "Played?"
-msgstr "Chơi?"
+msgstr "Đã phát?"
 
 #: cache/6a/6a00ee3d77ba0c4abd202500df4a6d77.php:595
 msgid "Errored?"
@@ -19409,7 +19409,7 @@ msgstr "Khóa bí mật CMS"
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:201
 msgid "This key must be entered into each Player to authenticate the Player with the CMS."
-msgstr "Khóa này phải được nhập vào từng Người chơi để xác thực Người chơi bằng CMS."
+msgstr "Khóa này phải được nhập vào từng Thiết bị trình chiếu để xác thực Thiết bị trình chiếu bằng CMS."
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:241
 msgid "CMS Theme"
@@ -19585,15 +19585,15 @@ msgstr "Số lượng khe hiển thị"
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:1121
 msgid "The maximum number of licensed Players for this server installation. 0 = unlimited"
-msgstr "Số lượng Người chơi được cấp phép tối đa cho việc cài đặt máy chủ này. 0 = không giới hạn"
+msgstr "Số lượng Thiết bị trình chiếu được cấp phép tối đa cho việc cài đặt máy chủ này. 0 = không giới hạn"
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:1158
 msgid "Set the Default setting to use for the level of collection for Proof of Play Statistics to be applied to Layouts / Media and Widget items."
-msgstr "Đặt cài đặt Mặc định để sử dụng cho mức độ thu thập Thống kê Bằng chứng Chơi sẽ được áp dụng cho các mục Bố cục / Phương tiện và Tiện ích."
+msgstr "Đặt cài đặt Mặc định để sử dụng cho mức độ thu thập Thống kê Bằng chứng phát sẽ được áp dụng cho các mục Bố cục / Phương tiện và Tiện ích."
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:1219
 msgid "Set the Default Settings for Proof of Play statistics to apply to all Displays. This can be toggled off by using Display Profiles."
-msgstr "Đặt Cài đặt mặc định cho thống kê Bằng chứng chơi để áp dụng cho tất cả các Màn hình. Điều này có thể được tắt bằng cách sử dụng Cấu hình hiển thị."
+msgstr "Đặt Cài đặt mặc định cho thống kê Bằng chứng phát để áp dụng cho tất cả các Màn hình. Điều này có thể được tắt bằng cách sử dụng Cấu hình hiển thị."
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:1236
 msgid "Enable Layout Stats Collection?"
@@ -19601,7 +19601,7 @@ msgstr "Bật Thu thập Thống kê Bố cục?"
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:1242
 msgid "Select the Default setting to use for the collection of Proof of Play statistics for all Layout Items."
-msgstr "Chọn cài đặt Mặc định để sử dụng cho việc thu thập số liệu thống kê Bằng chứng Chơi cho tất cả các Mục Bố cục."
+msgstr "Chọn cài đặt Mặc định để sử dụng cho việc thu thập số liệu thống kê Bằng chứng phát cho tất cả các Mục Bố cục."
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:1265
 msgid "Select the Default setting to use for the collection of Proof of Play statistics for all Media Items."
@@ -19625,7 +19625,7 @@ msgstr "Bật tùy chọn báo cáo trạng thái bố cục hiện tại?"
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:1459
 msgid "Lock the Display Name to the device name provided by the Player?"
-msgstr "Khóa Display Name với tên thiết bị do Người chơi cung cấp?"
+msgstr "Khóa Display Name với tên thiết bị do Thiết bị trình chiếu cung cấp?"
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:1476
 msgid "Enable the option to set the screenshot interval?"
@@ -19717,7 +19717,7 @@ msgstr "Gửi lịch trình trước?"
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:1853
 msgid "Should the CMS send future schedule information to Players?"
-msgstr "CMS có nên gửi thông tin lịch thi đấu trong tương lai cho Người chơi không?"
+msgstr "CMS có nên gửi thông tin lịch thi đấu trong tương lai cho Thiết bị trình chiếu không?"
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:1872
 msgid "Send files in advance?"
@@ -19825,7 +19825,7 @@ msgstr "Thời gian chờ hiển thị tối đa"
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:2293
 msgid "How long in minutes after the last time a Player connects should we send an alert? Can be overridden on a per Player basis."
-msgstr "Chúng tôi nên gửi thông báo bao lâu sau lần cuối cùng Người chơi kết nối? Có thể được ghi đè trên cơ sở mỗi Người chơi."
+msgstr "Chúng tôi nên gửi thông báo bao lâu sau lần cuối cùng Thiết bị trình chiếu kết nối? Có thể được ghi đè trên cơ sở mỗi lần."
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:2324
 msgid "Send repeat Display Timeouts"
@@ -19905,7 +19905,7 @@ msgstr "Địa chỉ CDN"
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:2668
 msgid "Content Delivery Network Address for serving file requests to Players"
-msgstr "Địa chỉ mạng phân phối nội dung để phân phối các yêu cầu tệp tới Người chơi"
+msgstr "Địa chỉ mạng phân phối nội dung để phân phối các yêu cầu tệp tới Thiết bị trình chiếu"
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:2699
 msgid "Monthly bandwidth Limit"
@@ -20541,7 +20541,7 @@ msgstr "Nội dung tải xuống từ CMS được lưu vào bộ nhớ đệm c
 
 #: cache/ce/ceeec6bdf494687f7ffe028f7c6ac733.php:115
 msgid "Once downloaded, the player checks the schedule it has been sent and will show the appropriate content based on the local date and time."
-msgstr "Sau khi tải xuống, người chơi sẽ kiểm tra lịch trình đã được gửi và sẽ hiển thị nội dung phù hợp dựa trên ngày giờ địa phương."
+msgstr "Sau khi tải xuống, Thiết bị trình chiếu sẽ kiểm tra lịch trình đã được gửi và sẽ hiển thị nội dung phù hợp dựa trên ngày giờ địa phương."
 
 #: cache/ce/ceeec6bdf494687f7ffe028f7c6ac733.php:125
 msgid "Install / Upgrade"
@@ -21075,7 +21075,7 @@ msgstr "Định dạng tiêu chí không hợp lệ. Tất cả số liệu, gi�
 
 #: lib/Controller/DisplayGroup.php:3005
 msgid "Schedule criteria updates sent to players."
-msgstr "Lên lịch cập nhật tiêu chí gửi tới người chơi."
+msgstr "Lên lịch cập nhật tiêu chí gửi tới Thiết bị trình chiếu."
 
 #: lib/Controller/DataSet.php:234
 msgid "View RSS"
@@ -21847,7 +21847,7 @@ msgstr "Mô-đun không hợp lệ"
 
 #: lib/Controller/Layout.php:1759 lib/Controller/Layout.php:2516
 msgid "This Layout is ready to play"
-msgstr "Bố cục này đã sẵn sàng để chơi"
+msgstr "Bố cục này đã sẵn sàng để phát"
 
 #: lib/Controller/Layout.php:1760 lib/Controller/Layout.php:2520
 msgid "There are items on this Layout that can only be assessed by the Display"
@@ -22375,7 +22375,7 @@ msgstr "Quản lý"
 
 #: lib/Controller/Display.php:890
 msgid "Authorise"
-msgstr "Ủy quyền"
+msgstr "Cấp phép hoạt động"
 
 #: lib/Controller/Display.php:968 lib/Controller/Display.php:983
 msgid "Check Licence"
@@ -22862,7 +22862,7 @@ msgstr "Tên không thể trống"
 
 #: lib/Entity/Campaign.php:484
 msgid "Please enter play count"
-msgstr "Vui lòng nhập số lượt chơi"
+msgstr "Vui lòng nhập số lượt phát"
 
 #: lib/Entity/Campaign.php:489
 msgid "Invalid target type"
@@ -22882,7 +22882,7 @@ msgstr "Không thể đặt ngày kết thúc sớm hơn ngày bắt đầu."
 
 #: lib/Entity/Campaign.php:509
 msgid "Please choose either round-robin or block play order for this list"
-msgstr "Vui lòng chọn thứ tự chơi vòng tròn hoặc chặn cho danh sách này"
+msgstr "Vui lòng chọn thứ tự phát vòng tròn hoặc chặn cho danh sách này"
 
 #: lib/Entity/PlayerVersion.php:230 lib/Service/ReportService.php:305
 #: lib/Service/ReportService.php:342 lib/Factory/LayoutFactory.php:1300
@@ -23447,7 +23447,7 @@ msgstr "Bố cục ngắt"
 
 #: lib/Entity/Schedule.php:2091
 msgid "Action"
-msgstr "Hoạt động"
+msgstr "Hành động"
 
 #: lib/Entity/Schedule.php:2092
 msgid "Video/Image"
@@ -23507,7 +23507,7 @@ msgstr "Giám sát truyền hình"
 
 #: lib/Entity/DisplayEvent.php:220
 msgid "Player Fault"
-msgstr "Lỗi người chơi"
+msgstr "Lỗi Thiết bị trình chiếu"
 
 #: lib/Service/ReportService.php:190
 msgid "Get Report By Name: No file to return"
@@ -23550,7 +23550,7 @@ msgstr "%s Đăng ký XMR không hợp lệ"
 
 #: lib/Service/PlayerActionService.php:188
 msgid "%d of %d player actions failed"
-msgstr "%d trong số %d hành động của người chơi không thành công"
+msgstr "%d trong số %d hành động của Thiết bị trình chiếu không thành công"
 
 #: lib/Service/ConfigService.php:295
 msgid "The theme \"%s\" does not exist"
@@ -23788,7 +23788,7 @@ msgstr "Không thể tìm thấy phiên bản"
 
 #: lib/Factory/PlayerVersionFactory.php:134
 msgid "Cannot find Player Version"
-msgstr "Không thể tìm thấy phiên bản người chơi"
+msgstr "Không thể tìm thấy phiên bản Thiết bị trình chiếu"
 
 #: lib/Factory/LayoutFactory.php:321
 msgid "LayoutId is 0"
@@ -24658,7 +24658,7 @@ msgstr "Đã vượt quá giới hạn băng thông"
 
 #: lib/Xmds/Soap6.php:157
 msgid "All Player faults cleared"
-msgstr "Đã xóa tất cả lỗi của Người chơi"
+msgstr "Đã xóa tất cả lỗi của Thiết bị trình chiếu"
 
 #: lib/Helper/WakeOnLan.php:47
 msgid "Pattern of MAC-address is not \"xx-xx-xx-xx-xx-xx\" (x = digit or letter)"
