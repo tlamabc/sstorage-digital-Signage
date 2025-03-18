@@ -40,19 +40,19 @@ if (array_key_exists('CMS_USE_MEMCACHED', $_SERVER)
     ];
 }
 
-// /* ==========================
-// * Thiết lập theme mặc định và menu điều hướng
-// * ========================== */
-// $mysqli = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
+/* ==========================
+* Thiết lập theme mặc định và menu điều hướng
+* ========================== */
+$mysqli = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
 
-// if ($mysqli->connect_error) {
-//     die("Database connection failed: " . $mysqli->connect_error);
-// }
+if ($mysqli->connect_error) {
+    die("Database connection failed: " . $mysqli->connect_error);
+}
 
-// $mysqli->query("UPDATE setting SET value = 'default' WHERE setting = 'GLOBAL_THEME_NAME'");
-// $mysqli->query("UPDATE setting SET value = 'horizontal' WHERE setting = 'NAVIGATION_MENU_POSITION'");
-// $mysqli->query("UPDATE setting SET value = 'vi_VN' WHERE setting = 'DEFAULT_LANGUAGE'");
+$mysqli->query("UPDATE setting SET value = 'default' WHERE setting = 'GLOBAL_THEME_NAME'");
+$mysqli->query("UPDATE setting SET value = 'horizontal' WHERE setting = 'NAVIGATION_MENU_POSITION'");
+$mysqli->query("UPDATE setting SET value = 'vi_VN' WHERE setting = 'DEFAULT_LANGUAGE'");
 
-// $mysqli->close();
+$mysqli->close();
 
 ?>
