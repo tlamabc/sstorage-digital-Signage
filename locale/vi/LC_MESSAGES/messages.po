@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-03-18 14:00+0700\n"
+"PO-Revision-Date: 2025-03-18 14:35+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: vi\n"
@@ -22399,7 +22399,7 @@ msgstr "Hủy chuyển CMS"
 
 #: lib/Controller/Display.php:1977
 msgid "Cannot delete a Lead Display of a Sync Group"
-msgstr "Không thể xóa Hiển thị khách hàng tiềm năng của Nhóm đồng bộ hóa"
+msgstr "Không thể xóa Thiết bị trưởng nhóm của Nhóm đồng bộ hóa"
 
 #: lib/Controller/Display.php:2121
 msgid "Displays Updated"
