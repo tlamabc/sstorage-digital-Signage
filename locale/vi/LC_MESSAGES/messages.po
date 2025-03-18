@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-03-18 13:40+0700\n"
+"PO-Revision-Date: 2025-03-18 13:42+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: vi\n"
@@ -1345,7 +1345,7 @@ msgstr "Thêm JavaScript để đưa vào ngay trước thẻ đóng nội dung.
 #: locale/moduletranslate.php:378
 #: cache/92/9237e31852b595e9eb59e8434735d717.php:267
 msgid "HEAD"
-msgstr "CÁI ĐẦU"
+msgstr "Header"
 
 #: locale/moduletranslate.php:379
 msgid "Add additional tags to appear immediately before the closing head tag, such as meta, link, etc. If your JavaScript uses the [] array notation add it inside script tags here."

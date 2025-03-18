@@ -48,6 +48,9 @@ services:
     image: memcached:alpine
     restart: always   # Giữ Memcached luôn chạy
     command: memcached -m 15
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+
 
   swagger:
     image: swaggerapi/swagger-ui:latest
@@ -59,5 +62,7 @@ services:
 
 
   quickchart:
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
     image: ianw/quickchart
     restart: always   # Giữ QuickChart luôn chạy
