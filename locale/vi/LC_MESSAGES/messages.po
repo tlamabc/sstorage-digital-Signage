@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-03-18 13:35+0700\n"
+"PO-Revision-Date: 2025-03-18 13:40+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: vi\n"
@@ -12001,7 +12001,7 @@ msgstr "Hủy bản nháp"
 #: cache/78/784f79febaa5e76ca7d1688b05866bd3.php:74
 #: lib/Controller/Template.php:205 lib/Controller/Layout.php:1813
 msgid "Checkout"
-msgstr "Tạm ngưng để chính sửa"
+msgstr "Tạm ngưng để chỉnh sửa"
 
 #: cache/ae/aede29170646eeec2459cefb297c2720.php:227
 #: cache/de/defca153992524c95626c6b14310c802.php:57
