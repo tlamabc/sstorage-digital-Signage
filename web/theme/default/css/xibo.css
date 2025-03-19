@@ -327,7 +327,7 @@ div.dropdown-menu-form {
 }
 
 .navbar-toggler {
-    color: #f9f9f9;
+    color: #0089cd;
     border-color: #ddd;
     font-size: 1.75rem;
     padding: 4px 8px;
@@ -337,7 +337,7 @@ div.dropdown-menu-form {
     margin-right: 10px;
 }
 .navbar-toggler:focus, .navbar-toggler:hover {
-    background-color: #c4c4c4;
+    background-color: #043a56;
 }
 
 @media (min-width: 768px) {
@@ -436,7 +436,7 @@ div.dt-buttons {
 }
 
 .notification-unread, .notification-date {
-    color: lightgrey;
+    color: rgb(34, 20, 116);
 }
 
 .fa-stack > .fa-nudge-left {
