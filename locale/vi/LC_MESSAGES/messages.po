@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-03-18 14:35+0700\n"
+"PO-Revision-Date: 2025-03-19 15:02+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: vi\n"
@@ -2258,7 +2258,7 @@ msgstr "Có nên xóa URL khỏi Bài đăng trên Mastodon không? Hầu hết 
 
 #: locale/moduletranslate.php:596
 msgid "Menu Board: Category"
-msgstr "Bảng thực đơn: Danh mục"
+msgstr "Bảng thông tin: Danh mục"
 
 #: locale/moduletranslate.php:597
 msgid "Display categories from a Menu Board"
@@ -8486,7 +8486,7 @@ msgstr "Xóa bảng menu"
 
 #: cache/12/12991cc4f563689d4f652f87eb19ad9c.php:91
 msgid "Are you sure you want to delete this Menu Board? This action will remove all Categories and their Products linked to this Menu Board. This cannot be undone"
-msgstr "Bạn có chắc chắn muốn xóa Bảng Menu này không? Hành động này sẽ xóa tất cả Danh mục và Sản phẩm của chúng được liên kết với Bảng Thực đơn này. Việc này không thể hoàn tác được"
+msgstr "Bạn có chắc chắn muốn xóa Bảng Menu này không? Hành động này sẽ xóa tất cả Danh mục và Sản phẩm của chúng được liên kết với Bảng thông tin này. Việc này không thể hoàn tác được"
 
 #: cache/21/21cb37a7a05080b05969e015396b81f1.php:57
 msgid "Reset Report Schedule"
@@ -8744,11 +8744,11 @@ msgstr "Quá trình chuyển đổi này có thể được sử dụng cho kế
 #: cache/7c/7c83e34565b8f2b468cd031ae65008ae.php:194
 #: cache/d1/d10814ee3dd19888fef200639442fd26.php:285
 msgid "Menu Boards"
-msgstr "Bảng thực đơn"
+msgstr "Bảng thông tin "
 
 #: cache/a0/a08d35232aeb73f99b2b364078cce4c0.php:72
 msgid "Add a new Menu Board"
-msgstr "Thêm bảng thực đơn mới"
+msgstr "Thêm bảng thông tin mới"
 
 #: cache/a0/a08d35232aeb73f99b2b364078cce4c0.php:225
 #: cache/40/40934d1cc21621783800143e32bfb38c.php:805
@@ -9546,7 +9546,7 @@ msgstr "Xóa danh mục bảng menu"
 
 #: cache/e5/e587709c485be92d0f9278e288af0d08.php:91
 msgid "Are you sure you want to delete this Menu Board Category? All Products linked to this Category will be removed as well. This cannot be undone"
-msgstr "Bạn có chắc chắn muốn xóa Danh mục Bảng Thực đơn này không? Tất cả các Sản phẩm được liên kết với Danh mục này cũng sẽ bị xóa. Việc này không thể hoàn tác được"
+msgstr "Bạn có chắc chắn muốn xóa Danh mục Bảng thông tin này không? Tất cả các Sản phẩm được liên kết với Danh mục này cũng sẽ bị xóa. Việc này không thể hoàn tác được"
 
 #: cache/2d/2dbe67d781e02d66070c9e05cf5ac86a.php:57
 msgid "Edit Data"
@@ -12530,7 +12530,7 @@ msgstr "Tên cho danh mục bảng menu này"
 #: cache/a4/a42e6fe0719d821849a979ad07b9ec14.php:125
 #: cache/7b/7b211e77ca836f35c8467646a37a5064.php:121
 msgid "The description for this Menu Board Category"
-msgstr "Mô tả cho Danh mục Bảng Thực đơn này"
+msgstr "Mô tả cho Danh mục Bảng thông tin này"
 
 #: cache/a4/a42e6fe0719d821849a979ad07b9ec14.php:142
 #: cache/7b/7b211e77ca836f35c8467646a37a5064.php:138
@@ -18752,7 +18752,7 @@ msgstr "Thông tin dị ứng"
 #: cache/c1/c19424fb800870d578c497d62cffc7a0.php:256
 #: cache/d3/d38e557b6d25029a63d9d9e5fa0c54f0.php:257
 msgid "The Allergy Information for this Menu Board Product"
-msgstr "Thông tin về Dị ứng cho Sản phẩm Bảng Thực đơn này"
+msgstr "Thông tin về Dị ứng cho Sản phẩm Bảng thông tin này"
 
 #: cache/c1/c19424fb800870d578c497d62cffc7a0.php:273
 #: cache/d3/d38e557b6d25029a63d9d9e5fa0c54f0.php:274
@@ -18842,7 +18842,7 @@ msgstr "Sản phẩm dành cho "
 
 #: cache/cd/cd5c56bd5d632c49c962f36bf0c33cad.php:60
 msgid "in Menu Board "
-msgstr "trong Bảng Thực đơn "
+msgstr "trong Bảng thông tin "
 
 #: cache/cd/cd5c56bd5d632c49c962f36bf0c33cad.php:78
 msgid "Add a new Menu Board Product"
@@ -18863,7 +18863,7 @@ msgstr "Sản phẩm dành cho"
 
 #: cache/cd/cd5c56bd5d632c49c962f36bf0c33cad.php:113
 msgid "in Menu Board"
-msgstr "trong Bảng Thực đơn"
+msgstr "trong Bảng thông tin"
 
 #: cache/3a/3a684358a61e5f033dbf4a0a4087e41b.php:61
 msgid "Edit %type% Transition for %name%"
@@ -24400,7 +24400,7 @@ msgstr "Đặt thư mục chính cho người dùng"
 
 #: lib/Factory/UserGroupFactory.php:921
 msgid "View the Menu Board page"
-msgstr "Xem trang Bảng Thực đơn"
+msgstr "Xem trang Bảng thông tin"
 
 #: lib/Factory/UserGroupFactory.php:926
 msgid "Include \"Add Menu Board\" button to allow for additional Menu Boards to be added to the platform"
