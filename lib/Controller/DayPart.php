@@ -190,12 +190,10 @@ class DayPart extends Base
                         ['name' => 'commit-method', 'value' => 'post'],
                         ['name' => 'id', 'value' => 'daypart_button_permissions'],
                         ['name' => 'text', 'value' => __('Share')],
-                       // ['name' => 'rowtitle', 'value' => $dayPart->name],
-                       ['name' => 'rowtitle', 'value' => str_replace('DayPart', 'Thời gian trong ngày', $dayPart->name)],
- 
-                       ['name' => 'sort-group', 'value' => 2],
+                        ['name' => 'rowtitle', 'value' => $dayPart->name],
+                        ['name' => 'sort-group', 'value' => 2],
                         ['name' => 'custom-handler', 'value' => 'XiboMultiSelectPermissionsFormOpen'],
-                        ['name' => 'custom-handler-url', 'value' => $this->urlFor($request,'user.permissions.multi.form', ['entity' => 'DayPart'])],
+                        ['name' => 'custom-handler-url', 'value' => $this->urlFor($request,'user.permissions.multi.form', ['entity' => 'Thời gian trong ngày'])],
                         ['name' => 'content-id-name', 'value' => 'dayPartId']
                     ]
                 ];
