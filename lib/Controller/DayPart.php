@@ -193,7 +193,7 @@ class DayPart extends Base
                         ['name' => 'rowtitle', 'value' => $dayPart->name],
                         ['name' => 'sort-group', 'value' => 2],
                         ['name' => 'custom-handler', 'value' => 'XiboMultiSelectPermissionsFormOpen'],
-                        ['name' => 'custom-handler-url', 'value' => $this->urlFor($request,'user.permissions.multi.form', ['entity' => 'Thời gian trong ngày'])],
+                        ['name' => 'custom-handler-url', 'value' => $this->urlFor($request,'user.permissions.multi.form', ['entity' => 'DayPart'])],
                         ['name' => 'content-id-name', 'value' => 'dayPartId']
                     ]
                 ];
