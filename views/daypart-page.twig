@@ -118,7 +118,8 @@
 
         function dayPartFormOpen(dialog) {
             // Render a set of exceptions
-{% block title %}{{ "Chia sẻ cho Thời gian trong ngày"|trans }} | {% endblock %}
+            $exceptions = $(dialog).find("#dayPartExceptions");
+
             // Days of the week translations
             var daysOfTheWeek = [
                 { day: "Mon", title: "{% trans "Monday" %}" },
