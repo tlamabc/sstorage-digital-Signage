@@ -117,98 +117,95 @@
         });
 
         function dayPartFormOpen(dialog) {
-            // Set the dialog title
-            dialog.find('.modal-title').text("Chia sẻ Thời gian trong ngày");
-
             // Render a set of exceptions
             $exceptions = $(dialog).find("#dayPartExceptions");
 
             // Days of the week translations
             var daysOfTheWeek = [
-            { day: "Mon", title: "{% trans "Monday" %}" },
-            { day: "Tue", title: "{% trans "Tuesday" %}" },
-            { day: "Wed", title: "{% trans "Wednesday" %}" },
-            { day: "Thu", title: "{% trans "Thursday" %}" },
-            { day: "Fri", title: "{% trans "Friday" %}" },
-            { day: "Sat", title: "{% trans "Saturday" %}" },
-            { day: "Sun", title: "{% trans "Sunday" %}" }
+                { day: "Mon", title: "{% trans "Monday" %}" },
+                { day: "Tue", title: "{% trans "Tuesday" %}" },
+                { day: "Wed", title: "{% trans "Wednesday" %}" },
+                { day: "Thu", title: "{% trans "Thursday" %}" },
+                { day: "Fri", title: "{% trans "Friday" %}" },
+                { day: "Sat", title: "{% trans "Saturday" %}" },
+                { day: "Sun", title: "{% trans "Sunday" %}" }
             ];
 
             // Compile the handlebars template
             var exceptionsTemplate = Handlebars.compile($("#dayPartExceptionsTemplate").html());
 
             if (dialog.data().extra.exceptions.length == 0) {
-            // Contexts for template
-            var context = {
-                daysOfWeek: daysOfTheWeek,
-                buttonGlyph: "fa-plus",
-                exceptionDay: "",
-                exceptionStart: "",
-                exceptionEnd: "",
-                fieldId: 0
-            };
-
-            // Append
-            $exceptions.append(exceptionsTemplate(context));
-            
-            XiboInitialise("#" + $exceptions.prop("id"));
-            } else {
-            // For each of the existing exceptions, create form components
-            var i = 0;
-            $.each(dialog.data().extra.exceptions, function (index, field) {
-                i++;
-                // call the template
+                // Contexts for template
                 var context = {
-                daysOfWeek: daysOfTheWeek,
-                buttonGlyph: ((i == 1) ? "fa-plus" : "fa-minus"),
-                exceptionDay: field.day,
-                exceptionStart: field.start,
-                exceptionEnd: field.end,
-                fieldId: i
+                    daysOfWeek: daysOfTheWeek,
+                    buttonGlyph: "fa-plus",
+                    exceptionDay: "",
+                    exceptionStart: "",
+                    exceptionEnd: "",
+                    fieldId: 0
                 };
 
+                // Append
                 $exceptions.append(exceptionsTemplate(context));
                 
                 XiboInitialise("#" + $exceptions.prop("id"));
-            });
+            } else {
+                // For each of the existing exceptions, create form components
+                var i = 0;
+                $.each(dialog.data().extra.exceptions, function (index, field) {
+                    i++;
+                    // call the template
+                    var context = {
+                        daysOfWeek: daysOfTheWeek,
+                        buttonGlyph: ((i == 1) ? "fa-plus" : "fa-minus"),
+                        exceptionDay: field.day,
+                        exceptionStart: field.start,
+                        exceptionEnd: field.end,
+                        fieldId: i
+                    };
+
+                    $exceptions.append(exceptionsTemplate(context));
+                    
+                    XiboInitialise("#" + $exceptions.prop("id"));
+                });
             }
 
             // Nabble the resulting buttons
             $exceptions.on("click", "button", function (e) {
-            e.preventDefault();
+                e.preventDefault();
 
-            // find the gylph
-            if ($(this).find("i").hasClass("fa-plus")) {
-                var context = {
-                daysOfTheWeek: daysOfTheWeek,
-                buttonGlyph: "fa-minus",
-                exceptionDay: "",
-                exceptionStart: "",
-                exceptionEnd: "",
-                fieldId: $exceptions.find('.form-group').length + 1
-                };
+                // find the gylph
+                if ($(this).find("i").hasClass("fa-plus")) {
+                    var context = {
+                        daysOfWeek: daysOfTheWeek,
+                        buttonGlyph: "fa-minus",
+                        exceptionDay: "",
+                        exceptionStart: "",
+                        exceptionEnd: "",
+                        fieldId: $exceptions.find('.form-group').length + 1
+                    };
 
-                $exceptions.append(exceptionsTemplate(context));
+                    $exceptions.append(exceptionsTemplate(context));
 
-                XiboInitialise("#" + $exceptions.prop("id"));
-            } else {
-                // Remove this row
-                $(this).closest(".form-group").remove();
-            }
+                    XiboInitialise("#" + $exceptions.prop("id"));
+                } else {
+                    // Remove this row
+                    $(this).closest(".form-group").remove();
+                }
             });
 
             // check if we already have this day in exceptions array, if so remove the row with a message.
             $exceptions.on("change", "select", function() {
-            var selectedDays = [];
-            $('select').not('#' + $(this).attr('id')).each(function(i) {
-                selectedDays.push($(this).val());
-            });
+                var selectedDays = [];
+                $('select').not('#' + $(this).attr('id')).each(function(i) {
+                    selectedDays.push($(this).val());
+                });
 
-            if (selectedDays.includes(this.value)) {
-                toastr.error(translations.dayPartExceptionErrorMessage);
-                // Remove this row
-                $(this).closest(".form-group").remove();
-            }
+                if (selectedDays.includes(this.value)) {
+                    toastr.error(translations.dayPartExceptionErrorMessage);
+                    // Remove this row
+                    $(this).closest(".form-group").remove();
+                }
             })
         }
 

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-03-20 15:50+0700\n"
+"PO-Revision-Date: 2025-03-20 16:44+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: vi\n"
@@ -10050,7 +10050,7 @@ msgstr "Thêm tệp đính kèm?"
 #: cache/03/038ac3b00213d90f819a240f82f71c92.php:85
 #: cache/be/be3e30948cadddcda2edc4c38f45c2d0.php:115
 msgid "Sharing for %objectName%"
-msgstr "Chia sẻ cho %objectName%"
+msgstr "Chia sẻ"
 
 #: cache/03/038ac3b00213d90f819a240f82f71c92.php:159
 msgid "Edit multiple sharing at the same time. Elements shown with an indeterminate state [-], result from a difference in sharing already set. All changes set here will be applied to all selected elements."
