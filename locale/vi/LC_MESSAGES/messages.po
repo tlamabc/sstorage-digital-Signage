@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-03-19 15:02+0700\n"
+"PO-Revision-Date: 2025-03-20 14:58+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: vi\n"
@@ -3823,7 +3823,7 @@ msgstr "Vui lòng chọn Bộ dữ liệu từ tab Định cấu hình để có
 #: locale/moduletranslate.php:1344 locale/moduletranslate.php:1349
 #: locale/moduletranslate.php:1354
 msgid "No field is available for that type of DataSet element."
-msgstr "Không có trường nào có sẵn cho loại phần tử DataSet đó."
+msgstr "Không có trường nào có sẵn cho loại phần tử của Bộ dữ liệu đó."
 
 #: locale/moduletranslate.php:1335 locale/moduletranslate.php:1340
 #: locale/moduletranslate.php:1345 locale/moduletranslate.php:1350
@@ -9411,7 +9411,7 @@ msgstr "Làm mới nhật ký"
 #: cache/74/745df4d934b108b14bbd2306db53e6b7.php:676
 #: cache/ca/ca33d05cf8fdeb833db69451a0ddd065.php:735
 msgid "Refresh"
-msgstr "Làm cho khỏe lại"
+msgstr "Làm mới"
 
 #: cache/92/9237e31852b595e9eb59e8434735d717.php:121
 #: cache/92/9237e31852b595e9eb59e8434735d717.php:390
@@ -10310,7 +10310,7 @@ msgstr "Tên cho thời gian trong ngày này"
 #: cache/09/0944ca62ad35800fa62041b5c4f39194.php:148
 #: cache/0b/0b2ded18bccb0b14e42b01735103674e.php:148
 msgid "Retire? It will no longer be visible when scheduling"
-msgstr "Về hưu? Nó sẽ không còn hiển thị khi lên lịch"
+msgstr "Ngừng sử dụng? Nó sẽ không còn hiển thị khi lên lịch"
 
 #: cache/09/0944ca62ad35800fa62041b5c4f39194.php:165
 #: cache/0b/0b2ded18bccb0b14e42b01735103674e.php:165
@@ -13564,7 +13564,7 @@ msgstr "Đang tải"
 #: cache/5f/5fe28b2a296fd3dbc16a9b9af78ccc95.php:70
 #: lib/Controller/Layout.php:1941 lib/Controller/Layout.php:1947
 msgid "Retire"
-msgstr "Về hưu"
+msgstr "Ngừng sử dụng"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:111
 #: cache/27/27081387c7b095a60dc9e1bfc169ce8d.php:74
@@ -15773,7 +15773,7 @@ msgstr "Bảo trì"
 #: cache/44/44f134266ea30161ba4929c6a2658018.php:121
 #: lib/Controller/Display.php:1193
 msgid "Wake on LAN"
-msgstr "Thức dậy trên mạng LAN"
+msgstr "Khởi động từ xa qua LAN"
 
 #: cache/44/44f134266ea30161ba4929c6a2658018.php:192
 msgid "The Name of the Display - your administrator has locked this to the device name"
@@ -16083,7 +16083,7 @@ msgstr "dữ liệu"
 #: cache/ca/ca33d05cf8fdeb833db69451a0ddd065.php:215
 #: cache/20/20c62931092a02ad5a52d5d17a567869.php:219
 msgid "Remote?"
-msgstr "Từ xa?"
+msgstr "Remote"
 
 #: cache/74/745df4d934b108b14bbd2306db53e6b7.php:207
 #: cache/ca/ca33d05cf8fdeb833db69451a0ddd065.php:221
@@ -16094,7 +16094,7 @@ msgstr "Bộ dữ liệu này có được kết nối với nguồn dữ liệu
 #: cache/ca/ca33d05cf8fdeb833db69451a0ddd065.php:232
 #: cache/20/20c62931092a02ad5a52d5d17a567869.php:223
 msgid "Real time?"
-msgstr "Thời gian thực?"
+msgstr "Thời gian thực"
 
 #: cache/74/745df4d934b108b14bbd2306db53e6b7.php:227
 #: cache/ca/ca33d05cf8fdeb833db69451a0ddd065.php:238
@@ -18809,7 +18809,7 @@ msgstr "Bạn có chắc chắn muốn kiểm tra Bố cục này không? Nó s�
 #: lib/Controller/DisplayGroup.php:523 lib/Controller/DisplayGroup.php:536
 #: lib/Controller/Display.php:1100 lib/Controller/Display.php:1114
 msgid "Trigger a web hook"
-msgstr "Kích hoạt một web hook"
+msgstr "Kích hoạt web hook"
 
 #: cache/78/78eb6816703378fd36d0f5c6daedcad0.php:93
 msgid "Enter the code associated with the web hook you wish to trigger. Please note that for this action to work, the webhook trigger code has to be added to Interactive Actions in scheduled content for this Player. "
@@ -19142,7 +19142,7 @@ msgstr "Vui lòng chọn Bố cục hoặc Chiến dịch để Sự kiện này
 
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:373
 msgid "Direct Schedule?"
-msgstr "Trực tiếp?"
+msgstr "Trực tiếp"
 
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:379
 msgid "Show only events scheduled directly on selected Displays/Groups"
@@ -19154,17 +19154,17 @@ msgstr "Chỉ hiển thị lịch xuất hiện trên tất cả các màn hình
 
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:411
 msgid "Shared Schedule?"
-msgstr "Chia sẻ?"
+msgstr "Chia sẻ"
 
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:437
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:536
 msgid "Geo Aware?"
-msgstr "Nhận biết địa lý?"
+msgstr "Nhận biết địa lý"
 
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:451
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:540
 msgid "Recurring?"
-msgstr "Định kỳ?"
+msgstr "Định kỳ"
 
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:471
 msgid "Grid"
@@ -19208,11 +19208,11 @@ msgstr "Kết thúc lặp lại"
 
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:564
 msgid "Priority?"
-msgstr "Sự ưu tiên?"
+msgstr "Ưu tiên"
 
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:568
 msgid "Criteria?"
-msgstr "Tiêu chuẩn?"
+msgstr "Tiêu chuẩn"
 
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:572
 msgid "Created On"
@@ -19308,7 +19308,7 @@ msgstr "Bộ điều khiển Webhook"
 
 #: cache/45/45f754a07a4e54ff5edcb310e4261d7c.php:201
 msgid "Navigate to layout with code [layoutTag]?"
-msgstr "Điều hướng đến bố cục bằng mã [layoutTag]?"
+msgstr "Điều hướng đến bố cục bằng mã [layoutTag]"
 
 #: cache/45/45f754a07a4e54ff5edcb310e4261d7c.php:205
 msgid "Empty region!"
@@ -19509,7 +19509,7 @@ msgstr "Số lượng hàng tối đa trên mỗi Tập dữ liệu, sau khi đ�
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:699
 msgid "Default ttl, in days, for records in purge_list table"
-msgstr "Ttl mặc định, tính bằng ngày, cho các bản ghi trong bảng purge_list"
+msgstr "Số ngày tồn tại mặc định của bản ghi trong bảng dữ liệu"
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:705
 msgid "Entries in purge_list table with expiry date older than specified ttl will be removed."
@@ -19725,7 +19725,7 @@ msgstr "Gửi tập tin trước?"
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:1878
 msgid "How many seconds in to the future should the calls to RequiredFiles look?"
-msgstr "Các lệnh gọi tới NeedFiles sẽ trông như thế nào trong bao nhiêu giây trong tương lai?"
+msgstr "Nên kiểm tra các tệp cần thiết trước bao nhiêu giây?"
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:1909
 msgid "Allow Import?"
@@ -20461,7 +20461,7 @@ msgstr "Gán các bộ tính năng cho nhóm mới"
 #: lib/Controller/DisplayGroup.php:500 lib/Controller/Display.php:1071
 #: lib/Controller/Display.php:1086
 msgid "Collect Now"
-msgstr "Thu thập ngay"
+msgstr "Thu thập dữ liệu ngay"
 
 #: cache/93/93078235b28ca357eac86e35a6a69595.php:91
 msgid "Are you sure you want to request a collection to occur?"
@@ -22387,7 +22387,7 @@ msgstr "Chuyển đến Bố cục đã lên lịch"
 
 #: lib/Controller/Display.php:1124
 msgid "Purge All"
-msgstr "Thanh lọc tất cả"
+msgstr "Xóa sạch dữ liệu"
 
 #: lib/Controller/Display.php:1261
 msgid "Set Bandwidth"
