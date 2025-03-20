@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-03-20 14:58+0700\n"
+"PO-Revision-Date: 2025-03-20 15:50+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: vi\n"
@@ -19200,7 +19200,7 @@ msgstr "Khoảng thời gian lặp lại"
 
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:556
 msgid "Recurrence Repeats On"
-msgstr "Bật lặp lại lặp lại"
+msgstr "Bật lặp lại "
 
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:560
 msgid "Recurrence End"
@@ -19220,7 +19220,7 @@ msgstr "Được tạo vào ngày"
 
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:576
 msgid "Updated On"
-msgstr "Đã cập nhật vào"
+msgstr "Đã cập nhật vào ngày"
 
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:596
 msgid "Please select a Display, Display Group or Layout / Campaign to view the calendar"
