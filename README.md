@@ -38,7 +38,7 @@ Dựa trên kinh nghiệm thực tế và tài liệu từ **diễn đàn Xibo**
  yêu cầu kéo, vui lòng Fork chúng tôi trước và tạo một nhánh mới.
  
  ```shell
- git clone https://github.com/tlamabc/sstorage-digital-Signage
+  git -c http.sslVerify=false clone https://git.icsp.vn/lamdt/sstorage-digital-Signage
  ```
  
  Tạo folder cho database
@@ -51,6 +51,10 @@ Dựa trên kinh nghiệm thực tế và tài liệu từ **diễn đàn Xibo**
  
  ```sh
  cd ./sstorage-digital-Signage
+ ```
+ Tạo thêm vài folder cần thiết và cấp quyền
+ ```
+  mkdir -p cache library && chmod 777 cache library
  ```
  Chúng tôi khuyên bạn nên cài đặt các phụ thuộc thông qua Docker để đảm bảo các phụ thuộc nhất quán trên
  các máy phát triển khác nhau.
@@ -150,9 +154,37 @@ $mysqli->query("UPDATE setting SET value = 'vi_VN' WHERE setting = 'DEFAULT_LANG
 
 $mysqli->close();
 ```
- ## =======================================================================================================================================================
+
+
+
+Tiếp đến login vào cms qua 'localhost:81' và vào phần 'Quản lý -> Cài đặt -> Nhập 
+```
+/var/www/cms/library/
+```
+Vào phần 'Vị trí thư viện' và ấn lưu.
+
+### Để setup đầy đủ chúng ta cần mở port cho ra internet.
+Như port 81 UI web và 9505 XMR ra Internet.
+
+ Mở port ra internet
+```sh
+sudo ufw allow 81/tcp  # Mở cổng UI Web
+sudo ufw allow 9505/tcp  # Mở cổng XMR
+sudo ufw reload
+```
+- Nếu dùng NAT, chuyển hướng port 81 và 9505 đến server.
+
+### 4. Cấu hình XMR
+- Truy cập **Quản lý > Cài đặt > Hiển thị**
+- Cập nhật **Địa chỉ công cộng XMR**: `tcp://your-domain:9505`
+- Nhấn **Lưu**
+
+### 5. Kiểm tra hoạt động
+- **Thư viện**: Upload file trong **Quản lý > Thư viện**
+- **XMR**: Vào **Quản lý > Hiển thị** > Chọn một màn hình > **Thử lại kết nối XMR**
+
+---
+**SSignage đã sẵn sàng! 🚀**
+
+ ## Nếu vấn để liên quan đến database, Lâm DevOps of ICSP có thể support qua zalo: 0359001647. Thanks!
  
- ## Nếu vấn để liên quan đến database, Lâm DevOps of ICSP có thể support qua zalo: 0359001647. Thanks
- - **CPU**: Xibo CMS chủ yếu dùng PHP/MySQdề liên quan đến database, Lâm DevOps of ICSP có thể support qua zalo: 0359001647. Thanks
- 
- # =======================================================================================================================================================
