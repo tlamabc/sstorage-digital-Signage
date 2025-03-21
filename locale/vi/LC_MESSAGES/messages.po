@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-03-20 16:44+0700\n"
+"PO-Revision-Date: 2025-03-21 10:33+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: vi\n"
@@ -1842,7 +1842,7 @@ msgstr "khó xảy ra"
 #: locale/moduletranslate.php:461 locale/dbtranslate.php:58
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:1546
 msgid "Flash"
-msgstr "đèn flash"
+msgstr "Chớp"
 
 #: locale/moduletranslate.php:462
 msgid "Upload SWF files to assign to Layouts"
@@ -2130,7 +2130,7 @@ msgstr "Xin lưu ý rằng hiện tại, việc chia tỷ lệ video và truyề
 
 #: locale/moduletranslate.php:564 locale/moduletranslate.php:565
 msgid "Mastodon"
-msgstr "voi răng mấu"
+msgstr "Mastodon"
 
 #: locale/moduletranslate.php:566
 msgid "Default Server URL"
@@ -2774,7 +2774,7 @@ msgstr "Hiển thị đầu vào từ nguồn bên ngoài"
 
 #: locale/moduletranslate.php:912
 msgid "Input"
-msgstr "đầu vào"
+msgstr "Nhập"
 
 #: locale/moduletranslate.php:913
 msgid "Which device input should be shown"
@@ -3653,7 +3653,7 @@ msgstr "Văn bản bản quyền có nên in nghiêng?"
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:2223
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:2375
 msgid "Underline"
-msgstr "gạch chân"
+msgstr "Gạch dưới"
 
 #: locale/moduletranslate.php:1258 locale/moduletranslate.php:1612
 msgid "Should the copyright text be underlined?"
@@ -4944,7 +4944,7 @@ msgstr "Văn bản có nên ngắt dòng sang dòng tiếp theo không?"
 
 #: locale/moduletranslate.php:2676
 msgid "Justify"
-msgstr "biện minh"
+msgstr "Căn đều"
 
 #: locale/moduletranslate.php:2677
 msgid "Should the text be justified?"
@@ -5100,7 +5100,7 @@ msgstr "Say mê"
 
 #: locale/moduletranslate.php:2815
 msgid "Dashed"
-msgstr "nét đứt"
+msgstr "Nét đứt"
 
 #: locale/moduletranslate.php:2816
 msgid "Double"
@@ -5112,7 +5112,7 @@ msgstr "Loại tip1"
 
 #: locale/moduletranslate.php:2818 locale/moduletranslate.php:2824
 msgid "Squared"
-msgstr "bình phương"
+msgstr "Hình vuông"
 
 #: locale/moduletranslate.php:2819 locale/moduletranslate.php:2825
 msgid "Diamond"
@@ -5187,7 +5187,7 @@ msgstr "Hình tròn có nên có đường viền không?"
 
 #: locale/moduletranslate.php:2850
 msgid "Ellipse"
-msgstr "hình elip"
+msgstr "Hình elip"
 
 #: locale/moduletranslate.php:2856
 msgid "Triangle"
@@ -5207,7 +5207,7 @@ msgstr "Hình ngũ giác có nên có đường viền không?"
 
 #: locale/moduletranslate.php:2876
 msgid "Hexagon"
-msgstr "lục giác"
+msgstr "Hình lục giác"
 
 #: locale/moduletranslate.php:2883
 msgid "Should the hexagon have an outline?"
@@ -5785,7 +5785,7 @@ msgstr "Làm mờ dần"
 
 #: locale/dbtranslate.php:27 cache/61/615bc932a2e18537d5fa3d21154ad53e.php:2501
 msgid "Fade Out"
-msgstr "mờ dần"
+msgstr "Mờ dần"
 
 #: locale/dbtranslate.php:28
 msgid "Fly"
@@ -6022,7 +6022,7 @@ msgstr "Tháng 9"
 
 #: locale/dbtranslate.php:114
 msgid "October"
-msgstr "tháng mười"
+msgstr "Tháng Mười"
 
 #: locale/dbtranslate.php:115
 msgid "November"
@@ -6158,7 +6158,7 @@ msgstr "Viên thuốc"
 
 #: locale/dbtranslate.php:160
 msgid "Totem"
-msgstr "vật tổ"
+msgstr "Totem"
 
 #: locale/dbtranslate.php:163
 msgid "Wind"
@@ -6182,7 +6182,7 @@ msgstr "Áp lực"
 
 #: locale/dbtranslate.php:168
 msgid "Visibility"
-msgstr "khả năng hiển thị"
+msgstr "Độ hiển thị"
 
 #: locale/dbtranslate.php:169
 msgid "TODAY"
@@ -6810,7 +6810,7 @@ msgstr "Chọn loại Lặp lại được yêu cầu cho Sự kiện này."
 #: cache/17/171a03d2fcd4a30b3b21796f9876f6cc.php:764
 #: cache/34/3493d88c45c5b62199e7bd7d6a5699df.php:745
 msgid "Per Minute"
-msgstr "mỗi phút"
+msgstr "Mỗi phút"
 
 #: cache/16/160f5151dae9dd6473665e95d0908966.php:446
 #: cache/bd/bd5d2e4a3e31b76bad9ff5f5698f7a7b.php:152
@@ -6855,7 +6855,7 @@ msgstr "Hằng ngày"
 #: cache/ca/ca33d05cf8fdeb833db69451a0ddd065.php:767
 #: cache/ca/ca33d05cf8fdeb833db69451a0ddd065.php:851
 msgid "Weekly"
-msgstr "hàng tuần"
+msgstr "Tuần"
 
 #: cache/16/160f5151dae9dd6473665e95d0908966.php:464
 #: cache/7e/7ebabda5480d88651340523f453cf0ea.php:417
@@ -6866,7 +6866,7 @@ msgstr "hàng tuần"
 #: cache/ca/ca33d05cf8fdeb833db69451a0ddd065.php:779
 #: cache/ca/ca33d05cf8fdeb833db69451a0ddd065.php:863
 msgid "Monthly"
-msgstr "hàng tháng"
+msgstr "Tháng"
 
 #: cache/16/160f5151dae9dd6473665e95d0908966.php:470
 #: cache/7e/7ebabda5480d88651340523f453cf0ea.php:423
@@ -7070,7 +7070,7 @@ msgstr "Việc xóa một tập tin không thể đảo ngược được."
 
 #: cache/39/39e9701c305bee67c2942096f45058f4.php:118
 msgid "Force delete from any existing layouts, assignments, etc"
-msgstr "Buộc xóa khỏi mọi bố cục, bài tập hiện có, v.v."
+msgstr "Buộc xóa khỏi mọi bố cục, phân công hiện có..."
 
 #: cache/39/39e9701c305bee67c2942096f45058f4.php:124
 msgid "This library item has been used somewhere in the system. You will only be allowed to delete it if you check this."
@@ -8744,7 +8744,7 @@ msgstr "Quá trình chuyển đổi này có thể được sử dụng cho kế
 #: cache/7c/7c83e34565b8f2b468cd031ae65008ae.php:194
 #: cache/d1/d10814ee3dd19888fef200639442fd26.php:285
 msgid "Menu Boards"
-msgstr "Bảng thông tin "
+msgstr "Bảng menu"
 
 #: cache/a0/a08d35232aeb73f99b2b364078cce4c0.php:72
 msgid "Add a new Menu Board"
@@ -9175,7 +9175,7 @@ msgstr "ID phương tiện"
 
 #: cache/3c/3c1fa79a7b77f42d6209210a75b63812.php:212
 msgid "Dependencies"
-msgstr "phụ thuộc"
+msgstr "Phụ thuộc"
 
 #: cache/3c/3c1fa79a7b77f42d6209210a75b63812.php:228
 #: cache/3c/3c1fa79a7b77f42d6209210a75b63812.php:304
@@ -9633,7 +9633,7 @@ msgstr "Chỉnh sửa liên kết trợ giúp"
 
 #: cache/ef/efc5d2fea64ff1cec16d51f2fbbaad06.php:114
 msgid "he Category for this Help Link"
-msgstr "Thể loại cho Liên kết Trợ giúp này"
+msgstr "Danh mục trợ giúp"
 
 #: cache/7a/7aa2e57558159a3e1f49d6bdf42fc2a4.php:60
 msgid "Retire %layout%"
@@ -10076,7 +10076,7 @@ msgstr "Bạn có chắc chắn muốn xóa chiến dịch này không? Việc n
 #: cache/7c/7c83e34565b8f2b468cd031ae65008ae.php:129
 #: cache/d1/d10814ee3dd19888fef200639442fd26.php:189
 msgid "Resolutions"
-msgstr "Độ phân giải "
+msgstr "Độ phân giải"
 
 #: cache/1d/1d4d60123f584d2cb4e7c5af85f76cdf.php:72
 msgid "Add a new resolution for use on layouts"
@@ -10360,7 +10360,7 @@ msgstr "bạn đã đọc %readDt% này."
 #: cache/7c/7c83e34565b8f2b468cd031ae65008ae.php:44
 #: cache/d1/d10814ee3dd19888fef200639442fd26.php:43
 msgid "Dashboard"
-msgstr "Tổng quan "
+msgstr "Bảng điều khiển"
 
 #: cache/7c/7c83e34565b8f2b468cd031ae65008ae.php:54
 #: cache/ae/aede29170646eeec2459cefb297c2720.php:223
@@ -10805,7 +10805,7 @@ msgstr "Của cải"
 #: cache/04/049b075cac583aefc958ee662a293536.php:120
 #: cache/04/049b075cac583aefc958ee662a293536.php:318
 msgid "Twig"
-msgstr "cành cây"
+msgstr "Twig"
 
 #: cache/04/049b075cac583aefc958ee662a293536.php:128
 #: cache/04/049b075cac583aefc958ee662a293536.php:336
@@ -11810,7 +11810,7 @@ msgstr "Chỉnh sửa cột"
 #: cache/f0/f09fc6c7681299332eebe7bd5725874b.php:138
 #: cache/50/506deff6963207415b8119b0bf38cafb.php:128
 msgid "Heading"
-msgstr "tiêu đề"
+msgstr "Tiêu đề"
 
 #: cache/ae/ae394f8c24c001c339b962459305c578.php:144
 #: cache/f0/f09fc6c7681299332eebe7bd5725874b.php:144
@@ -12047,7 +12047,7 @@ msgstr "Bố cục hiện tại sẽ được mở khóa cho những người d�
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:1423
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:2400
 msgid "Actions"
-msgstr "hành động"
+msgstr "Hành động"
 
 #: cache/ae/aede29170646eeec2459cefb297c2720.php:271
 msgid "This is published and cannot be edited. You can checkout for editing below, or continue to view it in a read only mode."
@@ -12622,7 +12622,7 @@ msgstr "Mô tả ứng dụng"
 
 #: cache/f6/f6b96362f0589dc5dc61076c1e58c8f7.php:297
 msgid "Logo"
-msgstr "biểu tượng"
+msgstr "Logo"
 
 #: cache/f6/f6b96362f0589dc5dc61076c1e58c8f7.php:303
 msgid "Url pointing to the logo"
@@ -13226,7 +13226,7 @@ msgstr "ChromeOS"
 
 #: cache/40/40934d1cc21621783800143e32bfb38c.php:371
 msgid "Windows"
-msgstr "cửa sổ"
+msgstr "Cửa sổ"
 
 #: cache/40/40934d1cc21621783800143e32bfb38c.php:377
 msgid "webOS"
@@ -13380,7 +13380,7 @@ msgstr "XMR đã đăng ký"
 #: cache/59/59f0058495a6a779727bbfe19dd6898f.php:591
 #: cache/ca/ca33d05cf8fdeb833db69451a0ddd065.php:100
 msgid "Remote"
-msgstr "Từ "
+msgstr "Từ xa"
 
 #: cache/40/40934d1cc21621783800143e32bfb38c.php:757
 msgid "Screen Size"
@@ -13417,7 +13417,7 @@ msgstr "SDK hệ điều hành"
 
 #: cache/40/40934d1cc21621783800143e32bfb38c.php:821
 msgid "Manufacturer"
-msgstr "nhà sản xuất"
+msgstr "Nhà sản xuất"
 
 #: cache/40/40934d1cc21621783800143e32bfb38c.php:825
 msgid "Brand"
@@ -14146,7 +14146,7 @@ msgstr "Quá trình chuyển đổi nào sẽ được áp dụng khi khu vực 
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:929
 msgid "The layering order of this %regionType% (z-index). Advanced use only."
-msgstr "Thứ tự phân lớp của %zoneType% (chỉ mục z) này. Chỉ sử dụng nâng cao."
+msgstr "Thứ tự lớp hiển thị %regionType% (z-index)"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:937
 msgid "The top position of the %regionType%"
@@ -14234,7 +14234,7 @@ msgstr "Xuyên tâm"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:1091
 msgid "Linear"
-msgstr "tuyến tính"
+msgstr "Tuần tự"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:1095
 msgid "Angle"
@@ -14242,7 +14242,7 @@ msgstr "Góc"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:1103
 msgid "Delete selected %object%"
-msgstr "Xóa %đối tượng% đã chọn"
+msgstr "Xóa %object% đã chọn"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:1107
 msgid "Delete selected objects"
@@ -14308,7 +14308,7 @@ msgstr "Nhãn"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:1208
 msgid "Provider"
-msgstr "nhà cung cấp"
+msgstr "Nhà cung cấp"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:1222
 msgid "Media Id"
@@ -14789,7 +14789,7 @@ msgstr "Điền - sử dụng Danh sách phát đầu tiên để lấp đầy m
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:2084
 msgid "Pad"
-msgstr "đệm"
+msgstr "Đệm lề"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:2088
 msgid "Pad - use the first Playlist to pad any remaining Spots"
