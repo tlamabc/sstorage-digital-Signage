@@ -672,8 +672,8 @@ class Settings extends Base
             $this->handleChangedSettings('FOLDERS_ALLOW_SAVE_IN_ROOT', $this->getConfig()->getSetting('FOLDERS_ALLOW_SAVE_IN_ROOT'), $sanitizedParams->getCheckbox('FOLDERS_ALLOW_SAVE_IN_ROOT'), $changedSettings);
             $this->getConfig()->changeSetting('FOLDERS_ALLOW_SAVE_IN_ROOT', $sanitizedParams->getCheckbox('FOLDERS_ALLOW_SAVE_IN_ROOT'));
         }
-        // Luôn ép ngôn ngữ mặc định là vi_VN
-        $this->getConfig()->changeSetting('DEFAULT_LANGUAGE', 'vi_VN');
+        // // Luôn ép ngôn ngữ mặc định là vi_VN
+        // $this->getConfig()->changeSetting('DEFAULT_LANGUAGE', 'vi_VN');
 
 
         if ($this->getConfig()->isSettingEditable('defaultTimezone')) {

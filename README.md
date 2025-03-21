@@ -150,7 +150,6 @@ if ($mysqli->connect_error) {
 
 $mysqli->query("UPDATE setting SET value = 'default' WHERE setting = 'GLOBAL_THEME_NAME'");
 $mysqli->query("UPDATE setting SET value = 'horizontal' WHERE setting = 'NAVIGATION_MENU_POSITION'");
-$mysqli->query("UPDATE setting SET value = 'vi_VN' WHERE setting = 'DEFAULT_LANGUAGE'");
 
 $mysqli->close();
 ```
