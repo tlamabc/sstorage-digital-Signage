@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-03-21 10:55+0700\n"
+"PO-Revision-Date: 2025-03-21 10:56+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: vi\n"
@@ -1288,7 +1288,7 @@ msgstr "Nếu Thiết bị trình chiếu ngoại tuyến, nó sẽ chuyển san
 
 #: locale/moduletranslate.php:364 locale/dbtranslate.php:50
 msgid "Embedded"
-msgstr "Đã nhúng"
+msgstr "Nhúng thẻ web"
 
 #: locale/moduletranslate.php:365
 msgid "Embed HTML and JavaScript"
