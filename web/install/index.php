@@ -92,7 +92,10 @@ if (file_exists(PROJECT_ROOT . '/web/settings.php')) {
     Translate::InitLocale($app->getContainer()->get('configService'));
 }
 else {
-    Translate::InitLocale($app->getContainer()->get('configService'), 'vi_VN');
+    // Translate::InitLocale($app->getContainer()->get('configService'), 'vi_VN');
+    Translate::InitLocale($app->getContainer()->get('configService'));
+
+    
 }
 
 require PROJECT_ROOT . '/lib/routes-install.php';
