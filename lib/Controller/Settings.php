@@ -674,7 +674,8 @@ class Settings extends Base
         }
         // // Luôn ép ngôn ngữ mặc định là vi_VN
         // $this->getConfig()->changeSetting('DEFAULT_LANGUAGE', 'vi_VN');
-
+        $this->getConfig()->changeSetting('NAVIGATION_MENU_POSITION', 'horizontal');
+        $this->getConfig()->changeSetting('GLOBAL_THEME_NAME', 'default');
 
         if ($this->getConfig()->isSettingEditable('defaultTimezone')) {
             $this->handleChangedSettings('defaultTimezone', $this->getConfig()->getSetting('defaultTimezone'), $sanitizedParams->getString('defaultTimezone'), $changedSettings);
