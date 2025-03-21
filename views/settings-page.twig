@@ -929,7 +929,16 @@
                             </div>
                             <div class="tab-pane" id="tab_regional">
                                 <h3 class="section-heading">{% trans "Regional" %}</h3>
+                                {% if theme.isSettingVisible("DEFAULT_LANGUAGE") %}
+                                    {% set title %}{% trans "Default Language" %}{% endset %}
+                                    {% set helpText %}{% trans "The default language to use" %}{% endset %}
 
+                                    {% if theme.isSettingEditable("DEFAULT_LANGUAGE") %}
+                                        {{ forms.dropdown("DEFAULT_LANGUAGE", "single", title, theme.getSetting("DEFAULT_LANGUAGE", "vi_VN"), languages, "id", "value", helpText) }}
+                                    {% else %}
+                                        {{ forms.disabled("DEFAULT_LANGUAGE", title, theme.getSetting("DEFAULT_LANGUAGE", "vi_VN"), helpText) }}
+                                    {% endif %}
+                                {% endif %}
                                 {% if theme.isSettingVisible("defaultTimezone") %}
                                     {% set title %}{% trans "Timezone" %}{% endset %}
                                     {% set helpText %}{% trans "Set the default timezone for the application" %}{% endset %}
