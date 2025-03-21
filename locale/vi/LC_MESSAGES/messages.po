@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-03-21 10:33+0700\n"
+"PO-Revision-Date: 2025-03-21 10:55+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: vi\n"
@@ -5199,7 +5199,7 @@ msgstr "Hình tam giác có nên có đường viền không?"
 
 #: locale/moduletranslate.php:2866
 msgid "Pentagon"
-msgstr "Lầu Năm Góc"
+msgstr "Hình ngũ giác"
 
 #: locale/moduletranslate.php:2873
 msgid "Should the pentagon have an outline?"
