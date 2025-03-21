@@ -677,6 +677,11 @@ class Settings extends Base
         $this->getConfig()->changeSetting('NAVIGATION_MENU_POSITION', 'horizontal');
         $this->getConfig()->changeSetting('GLOBAL_THEME_NAME', 'default');
 
+        
+        if ($this->getConfig()->isSettingEditable('DEFAULT_LANGUAGE')) {
+            $this->handleChangedSettings('DEFAULT_LANGUAGE', $this->getConfig()->getSetting('DEFAULT_LANGUAGE'), $sanitizedParams->getString('DEFAULT_LANGUAGE'), $changedSettings);
+            $this->getConfig()->changeSetting('DEFAULT_LANGUAGE', $sanitizedParams->getString('DEFAULT_LANGUAGE'));
+        }
         if ($this->getConfig()->isSettingEditable('defaultTimezone')) {
             $this->handleChangedSettings('defaultTimezone', $this->getConfig()->getSetting('defaultTimezone'), $sanitizedParams->getString('defaultTimezone'), $changedSettings);
             $this->getConfig()->changeSetting('defaultTimezone', $sanitizedParams->getString('defaultTimezone'));
