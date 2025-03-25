@@ -70,33 +70,34 @@
         var isXiboThemed = '{{ theme.getThemeConfig("app_name") }}' === 'Xibo';
         var isSuperAdmin ='{{ currentUser.isSuperAdmin()}}';
 
-        var onboardingCard = [
-            {
-                title: '{% trans "Displays" %}',
-                link: 'displays',
-                iconURL: '{{ theme.rootUri() }}theme/default/img/onboarding/displays-icon.png',
-            },
-            {
-                title: 'Nội dung đang có',
-                link: 'existing-content',
-                iconURL: '{{ theme.rootUri() }}theme/default/img/onboarding/existing-content-icon.png',
-            },
-            {
-                title: '{% trans "Playlists" %}',
-                link: 'playlists',
-                iconURL: '{{ theme.rootUri() }}theme/default/img/onboarding/playlist-icon.png',
-            },
-            {
-                title: 'Sáng tạo nội dung',
-                link: 'create-content',
-                iconURL: '{{ theme.rootUri() }}theme/default/img/onboarding/create-content-icon.png',
-            },
-            {
-                title: '{% trans "Schedule" %}',
-                link: 'schedule',
-                iconURL: '{{ theme.rootUri() }}theme/default/img/onboarding/schedule-icon.png',
-            },
-        ];
+    var onboardingCard = [
+        {
+            title: '{% trans "Displays" %}',
+            link: 'displays',
+            iconURL: '{{ theme.rootUri() }}theme/default/img/onboarding/displays-icon.png',
+        },
+        {
+            title: '{% trans "Existing content" %}',
+            link: 'existing-content',
+            iconURL: '{{ theme.rootUri() }}theme/default/img/onboarding/existing-content-icon.png',
+        },
+        {
+            title: '{% trans "Playlists" %}',
+            link: 'playlists',
+            iconURL: '{{ theme.rootUri() }}theme/default/img/onboarding/playlist-icon.png',
+        },
+        {
+            title: '{% trans "Create content" %}',
+            link: 'create-content',
+            iconURL: '{{ theme.rootUri() }}theme/default/img/onboarding/create-content-icon.png',
+        },
+        {
+            title: '{% trans "Schedule" %}',
+            link: 'schedule',
+            iconURL: '{{ theme.rootUri() }}theme/default/img/onboarding/schedule-icon.png',
+        },
+    ];
+
 
         var serviceCards = [
             {
