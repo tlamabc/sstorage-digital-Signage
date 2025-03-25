@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-03-25 17:09+0700\n"
+"PO-Revision-Date: 2025-03-25 17:13+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: vi\n"
@@ -5265,7 +5265,7 @@ msgstr "Màu nền giữ chỗ"
 #: cache/6d/6dbfc6f56029f200649cfd67abd33697.php:172
 #: cache/d6/d601b43ade56f366a4fe9923466d9cf7.php:120
 msgid "Subject"
-msgstr "Chủ thể"
+msgstr "Tiêu đề"
 
 #: locale/moduletranslate.php:2900 locale/moduletranslate.php:2911
 msgid "Body"
@@ -9985,7 +9985,7 @@ msgstr "Ngày thông báo này sẽ được xuất bản"
 #: cache/6d/6dbfc6f56029f200649cfd67abd33697.php:184
 #: cache/d6/d601b43ade56f366a4fe9923466d9cf7.php:154
 msgid "Interrupt?"
-msgstr "Ngắt?"
+msgstr "Chen ngang?"
 
 #: cache/03/03d9fcd1aca39b90d734869371805ed5.php:160
 #: cache/d6/d601b43ade56f366a4fe9923466d9cf7.php:160
@@ -19260,7 +19260,7 @@ msgstr "Chỉ xem"
 
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:769
 msgid "Interrupt"
-msgstr "Ngắt"
+msgstr "Chen ngang"
 
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:779
 msgid "Interactive Action"
