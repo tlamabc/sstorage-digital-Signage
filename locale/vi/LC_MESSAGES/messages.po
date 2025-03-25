@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-03-25 17:17+0700\n"
+"PO-Revision-Date: 2025-03-25 17:34+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: vi\n"
@@ -19733,7 +19733,7 @@ msgstr "Cho phép nhập?"
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:1928
 msgid "Enable Library Tidy?"
-msgstr "Bật Thư viện gọn gàng?"
+msgstr "Bật chế độ dọn dẹp thư viện?"
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:1947
 msgid "Status Dashboard Widget"
@@ -19805,19 +19805,19 @@ msgstr "Chuyển đổi toàn cầu để gửi thông báo qua email"
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:2213
 msgid "Max Log Age"
-msgstr "Tuổi đăng nhập tối đa"
+msgstr "Số ngày lưu nhật ký tối đa"
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:2219
 msgid "Maximum age for log entries in days. Set to 0 to keep logs indefinitely."
-msgstr "Tuổi tối đa cho các mục nhật ký tính theo ngày. Đặt thành 0 để giữ nhật ký vô thời hạn."
+msgstr "Thời gian lưu nhật ký tối đa (tính theo ngày). Đặt là 0 để giữ nhật ký vĩnh viễn."
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:2250
 msgid "Max Statistics Age"
-msgstr "Tuổi thống kê tối đa"
+msgstr "Thời gian lưu thống kê tối đa"
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:2256
 msgid "Maximum age for statistics entries in days. Entries older than this will not be processed and existing entries will be removed. Set to 0 to keep statistics indefinitely."
-msgstr "Tuổi tối đa cho các mục thống kê tính theo ngày. Các mục cũ hơn sẽ không được xử lý và các mục hiện có sẽ bị xóa. Đặt thành 0 để giữ số liệu thống kê vô thời hạn."
+msgstr "Thời gian tối đa cho các mục thống kê tính theo ngày. Các mục cũ hơn sẽ không được xử lý và các mục hiện có sẽ bị xóa. Đặt thành 0 để giữ số liệu thống kê vô thời hạn."
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:2287
 msgid "Max Display Timeout"
@@ -20045,7 +20045,7 @@ msgstr "Jalali - Lịch Ba Tư ( Iran )"
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:3274
 msgid "Resting Log Level"
-msgstr "Cấp độ nhật ký nghỉ ngơi"
+msgstr "Mức log khi không hoạt động"
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:3280
 msgid "Set the level of the resting log level. The CMS will revert to this log level after an elevated period ends. In production systems \"error\" is recommended."
@@ -20125,7 +20125,7 @@ msgstr "Siêu quản trị viên"
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:3676
 msgid "Password Policy Regular Expression"
-msgstr "Chính sách mật khẩu Biểu thức chính quy"
+msgstr "Biểu thức kiểm tra mật khẩu"
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:3682
 msgid "Regular Expression for password complexity, leave blank for no policy."
@@ -20153,7 +20153,7 @@ msgstr "Bật ngoại trừ quản trị viên"
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:3811
 msgid "Two Factor Issuer"
-msgstr "Nhà phát hành hai yếu tố"
+msgstr "Tên nhà phát hành xác thực hai lớp"
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:3817
 msgid "Name that should appear as Issuer when two factor authorisation is enabled"
@@ -25394,7 +25394,7 @@ msgstr "Lưu trữ nhật ký kiểm tra"
 
 #: lib/XTR/AuditLogArchiveTask.php:107
 msgid "Exceeded max age: "
-msgstr "Đã vượt quá độ tuổi tối đa: "
+msgstr "Đã vượt quá thời gian lưu tối đa:"
 
 #: lib/XTR/AuditLogArchiveTask.php:155
 msgid "No audit log found for these dates"
