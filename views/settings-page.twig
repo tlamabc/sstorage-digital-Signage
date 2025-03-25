@@ -1202,9 +1202,9 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 9999;
-    background: #0089cd;
+    background: #28a745;
     color: #ffffff;
-    border: 1px solid #ffffff;
+    border: 1px solid #28a745;
     padding: 12px 24px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -1266,9 +1266,9 @@
                 localStorage.removeItem('showSavedMessage');
 
                 setTimeout(function () {
-                    const savedLabel = "{{ 'Saved %s'|trans|e('js') }}"; // Trans cho "Saved %s"
-                    
-                    const fullMessage = savedLabel.replace('%s');
+                    const savedLabel = "{{ 'Saved %s'|trans|e('js') }}";
+                    const whatWasSaved = ""; 
+                    const fullMessage = savedLabel.replace('%s', whatWasSaved);
 
                     $('#saveSuccessMessage').text(fullMessage);
                     $('#saveSuccessAlert').fadeIn(300);
