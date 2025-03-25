@@ -968,7 +968,11 @@
                                     {% endif %}
                                 {% endif %}
 
-
+                                {% set languages = [
+                                    {'id': 'en_GB', 'value': 'English'},
+                                    {'id': 'vi_VN', 'value': 'Tiếng Việt'},
+                                    {'id': 'custom', 'value': 'Tùy chỉnh'},
+                                ] %}
 
                                 {% if theme.isSettingVisible("CALENDAR_TYPE") %}
                                     {% set title %}{% trans "Calendar Type" %}{% endset %}

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-03-25 14:55+0700\n"
+"PO-Revision-Date: 2025-03-25 15:23+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: vi\n"
@@ -20037,11 +20037,11 @@ msgstr "CMS nên sử dụng loại lịch nào?"
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:3228
 msgid "Gregorian"
-msgstr "Gregorian"
+msgstr "Gregorian - Dương lịch"
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:3234
 msgid "Jalali"
-msgstr "Jalali"
+msgstr "Jalali - Lịch Ba Tư ( Iran )"
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:3274
 msgid "Resting Log Level"
