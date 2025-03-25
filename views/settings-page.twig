@@ -1185,7 +1185,11 @@
                                 {% endif %}
                             </div>
                         </div>
-                        <button class="btn btn-save btn-block btn-success" href="#"><span>{% trans "Save" %}</span></button>
+                        <button id="saveBtn" class="btn btn-save btn-block btn-success">
+                            <span>{% trans "Save" %}</span>
+                        </button>
+
+                        {# <button class="btn btn-save btn-block btn-success" href="#"><span>{% trans "Save" %}</span></button> #}
                     </form>
                 </div>
             </div>
@@ -1216,6 +1220,28 @@
                     }
                 }, 300);
             });
+       
+       
+       
+                $('#saveBtn').on('click', function (e) {
+            e.preventDefault();
+
+            // Submit form
+            const $form = $(this).closest('form');
+            $.ajax({
+                url: $form.attr('action'),
+                method: $form.attr('method'),
+                data: $form.serialize(),
+                success: function () {
+                    // Sau khi lưu xong thì reload
+                    location.reload();
+                },
+                error: function () {
+                    alert('Lưu thất bại!');
+                }
+            });
+        });
+       
         })
     </script>
 
