@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-03-25 11:23+0700\n"
+"PO-Revision-Date: 2025-03-25 11:28+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: vi\n"
@@ -15696,7 +15696,7 @@ msgstr "Chọn hoặc bỏ chọn các tùy chọn đối với từng màn hìn
 #: cache/59/59f0058495a6a779727bbfe19dd6898f.php:254
 #: cache/78/78ed9f2a473ef7fccd9492ef5da7328b.php:168
 msgid "Authorised"
-msgstr "Được ủy quyền"
+msgstr "Được cấp phép hoạt động"
 
 #: cache/69/69ec08a106f7f315270a0d937d8b66dc.php:303
 msgid "Below is the family tree for this Display Group."
