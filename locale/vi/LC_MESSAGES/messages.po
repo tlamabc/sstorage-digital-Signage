@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-03-25 16:30+0700\n"
+"PO-Revision-Date: 2025-03-25 17:07+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: vi\n"
@@ -289,7 +289,7 @@ msgstr "Tối tăm"
 #: locale/moduletranslate.php:63 locale/moduletranslate.php:91
 #: locale/moduletranslate.php:104 locale/moduletranslate.php:2736
 msgid "Offset"
-msgstr "Bù lại"
+msgstr "Độ lệch (phút)"
 
 #: locale/moduletranslate.php:64 locale/moduletranslate.php:105
 msgid "The offset in minutes that should be applied to the current time, or if a counter then date/time to run from in the format Y-m-d H:i:s."
@@ -3680,7 +3680,7 @@ msgstr "Thay đổi biểu tượng"
 #: locale/moduletranslate.php:2746 locale/moduletranslate.php:2936
 #: locale/moduletranslate.php:2954
 msgid "Fit to selection"
-msgstr "Phù hợp với sự lựa chọn"
+msgstr "Căn vừa với vùng đã chọn"
 
 #: locale/moduletranslate.php:1267 locale/moduletranslate.php:2016
 #: locale/moduletranslate.php:2662 locale/moduletranslate.php:2703
@@ -11164,7 +11164,7 @@ msgstr "Thời gian trong ngày"
 #: cache/30/302546eec41a46c8a34a19447abc899c.php:330
 #: lib/Report/DisplayAdPlay.php:461
 msgid "Spend"
-msgstr "Tiêu"
+msgstr "Mức sử dụng"
 
 #: cache/9b/9b336feab307d9fb44a116731ed70a80.php:529
 msgid "Stats need to be enabled on the Displays and Layouts selected on this campaign"
@@ -11873,7 +11873,7 @@ msgstr "Thứ tự hiển thị của cột này khi nhập dữ liệu"
 #: cache/f0/f09fc6c7681299332eebe7bd5725874b.php:255
 #: cache/50/506deff6963207415b8119b0bf38cafb.php:144
 msgid "Tooltip"
-msgstr "Chú giải công cụ"
+msgstr "Gợi ý nhanh"
 
 #: cache/ae/ae394f8c24c001c339b962459305c578.php:261
 #: cache/f0/f09fc6c7681299332eebe7bd5725874b.php:261
@@ -13146,11 +13146,11 @@ msgstr "Trung tâm thông báo"
 
 #: cache/6d/6dbfc6f56029f200649cfd67abd33697.php:113
 msgid "My Read"
-msgstr "Đọc của tôi"
+msgstr "Chưa đọc"
 
 #: cache/6d/6dbfc6f56029f200649cfd67abd33697.php:116
 msgid "My Unread"
-msgstr "Chưa đọc của tôi"
+msgstr "Chưa đọc"
 
 #: cache/6d/6dbfc6f56029f200649cfd67abd33697.php:139
 msgid "Report"
@@ -14312,7 +14312,7 @@ msgstr "Nhà cung cấp"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:1222
 msgid "Media Id"
-msgstr "Id phương tiện"
+msgstr "ID phương tiện"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:1246
 #: cache/69/697199e08306c9b60a6f883010d54416.php:98
@@ -17485,7 +17485,7 @@ msgstr "Cảnh báo - bắt đầu bằng hoặc kết thúc bằng dấu cách 
 
 #: cache/5d/5ddc3b3a06dcb05f69b47d5cd8bae287.php:128
 msgid "Free Text"
-msgstr "Văn bản miễn phí"
+msgstr "Free Text"
 
 #: cache/5d/5ddc3b3a06dcb05f69b47d5cd8bae287.php:132
 msgid "Edit Tags"
