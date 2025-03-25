@@ -1202,17 +1202,18 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 9999;
-    background: #fff;
-    color: #0089cd;
-    border: 1px solid #0089cd;
+    background: #0089cd;
+    color: #ffffff;
+    border: 1px solid #ffffff;
     padding: 12px 24px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     font-weight: bold;
     font-size: 16px;
 ">
-    Lưu thành công!
+    <span id="saveSuccessMessage"></span>
 </div>
+
 
 
 {% endblock %}
@@ -1265,13 +1266,17 @@
                 localStorage.removeItem('showSavedMessage');
 
                 setTimeout(function () {
+                    const savedLabel = "{{ 'Saved %s'|trans|e('js') }}"; // Trans cho "Saved %s"
+                    const whatWasSaved = "thiết lập"; // có thể truyền động
+                    const fullMessage = savedLabel.replace('%s', whatWasSaved);
+
+                    $('#saveSuccessMessage').text(fullMessage);
                     $('#saveSuccessAlert').fadeIn(300);
 
-                    // Ẩn sau 3 giây
                     setTimeout(function () {
                         $('#saveSuccessAlert').fadeOut(300);
-                    }, 4000);
-                }, 400);
+                    }, 3000);
+                }, 300);
             }
 
 
