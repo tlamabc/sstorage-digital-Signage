@@ -1195,9 +1195,25 @@
             </div>
         </div>
     </div>
-    <div id="saveSuccessAlert" style="display: none; position: fixed; top: 20px; right: 20px; z-index: 9999; background: #fff; color: #0089cd; border: 1px solid #0089cd; padding: 12px 20px; border-radius: 8px; box-shadow: 0 0 8px rgba(0,0,0,0.1); font-weight: bold;">
+<div id="saveSuccessAlert" style="
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    background: #fff;
+    color: #0089cd;
+    border: 1px solid #0089cd;
+    padding: 12px 24px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-weight: bold;
+    font-size: 16px;
+">
     Lưu thành công!
 </div>
+
 
 {% endblock %}
 
@@ -1251,11 +1267,11 @@
                 setTimeout(function () {
                     $('#saveSuccessAlert').fadeIn(300);
 
-                    // Tự động ẩn sau 3 giây
+                    // Ẩn sau 3 giây
                     setTimeout(function () {
                         $('#saveSuccessAlert').fadeOut(300);
-                    }, 3000);
-                }, 300);
+                    }, 4000);
+                }, 400);
             }
 
 
