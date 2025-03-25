@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-03-25 12:14+0700\n"
+"PO-Revision-Date: 2025-03-25 14:36+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: vi\n"
@@ -4648,7 +4648,7 @@ msgstr "Chọn hình ảnh từ thư viện phương tiện để thay thế hì
 
 #: locale/moduletranslate.php:2088 locale/moduletranslate.php:2305
 msgid "Landscape - Current day, 4 day forecast"
-msgstr "Phong cảnh - Ngày hiện tại, dự báo 4 ngày"
+msgstr "Chiều ngang - Ngày hiện tại, dự báo 4 ngày"
 
 #: locale/moduletranslate.php:2089 locale/moduletranslate.php:2118
 #: locale/moduletranslate.php:2147 locale/moduletranslate.php:2176
@@ -4719,15 +4719,15 @@ msgstr "Màu của bóng tối"
 
 #: locale/moduletranslate.php:2117
 msgid "Landscape - Current day, summary"
-msgstr "Phong cảnh - Ngày hiện tại, tóm tắt"
+msgstr "Chiều ngang - Ngày hiện tại, tóm tắt"
 
 #: locale/moduletranslate.php:2146
 msgid "Landscape - Current day"
-msgstr "Phong cảnh - Ngày hiện tại"
+msgstr "Chiều ngang - Ngày hiện tại"
 
 #: locale/moduletranslate.php:2175 locale/moduletranslate.php:2363
 msgid "Landscape - Current day detailed, 4 day forecast"
-msgstr "Phong cảnh - Ngày hiện tại chi tiết, dự báo 4 ngày"
+msgstr "Chiều ngang - Ngày hiện tại chi tiết, dự báo 4 ngày"
 
 #: locale/moduletranslate.php:2184 locale/moduletranslate.php:2219
 #: locale/moduletranslate.php:2409 locale/moduletranslate.php:2452
@@ -4837,7 +4837,7 @@ msgstr "Màu nền hình tròn"
 
 #: locale/moduletranslate.php:2437
 msgid "Landscape - Current day detailed, 3 day forecast"
-msgstr "Phong cảnh - Ngày hiện tại chi tiết, dự báo 3 ngày"
+msgstr "Chiều ngang - Ngày hiện tại chi tiết, dự báo 3 ngày"
 
 #: locale/moduletranslate.php:2442
 msgid "Current Container Background"
@@ -4857,7 +4857,7 @@ msgstr "Màu của nền vùng chứa dự báo"
 
 #: locale/moduletranslate.php:2474
 msgid "Landscape - Current day details, 4 day forecast"
-msgstr "Phong cảnh - Chi tiết ngày hiện tại, dự báo 4 ngày"
+msgstr "Chiều ngang - Chi tiết ngày hiện tại, dự báo 4 ngày"
 
 #: locale/moduletranslate.php:2501
 msgid "Portrait - Current day details, 4 day forecast"
@@ -4877,7 +4877,7 @@ msgstr "Tỷ lệ - Chỉ nền thời tiết"
 
 #: locale/moduletranslate.php:2624
 msgid "Landscape - Weather fullscreen"
-msgstr "Phong cảnh - Thời tiết toàn màn hình"
+msgstr "Chiều ngang - Thời tiết toàn màn hình"
 
 #: locale/moduletranslate.php:2629
 msgid "Container Background"
@@ -7377,7 +7377,7 @@ msgstr "Người sở hữu"
 #: cache/11/1166151ca61185a39a692ab3eb99064f.php:269
 #: cache/11/1166151ca61185a39a692ab3eb99064f.php:472
 msgid "Orientation"
-msgstr "Định hướng"
+msgstr "Hướng hiển thị "
 
 #: cache/c8/c8be5b9fc4051f3583eba482b4065cf3.php:224
 #: cache/c8/c8be5b9fc4051f3583eba482b4065cf3.php:337
@@ -9031,7 +9031,7 @@ msgstr "Bộ lọc thư mục"
 #: cache/8e/8e6f77c3d5f13012bdd306a830c2cc41.php:321
 #: cache/11/1166151ca61185a39a692ab3eb99064f.php:277
 msgid "Landscape"
-msgstr "Phong cảnh"
+msgstr "Chiều ngang"
 
 #: cache/cf/cf63b697a899071854cdf7e574d55466.php:490
 #: cache/40/40934d1cc21621783800143e32bfb38c.php:465
