@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-03-25 11:18+0700\n"
+"PO-Revision-Date: 2025-03-25 11:23+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: vi\n"
@@ -9294,7 +9294,7 @@ msgstr "Chi tiết thay đổi"
 
 #: cache/14/14bb6e98f6948b95336492e93123ea66.php:315
 msgid "Property"
-msgstr "Tài sản"
+msgstr "Thuộc tính"
 
 #: cache/14/14cdd787962b5d5fd4e9840685756ca7.php:57
 msgid "Delete this DataSet?"
@@ -10890,7 +10890,7 @@ msgstr "Đi để bắt đầu"
 
 #: cache/04/049b075cac583aefc958ee662a293536.php:285
 msgid "Add new property"
-msgstr "Thêm tài sản mới"
+msgstr "Thêm thuộc tính mới"
 
 #: cache/04/049b075cac583aefc958ee662a293536.php:289
 #: cache/ae/aede29170646eeec2459cefb297c2720.php:416
@@ -22307,7 +22307,7 @@ msgstr "Thiếu thuộc tính hàng đầu"
 
 #: lib/Controller/Region.php:521
 msgid "Missing left property"
-msgstr "Thiếu tài sản bên trái"
+msgstr "Thiếu thuộc tính bên trái"
 
 #: lib/Controller/Region.php:524
 msgid "Missing width property"
