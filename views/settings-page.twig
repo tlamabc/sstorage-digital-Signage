@@ -1195,6 +1195,10 @@
             </div>
         </div>
     </div>
+    <div id="saveSuccessAlert" style="display: none; position: fixed; top: 20px; right: 20px; z-index: 9999; background: #fff; color: #0089cd; border: 1px solid #0089cd; padding: 12px 20px; border-radius: 8px; box-shadow: 0 0 8px rgba(0,0,0,0.1); font-weight: bold;">
+    Lưu thành công!
+</div>
+
 {% endblock %}
 
 {% block javaScript %}
@@ -1243,12 +1247,17 @@
             });
             if (localStorage.getItem('showSavedMessage') === 'true') {
                 localStorage.removeItem('showSavedMessage');
-                
-                // Hiển thị thông báo – bạn có thể tùy chỉnh kiểu alert này
+
                 setTimeout(function () {
-                    alert('Lưu thành công!');
-                }, 300); // delay nhẹ để đảm bảo DOM đã load
+                    $('#saveSuccessAlert').fadeIn(300);
+
+                    // Tự động ẩn sau 3 giây
+                    setTimeout(function () {
+                        $('#saveSuccessAlert').fadeOut(300);
+                    }, 3000);
+                }, 300);
             }
+
 
        
         })
