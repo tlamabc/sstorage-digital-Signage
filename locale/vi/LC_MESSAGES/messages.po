@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-03-25 09:38+0700\n"
+"PO-Revision-Date: 2025-03-25 11:18+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: vi\n"
@@ -5661,7 +5661,7 @@ msgstr "Chọn màu mẫu bạn muốn áp dụng giá trị cho các màu bên 
 #: cache/2e/2e7cf65479feac6f2abf2dca6b37d28e.php:724
 #: cache/5d/5ddc3b3a06dcb05f69b47d5cd8bae287.php:246
 msgid "Custom"
-msgstr "Phong tục"
+msgstr "Tùy chỉnh "
 
 #: locale/moduletranslate.php:3400
 msgid "Colours 1 - Default"
@@ -9290,7 +9290,7 @@ msgstr "Tin nhắn"
 
 #: cache/14/14bb6e98f6948b95336492e93123ea66.php:216
 msgid "Object"
-msgstr "Sự vật"
+msgstr "Chi tiết thay đổi"
 
 #: cache/14/14bb6e98f6948b95336492e93123ea66.php:315
 msgid "Property"
