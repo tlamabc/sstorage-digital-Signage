@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-03-25 11:32+0700\n"
+"PO-Revision-Date: 2025-03-25 12:07+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: vi\n"
@@ -8894,7 +8894,7 @@ msgstr "Chỉnh sửa Chiến dịch \"%campaignName%\""
 #: cache/22/22f7152547bc1d348546cfbb37d509f4.php:142
 #: cache/6c/6c1dd0533ff1fe8d7d9a0d40647751ed.php:109
 msgid "Reference"
-msgstr "Thẩm quyền giải quyết"
+msgstr "Tham chiếu"
 
 #: cache/cf/cf63b697a899071854cdf7e574d55466.php:167
 #: cache/9b/9b336feab307d9fb44a116731ed70a80.php:130
@@ -13090,7 +13090,7 @@ msgstr "Thẻ cho Nhóm hiển thị này - Chuỗi Thẻ hoặc định dạng 
 #: cache/b4/b4e0a32ac171996e111be1266b068542.php:281
 #: cache/22/22f7152547bc1d348546cfbb37d509f4.php:289
 msgid "Dynamic Group?"
-msgstr "Nhóm năng động?"
+msgstr "Nhóm động?"
 
 #: cache/b4/b4e0a32ac171996e111be1266b068542.php:287
 #: cache/22/22f7152547bc1d348546cfbb37d509f4.php:295
@@ -17167,7 +17167,7 @@ msgstr "Tiêu chí động"
 
 #: cache/af/afb7866a1b31acfe5bca26fc69acd70e.php:270
 msgid "Is Dynamic?"
-msgstr "Là động?"
+msgstr "Động?"
 
 #: cache/af/afb7866a1b31acfe5bca26fc69acd70e.php:595
 #: cache/45/452993b5cfada14b95c3c3f731195fbd.php:329
