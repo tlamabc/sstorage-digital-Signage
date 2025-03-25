@@ -1267,8 +1267,8 @@
 
                 setTimeout(function () {
                     const savedLabel = "{{ 'Saved %s'|trans|e('js') }}"; // Trans cho "Saved %s"
-                    const whatWasSaved = "thiết lập"; // có thể truyền động
-                    const fullMessage = savedLabel.replace('%s', whatWasSaved);
+                    
+                    const fullMessage = savedLabel.replace('%s');
 
                     $('#saveSuccessMessage').text(fullMessage);
                     $('#saveSuccessAlert').fadeIn(300);
