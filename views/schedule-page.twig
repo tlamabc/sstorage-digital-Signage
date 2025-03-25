@@ -166,14 +166,13 @@
                                     </div>
                                 </div>
                             </div>
-
-                            {% set title %}{% trans 'Geo Aware?' %}{% endset %}
+                            {# {% set title %}{% trans 'Geo Aware?' %}{% endset %}
                             {% set options = [
                                 { id: null, name: "Both"|trans },
                                 { id: 0, name: "No"|trans },
                                 { id: 1, name: "Yes"|trans }
                             ] %}
-                            {{ inline.dropdown("geoAware", "single", title, "both", options, "id", "name", "", "non-agenda-filter") }}
+                            {{ inline.dropdown("geoAware", "single", title, "both", options, "id", "name", "", "non-agenda-filter") }} #}
 
                             {% set title %}{% trans 'Recurring?' %}{% endset %}
                             {% set options = [
