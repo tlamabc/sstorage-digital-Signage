@@ -1222,25 +1222,34 @@
             });
        
        
-       
-                $('#saveBtn').on('click', function (e) {
-            e.preventDefault();
+            $('#saveBtn').on('click', function (e) {
+                e.preventDefault();
 
-            // Submit form
-            const $form = $(this).closest('form');
-            $.ajax({
-                url: $form.attr('action'),
-                method: $form.attr('method'),
-                data: $form.serialize(),
-                success: function () {
-                    // Sau khi lưu xong thì reload
-                    location.reload();
-                },
-                error: function () {
-                    alert('Lưu thất bại!');
-                }
+                const $form = $(this).closest('form');
+
+                $.ajax({
+                    url: $form.attr('action'),
+                    method: $form.attr('method'),
+                    data: $form.serialize(),
+                    success: function () {
+                        // Ghi cờ để hiển thị thông báo sau reload
+                        localStorage.setItem('showSavedMessage', 'true');
+                        location.reload();
+                    },
+                    error: function () {
+                        alert('Lưu thất bại!');
+                    }
+                });
             });
-        });
+            if (localStorage.getItem('showSavedMessage') === 'true') {
+                localStorage.removeItem('showSavedMessage');
+                
+                // Hiển thị thông báo – bạn có thể tùy chỉnh kiểu alert này
+                setTimeout(function () {
+                    alert('Lưu thành công!');
+                }, 300); // delay nhẹ để đảm bảo DOM đã load
+            }
+
        
         })
     </script>
