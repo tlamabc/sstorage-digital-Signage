@@ -929,6 +929,11 @@
                             </div>
                             <div class="tab-pane" id="tab_regional">
                                 <h3 class="section-heading">{% trans "Regional" %}</h3>
+                                {% set languages = [
+                                    {'id': 'en_GB', 'value': 'English'},
+                                    {'id': 'vi_VN', 'value': 'Tiếng Việt'},
+                                    {'id': 'custom', 'value': 'Tùy chỉnh'},
+                                ] %}
                                 {% if theme.isSettingVisible("DEFAULT_LANGUAGE") %}
                                     {% set title %}{% trans "Default Language" %}{% endset %}
                                     {% set helpText %}{% trans "The default language to use" %}{% endset %}
@@ -968,11 +973,6 @@
                                     {% endif %}
                                 {% endif %}
 
-                                {% set languages = [
-                                    {'id': 'en_GB', 'value': 'English'},
-                                    {'id': 'vi_VN', 'value': 'Tiếng Việt'},
-                                    {'id': 'custom', 'value': 'Tùy chỉnh'},
-                                ] %}
 
                                 {% if theme.isSettingVisible("CALENDAR_TYPE") %}
                                     {% set title %}{% trans "Calendar Type" %}{% endset %}
