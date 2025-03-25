@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-03-25 17:07+0700\n"
+"PO-Revision-Date: 2025-03-25 17:09+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: vi\n"
@@ -13146,7 +13146,7 @@ msgstr "Trung tâm thông báo"
 
 #: cache/6d/6dbfc6f56029f200649cfd67abd33697.php:113
 msgid "My Read"
-msgstr "Chưa đọc"
+msgstr "Đã đọc"
 
 #: cache/6d/6dbfc6f56029f200649cfd67abd33697.php:116
 msgid "My Unread"
