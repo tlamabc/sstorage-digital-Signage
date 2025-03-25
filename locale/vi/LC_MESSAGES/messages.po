@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-03-25 12:07+0700\n"
+"PO-Revision-Date: 2025-03-25 12:14+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: vi\n"
@@ -13095,7 +13095,7 @@ msgstr "Nhóm động?"
 #: cache/b4/b4e0a32ac171996e111be1266b068542.php:287
 #: cache/22/22f7152547bc1d348546cfbb37d509f4.php:295
 msgid "Are the members of this group dynamic?"
-msgstr "Các thành viên của nhóm này có năng động không?"
+msgstr "Các thành viên của nhóm này có động không?"
 
 #: cache/b4/b4e0a32ac171996e111be1266b068542.php:311
 #: cache/22/22f7152547bc1d348546cfbb37d509f4.php:319
@@ -17385,7 +17385,7 @@ msgstr "Đã sửa đổi"
 #: cache/6b/6b8f3b359fea543f836222f075be96fc.php:340
 #: cache/11/1166151ca61185a39a692ab3eb99064f.php:492
 msgid "Stats?"
-msgstr "Số liệu thống kê?"
+msgstr "Số liệu thống kê"
 
 #: cache/fd/fdc577da9565022792574e6aa3ef7609.php:404
 #: cache/4a/4a4278fd57892a9180e837c6b9b78f8b.php:227
@@ -20289,7 +20289,7 @@ msgstr "Đã sửa đổi kể từ"
 
 #: cache/11/1166151ca61185a39a692ab3eb99064f.php:488
 msgid "Valid?"
-msgstr "Có hiệu lực?"
+msgstr "Có hiệu lực"
 
 #: cache/11/1166151ca61185a39a692ab3eb99064f.php:796
 msgid "Upload Layout"
