@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-03-25 15:23+0700\n"
+"PO-Revision-Date: 2025-03-25 16:30+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: vi\n"
@@ -6508,7 +6508,7 @@ msgstr "Cắt ngắn"
 #: cache/98/98b375e50a36cec178f7233572922b1e.php:71
 #: cache/13/13e4010fdfbb66f03c85dd7585947f4b.php:71
 msgid "Yes"
-msgstr "Yes"
+msgstr "Có"
 
 #: cache/16/167e064e1d5bf296075e5acc2c43ec0f.php:91
 msgid "Are you sure you want to truncate?"
@@ -8650,7 +8650,7 @@ msgstr "Xóa %playlistName%"
 #: cache/11/1166151ca61185a39a692ab3eb99064f.php:307
 #: cache/13/13e4010fdfbb66f03c85dd7585947f4b.php:67
 msgid "No"
-msgstr "No"
+msgstr "Không"
 
 #: cache/86/865311c56a517c5f48e7967dae5846e1.php:94
 msgid "Are you sure you want to delete this Playlist?"
@@ -10800,7 +10800,7 @@ msgstr "%templateName% - Mẫu mô-đun"
 #: cache/04/049b075cac583aefc958ee662a293536.php:112
 #: cache/04/049b075cac583aefc958ee662a293536.php:269
 msgid "Properties"
-msgstr "Của cải"
+msgstr "Thuộc tính"
 
 #: cache/04/049b075cac583aefc958ee662a293536.php:120
 #: cache/04/049b075cac583aefc958ee662a293536.php:318
@@ -15958,7 +15958,7 @@ msgstr "Có luôn đặt bố cục mặc định vào chu trình hay không."
 
 #: cache/44/44f134266ea30161ba4929c6a2658018.php:876
 msgid "Auditing until"
-msgstr "Kiểm toán cho đến khi"
+msgstr "Ghi nhật ký cho đến khi"
 
 #: cache/44/44f134266ea30161ba4929c6a2658018.php:882
 msgid "Collect auditing from this Player. Should only be used if there is a problem with the display."
