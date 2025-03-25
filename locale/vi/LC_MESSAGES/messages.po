@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-03-25 14:36+0700\n"
+"PO-Revision-Date: 2025-03-25 14:55+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: vi\n"
@@ -272,7 +272,7 @@ msgstr "Đồng hồ analog"
 
 #: locale/moduletranslate.php:59 locale/moduletranslate.php:95
 msgid "Theme"
-msgstr "chủ đề"
+msgstr "Chủ đề"
 
 #: locale/moduletranslate.php:60
 msgid "Please select a theme for the clock."
@@ -2623,7 +2623,7 @@ msgstr "Nhập văn bản để hiển thị. Hình chữ nhật màu đỏ ph�
 #: cache/11/1166151ca61185a39a692ab3eb99064f.php:368
 #: cache/ce/ceeec6bdf494687f7ffe028f7c6ac733.php:197
 msgid "Media"
-msgstr "Phương tiện truyền thông"
+msgstr "Tệp phương tiện"
 
 #: locale/moduletranslate.php:876
 msgid "Choose media"
@@ -4777,7 +4777,7 @@ msgstr "Màu sắc của các biểu tượng chân trang"
 
 #: locale/moduletranslate.php:2210
 msgid "Portrait - Current day, 2 day forecast"
-msgstr "Chân dung - Ngày hiện tại, dự báo 2 ngày"
+msgstr "Chiều dọc - Ngày hiện tại, dự báo 2 ngày"
 
 #: locale/moduletranslate.php:2245
 msgid "Landscape - Current day detailed table, 4 day forecast"
@@ -4805,7 +4805,7 @@ msgstr "Hình vuông - Ngày hiện tại"
 
 #: locale/moduletranslate.php:2334
 msgid "Portrait - Current day, 4 day forecast"
-msgstr "Chân dung - Ngày hiện tại, dự báo 4 ngày"
+msgstr "Chiều dọc - Ngày hiện tại, dự báo 4 ngày"
 
 #: locale/moduletranslate.php:2372
 msgid "Footer Background 1"
@@ -4825,7 +4825,7 @@ msgstr "Màu nền footer 2"
 
 #: locale/moduletranslate.php:2400
 msgid "Portrait - Current day, 3 day forecast"
-msgstr "Chân dung - Ngày hiện tại, dự báo 3 ngày"
+msgstr "Chiều dọc - Ngày hiện tại, dự báo 3 ngày"
 
 #: locale/moduletranslate.php:2407
 msgid "Circle Background"
@@ -4861,7 +4861,7 @@ msgstr "Chiều ngang - Chi tiết ngày hiện tại, dự báo 4 ngày"
 
 #: locale/moduletranslate.php:2501
 msgid "Portrait - Current day details, 4 day forecast"
-msgstr "Chân dung - Chi tiết ngày hiện tại, dự báo 4 ngày"
+msgstr "Chiều dọc - Chi tiết ngày hiện tại, dự báo 4 ngày"
 
 #: locale/moduletranslate.php:2530
 msgid "Square - Forecast squared with background"
@@ -9042,7 +9042,7 @@ msgstr "Chiều ngang"
 #: cache/8e/8e6f77c3d5f13012bdd306a830c2cc41.php:324
 #: cache/11/1166151ca61185a39a692ab3eb99064f.php:280
 msgid "Portrait"
-msgstr "Chân dung"
+msgstr "Chiều dọc"
 
 #: cache/cf/cffabfeef57943ab38af08d828420e2d.php:58
 msgid "Export Statistics"
@@ -12448,7 +12448,7 @@ msgstr "Phát lại dựa trên chu kỳ"
 #: lib/Controller/User.php:306 lib/XTR/MaintenanceDailyTask.php:165
 #: lib/XTR/StatsArchiveTask.php:137 lib/XTR/StatsArchiveTask.php:332
 msgid "Disabled"
-msgstr "Tàn tật"
+msgstr "Tắt"
 
 #: cache/30/302546eec41a46c8a34a19447abc899c.php:292
 msgid "# Layouts"
@@ -16497,7 +16497,7 @@ msgstr "Cảnh quan đảo ngược"
 #: cache/62/62f02d9694937edf9eeebf8af13766c4.php:299
 #: cache/c5/c55b97faf35e73cd93f558006e1ecd0c.php:206
 msgid "Reverse Portrait"
-msgstr "Chân dung ngược"
+msgstr "Chiều dọc ngược"
 
 #: cache/62/62f02d9694937edf9eeebf8af13766c4.php:307
 msgid "Screen Dimensions"
@@ -20277,7 +20277,7 @@ msgstr "Chỉ chưa sử dụng"
 
 #: cache/11/1166151ca61185a39a692ab3eb99064f.php:350
 msgid "1st line"
-msgstr "dòng đầu tiên"
+msgstr "Dòng đầu tiên"
 
 #: cache/11/1166151ca61185a39a692ab3eb99064f.php:353
 msgid "Widget List"
