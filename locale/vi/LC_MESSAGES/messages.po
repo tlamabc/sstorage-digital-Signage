@@ -25625,3 +25625,51 @@ msgstr "Xin lỗi, bạn không được phép truy cập trực tiếp vào tra
 #: web/settings.php:11
 msgid "Please press the back button in your browser."
 msgstr "Vui lòng nhấn nút quay lại trong trình duyệt của bạn."
+
+msgid "This field is required."
+msgstr "Trường này là bắt buộc."
+
+msgid "Please fix this field."
+msgstr "Vui lòng sửa lại trường này."
+
+msgid "Please enter a valid email address."
+msgstr "Vui lòng nhập một địa chỉ email hợp lệ."
+
+msgid "Please enter a valid URL."
+msgstr "Vui lòng nhập một URL hợp lệ."
+
+msgid "Please enter a valid date."
+msgstr "Vui lòng nhập một ngày hợp lệ."
+
+msgid "Please enter a valid date (ISO)."
+msgstr "Vui lòng nhập một ngày hợp lệ (ISO)."
+
+msgid "Please enter a valid number."
+msgstr "Vui lòng nhập một số hợp lệ."
+
+msgid "Please enter only digits."
+msgstr "Vui lòng chỉ nhập chữ số."
+
+msgid "Please enter the same value again."
+msgstr "Vui lòng nhập lại giá trị giống nhau."
+
+msgid "Please enter no more than {0} characters."
+msgstr "Vui lòng không nhập nhiều hơn {0} ký tự."
+
+msgid "Please enter at least {0} characters."
+msgstr "Vui lòng nhập ít nhất {0} ký tự."
+
+msgid "Please enter a value between {0} and {1} characters long."
+msgstr "Vui lòng nhập giá trị có độ dài từ {0} đến {1} ký tự."
+
+msgid "Please enter a value between {0} and {1}."
+msgstr "Vui lòng nhập giá trị trong khoảng từ {0} đến {1}."
+
+msgid "Please enter a value less than or equal to {0}."
+msgstr "Vui lòng nhập giá trị nhỏ hơn hoặc bằng {0}."
+
+msgid "Please enter a value greater than or equal to {0}."
+msgstr "Vui lòng nhập giá trị lớn hơn hoặc bằng {0}."
+
+msgid "Please enter a multiple of {0}."
+msgstr "Vui lòng nhập bội số của {0}."
