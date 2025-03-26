@@ -56,8 +56,8 @@
                         <input title="{{ exactTagTitle }}" type="checkbox" id="{{ exactTag }}" name="{{ exactTag }}">
                     </div>
                     <select class="custom-select" id="logicalOperator" name="logicalOperator" title="{{ logicalOperatorTitle }}" style="min-width:auto!important">
-                        <option value="OR" selected>OR</option>
-                        <option value="AND">AND</option>
+                        <option value="OR" selected>Hoặc (OR)</option>
+                        <option value="AND">Và (AND)</option>
                     </select>
                 </div>
             </div>
@@ -255,8 +255,8 @@
                     </div>
                     <select class="custom-select" {% if logicalOperatorName %} id="{{ logicalOperatorName }}" name="{{ logicalOperatorName }}" {% else %} id="logicalOperatorName" name="logicalOperatorName"{% endif %}
                             title="{% trans "When filtering by multiple names, which logical operator should be used?" %}" style="min-width:auto!important">
-                        <option value="OR" selected>OR</option>
-                        <option value="AND">AND</option>
+                        <option value="OR" selected>Hoặc (OR)</option>
+                        <option value="AND">Và (AND)</option>
                     </select>
                 </div>
             </div>
