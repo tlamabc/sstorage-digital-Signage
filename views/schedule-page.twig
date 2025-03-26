@@ -63,7 +63,7 @@
                             {{ inline.inputNameGrid('name', title, "non-agenda-filter") }}
 
                             {% set title %}{% trans 'Event Type' %}{% endset %}
-                            {{ inline.dropdown("eventTypeId", "single", title, "", [{eventTypeId: null, eventTypeName: "All"}]|merge(eventTypes), "eventTypeId", "eventTypeName", "", "non-agenda-filter") }}
+                            {{ inline.dropdown("eventTypeId", "single", title, "", [{eventTypeId: null, eventTypeName: ""}]|merge(eventTypes), "eventTypeId", "eventTypeName", "", "non-agenda-filter") }}
 
                             {% set title %}{% trans "Layout / Campaign" %}{% endset %}
                             {% set helpText %}{% trans "Please select a Layout or Campaign for this Event to show" %}{% endset %}
@@ -154,7 +154,7 @@
 
                             {% set title %}{% trans 'Recurring?' %}{% endset %}
                             {% set options = [
-                                { id: null, name: "Both" },
+                                { id: null, name: "Both"|trans },
                                 { id: 0, name: "No"|trans },
                                 { id: 1, name: "Yes"|trans }
                             ] %}
