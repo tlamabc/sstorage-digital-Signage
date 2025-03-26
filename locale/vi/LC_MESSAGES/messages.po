@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-03-25 17:34+0700\n"
+"PO-Revision-Date: 2025-03-26 10:48+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: vi\n"
@@ -870,7 +870,7 @@ msgstr "Chiều rộng ban đầu"
 #: locale/moduletranslate.php:1285 locale/moduletranslate.php:2063
 #: locale/moduletranslate.php:2987 locale/moduletranslate.php:3448
 msgid "This is the intended width of the template and is used to scale the Widget within its region when the template is applied."
-msgstr "Đây là chiều rộng dự định của mẫu và được sử dụng để chia tỷ lệ Widget trong vùng của nó khi áp dụng mẫu."
+msgstr "Đây là chiều rộng dự định của mẫu và được sử dụng để chia tỷ lệ tiện ích trong vùng của nó khi áp dụng mẫu."
 
 #: locale/moduletranslate.php:175 locale/moduletranslate.php:1010
 #: locale/moduletranslate.php:1286 locale/moduletranslate.php:2064
@@ -882,7 +882,7 @@ msgstr "Chiều cao ban đầu"
 #: locale/moduletranslate.php:1287 locale/moduletranslate.php:2065
 #: locale/moduletranslate.php:2989 locale/moduletranslate.php:3450
 msgid "This is the intended height of the template and is used to scale the Widget within its region when the template is applied."
-msgstr "Đây là chiều cao dự định của mẫu và được sử dụng để chia tỷ lệ Widget trong vùng của nó khi áp dụng mẫu."
+msgstr "Đây là chiều cao dự định của mẫu và được sử dụng để chia tỷ lệ tiện ích trong vùng của nó khi áp dụng mẫu."
 
 #: locale/moduletranslate.php:177 locale/moduletranslate.php:1288
 msgid "mainTemplate"
@@ -1195,7 +1195,7 @@ msgstr "Ngẫu nhiên hóa?"
 
 #: locale/moduletranslate.php:340
 msgid "Should the order of the feed be randomised? When enabled each time the Widget is shown the items will be randomly shuffled and displayed in a random order."
-msgstr "Thứ tự của nguồn cấp dữ liệu có nên được sắp xếp ngẫu nhiên không? Khi được bật mỗi lần Widget được hiển thị, các mục sẽ được xáo trộn ngẫu nhiên và hiển thị theo thứ tự ngẫu nhiên."
+msgstr "Thứ tự của nguồn cấp dữ liệu có nên được sắp xếp ngẫu nhiên không? Khi được bật mỗi lần tiện ích được hiển thị, các mục sẽ được xáo trộn ngẫu nhiên và hiển thị theo thứ tự ngẫu nhiên."
 
 #: locale/moduletranslate.php:341
 msgid "Number of Items"
@@ -1300,7 +1300,7 @@ msgstr "Nền trong suốt?"
 
 #: locale/moduletranslate.php:367 locale/moduletranslate.php:927
 msgid "Should the Widget be shown with a transparent background? Also requires the embedded content to have a transparent background."
-msgstr "Widget có nên được hiển thị với nền trong suốt không? Cũng yêu cầu nội dung được nhúng phải có nền trong suốt."
+msgstr "Tiện ích có nên được hiển thị với nền trong suốt không? Cũng yêu cầu nội dung được nhúng phải có nền trong suốt."
 
 #: locale/moduletranslate.php:368
 msgid "Scale Content?"
@@ -1316,7 +1316,7 @@ msgstr "Tải trước?"
 
 #: locale/moduletranslate.php:371
 msgid "Should this Widget be loaded entirely off-screen so that it is ready when shown? Dynamic content will start running off screen."
-msgstr "Widget này có nên được tải hoàn toàn ngoài màn hình để nó sẵn sàng khi hiển thị không? Nội dung động sẽ bắt đầu chạy ngoài màn hình."
+msgstr "Tiện ích này có nên được tải hoàn toàn ngoài màn hình để nó sẵn sàng khi hiển thị không? Nội dung động sẽ bắt đầu chạy ngoài màn hình."
 
 #: locale/moduletranslate.php:372 locale/moduletranslate.php:1352
 msgid "HTML"
@@ -1651,7 +1651,7 @@ msgstr "Chỉ hiển thị Cảnh báo khẩn cấp trong bố cục này nếu 
 
 #: locale/moduletranslate.php:411
 msgid "Geo - Geophysical (including landslides)"
-msgstr "Địa - địa vật lý (bao gồm cả trượt lở đất)"
+msgstr "Địa lý – Địa vật lý (bao gồm cả sạt lở đất)"
 
 #: locale/moduletranslate.php:412
 msgid "Met - Meteorological (including floods)"
@@ -1735,7 +1735,7 @@ msgstr "Đánh giá"
 
 #: locale/moduletranslate.php:433
 msgid "AllClear"
-msgstr "Tất cảXóa"
+msgstr "Xóa tất cả"
 
 #: locale/moduletranslate.php:434 locale/moduletranslate.php:2072
 #: locale/moduletranslate.php:2101 locale/moduletranslate.php:2130
@@ -1874,7 +1874,7 @@ msgstr "Vĩ độ"
 
 #: locale/moduletranslate.php:470 locale/moduletranslate.php:503
 msgid "The Latitude for this widget"
-msgstr "Latitude cho tiện ích này"
+msgstr "Vĩ độ cho tiện ích này"
 
 #: locale/moduletranslate.php:471 locale/moduletranslate.php:504
 #: cache/40/40934d1cc21621783800143e32bfb38c.php:717
@@ -1960,7 +1960,7 @@ msgstr "Mô-đun này được hiển thị trên Trình phát, nghĩa là Trìn
 
 #: locale/moduletranslate.php:509
 msgid "The Traffic Widget has not been configured yet, please ask your CMS Administrator to look at it for you."
-msgstr "Widget giao thông chưa được định cấu hình, vui lòng yêu cầu Quản trị viên CMS xem xét nó giúp bạn."
+msgstr "Tiện ích giao thông chưa được định cấu hình, vui lòng yêu cầu Quản trị viên CMS xem xét nó giúp bạn."
 
 #: locale/moduletranslate.php:510
 msgid "You have entered a duration lower than the recommended minimum, this could cause significant API charges."
@@ -1989,7 +1989,7 @@ msgstr "Đường dẫn Video"
 
 #: locale/moduletranslate.php:516
 msgid "A URL to the HLS video stream. Requires Player running Windows 8.1 or later, or Android 6 or later. Earlier Android devices may play HLS via the LocalVideo widget."
-msgstr "URL tới luồng video HLS. Yêu cầu Trình phát chạy Windows 8.1 trở lên hoặc Android 6 trở lên. Các thiết bị Android cũ hơn có thể phát HLS thông qua tiện ích LocalVideo."
+msgstr "URL tới luồng video HLS. Yêu cầu Trình phát chạy Windows 8.1 trở lên hoặc Android 6 trở lên. Các thiết bị Android cũ hơn có thể phát HLS thông qua tiện ích Video cục bộ"
 
 #: locale/moduletranslate.php:517 locale/moduletranslate.php:559
 #: locale/moduletranslate.php:906
@@ -2580,15 +2580,15 @@ msgstr "Số lượt phát"
 
 #: locale/moduletranslate.php:868
 msgid "In cycle based playback, how many plays should each Widget have before moving on?"
-msgstr "Khi phát lại theo chu kỳ, mỗi Widget nên có bao nhiêu lần phát trước khi tiếp tục?"
+msgstr "Khi phát lại theo chu kỳ, mỗi tiện ích nên có bao nhiêu lần phát trước khi tiếp tục?"
 
 #: locale/moduletranslate.php:869
 msgid "Random Widget each cycle?"
-msgstr "Widget ngẫu nhiên mỗi chu kỳ?"
+msgstr "Tiện ích ngẫu nhiên mỗi chu kỳ?"
 
 #: locale/moduletranslate.php:870
 msgid "When enabled the next Widget to play will be chosen at random from the available Widgets."
-msgstr "Khi được bật, Widget tiếp theo để phát sẽ được chọn ngẫu nhiên từ các Widget có sẵn."
+msgstr "Khi được bật, tiện ích tiếp theo để phát sẽ được chọn ngẫu nhiên từ các tiện ích có sẵn."
 
 #: locale/moduletranslate.php:871
 msgid "Rich Text"
@@ -2754,7 +2754,7 @@ msgstr "Tiện ích video mới có nên mặc định ở chế độ Tắt ti�
 
 #: locale/moduletranslate.php:896
 msgid "How should new Video Widgets be scaled by default?"
-msgstr "Các Widget Video mới nên được điều chỉnh theo mặc định như thế nào?"
+msgstr "Các tiện ích Video mới nên được điều chỉnh theo mặc định như thế nào?"
 
 #: locale/moduletranslate.php:899
 msgid "This video will play for %media.duration% seconds. Cut the video short by setting a shorter duration in the Advanced tab. Wait on the last frame or set to Loop by setting a higher duration in the Advanced tab."
@@ -2818,7 +2818,7 @@ msgstr "Vị trí (URL) của trang web"
 
 #: locale/moduletranslate.php:929
 msgid "Should this Widget be loaded entirely off screen so that it is ready when shown? Dynamic content will start running off screen."
-msgstr "Widget này có nên được tải hoàn toàn khỏi màn hình để nó sẵn sàng khi hiển thị không? Nội dung động sẽ bắt đầu chạy ngoài màn hình."
+msgstr "Tiện ích này có nên được tải hoàn toàn khỏi màn hình để nó sẵn sàng khi hiển thị không? Nội dung động sẽ bắt đầu chạy ngoài màn hình."
 
 #: locale/moduletranslate.php:930
 #: cache/a3/a3efbd21e9c181a14f5fceee1b54a95f.php:122
@@ -3312,7 +3312,7 @@ msgstr "Định dạng ngày"
 #: locale/moduletranslate.php:3196 locale/moduletranslate.php:3357
 #: locale/moduletranslate.php:3394 locale/moduletranslate.php:3444
 msgid "The format to apply to all dates returned by the Widget."
-msgstr "Định dạng áp dụng cho tất cả các ngày được Widget trả về."
+msgstr "Định dạng áp dụng cho tất cả các ngày được tiện ích trả về."
 
 #: locale/moduletranslate.php:1116 locale/moduletranslate.php:1240
 #: locale/moduletranslate.php:1594
@@ -5396,7 +5396,7 @@ msgstr "Đệm gốc"
 
 #: locale/moduletranslate.php:2991
 msgid "This is the intended padding of the template and is used to position the Widget within its region when the template is applied."
-msgstr "Đây là phần đệm dự định của mẫu và được sử dụng để định vị Widget trong vùng của nó khi áp dụng mẫu."
+msgstr "Đây là phần đệm dự định của mẫu và được sử dụng để định vị tiện ích trong vùng của nó khi áp dụng mẫu."
 
 #: locale/moduletranslate.php:2995
 #: cache/5d/5ddc3b3a06dcb05f69b47d5cd8bae287.php:657
@@ -5781,11 +5781,11 @@ msgstr "Bố cục lưới"
 
 #: locale/dbtranslate.php:26
 msgid "Fade In"
-msgstr "Làm mờ dần"
+msgstr "Hiện dần lên"
 
 #: locale/dbtranslate.php:27 cache/61/615bc932a2e18537d5fa3d21154ad53e.php:2501
 msgid "Fade Out"
-msgstr "Mờ dần"
+msgstr "Biến mất dần"
 
 #: locale/dbtranslate.php:28
 msgid "Fly"
@@ -7753,7 +7753,7 @@ msgstr "Cá nhân"
 #: cache/bd/bd5d2e4a3e31b76bad9ff5f5698f7a7b.php:160
 #: cache/62/62f02d9694937edf9eeebf8af13766c4.php:182
 msgid "Record geolocation on each Proof of Play?"
-msgstr "Ghi lại vị trí địa lý trên mỗi Proof of Play?"
+msgstr "Ghi lại vị trí địa lý cho mỗi lượt phát nội dung?"
 
 #: cache/bd/bd5d2e4a3e31b76bad9ff5f5698f7a7b.php:163
 #: cache/62/62f02d9694937edf9eeebf8af13766c4.php:185
@@ -8474,7 +8474,7 @@ msgstr "Bật Thu thập số liệu thống kê?"
 
 #: cache/bb/bb9d8c7fef20d1514f5bb3acae314198.php:265
 msgid "Enable the collection of Proof of Play statistics for this Layout. Ensure that ‘Enable Stats Collection’ is set to ‘On’ in the Display Settings."
-msgstr "Kích hoạt tính năng thu thập số liệu thống kê Proof of Play cho Bố cục này. Đảm bảo rằng 'Bật thu thập số liệu thống kê' được đặt thành 'Bật' trong Cài đặt hiển thị."
+msgstr "Bật thu thập thống kê lượt phát (Proof of Play) cho bố cục này. Hãy đảm bảo rằng tùy chọn ‘Bật thu thập thống kê’ đã được bật trong phần Cài đặt Màn hình."
 
 #: cache/bb/bb9d8c7fef20d1514f5bb3acae314198.php:283
 msgid "An optional description of the Layout. (1 - 250 characters)"
@@ -9222,7 +9222,7 @@ msgstr "Phát hành"
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:1288
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:1415
 msgid "Widgets"
-msgstr "Widget"
+msgstr "Tiện ích"
 
 #: cache/3c/3c1fa79a7b77f42d6209210a75b63812.php:564
 msgid "Widget Data"
@@ -9272,12 +9272,12 @@ msgstr "Tài khoản"
 #: cache/14/14bb6e98f6948b95336492e93123ea66.php:139
 #: cache/14/14bb6e98f6948b95336492e93123ea66.php:200
 msgid "Entity"
-msgstr "Thực thể"
+msgstr "Đối tượng"
 
 #: cache/14/14bb6e98f6948b95336492e93123ea66.php:150
 #: cache/14/14bb6e98f6948b95336492e93123ea66.php:204
 msgid "Entity ID"
-msgstr "ID thực thể"
+msgstr "ID Đối tượng"
 
 #: cache/14/14bb6e98f6948b95336492e93123ea66.php:172
 #: cache/14/14bb6e98f6948b95336492e93123ea66.php:212
@@ -9340,7 +9340,7 @@ msgstr "Xóa khi hết hạn?"
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:314
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:1833
 msgid "When the End Time for this Widget passes should the Widget be removed from the Playlist?"
-msgstr "Khi Thời gian kết thúc của Widget này trôi qua, Widget có nên bị xóa khỏi Danh sách phát không?"
+msgstr "Khi Thời gian kết thúc của tiện ích này trôi qua, tiện ích có nên bị xóa khỏi Danh sách phát không?"
 
 #: cache/f9/f94739d77632ff2785eb7f60400f9cff.php:82
 msgid "Library Count"
@@ -10691,7 +10691,7 @@ msgstr "Bật Bộ sưu tập số liệu thống kê danh sách phát?"
 #: cache/24/24586f514f7ca9717426ed09b5e5d4c2.php:297
 #: cache/f7/f7f09a3ccd551d0c4068a90ef4a908ee.php:288
 msgid "Enable the collection of Proof of Play statistics for this Playlist. Ensure that ‘Enable Stats Collection’ is set to ‘On’ in the Display Settings."
-msgstr "Cho phép thu thập số liệu thống kê Proof of Play cho Danh sách phát này. Đảm bảo rằng 'Bật thu thập số liệu thống kê' được đặt thành 'Bật' trong Cài đặt hiển thị."
+msgstr "Cho phép thu thập số liệu thống kê lượt phát (Proof of Play) cho Danh sách phát này. Đảm bảo rằng 'Bật thu thập số liệu thống kê' được đặt thành 'Bật' trong Cài đặt hiển thị."
 
 #: cache/24/24586f514f7ca9717426ed09b5e5d4c2.php:311
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:1011
@@ -11478,7 +11478,7 @@ msgstr "Khi được bật, người dùng sẽ có thể thêm phương tiện 
 
 #: cache/41/4183074efb7723c5f952e5f8dba225aa.php:150
 msgid "The default duration for Widgets of this Module when the user has elected to not set a specific duration."
-msgstr "Thời lượng mặc định cho Widget của Mô-đun này khi người dùng đã chọn không đặt thời lượng cụ thể."
+msgstr "Thời lượng mặc định cho tiện ích của Mô-đun này khi người dùng đã chọn không đặt thời lượng cụ thể."
 
 #: cache/41/41500c7ce19e92828d30bb511215759d.php:57
 msgid "Delete Module Template"
@@ -11502,7 +11502,7 @@ msgstr "Bản mẫu"
 
 #: cache/41/41a6be7914a5010730d851a22d9c8bb9.php:232
 msgid "Include Widgets?"
-msgstr "Bao gồm Widget?"
+msgstr "Bao gồm tiện ích?"
 
 #: cache/41/41a6be7914a5010730d851a22d9c8bb9.php:238
 msgid "Add all the widgets to the template?"
@@ -12308,7 +12308,7 @@ msgstr "Nhóm phần tử"
 
 #: cache/ae/aede29170646eeec2459cefb297c2720.php:560
 msgid "Upload Audio files to assign to Widgets"
-msgstr "Tải lên tệp âm thanh để gán cho Widget"
+msgstr "Tải lên tệp âm thanh để gán cho tiện ích"
 
 #: cache/ae/aede29170646eeec2459cefb297c2720.php:566
 msgid "Transition In"
@@ -12328,7 +12328,7 @@ msgstr "Áp dụng loại Chuyển tiếp cho phần cuối của mục phương
 
 #: cache/ae/aede29170646eeec2459cefb297c2720.php:590
 msgid "Set View, Edit and Delete Sharing for Widgets and Playlists"
-msgstr "Đặt Chế độ xem, Chỉnh sửa và Xóa Chia sẻ cho Widget và Danh sách phát"
+msgstr "Đặt Chế độ xem, Chỉnh sửa và Xóa Chia sẻ cho Tiện ích và Danh sách phát"
 
 #: cache/ae/aede29170646eeec2459cefb297c2720.php:775
 msgid "Add Background Image"
@@ -12739,7 +12739,7 @@ msgstr "Phương tiện âm thanh"
 
 #: cache/4f/4f986972093be579922959000f8429fb.php:134
 msgid "Select the audio file that should be played when this Widget starts."
-msgstr "Chọn tệp âm thanh sẽ được phát khi Widget này khởi động."
+msgstr "Chọn tệp âm thanh sẽ được phát khi tiện ích này khởi động."
 
 #: cache/4f/4f986972093be579922959000f8429fb.php:148
 msgid "The currently selected audio has been retired, please select a new item or cancel to keep the current one."
@@ -13226,7 +13226,7 @@ msgstr "ChromeOS"
 
 #: cache/40/40934d1cc21621783800143e32bfb38c.php:371
 msgid "Windows"
-msgstr "Cửa sổ"
+msgstr "Windows"
 
 #: cache/40/40934d1cc21621783800143e32bfb38c.php:377
 msgid "webOS"
@@ -13380,7 +13380,7 @@ msgstr "XMR đã đăng ký"
 #: cache/59/59f0058495a6a779727bbfe19dd6898f.php:591
 #: cache/ca/ca33d05cf8fdeb833db69451a0ddd065.php:100
 msgid "Remote"
-msgstr "Từ xa"
+msgstr "Điều khiển từ xa"
 
 #: cache/40/40934d1cc21621783800143e32bfb38c.php:757
 msgid "Screen Size"
@@ -13959,11 +13959,11 @@ msgstr "Tác vụ tiện ích"
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:659
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:743
 msgid "Trigger"
-msgstr "Cò súng"
+msgstr "Kích hoạt"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:667
 msgid "If your Widget is a Shell Command you can select to target 'Screen' to run the command without affecting any Zones. For all other Widgets select 'Zone' as target."
-msgstr "Nếu Widget của bạn là Lệnh Shell, bạn có thể chọn nhắm mục tiêu 'Màn hình' để chạy lệnh mà không ảnh hưởng đến bất kỳ Vùng nào. Đối với tất cả các Widget khác, hãy chọn 'Vùng' làm mục tiêu."
+msgstr "Nếu tiện ích của bạn là Lệnh Shell, bạn có thể chọn nhắm mục tiêu 'Màn hình' để chạy lệnh mà không ảnh hưởng đến bất kỳ Vùng nào. Đối với tất cả các tiện ích khác, hãy chọn 'Vùng' làm mục tiêu."
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:671
 msgid "Touch/Click"
@@ -13971,7 +13971,7 @@ msgstr "Chạm/Nhấp chuột"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:675
 msgid "Web hook"
-msgstr "Móc web"
+msgstr "Web hook"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:687
 msgid "Edit Action"
@@ -13999,7 +13999,7 @@ msgstr "Tiện ích để tải"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:723
 msgid "Select or create a Widget to be loaded"
-msgstr "Chọn hoặc tạo Widget để tải"
+msgstr "Chọn hoặc tạo tiện ích để tải"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:727
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:2412
@@ -14122,19 +14122,19 @@ msgstr "Nếu bố cục này được lên lịch bằng một sự kiện đư
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:901
 msgid "Enable Widget loop?"
-msgstr "Bật vòng lặp Widget?"
+msgstr "Bật vòng lặp cho tiện ích?"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:905
 msgid "When should the Widget Loop be enabled?"
-msgstr "Khi nào nên bật Vòng lặp Widget?"
+msgstr "Khi nào nên bật Vòng lặp cho tiện ích?"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:909
 msgid "* If the Widget is a 'fixed' item (eg Text), Loop should not be enabled."
-msgstr "* Nếu Widget là một mục 'cố định' (ví dụ: Văn bản), không nên bật Vòng lặp."
+msgstr "* Nếu tiện ích là một mục 'cố định' (ví dụ: Văn bản), không nên bật Vòng lặp."
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:913
 msgid "* If the Widget needs to update periodically (eg RSS Ticker Widget), Loop can be enabled ONLY if the Widget needs to update MORE frequently than the duration of the overall Layout."
-msgstr "* Nếu Widget cần cập nhật định kỳ (ví dụ: Widget RSS Ticker), CHỈ có thể bật Vòng lặp nếu Widget cần cập nhật THÊM thường xuyên hơn thời lượng của Bố cục tổng thể."
+msgstr "* Nếu tiện ích cần cập nhật định kỳ (ví dụ: Tiện ích RSS Ticker), CHỈ có thể bật Vòng lặp nếu tiện ích cần cập nhật THÊM thường xuyên hơn thời lượng của Bố cục tổng thể."
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:917
 msgid "Exit Transition?"
@@ -14182,7 +14182,7 @@ msgstr "Đặt thời lượng?"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:987
 msgid "Select to provide a specific duration for this Widget"
-msgstr "Chọn để cung cấp thời lượng cụ thể cho Widget này"
+msgstr "Chọn để cung cấp thời lượng cụ thể cho  này"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:995
 msgid "The duration of the widget in seconds"
@@ -14190,7 +14190,7 @@ msgstr "Thời lượng của tiện ích tính bằng giây"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:1003
 msgid "Enable the collection of Proof of Play statistics for this Widget. Ensure that ‘Enable Stats Collection’ is set to ‘On’ in the Display Settings."
-msgstr "Kích hoạt tính năng thu thập số liệu thống kê Proof of Play cho Widget này. Đảm bảo rằng 'Bật thu thập số liệu thống kê' được đặt thành 'Bật' trong Cài đặt hiển thị."
+msgstr "Kích hoạt tính năng thu thập số liệu thống kê lượt phát (Proof of Play) cho  này. Đảm bảo rằng 'Bật thu thập số liệu thống kê' được đặt thành 'Bật' trong Cài đặt hiển thị."
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:1019
 msgid "Repeat items to fill all data slots?"
@@ -14230,7 +14230,7 @@ msgstr "Màu 2"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:1087
 msgid "Radial"
-msgstr "Xuyên tâm"
+msgstr "Dạng hình tròn"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:1091
 msgid "Linear"
@@ -14254,7 +14254,7 @@ msgstr "Thay đổi bố cục"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:1119
 msgid "Tooltips?"
-msgstr "Chú giải công cụ?"
+msgstr "Chú thích nhanh?"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:1123
 msgid "Show/Hide tooltips which provide help; informational tooltips will remain."
@@ -14262,7 +14262,7 @@ msgstr "Hiển thị/Ẩn chú giải công cụ cung cấp trợ giúp; chú gi
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:1127
 msgid "Delete confirmation?"
-msgstr "Xóa xác nhận?"
+msgstr "Xác nhận xóa?"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:1131
 msgid "Do we want to show confirmation modals when deleting critical Layout content?"
@@ -14321,7 +14321,7 @@ msgstr "Kích thước tệp"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:1278
 msgid "Local"
-msgstr "Địa phương"
+msgstr "Cục bộ"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:1292
 msgid "Add widgets"
@@ -14801,11 +14801,11 @@ msgstr "Lặp lại"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:2096
 msgid "Repeat - repeat the Widgets in this Playlist until the number of Spots have been filled"
-msgstr "Lặp lại - lặp lại các Widget trong Danh sách phát này cho đến khi số Điểm được lấp đầy"
+msgstr "Lặp lại - lặp lại các  trong Danh sách phát này cho đến khi số Điểm được lấp đầy"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:2104
 msgid "How many spots would you like on this Sub-Playlist? This is used before ordering to expand or shrink the list to the specified size. Leave empty to use the count of Widgets."
-msgstr "Bạn muốn có bao nhiêu vị trí trong Danh sách phát phụ này? Điều này được sử dụng trước khi ra lệnh mở rộng hoặc thu nhỏ danh sách theo kích thước đã chỉ định. Để trống để sử dụng số lượng Widget."
+msgstr "Bạn muốn có bao nhiêu vị trí trong Danh sách phát phụ này? Điều này được sử dụng trước khi ra lệnh mở rộng hoặc thu nhỏ danh sách theo kích thước đã chỉ định. Để trống để sử dụng số lượng ."
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:2108
 #: cache/3e/3e7458845914d9492007fbab6a01b6ab.php:80
@@ -14814,7 +14814,7 @@ msgstr "Điểm"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:2112
 msgid "Set the duration of all Widgets in the Playlist to a specific value in seconds. Leave empty to use each Widget duration."
-msgstr "Đặt thời lượng của tất cả các Widget trong Danh sách phát thành một giá trị cụ thể tính bằng giây. Để trống để sử dụng từng thời lượng Widget."
+msgstr "Đặt thời lượng của tất cả các  trong Danh sách phát thành một giá trị cụ thể tính bằng giây. Để trống để sử dụng từng thời lượng ."
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:2116
 msgid "Spot Length"
@@ -14822,7 +14822,7 @@ msgstr "Độ dài điểm"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:2120
 msgid "If there are not enough Widgets fill all spots, how should the remaining spots be filled?"
-msgstr "Nếu không có đủ Widget lấp đầy tất cả các vị trí thì các vị trí còn lại nên lấp đầy như thế nào?"
+msgstr "Nếu không có đủ  lấp đầy tất cả các vị trí thì các vị trí còn lại nên lấp đầy như thế nào?"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:2124
 msgid "Spot Fill"
@@ -14873,7 +14873,7 @@ msgstr "Hiển thị dữ liệu dự phòng"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:2271
 msgid "If provided, when should we show fallback data for this Widget?"
-msgstr "Nếu được cung cấp, khi nào chúng tôi nên hiển thị dữ liệu dự phòng cho Widget này?"
+msgstr "Nếu được cung cấp, khi nào chúng tôi nên hiển thị dữ liệu dự phòng cho  này?"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:2275
 #: cache/74/745df4d934b108b14bbd2306db53e6b7.php:768
@@ -14920,7 +14920,7 @@ msgstr "ID"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:2408
 msgid "Owner Id"
-msgstr "Id chủ sở hữu"
+msgstr "ID chủ sở hữu"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:2442
 msgid "Add Action"
@@ -15057,7 +15057,7 @@ msgstr "Xóa phần tử"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:2609
 msgid "Are you sure you want to delete this element? Widget will also be deleted and configuration will be lost."
-msgstr "Bạn có chắc chắn muốn xóa phần tử này không? Widget cũng sẽ bị xóa và cấu hình sẽ bị mất."
+msgstr "Bạn có chắc chắn muốn xóa phần tử này không?  cũng sẽ bị xóa và cấu hình sẽ bị mất."
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:2615
 msgid "Delete Element Group"
@@ -15065,7 +15065,7 @@ msgstr "Xóa nhóm phần tử"
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:2619
 msgid "Are you sure you want to delete this element group? Widget will also be deleted and configuration will be lost."
-msgstr "Bạn có chắc chắn muốn xóa nhóm thành phần này không? Widget cũng sẽ bị xóa và cấu hình sẽ bị mất."
+msgstr "Bạn có chắc chắn muốn xóa nhóm thành phần này không?  cũng sẽ bị xóa và cấu hình sẽ bị mất."
 
 #: cache/61/615bc932a2e18537d5fa3d21154ad53e.php:2625
 msgid "Delete all selected objects?"
@@ -15725,7 +15725,7 @@ msgstr "Có sẵn trên"
 
 #: cache/e0/e09c6619e3b0a4701989799289df6e3d.php:100
 msgid "Enable the collection of Proof of Play statistics for this Playlist."
-msgstr "Cho phép thu thập số liệu thống kê Proof of Play cho Danh sách phát này."
+msgstr "Cho phép thu thập số liệu thống kê lượt phát (Proof of Play) cho Danh sách phát này."
 
 #: cache/33/33d78c8206b2467afa2f8964b3f16154.php:57
 #: lib/Controller/Display.php:905
@@ -16083,7 +16083,7 @@ msgstr "dữ liệu"
 #: cache/ca/ca33d05cf8fdeb833db69451a0ddd065.php:215
 #: cache/20/20c62931092a02ad5a52d5d17a567869.php:219
 msgid "Remote?"
-msgstr "Remote"
+msgstr "Điều khiển từ xa"
 
 #: cache/74/745df4d934b108b14bbd2306db53e6b7.php:207
 #: cache/ca/ca33d05cf8fdeb833db69451a0ddd065.php:221
@@ -17110,7 +17110,7 @@ msgstr " TẮT gỡ lỗi"
 
 #: cache/38/385ee00baa220642744fad407cdf9850.php:549
 msgid "That's it!"
-msgstr "Thế thôi!"
+msgstr "Thiết lập báo cáo lỗi đã hoàn tất!"
 
 #: cache/38/385ee00baa220642744fad407cdf9850.php:555
 msgid "Click on the below link to open the bug report page for this release."
@@ -17292,7 +17292,7 @@ msgstr "Những màn hình nào bạn muốn đăng ký với SSP này. Để tr
 
 #: cache/0b/0b613c3b800b3276e4da1deace20b79a.php:510
 msgid "ID field"
-msgstr "trường ID"
+msgstr "ID trường"
 
 #: cache/0b/0b613c3b800b3276e4da1deace20b79a.php:516
 msgid "Which field would you like to use as the ID for this SSP?"
@@ -17846,7 +17846,7 @@ msgstr "Bắt tay"
 
 #: cache/5d/5ddc3b3a06dcb05f69b47d5cd8bae287.php:621
 msgid "HexSupport"
-msgstr "HexHỗ trợ"
+msgstr "Hỗ trợ Hex"
 
 #: cache/5d/5ddc3b3a06dcb05f69b47d5cd8bae287.php:633
 msgid "Query params builder"
@@ -17882,7 +17882,7 @@ msgstr "Hiển thị dữ liệu thô"
 
 #: cache/5d/5ddc3b3a06dcb05f69b47d5cd8bae287.php:669
 msgid "Body data"
-msgstr "Dữ liệu cơ thể"
+msgstr "Dữ liệu trong phần thân"
 
 #: cache/5d/5ddc3b3a06dcb05f69b47d5cd8bae287.php:675
 msgid "New tags"
@@ -19180,7 +19180,7 @@ msgstr "ID chiến dịch"
 
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:528
 msgid "SoV"
-msgstr "SoV"
+msgstr "Tỷ lệ thời lượng phát"
 
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:532
 msgid "Max Plays per Hour"
@@ -19192,7 +19192,7 @@ msgstr "Mô tả lặp lại"
 
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:548
 msgid "Recurrence Type"
-msgstr "Loại tái phát"
+msgstr "Hình thức lặp lại"
 
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:552
 msgid "Recurrence Interval"
@@ -19236,7 +19236,7 @@ msgstr "Nhận vị trí trình duyệt!"
 
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:685
 msgid "Clear coordinates!"
-msgstr "Rõ tọa độ!"
+msgstr "Làm trống tọa độ!"
 
 #: cache/10/10fd044330899bf16e5c496d43db4cb0.php:734
 msgid "Always showing"
@@ -19359,7 +19359,7 @@ msgstr "Bật Bộ sưu tập số liệu thống kê phương tiện?"
 #: cache/d0/d075ecb35bc809fa2ba2624ee1154c94.php:163
 #: cache/8e/8e6f77c3d5f13012bdd306a830c2cc41.php:273
 msgid "Enable the collection of Proof of Play statistics for this Media Item. Ensure that ‘Enable Stats Collection’ is set to ‘On’ in the Display Settings."
-msgstr "Cho phép thu thập số liệu thống kê Proof of Play cho Mục phương tiện này. Đảm bảo rằng 'Bật thu thập số liệu thống kê' được đặt thành 'Bật' trong Cài đặt hiển thị."
+msgstr "Cho phép thu thập số liệu thống kê lượt phát (Proof of Play) cho Mục phương tiện này. Đảm bảo rằng 'Bật thu thập số liệu thống kê' được đặt thành 'Bật' trong Cài đặt hiển thị."
 
 #: cache/d0/d0cd42c40e99ed35fac97c4508e666ce.php:66
 msgid "Manage Membership for %userName%"
@@ -19485,7 +19485,7 @@ msgstr "Giá trị mặc định cho \"Tự động áp dụng Chuyển đổi?\
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:588
 msgid "Resize Threshold"
-msgstr "Thay đổi kích thước ngưỡng"
+msgstr "Thay đổi ngưỡng kích thước "
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:594
 msgid "The maximum dimensions to be considered when an image is resized, based on the longest side"
@@ -19513,7 +19513,7 @@ msgstr "Số ngày tồn tại mặc định của bản ghi trong bảng dữ l
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:705
 msgid "Entries in purge_list table with expiry date older than specified ttl will be removed."
-msgstr "Các mục trong bảng purge_list có ngày hết hạn cũ hơn ttl được chỉ định sẽ bị xóa."
+msgstr "Các mục trong danh sách dọn dẹp sẽ được xóa tự động nếu đã hết hạn theo thời gian quy định."
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:736
 msgid "The default value for max number of items on a new dynamic Playlist"
@@ -19605,11 +19605,11 @@ msgstr "Chọn cài đặt Mặc định để sử dụng cho việc thu thập
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:1265
 msgid "Select the Default setting to use for the collection of Proof of Play statistics for all Media Items."
-msgstr "Chọn cài đặt Mặc định để sử dụng cho việc thu thập số liệu thống kê Proof of Play cho tất cả các Mục phương tiện."
+msgstr "Chọn cài đặt Mặc định để sử dụng cho việc thu thập số liệu thống kê lượt phát (Proof of Play) cho tất cả các Mục phương tiện."
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:1326
 msgid "Select the Default setting to use for the collection of Proof of Play statistics for all Playlists."
-msgstr "Chọn cài đặt Mặc định để sử dụng cho việc thu thập số liệu thống kê Proof of Play cho tất cả Danh sách phát."
+msgstr "Chọn cài đặt Mặc định để sử dụng cho việc thu thập số liệu thống kê lượt phát (Proof of Play) cho tất cả Danh sách phát."
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:1381
 msgid "Enable Widget Stats Collection?"
@@ -19617,7 +19617,7 @@ msgstr "Bật Bộ sưu tập số liệu thống kê widget?"
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:1387
 msgid "Select the Default setting to use for the collection for Proof of Play statistics for all Widgets."
-msgstr "Chọn cài đặt Mặc định để sử dụng cho bộ sưu tập số liệu thống kê Proof of Play cho tất cả các Widget."
+msgstr "Chọn cài đặt Mặc định để sử dụng cho bộ sưu tập số liệu thống kê lượt phát (Proof of Play) cho tất cả các tiện ích."
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:1442
 msgid "Enable the option to report the current layout status?"
@@ -19625,7 +19625,7 @@ msgstr "Bật tùy chọn báo cáo trạng thái bố cục hiện tại?"
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:1459
 msgid "Lock the Display Name to the device name provided by the Player?"
-msgstr "Khóa Display Name với tên thiết bị do Thiết bị trình chiếu cung cấp?"
+msgstr "Giữ nguyên Tên Màn Hình theo tên thiết bị từ thiết bị phát?"
 
 #: cache/d0/d0f93bd70d03aad181d81f1e0c3c46d2.php:1476
 msgid "Enable the option to set the screenshot interval?"
@@ -20192,7 +20192,7 @@ msgstr "Trống"
 
 #: cache/3e/3ed02f545af948d29ad19fb5d28aea9c.php:100
 msgid "Enable the collection of Proof of Play statistics for the selected Layout."
-msgstr "Kích hoạt tính năng thu thập số liệu thống kê Proof of Play cho Bố cục đã chọn."
+msgstr "Kích hoạt tính năng thu thập số liệu thống kê lượt phát (Proof of Play) cho Bố cục đã chọn."
 
 #: cache/8e/8e6f77c3d5f13012bdd306a830c2cc41.php:58
 msgid "Edit Media"
@@ -20249,7 +20249,7 @@ msgstr "Xóa %syncGroupName%"
 
 #: cache/11/11647a3c18d902dd179d3cb9b3b7ec76.php:100
 msgid "Enable the collection of Proof of Play statistics for this Media Item."
-msgstr "Cho phép thu thập số liệu thống kê Proof of Play cho Mục phương tiện này."
+msgstr "Cho phép thu thập số liệu thống kê lượt phát (Proof of Play) cho Mục phương tiện này."
 
 #: cache/11/1166151ca61185a39a692ab3eb99064f.php:74
 msgid "Add a new Layout and jump to the layout editor."
@@ -20329,7 +20329,7 @@ msgstr "Nhập dữ liệu dự phòng tiện ích?"
 
 #: cache/11/1166151ca61185a39a692ab3eb99064f.php:938
 msgid "Check to enable the collection of Proof of Play statistics for the selected items."
-msgstr "Chọn để bật thu thập số liệu thống kê Proof of Play cho các mục đã chọn."
+msgstr "Chọn để bật thu thập số liệu thống kê lượt phát (Proof of Play) cho các mục đã chọn."
 
 #: cache/d9/d9bb1395733b568ad7daf560b7033171.php:57
 msgid "Add New User"
@@ -20497,7 +20497,7 @@ msgstr "Bạn có muốn bao gồm dữ liệu DataSet không?"
 
 #: cache/ce/ce588b2450168ec579146b9f4779dc3f.php:122
 msgid "Include Widget fallback data?"
-msgstr "Bao gồm dữ liệu dự phòng Widget?"
+msgstr "Bao gồm dữ liệu dự phòng ?"
 
 #: cache/ce/ce588b2450168ec579146b9f4779dc3f.php:128
 msgid "Do you want to include fallback data added to Widgets used on this Layout?"
@@ -20756,15 +20756,15 @@ msgstr "Không có mô-đun nào được kích hoạt thuộc loại đó."
 
 #: lib/Controller/Widget.php:217
 msgid "Sorry but a file based Widget must be assigned not created"
-msgstr "Xin lỗi nhưng Widget dựa trên tệp phải được chỉ định chứ không được tạo"
+msgstr "Xin lỗi nhưng  dựa trên tệp phải được chỉ định chứ không được tạo"
 
 #: lib/Controller/Widget.php:225
 msgid "Canvas Widgets can only be added to a Zone"
-msgstr "Canvas Widget chỉ có thể được thêm vào một Vùng"
+msgstr "Canvas  chỉ có thể được thêm vào một Vùng"
 
 #: lib/Controller/Widget.php:230
 msgid "Only one Canvas Widget allowed per Playlist"
-msgstr "Chỉ cho phép một Widget Canvas cho mỗi Danh sách phát"
+msgstr "Chỉ cho phép một  Canvas cho mỗi Danh sách phát"
 
 #: lib/Controller/Widget.php:255
 msgid "Please select a template"
@@ -20783,7 +20783,7 @@ msgstr "Đang mong đợi một mẫu tĩnh"
 #: lib/Controller/WidgetData.php:129 lib/Controller/WidgetData.php:205
 #: lib/Controller/WidgetData.php:267 lib/Controller/WidgetData.php:345
 msgid "This Widget is not shared with you with edit permission"
-msgstr "Widget này không được chia sẻ với bạn với quyền chỉnh sửa"
+msgstr " này không được chia sẻ với bạn với quyền chỉnh sửa"
 
 #: lib/Controller/Widget.php:497
 msgid "Duration needs to be a positive value"
@@ -20807,7 +20807,7 @@ msgstr "Tham chiếu thư viện của bạn %d không tồn tại."
 
 #: lib/Controller/Widget.php:639
 msgid "This Widget is not shared with you with delete permission"
-msgstr "Widget này không được chia sẻ với bạn với quyền xóa"
+msgstr " này không được chia sẻ với bạn với quyền xóa"
 
 #: lib/Controller/Widget.php:682
 msgid "Deleted Widget"
@@ -20859,7 +20859,7 @@ msgstr "Chuyển đổi đã chỉnh sửa"
 
 #: lib/Controller/Widget.php:882 lib/Controller/Widget.php:990
 msgid "Audio cannot be attached to a Sub-Playlist Widget. Please attach it to the Widgets inside the Playlist"
-msgstr "Không thể đính kèm âm thanh vào Tiện ích danh sách phát phụ. Vui lòng đính kèm nó vào Widget bên trong Danh sách phát"
+msgstr "Không thể đính kèm âm thanh vào Tiện ích danh sách phát phụ. Vui lòng đính kèm nó vào  bên trong Danh sách phát"
 
 #: lib/Controller/Widget.php:1021
 msgid "Edited Audio"
@@ -20875,7 +20875,7 @@ msgstr "Khu vực này không được chia sẻ với bạn"
 
 #: lib/Controller/Widget.php:1116 lib/Controller/Widget.php:1335
 msgid "This Widget is not shared with you"
-msgstr "Widget này không được chia sẻ với bạn"
+msgstr " này không được chia sẻ với bạn"
 
 #: lib/Controller/Widget.php:1276
 msgid "No data providers configured"
@@ -20891,7 +20891,7 @@ msgstr "Đã chỉnh sửa hết hạn"
 
 #: lib/Controller/Widget.php:1635
 msgid "You can only set a target region on a Widget in the drawer."
-msgstr "Bạn chỉ có thể đặt vùng mục tiêu trên Widget trong ngăn kéo."
+msgstr "Bạn chỉ có thể đặt vùng mục tiêu trên  trong ngăn kéo."
 
 #: lib/Controller/Widget.php:1659
 msgid "Target region set"
@@ -20903,7 +20903,7 @@ msgstr "Phần tử JSON không hợp lệ"
 
 #: lib/Controller/Widget.php:1739
 msgid "At least one element is required for this Widget. Please delete it if you no longer need it."
-msgstr "Cần có ít nhất một phần tử cho Widget này. Vui lòng xóa nó nếu bạn không còn cần nó nữa."
+msgstr "Cần có ít nhất một phần tử cho  này. Vui lòng xóa nó nếu bạn không còn cần nó nữa."
 
 #: lib/Controller/Widget.php:1829
 msgid "Saved elements"
@@ -20919,7 +20919,7 @@ msgstr "Vui lòng cung cấp widgetId"
 
 #: lib/Controller/Widget.php:1927
 msgid "Widget does not have a data type"
-msgstr "Widget không có kiểu dữ liệu"
+msgstr " không có kiểu dữ liệu"
 
 #: lib/Controller/Template.php:179
 msgid "Alter Template"
@@ -22186,7 +22186,7 @@ msgstr "Mảng id trống!"
 
 #: lib/Controller/User.php:1703
 msgid "You do not have permission to edit all the entities permissions."
-msgstr "Bạn không có quyền chỉnh sửa tất cả các quyền của thực thể."
+msgstr "Bạn không có quyền chỉnh sửa tất cả các quyền của Đối tượng."
 
 #: lib/Controller/User.php:1892
 msgid "This object is not shared with you with edit permission"
@@ -22210,7 +22210,7 @@ msgstr "Tùy chọn chia sẻ Đã cập nhật"
 
 #: lib/Controller/User.php:2075
 msgid "Sharing requested without an entity"
-msgstr "Yêu cầu chia sẻ không có thực thể"
+msgstr "Yêu cầu chia sẻ không có đối tượng"
 
 #: lib/Controller/User.php:2079
 msgid "Sharing form requested without an object"
@@ -22266,7 +22266,7 @@ msgstr "Quyền truy cập vào %s đã bị thu hồi"
 
 #: lib/Controller/WidgetData.php:148
 msgid "Added data for Widget"
-msgstr "Đã thêm dữ liệu cho Widget"
+msgstr "Đã thêm dữ liệu cho "
 
 #: lib/Controller/WidgetData.php:212 lib/Controller/WidgetData.php:274
 #: lib/Controller/WidgetData.php:358
@@ -22275,7 +22275,7 @@ msgstr "Dữ liệu tiện ích này không thuộc về tiện ích này"
 
 #: lib/Controller/WidgetData.php:223
 msgid "Edited data for Widget"
-msgstr "Dữ liệu đã chỉnh sửa cho Widget"
+msgstr "Dữ liệu đã chỉnh sửa cho "
 
 #: lib/Controller/WidgetData.php:281
 msgid "Deleted"
@@ -22283,7 +22283,7 @@ msgstr "Đã xóa"
 
 #: lib/Controller/WidgetData.php:367
 msgid "Updated the display order for data on Widget"
-msgstr "Cập nhật thứ tự hiển thị dữ liệu trên Widget"
+msgstr "Cập nhật thứ tự hiển thị dữ liệu trên "
 
 #: lib/Controller/WidgetData.php:385
 msgid "This is not a data widget"
@@ -22291,7 +22291,7 @@ msgstr "Đây không phải là một tiện ích dữ liệu"
 
 #: lib/Controller/WidgetData.php:389
 msgid "Fallback data is not expected for this Widget"
-msgstr "Dữ liệu dự phòng không được mong đợi cho Widget này"
+msgstr "Dữ liệu dự phòng không được mong đợi cho  này"
 
 #: lib/Controller/Region.php:506
 msgid "No regions present"
@@ -22319,7 +22319,7 @@ msgstr "Thiếu thuộc tính chiều cao"
 
 #: lib/Controller/Region.php:647
 msgid "Please correct the error with this Widget"
-msgstr "Vui lòng sửa lỗi với Widget này"
+msgstr "Vui lòng sửa lỗi với  này"
 
 #: lib/Controller/Region.php:752
 msgid "Added drawer %s"
@@ -22645,7 +22645,7 @@ msgstr "Nhật ký bị cắt bớt"
 
 #: lib/Controller/DayPart.php:606
 msgid "Cannot Delete system specific DayParts"
-msgstr "Không thể xóa DayParts cụ thể của hệ thống"
+msgstr "Không thể xóa Thời gian trong ngày mặc định của hệ thống"
 
 #: lib/Controller/Base.php:301
 msgid "Template Missing"
@@ -22983,7 +22983,7 @@ msgstr "Không tìm thấy tiện ích có ID %d"
 
 #: lib/Entity/Playlist.php:489
 msgid "Cannot delete a Widget that isn't assigned to me"
-msgstr "Không thể xóa Widget không được gán cho tôi"
+msgstr "Không thể xóa  không được gán cho tôi"
 
 #: lib/Entity/Playlist.php:691
 msgid "This Playlist belongs to a Region, please delete the Region instead."
@@ -24256,7 +24256,7 @@ msgstr "Trang tổng quan trạng thái hiển thị các số liệu nền tả
 
 #: lib/Factory/UserGroupFactory.php:741
 msgid "Media Manager Dashboard showing only the Widgets the user has access to modify."
-msgstr "Bảng điều khiển Trình quản lý phương tiện chỉ hiển thị các Widget mà người dùng có quyền truy cập để sửa đổi."
+msgstr "Bảng điều khiển Trình quản lý phương tiện chỉ hiển thị các  mà người dùng có quyền truy cập để sửa đổi."
 
 #: lib/Factory/UserGroupFactory.php:746
 msgid "Playlist Dashboard showing only the Playlists configured in Layouts the user has access to modify."
@@ -24444,7 +24444,7 @@ msgstr "Bảng điều khiển quản lý phương tiện"
 
 #: lib/Factory/UserGroupFactory.php:996
 msgid "Media Manager Dashboard showing all Widgets the user has access to modify."
-msgstr "Bảng điều khiển Trình quản lý phương tiện hiển thị tất cả các Widget mà người dùng có quyền truy cập để sửa đổi."
+msgstr "Bảng điều khiển Trình quản lý phương tiện hiển thị tất cả các tiện ích mà người dùng có quyền truy cập để sửa đổi."
 
 #: lib/Factory/UserGroupFactory.php:1001
 msgid "Playlist Dashboard"
@@ -24456,11 +24456,11 @@ msgstr "Trang tổng quan danh sách phát hiển thị tất cả Danh sách ph
 
 #: lib/Factory/PermissionFactory.php:62 lib/Factory/PermissionFactory.php:110
 msgid "Entity not found: "
-msgstr "Thực thể không được tìm thấy: "
+msgstr "Đối tượng không được tìm thấy: "
 
 #: lib/Factory/PermissionFactory.php:176
 msgid "Entity not found"
-msgstr "Không tìm thấy thực thể"
+msgstr "Không tìm thấy Đối tượng"
 
 #: lib/Widget/RssProvider.php:53
 msgid "Please enter the URI to a valid RSS feed."
@@ -25437,11 +25437,11 @@ msgstr "Đã cung cấp statId không hợp lệ"
 #: lib/Storage/MongoDbTimeSeriesStore.php:596
 #: lib/Storage/MongoDbTimeSeriesStore.php:655
 msgid "Sorry we encountered an error getting Proof of Play data, please consult your administrator"
-msgstr "Rất tiếc, chúng tôi đã gặp lỗi khi tải dữ liệu Proof of Play, vui lòng tham khảo ý kiến ​​quản trị viên của bạn"
+msgstr "Rất tiếc, chúng tôi đã gặp lỗi khi tải dữ liệu thống kế lượt phát (Proof of Play), vui lòng tham khảo ý kiến ​​quản trị viên của bạn"
 
 #: lib/Storage/MongoDbTimeSeriesStore.php:705
 msgid "Sorry we encountered an error getting total number of Proof of Play data, please consult your administrator"
-msgstr "Rất tiếc, chúng tôi đã gặp lỗi khi lấy tổng số dữ liệu Proof of Play, vui lòng tham khảo ý kiến ​​quản trị viên của bạn"
+msgstr "Rất tiếc, chúng tôi đã gặp lỗi khi lấy tổng số dữ liệu lượt phát (Proof of Play), vui lòng tham khảo ý kiến ​​quản trị viên của bạn"
 
 #: lib/Storage/PdoStorageService.php:417
 msgid "Failed to write to database after %d retries. Please try again later."
