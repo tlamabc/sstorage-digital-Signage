@@ -102,9 +102,9 @@
         var serviceCards = [
             {
                 title: 'Màn hình',
-                text: 'Bắt đầu bằng cách cài đặt một trong các Trình phát của chúng tôi và nhập mã ghép nối vào <a class="text-link">trang Hiển thị</a> để bạn có thể hiển thị nội dung của mình. Nếu bạn không có thiết bị để sử dụng làm Người chơi, bạn có thể xem trước và kiểm tra lịch trình trong trình duyệt web của mình.',
+                text: 'Bắt đầu bằng cách cài đặt một trong các Trình phát của chúng tôi và nhập mã ghép nối vào <a class="text-link" href="{{ url_for("display.view") }}">trang Hiển thị</a> để bạn có thể hiển thị nội dung của mình. Nếu bạn không có thiết bị để sử dụng làm Màn hình trình chiếu, bạn có thể xem trước và kiểm tra lịch trình trong trình duyệt web của mình. <a href="https://drive.sstorage.vn/s/WF5eMRZ4nm9GsK9/download/T%C3%A0i%20Li%E1%BB%87u%20Tri%E1%BB%83n%20Khai%20SSignage%20Player%20%281%29.docx" target="_blank" class="text-link">Chi tiết</a>',
                 firstLink: '{{ url_for("display.view")}}',
-                secondLink: '{{ helpService.getLandingPage}}displays.html',
+                secondLink: '{{ helpService.getLandingPage }}displays.html',
                 imageUrl: '{{ theme.rootUri() }}theme/default/img/onboarding/displays.png',
                 serviceId: 'displays',
                 featureFlag: "displays.view"
