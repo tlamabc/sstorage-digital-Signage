@@ -1,5 +1,5 @@
 # Custom from XIBO CMS ( Vietnamese supported )
-# Ước Lượng Cấu Hình Server Cho 100 Player
+# Ước Lượng Cấu Hình Server Cho 1000 Player
 
 Dựa trên kinh nghiệm thực tế và tài liệu từ **diễn đàn Xibo**, có thể tham khảo:
 
@@ -182,7 +182,6 @@ sudo ufw reload
 - **XMR**: Vào **Quản lý > Hiển thị** > Chọn một màn hình > **Thử lại kết nối XMR**
 
 ---
-**SSignage đã sẵn sàng! 🚀**
+**Signage đã sẵn sàng!=**
 
- ## Nếu vấn để liên quan đến database, Lâm DevOps of ICSP có thể support qua zalo: 0359001647. Thanks!
  
