@@ -1,5 +1,4 @@
-[![SStorage - Digital Signage](web/theme/default/img/192x192.png)](https://sstorage.vn)
-
+#Custom from XIBO CMS ( Vietnamese supported )
 # Ước Lượng Cấu Hình Server Cho 100 Player
 
 Dựa trên kinh nghiệm thực tế và tài liệu từ **diễn đàn Xibo**, có thể tham khảo:
